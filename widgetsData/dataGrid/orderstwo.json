@@ -1,0 +1,153 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "layout": {
+      "displayName": "Layout",
+      "order": 5,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": true,
+      "order": 0,
+      "type": "string"
+    },
+    "price": {
+      "displayName": "Price",
+      "order": 2,
+      "type": "number"
+    },
+    "startDate": {
+      "displayName": "Start Date",
+      "order": 4,
+      "type": "datepicker"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 3,
+      "type": "select"
+    },
+    "title": {
+      "displayName": "Title",
+      "order": 1,
+      "type": "string"
+    },
+    "totalOrderValue": {
+      "displayName": "Total Order Value",
+      "order": 7,
+      "type": "number"
+    },
+    "totalPrice": {
+      "displayName": "Total Price",
+      "order": 6,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_504729",
+        "label": "",
+        "tooltip": "",
+        "clientKey": "section_504729",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_504729_row_737219",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_79e0afd2-8a36-11ef-9848-3fa311223d50",
+                "fieldName": "control_79e0afd2-8a36-11ef-9848-3fa311223d50",
+                "label": "Start Date",
+                "type": "datepicker",
+                "propName": "startDate",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "orderstwo"
+              },
+              {
+                "name": "control_cea101a0-8a36-11ef-8bef-fb5ab2d17028",
+                "fieldName": "control_cea101a0-8a36-11ef-8bef-fb5ab2d17028",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "",
+                    "text": ""
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "orderstwo"
+              },
+              {
+                "name": "control_6e5772f0-ad92-11ef-8ff6-c915ee02ea2c",
+                "fieldName": "control_6e5772f0-ad92-11ef-8ff6-c915ee02ea2c",
+                "label": "Total Price",
+                "type": "number",
+                "propName": "totalPrice",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.price * rowData.quantity",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              },
+              {
+                "name": "control_d0ee2670-ad97-11ef-8ce3-35cc7dce590a",
+                "fieldName": "control_d0ee2670-ad97-11ef-8ce3-35cc7dce590a",
+                "label": "Total Order Value",
+                "type": "number",
+                "propName": "totalOrderValue",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.price * rowData.quantity",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              }
+            ]
+          },
+          {
+            "name": "section_504729_row_679005",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "cleintKey": "hidden_section_79e0afd0-8a36-11ef-9848-3fa311223d50",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_79e0afd0-8a36-11ef-9848-3fa311223d50",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_79e0afd0-8a36-11ef-9848-3fa311223d50_row_79e0afd1-8a36-11ef-9848-3fa311223d50",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "orderstwo",
+  "storageType": "dashboard",
+  "title": "orderstwo"
+}

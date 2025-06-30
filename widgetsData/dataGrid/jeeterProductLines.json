@@ -1,0 +1,240 @@
+{
+  "displayColumn": "price",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "jeeterProducts_instance": {
+      "dataGrid": "jeeterProducts",
+      "displayName": "Jeeter Products",
+      "filterColumn": "jeeterProductLines",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "lines": {
+      "displayName": "Lines",
+      "lookUpTable": "lines",
+      "order": 9,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "price": {
+      "displayName": "Price",
+      "order": 10,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_201469",
+        "label": "",
+        "clientKey": "section_201469",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_201469_row_982219",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_31357d32-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_31357d32-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_fca85280-e5f2-11ee-a096-e3f8608db780",
+                "fieldName": "control_fca85280-e5f2-11ee-a096-e3f8608db780",
+                "label": "Jeeter Products",
+                "type": "datagrid",
+                "propName": "jeeterProducts_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_88151240-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_88151240-e5f3-11ee-a096-e3f8608db780",
+                "label": "Lines",
+                "type": "lookup",
+                "propName": "lines",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_e793c9a0-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_e793c9a0-e5f3-11ee-a096-e3f8608db780",
+                "label": "Price",
+                "type": "number",
+                "propName": "price",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_31357d30-e5e3-11ee-968c-53fac65bb8f4",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_31357d30-e5e3-11ee-968c-53fac65bb8f4",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_31357d30-e5e3-11ee-968c-53fac65bb8f4_row_31357d31-e5e3-11ee-968c-53fac65bb8f4",
+            "controls": [
+              {
+                "name": "control_315efe30-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_315efe30-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_318e72a0-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_318e72a0-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_31ced700-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_31ced700-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_31f809e0-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_31f809e0-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_32218ae0-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_32218ae0-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_324b5a00-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_324b5a00-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3276d6d0-e5e3-11ee-968c-53fac65bb8f4",
+                "fieldName": "control_3276d6d0-e5e3-11ee-968c-53fac65bb8f4",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "jeeterProductLines",
+  "storageType": "dashboard",
+  "title": "Jeeter Product Lines"
+}

@@ -1,0 +1,417 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 10,
+      "type": "date"
+    },
+    "estimatedTimePerUnit": {
+      "displayName": "Estimated Time Per Unit",
+      "invisible": true,
+      "order": 19,
+      "type": "number"
+    },
+    "instructions": {
+      "displayName": "Instructions",
+      "invisible": true,
+      "order": 16,
+      "type": "multiline_text"
+    },
+    "laborRate": {
+      "Width": "173px",
+      "displayName": "Labor Rate",
+      "invisible": false,
+      "order": 3,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 14,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 13,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 8,
+      "type": "select"
+    },
+    "name": {
+      "Width": "232px",
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 12,
+      "type": "string"
+    },
+    "operationType": {
+      "Width": "252px",
+      "displayName": "Operation Type",
+      "invisible": false,
+      "lookUpTable": "operationTypes",
+      "order": 1,
+      "type": "lookup"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 9,
+      "type": "user"
+    },
+    "quantity": {
+      "Width": "146px",
+      "displayName": "Quantity",
+      "invisible": true,
+      "order": 2,
+      "type": "number"
+    },
+    "quoteLine": {
+      "Width": "188px",
+      "displayName": "Quote Line",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "quoteLines",
+      "order": 7,
+      "type": "lookup"
+    },
+    "resource": {
+      "displayName": "Resource",
+      "invisible": true,
+      "lookUpTable": "resources",
+      "order": 17,
+      "type": "lookup"
+    },
+    "resourceGroup": {
+      "displayName": "Resource Group",
+      "invisible": true,
+      "lookUpTable": "resourceGroups",
+      "order": 18,
+      "type": "lookup"
+    },
+    "salesLine": {
+      "displayName": "Sales Line",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "salesLines",
+      "order": 5,
+      "type": "lookup"
+    },
+    "sequence": {
+      "displayName": "Sequence",
+      "invisible": true,
+      "order": 15,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "timeType": {
+      "displayName": "Time Type",
+      "invisible": false,
+      "order": 6,
+      "type": "string"
+    },
+    "total": {
+      "Width": "175px",
+      "displayName": "Total",
+      "invisible": false,
+      "order": 4,
+      "priceFormat": true,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_92021",
+        "label": "Estimate Operation",
+        "clientKey": "section_92021",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_92021_row_842168",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_1873db62-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1873db62-c104-11ee-8433-4f93c020f70e",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "estimateOperations",
+                "sum": true,
+                "expression": "rowData.operationType && rowData.$operationType.name"
+              },
+              {
+                "name": "control_38f256a0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_38f256a0-c104-11ee-8433-4f93c020f70e",
+                "label": "Quote Line",
+                "type": "lookup",
+                "propName": "quoteLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_428d98f0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_428d98f0-c104-11ee-8433-4f93c020f70e",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "defaultValue": "1",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "estimateOperations"
+              },
+              {
+                "name": "control_6e0782c0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_6e0782c0-c104-11ee-8433-4f93c020f70e",
+                "label": "Total",
+                "type": "number",
+                "propName": "total",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_7e68a040-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_7e68a040-c104-11ee-8433-4f93c020f70e",
+                "label": "Operation Type",
+                "type": "lookup",
+                "propName": "operationType",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_8a84e820-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_8a84e820-c104-11ee-8433-4f93c020f70e",
+                "label": "Labor Rate",
+                "type": "number",
+                "propName": "laborRate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2e7a3b80-d260-11ee-a326-c1ec30d265cd",
+                "fieldName": "control_2e7a3b80-d260-11ee-a326-c1ec30d265cd",
+                "label": "Resource",
+                "type": "lookup",
+                "propName": "resource",
+                "className": "col-md-6",
+                "expression": "rowData.$operationType.resource",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true
+              },
+              {
+                "name": "control_339f5f00-d260-11ee-a326-c1ec30d265cd",
+                "fieldName": "control_339f5f00-d260-11ee-a326-c1ec30d265cd",
+                "label": "Resource Group",
+                "type": "lookup",
+                "propName": "resourceGroup",
+                "className": "col-md-6",
+                "expression": "rowData.$operationType.resourceGroup",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true
+              },
+              {
+                "name": "control_b3f1a980-c1d8-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_b3f1a980-c1d8-11ee-99a2-8d4194ff50ca",
+                "label": "Sales Line",
+                "type": "lookup",
+                "propName": "salesLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_00816470-d25f-11ee-a326-c1ec30d265cd",
+                "fieldName": "control_00816470-d25f-11ee-a326-c1ec30d265cd",
+                "label": "Sequence",
+                "type": "number",
+                "propName": "sequence",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_91e0fd50-d272-11ee-95f8-a901455344b9",
+                "fieldName": "control_91e0fd50-d272-11ee-95f8-a901455344b9",
+                "label": "Estimated Time Per Unit",
+                "type": "number",
+                "propName": "estimatedTimePerUnit",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.$operationType.rateperUnit",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              },
+              {
+                "name": "control_01725eb0-d260-11ee-a326-c1ec30d265cd",
+                "fieldName": "control_01725eb0-d260-11ee-a326-c1ec30d265cd",
+                "label": "Instructions",
+                "type": "multiline_text",
+                "propName": "instructions",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "estimateOperations"
+              },
+              {
+                "name": "control_3e7f3c20-54be-11ef-a856-d35650c1f3f6",
+                "fieldName": "control_3e7f3c20-54be-11ef-a856-d35650c1f3f6",
+                "label": "Time Type",
+                "type": "text",
+                "propName": "timeType",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_1873db60-c104-11ee-8433-4f93c020f70e",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_1873db60-c104-11ee-8433-4f93c020f70e",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_1873db60-c104-11ee-8433-4f93c020f70e_row_1873db61-c104-11ee-8433-4f93c020f70e",
+            "controls": [
+              {
+                "name": "control_18c4e190-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_18c4e190-c104-11ee-8433-4f93c020f70e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1952a2a0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1952a2a0-c104-11ee-8433-4f93c020f70e",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_198f8490-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_198f8490-c104-11ee-8433-4f93c020f70e",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_19ca1c90-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_19ca1c90-c104-11ee-8433-4f93c020f70e",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1a061420-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1a061420-c104-11ee-8433-4f93c020f70e",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1a414860-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1a414860-c104-11ee-8433-4f93c020f70e",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1aa70f10-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1aa70f10-c104-11ee-8433-4f93c020f70e",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "estimateOperations",
+  "storageType": "dashboard",
+  "title": "Estimate Operations"
+}

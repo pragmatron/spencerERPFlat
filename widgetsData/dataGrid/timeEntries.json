@@ -1,0 +1,454 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"workOrderOperation\",\"operator\":\"=\",\"value\":null,\"name\":\"Work Order Operation\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"resource\",\"operator\":\"in\",\"value\":null,\"name\":\"Resource\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"owner\",\"operator\":\"=\",\"value\":null,\"name\":\"Owner\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "type": "date"
+    },
+    "employee": {
+      "displayName": "Employee",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "employees",
+      "type": "lookup"
+    },
+    "hours": {
+      "displayName": "Hours",
+      "invisible": false,
+      "order": 3,
+      "type": "number"
+    },
+    "issues": {
+      "displayName": "Issues",
+      "invisible": false,
+      "order": 7,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "type": "string"
+    },
+    "ophoursref": {
+      "displayName": "op hours ref",
+      "invisible": true,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "type": "user"
+    },
+    "qCQuantity": {
+      "displayName": "QC Quantity",
+      "invisible": true,
+      "type": "number"
+    },
+    "qCRework": {
+      "displayName": "QC Rework",
+      "invisible": true,
+      "type": "number"
+    },
+    "quantityCompleted": {
+      "displayName": "Quantity Completed",
+      "invisible": false,
+      "order": 4,
+      "type": "number"
+    },
+    "quantityEstimated": {
+      "displayName": "Quantity Estimated",
+      "invisible": true,
+      "type": "number"
+    },
+    "resource": {
+      "Width": "235px",
+      "displayName": "Resource",
+      "invisible": false,
+      "lookUpTable": "resources",
+      "order": 1,
+      "type": "lookup"
+    },
+    "resourceGroup": {
+      "displayName": "Resource Group",
+      "invisible": true,
+      "lookUpTable": "resourceGroups",
+      "type": "lookup"
+    },
+    "started": {
+      "displayName": "Started",
+      "invisible": false,
+      "order": 5,
+      "type": "timepicker"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "type": "string"
+    },
+    "stopped": {
+      "displayName": "Stopped",
+      "invisible": false,
+      "order": 6,
+      "type": "timepicker"
+    },
+    "timeCards": {
+      "displayName": "Time Cards",
+      "invisible": true,
+      "lookUpTable": "timeCards",
+      "type": "lookup"
+    },
+    "workOrderOperation": {
+      "Width": "339px",
+      "displayName": "Work Order Operation",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "workOrderOperations",
+      "order": 2,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_853921",
+        "label": "Time Entries",
+        "clientKey": "section_853921",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_853921_row_927189",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_70904a12-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70904a12-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_eeae3220-e23d-11ee-9002-a5ca3afe8325",
+                "fieldName": "control_eeae3220-e23d-11ee-9002-a5ca3afe8325",
+                "label": "QC Rework",
+                "type": "number",
+                "propName": "qCRework",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_7b5e6710-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_7b5e6710-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Hours",
+                "type": "number",
+                "propName": "hours",
+                "className": "col-md-6",
+                "decimalPlace": 9,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "gridId": "timeEntries"
+              },
+              {
+                "name": "control_a80cb230-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_a80cb230-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Started",
+                "type": "timepicker",
+                "propName": "started",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_ac9b8920-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_ac9b8920-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Stopped",
+                "type": "timepicker",
+                "propName": "stopped",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_86f5c780-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_86f5c780-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Resource",
+                "type": "lookup",
+                "propName": "resource",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_8ca7e8c0-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_8ca7e8c0-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Resource Group",
+                "type": "lookup",
+                "propName": "resourceGroup",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_94ffd5a0-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_94ffd5a0-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Work Order Operation",
+                "type": "lookup",
+                "propName": "workOrderOperation",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "timeEntries"
+              },
+              {
+                "name": "control_86840f60-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_86840f60-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "Employee",
+                "type": "lookup",
+                "propName": "employee",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "timeEntries"
+              },
+              {
+                "name": "control_e1f6c420-c690-11ee-82b5-5154051a5701",
+                "fieldName": "control_e1f6c420-c690-11ee-82b5-5154051a5701",
+                "label": "Time Cards",
+                "type": "lookup",
+                "propName": "timeCards",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "timeEntries"
+              },
+              {
+                "name": "control_e5513f40-dd85-11ee-b71b-255475fda85a",
+                "fieldName": "control_e5513f40-dd85-11ee-b71b-255475fda85a",
+                "label": "Quantity Completed",
+                "type": "number",
+                "propName": "quantityCompleted",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_ee85d080-dd85-11ee-b71b-255475fda85a",
+                "fieldName": "control_ee85d080-dd85-11ee-b71b-255475fda85a",
+                "label": "Quantity Estimated",
+                "type": "number",
+                "propName": "quantityEstimated",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0cdb2a30-dd86-11ee-b71b-255475fda85a",
+                "fieldName": "control_0cdb2a30-dd86-11ee-b71b-255475fda85a",
+                "label": "Issues",
+                "type": "text",
+                "propName": "issues",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b0371f30-dd87-11ee-b71b-255475fda85a",
+                "fieldName": "control_b0371f30-dd87-11ee-b71b-255475fda85a",
+                "label": "QC Quantity",
+                "type": "number",
+                "propName": "qCQuantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_366b6020-157c-11f0-8200-af673b97e6f1",
+                "fieldName": "control_366b6020-157c-11f0-8200-af673b97e6f1",
+                "label": "op hours ref",
+                "type": "number",
+                "propName": "ophoursref",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.$workOrderOperation.hours",
+                "sum": true,
+                "calculateRelated": "workOrderOperations/hours/workOrderOperation",
+                "gridId": "timeEntries"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_70904a10-53e3-11ee-8b82-09e16f6c6dd5",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_70904a10-53e3-11ee-8b82-09e16f6c6dd5",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_70904a10-53e3-11ee-8b82-09e16f6c6dd5_row_70904a11-53e3-11ee-8b82-09e16f6c6dd5",
+            "controls": [
+              {
+                "name": "control_70a69130-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70a69130-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70badc80-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70badc80-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70c84a00-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70c84a00-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70d6a1e0-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70d6a1e0-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70e3c140-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70e3c140-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70f24030-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70f24030-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_70fec350-53e3-11ee-8b82-09e16f6c6dd5",
+                "fieldName": "control_70fec350-53e3-11ee-8b82-09e16f6c6dd5",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "timeEntries",
+  "storageType": "dashboard",
+  "title": "Time Entries",
+  "views": {
+    "default": {
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "nestedDataGrid": "",
+      "readOnly": true,
+      "recordCustomCode": "",
+      "title": "Default"
+    }
+  }
+}

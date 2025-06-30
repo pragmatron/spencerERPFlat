@@ -1,0 +1,235 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "output": {
+      "displayName": "output",
+      "order": 9,
+      "type": "custom"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "test": {
+      "displayName": "test",
+      "order": 8,
+      "type": "text_editor"
+    },
+    "testingfilesupload": {
+      "displayName": "testing files upload",
+      "order": 10,
+      "type": "files"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_365229",
+        "label": "",
+        "clientKey": "section_365229",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_365229_row_237045",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_f9cdc1b0-5eef-11ee-afe0-abe728cbd12d",
+                "fieldName": "control_f9cdc1b0-5eef-11ee-afe0-abe728cbd12d",
+                "label": "testing files upload",
+                "type": "files",
+                "propName": "testingfilesupload",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_26da93d0-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_26da93d0-57da-11ee-9998-5d5804a693b1",
+                "label": "test",
+                "type": "text_editor",
+                "propName": "test",
+                "className": "col-md-12",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "gridId": "markdowntest"
+              },
+              {
+                "name": "control_20f8d712-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_20f8d712-57da-11ee-9998-5d5804a693b1",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_3bcbc0c0-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_3bcbc0c0-57da-11ee-9998-5d5804a693b1",
+                "label": "output",
+                "type": "custom",
+                "propName": "output",
+                "className": "col-md-6",
+                "customCode": "{{rowData.test}}",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "gridId": "markdowntest"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_20f8d710-57da-11ee-9998-5d5804a693b1",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_20f8d710-57da-11ee-9998-5d5804a693b1",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_20f8d710-57da-11ee-9998-5d5804a693b1_row_20f8d711-57da-11ee-9998-5d5804a693b1",
+            "controls": [
+              {
+                "name": "control_21138b00-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_21138b00-57da-11ee-9998-5d5804a693b1",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_212c1c10-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_212c1c10-57da-11ee-9998-5d5804a693b1",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_214374a0-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_214374a0-57da-11ee-9998-5d5804a693b1",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_215f6110-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_215f6110-57da-11ee-9998-5d5804a693b1",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_21777cf0-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_21777cf0-57da-11ee-9998-5d5804a693b1",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_219257f0-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_219257f0-57da-11ee-9998-5d5804a693b1",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_21a60700-57da-11ee-9998-5d5804a693b1",
+                "fieldName": "control_21a60700-57da-11ee-9998-5d5804a693b1",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "markdowntest",
+  "storageType": "dashboard",
+  "title": "markdown test "
+}

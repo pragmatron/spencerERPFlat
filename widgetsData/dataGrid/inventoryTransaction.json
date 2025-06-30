@@ -1,0 +1,453 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "cost": {
+      "displayName": "Cost",
+      "invisible": true,
+      "order": 15,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 9,
+      "type": "date"
+    },
+    "email": {
+      "displayName": "Email",
+      "invisible": true,
+      "order": 18,
+      "type": "email"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 13,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 12,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 7,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "locations",
+      "order": 20,
+      "type": "lookup"
+    },
+    "locationInventory": {
+      "Width": "196px",
+      "displayName": "Location Inventory",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "locationInventory",
+      "order": 2,
+      "type": "lookup"
+    },
+    "makeNewLot": {
+      "displayName": "Make New Lot",
+      "invisible": false,
+      "onChange": "newLot(rowData)",
+      "order": 4,
+      "type": "checkbox"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": true,
+      "order": 6,
+      "type": "string"
+    },
+    "newLotCode": {
+      "displayName": "New Lot Code",
+      "invisible": false,
+      "order": 5,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 8,
+      "type": "user"
+    },
+    "parts": {
+      "displayName": "Parts",
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 0,
+      "type": "lookup"
+    },
+    "quantity": {
+      "displayName": "Quantity",
+      "invisible": false,
+      "order": 1,
+      "type": "number"
+    },
+    "receiptLine": {
+      "displayName": "Receipt Line",
+      "invisible": false,
+      "lookUpTable": "receiptLines",
+      "order": 3,
+      "type": "lookup"
+    },
+    "shipmentLine": {
+      "displayName": "Shipment Line",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "shipmentLines",
+      "order": 19,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "unitCost": {
+      "displayName": "Unit Cost",
+      "invisible": true,
+      "order": 16,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "workOrder": {
+      "displayName": "Work Order",
+      "invisible": true,
+      "lookUpTable": "opportunityLines",
+      "order": 17,
+      "type": "lookup"
+    },
+    "workOrderMaterial": {
+      "displayName": "Work Order Material",
+      "invisible": false,
+      "lookUpTable": "workOrderMaterials",
+      "order": 14,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_814445",
+        "label": "Inventory Transaction",
+        "clientKey": "section_814445",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_814445_row_770371",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_bae16a00-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_bae16a00-c5ed-11ee-b77d-d797341c053c",
+                "label": "Location Inventory",
+                "type": "lookup",
+                "propName": "locationInventory",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_86737a60-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_86737a60-c5ed-11ee-b77d-d797341c053c",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_a7007490-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_a7007490-c5ed-11ee-b77d-d797341c053c",
+                "label": "Work Order Material",
+                "type": "lookup",
+                "propName": "workOrderMaterial",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_c47c3720-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_c47c3720-c5ed-11ee-b77d-d797341c053c",
+                "label": "Parts",
+                "type": "lookup",
+                "propName": "parts",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction",
+                "sum": true,
+                "expression": "rowData.$receiptLine.part"
+              },
+              {
+                "name": "control_c7a4ee60-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_c7a4ee60-c5ed-11ee-b77d-d797341c053c",
+                "label": "Cost",
+                "type": "number",
+                "propName": "cost",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_d211d890-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_d211d890-c5ed-11ee-b77d-d797341c053c",
+                "label": "Unit Cost",
+                "type": "number",
+                "propName": "unitCost",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_d8b314c0-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_d8b314c0-c5ed-11ee-b77d-d797341c053c",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_e53411e0-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_e53411e0-c5ed-11ee-b77d-d797341c053c",
+                "label": "Work Order",
+                "type": "lookup",
+                "propName": "workOrder",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_f4965d00-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_f4965d00-c5ed-11ee-b77d-d797341c053c",
+                "label": "Email",
+                "type": "email",
+                "propName": "email",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_83e0ea50-dfa4-11ee-8f0f-a5c58b46d38b",
+                "fieldName": "control_83e0ea50-dfa4-11ee-8f0f-a5c58b46d38b",
+                "label": "Receipt Line",
+                "type": "lookup",
+                "propName": "receiptLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_873f07c0-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_873f07c0-c5ed-11ee-b77d-d797341c053c",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_53400270-4906-11ef-a900-4d6b129a87f3",
+                "fieldName": "control_53400270-4906-11ef-a900-4d6b129a87f3",
+                "label": "Shipment Line",
+                "type": "lookup",
+                "propName": "shipmentLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_3f0469c0-e93f-11ef-bc46-e743e0bbe269",
+                "fieldName": "control_3f0469c0-e93f-11ef-bc46-e743e0bbe269",
+                "label": "New Lot Code",
+                "type": "text",
+                "propName": "newLotCode",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_2c1d8bc0-e93f-11ef-bc46-e743e0bbe269",
+                "fieldName": "control_2c1d8bc0-e93f-11ef-bc46-e743e0bbe269",
+                "label": "Make New Lot",
+                "type": "checkbox",
+                "propName": "makeNewLot",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "inventoryTransaction"
+              },
+              {
+                "name": "control_50e54970-e93f-11ef-bc46-e743e0bbe269",
+                "fieldName": "control_50e54970-e93f-11ef-bc46-e743e0bbe269",
+                "label": "Location",
+                "type": "lookup",
+                "propName": "location",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "inventoryTransaction"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_86735350-c5ed-11ee-b77d-d797341c053c",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_86735350-c5ed-11ee-b77d-d797341c053c",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_86735350-c5ed-11ee-b77d-d797341c053c_row_86735351-c5ed-11ee-b77d-d797341c053c",
+            "controls": [
+              {
+                "name": "control_86b25820-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_86b25820-c5ed-11ee-b77d-d797341c053c",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_86ed1730-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_86ed1730-c5ed-11ee-b77d-d797341c053c",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_883a30a0-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_883a30a0-c5ed-11ee-b77d-d797341c053c",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_88f76620-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_88f76620-c5ed-11ee-b77d-d797341c053c",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_89390300-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_89390300-c5ed-11ee-b77d-d797341c053c",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_89861190-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_89861190-c5ed-11ee-b77d-d797341c053c",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "inventoryTransaction",
+  "storageType": "dashboard",
+  "title": "Inventory Transaction",
+  "views": {
+    "default": {
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "nestedDataGrid": "",
+      "readOnly": true,
+      "recordCustomCode": "",
+      "title": "Default"
+    }
+  }
+}

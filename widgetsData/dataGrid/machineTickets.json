@@ -1,0 +1,221 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "173px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "reason": {
+      "Width": "205px",
+      "displayName": "Reason",
+      "order": 8,
+      "type": "multiline_text"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "status": {
+      "Width": "213px",
+      "displayName": "Status",
+      "order": 9,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_624319",
+        "label": "",
+        "clientKey": "section_624319",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_624319_row_572759",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_1c3f7890-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1c3f7890-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_2286fc00-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_2286fc00-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Reason",
+                "type": "multiline_text",
+                "propName": "reason",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_1c7a85c0-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1c7a85c0-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Assigned to",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "gridId": "machineTickets"
+              },
+              {
+                "name": "control_2eaa21b0-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_2eaa21b0-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Status",
+                "type": "text",
+                "propName": "status",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_1c3f5180-6a00-11ee-9c6b-e9c20a5800dc",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_1c3f5180-6a00-11ee-9c6b-e9c20a5800dc",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_1c3f5180-6a00-11ee-9c6b-e9c20a5800dc_row_1c3f5181-6a00-11ee-9c6b-e9c20a5800dc",
+            "controls": [
+              {
+                "name": "control_1c61f4b0-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1c61f4b0-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1c8fe280-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1c8fe280-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1caae490-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1caae490-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1cbdd050-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1cbdd050-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1cd83620-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1cd83620-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1cf9a0d0-6a00-11ee-9c6b-e9c20a5800dc",
+                "fieldName": "control_1cf9a0d0-6a00-11ee-9c6b-e9c20a5800dc",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "machineTickets",
+  "storageType": "dashboard",
+  "title": "Machine Tickets"
+}

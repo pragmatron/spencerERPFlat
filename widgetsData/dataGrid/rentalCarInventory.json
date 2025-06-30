@@ -1,0 +1,219 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "car": {
+      "displayName": "Car",
+      "order": 8,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customers": {
+      "displayName": "Customers",
+      "lookUpTable": "customers",
+      "order": 9,
+      "type": "lookup"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_960184",
+        "label": "",
+        "clientKey": "section_960184",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_960184_row_926930",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_67798640-0288-11ef-9693-21779518604c",
+                "fieldName": "control_67798640-0288-11ef-9693-21779518604c",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_6b5e6190-0288-11ef-9693-21779518604c",
+                "fieldName": "control_6b5e6190-0288-11ef-9693-21779518604c",
+                "label": "Car",
+                "type": "text",
+                "propName": "car",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_701273c0-0288-11ef-9693-21779518604c",
+                "fieldName": "control_701273c0-0288-11ef-9693-21779518604c",
+                "label": "Customers",
+                "type": "lookup",
+                "propName": "customers",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_67795f30-0288-11ef-9693-21779518604c",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_67795f30-0288-11ef-9693-21779518604c",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_67795f30-0288-11ef-9693-21779518604c_row_67795f31-0288-11ef-9693-21779518604c",
+            "controls": [
+              {
+                "name": "control_67bde240-0288-11ef-9693-21779518604c",
+                "fieldName": "control_67bde240-0288-11ef-9693-21779518604c",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_680cc590-0288-11ef-9693-21779518604c",
+                "fieldName": "control_680cc590-0288-11ef-9693-21779518604c",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_685df2d0-0288-11ef-9693-21779518604c",
+                "fieldName": "control_685df2d0-0288-11ef-9693-21779518604c",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_68a7cd10-0288-11ef-9693-21779518604c",
+                "fieldName": "control_68a7cd10-0288-11ef-9693-21779518604c",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_68f291b0-0288-11ef-9693-21779518604c",
+                "fieldName": "control_68f291b0-0288-11ef-9693-21779518604c",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_6932a7f0-0288-11ef-9693-21779518604c",
+                "fieldName": "control_6932a7f0-0288-11ef-9693-21779518604c",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_697e2fe0-0288-11ef-9693-21779518604c",
+                "fieldName": "control_697e2fe0-0288-11ef-9693-21779518604c",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "rentalCarInventory",
+  "storageType": "dashboard",
+  "title": "Rental Car Inventory"
+}

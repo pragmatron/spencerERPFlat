@@ -1,0 +1,1472 @@
+{
+  "cloneData": true,
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"parentPart\",\"operator\":\"in\",\"value\":null,\"name\":\"Parent Part\",\"expression\":false,\"hidden\":false}]}",
+  "formLayouts": {
+    "-NsOWun_nzthtwuO5OG7": {
+      "layout": "{\"sections\":[{\"name\":\"section_107049\",\"label\":\"Part\",\"clientKey\":\"section_107049\",\"order\":0,\"rows\":[{\"name\":\"section_107049_row_267038\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Part\",\"type\":\"text\",\"propName\":\"name\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisibleInDataGrid\":false,\"gridId\":\"parts\"},{\"name\":\"control_dcee09c0-aa2a-11ee-88be-ffaa114ba029\",\"fieldName\":\"control_dcee09c0-aa2a-11ee-88be-ffaa114ba029\",\"label\":\"Part Image\",\"type\":\"profile_image\",\"propName\":\"partImage\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"isForDownload\":false,\"openInNewTab\":false,\"skipCrop\":true,\"disableRoundedStyle\":true,\"gridId\":\"parts\"},{\"name\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Current Unit Cost\",\"type\":\"number\",\"propName\":\"totalCurrentUnitCost\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"methodOperations.estimatedUnitCost\",\"groupBy\":\"parentPart\"},{\"name\":\"control_ef5df070-b556-11ee-834c-8529dd7366a1\",\"fieldName\":\"control_ef5df070-b556-11ee-834c-8529dd7366a1\",\"label\":\"Price (For Sale)\",\"type\":\"number\",\"propName\":\"price\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\"},{\"name\":\"control_d40293c0-c5e7-11ee-b77d-d797341c053c\",\"fieldName\":\"control_d40293c0-c5e7-11ee-b77d-d797341c053c\",\"label\":\"Demand\",\"type\":\"number\",\"propName\":\"demand\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"workOrderMaterials.remainingToAssign\",\"groupBy\":\"part\"},{\"name\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Type\",\"type\":\"lookup\",\"propName\":\"type\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"lookUpTable\":\"partTypes\"},{\"name\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Description\",\"type\":\"text\",\"propName\":\"description\",\"className\":\"col-md-6\",\"decimalPlace\":0},{\"name\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"On Hand\",\"type\":\"number\",\"propName\":\"onHand\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"locationInventory.quantity\",\"groupBy\":\"part\"},{\"name\":\"control_f3fb6440-c5e7-11ee-b77d-d797341c053c\",\"fieldName\":\"control_f3fb6440-c5e7-11ee-b77d-d797341c053c\",\"label\":\"Quantity Remaining\",\"type\":\"number\",\"propName\":\"quantityRemaining\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"purchaseLines.remainingQuantity\",\"groupBy\":\"part\"},{\"name\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Availability\",\"type\":\"number\",\"propName\":\"totalAvailability\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"expression\":\"(rowData.onHand + rowData.quantityRemaining) - rowData.demand\"},{\"name\":\"control_5d0bfaf0-dc98-11ee-b71b-255475fda85a\",\"fieldName\":\"control_5d0bfaf0-dc98-11ee-b71b-255475fda85a\",\"label\":\"Drawing file\",\"type\":\"files\",\"propName\":\"drawingfile\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_02596f30-e20a-11ee-9017-5d5b9d9598f2\",\"fieldName\":\"control_02596f30-e20a-11ee-9017-5d5b9d9598f2\",\"label\":\"Parent Part\",\"type\":\"lookup\",\"propName\":\"parentPart\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false,\"ableToAddLookUpVal\":true},{\"name\":\"control_0386a490-e20a-11ee-9017-5d5b9d9598f2\",\"fieldName\":\"control_0386a490-e20a-11ee-9017-5d5b9d9598f2\",\"label\":\"Parts\",\"type\":\"datagrid\",\"propName\":\"parts_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_e3fd2f00-e5eb-11ee-a450-5d9c1c43955b\",\"fieldName\":\"control_e3fd2f00-e5eb-11ee-a450-5d9c1c43955b\",\"label\":\"Materials Cost\",\"type\":\"number\",\"propName\":\"materialsCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_ebe51c00-e5eb-11ee-a450-5d9c1c43955b\",\"fieldName\":\"control_ebe51c00-e5eb-11ee-a450-5d9c1c43955b\",\"label\":\"Operations Cost\",\"type\":\"number\",\"propName\":\"operationsCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_0255edb0-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_0255edb0-e7a5-11ee-9862-538140391a39\",\"label\":\"Estimate Operations\",\"type\":\"number\",\"propName\":\"estimateOperations\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_09b2ffd0-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_09b2ffd0-e7a5-11ee-9862-538140391a39\",\"label\":\"Estimate Materials\",\"type\":\"number\",\"propName\":\"estimateMaterials\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_12dbf850-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_12dbf850-e7a5-11ee-9862-538140391a39\",\"label\":\"Subtotal\",\"type\":\"number\",\"propName\":\"subtotal\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_1a715880-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_1a715880-e7a5-11ee-9862-538140391a39\",\"label\":\"Markup %\",\"type\":\"number\",\"propName\":\"markup\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_237e3d80-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_237e3d80-e7a5-11ee-9862-538140391a39\",\"label\":\"Markup Amount\",\"type\":\"number\",\"propName\":\"markupAmount\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_2e0b59e0-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_2e0b59e0-e7a5-11ee-9862-538140391a39\",\"label\":\"Markedup Estimate\",\"type\":\"number\",\"propName\":\"markedupEstimate\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_142e4bb0-f0d6-11ee-a0c7-41873f58d964\",\"fieldName\":\"control_142e4bb0-f0d6-11ee-a0c7-41873f58d964\",\"label\":\"Estimated Time To Make\",\"type\":\"number\",\"propName\":\"estimatedTimeToMake\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_edabc2d0-0e1a-11ef-b904-eb37b229548c\",\"fieldName\":\"control_edabc2d0-0e1a-11ef-b904-eb37b229548c\",\"label\":\"Sales Lines\",\"type\":\"datagrid\",\"propName\":\"salesLines_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_28d60190-0ee8-11ef-8d9e-75e79a3544cc\",\"fieldName\":\"control_28d60190-0ee8-11ef-8d9e-75e79a3544cc\",\"label\":\"Method Materials\",\"type\":\"datagrid\",\"propName\":\"methodMaterials_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_87a0d230-121d-11ef-8bbb-53ce8f5540de\",\"fieldName\":\"control_87a0d230-121d-11ef-8bbb-53ce8f5540de\",\"label\":\"Create Work Order\",\"type\":\"custom\",\"propName\":\"createWorkOrder\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_d097a7c0-5af2-11ef-8b34-a1868ab57973\",\"fieldName\":\"control_d097a7c0-5af2-11ef-8b34-a1868ab57973\",\"label\":\"Notes Description\",\"type\":\"multiline_text\",\"propName\":\"notesDescription\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_0491d480-a682-11ef-ac2a-7ff21e1f59bb\",\"fieldName\":\"control_0491d480-a682-11ef-ac2a-7ff21e1f59bb\",\"label\":\"Full Cost Tree\",\"type\":\"custom\",\"propName\":\"fullCostTree\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_54a736c0-e54a-11ef-b3ab-a34e997b7454\",\"fieldName\":\"control_54a736c0-e54a-11ef-b3ab-a34e997b7454\",\"label\":\"UoM\",\"type\":\"lookup\",\"propName\":\"uoM\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false,\"ableToAddLookUpVal\":true},{\"name\":\"control_3507a690-e87b-11ef-a601-e127c716e39b\",\"fieldName\":\"control_3507a690-e87b-11ef-a601-e127c716e39b\",\"label\":\"Last Purchase Cost\",\"type\":\"number\",\"propName\":\"lastPurchaseCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_bd67a6f0-1faf-11f0-a3c0-efdaa8f56a9d\",\"fieldName\":\"control_bd67a6f0-1faf-11f0-a3c0-efdaa8f56a9d\",\"label\":\"Minimum Quantity\",\"type\":\"number\",\"propName\":\"minimumQuantity\",\"className\":\"col-md-6\",\"decimalPlace\":2},{\"name\":\"control_adacab70-2f7c-11f0-ad3a-b3cdedca7948\",\"fieldName\":\"control_adacab70-2f7c-11f0-ad3a-b3cdedca7948\",\"label\":\"Rev\",\"type\":\"text\",\"propName\":\"rev\",\"className\":\"col-md-6\"},{\"name\":\"control_ee13a700-3570-11f0-8447-ab0aebc040b7\",\"fieldName\":\"control_ee13a700-3570-11f0-8447-ab0aebc040b7\",\"label\":\"Type1\",\"type\":\"select\",\"propName\":\"type1\",\"className\":\"col-md-6\",\"dataOptions\":[]},{\"name\":\"control_38a5cfe0-3572-11f0-8447-ab0aebc040b7\",\"fieldName\":\"control_38a5cfe0-3572-11f0-8447-ab0aebc040b7\",\"label\":\"Parent Part v2\",\"type\":\"multi_lookup\",\"propName\":\"parentPartv2\",\"className\":\"col-md-6\",\"ableToAddLookUpVal\":true}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"readonly\":true},{\"cleintKey\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"instances\":[],\"isDynamic\":false,\"label\":\"Hidden Section\",\"vif\":\"false\",\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"order\":1,\"rows\":[{\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6_row_279f7621-2574-11ee-8577-0b3fe3a7f8e6\",\"controls\":[{\"name\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Layout\",\"type\":\"select\",\"propName\":\"layout\",\"className\":\"col-md-6\",\"dataOptions\":[],\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Owner\",\"type\":\"user\",\"propName\":\"owner\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Created Date\",\"type\":\"datepicker\",\"propName\":\"createdDate\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"State\",\"type\":\"text\",\"propName\":\"state\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Next Events\",\"type\":\"text\",\"propName\":\"nextEvents\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edited by\",\"type\":\"user\",\"propName\":\"lastEditedBy\",\"className\":\"col-md-6\",\"readonly\":true,\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edit date\",\"type\":\"datepicker\",\"propName\":\"lastEditDate\",\"className\":\"col-md-6\",\"readonly\":true,\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false}]}]},{\"name\":\"section_683051\",\"label\":\"Production Method\",\"clientKey\":\"section_683051\",\"order\":0,\"rows\":[{\"name\":\"section_683051_row_149634\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"fieldName\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"label\":\"Production Methods\",\"type\":\"datagrid\",\"propName\":\"productionMethods\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"decimalPlace\":0,\"isForDownload\":false,\"invisibleInDataGrid\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\"},{\"name\":\"section_666222\",\"label\":\"Method Operations\",\"clientKey\":\"section_666222\",\"order\":0,\"rows\":[{\"name\":\"section_666222_row_216551\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d\",\"fieldName\":\"control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d\",\"label\":\"Method Operations\",\"type\":\"datagrid\",\"propName\":\"methodOperations_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_117091\",\"label\":\"Method Materials\",\"clientKey\":\"section_117091\",\"order\":0,\"rows\":[{\"name\":\"section_117091_row_182160\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d\",\"fieldName\":\"control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d\",\"label\":\"Method Materials\",\"type\":\"datagrid\",\"propName\":\"methodMaterials\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_136209\",\"label\":\"Work Order Materials\",\"clientKey\":\"section_136209\",\"order\":0,\"rows\":[{\"name\":\"section_136209_row_938539\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_98185d20-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_98185d20-c5da-11ee-b77d-d797341c053c\",\"label\":\"Work Order Materials\",\"type\":\"datagrid\",\"propName\":\"workOrderMaterials\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_360309\",\"label\":\"Purchase Lines\",\"clientKey\":\"section_360309\",\"order\":0,\"rows\":[{\"name\":\"section_360309_row_782752\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_acf6c560-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_acf6c560-c5da-11ee-b77d-d797341c053c\",\"label\":\"Purchase Lines\",\"type\":\"datagrid\",\"propName\":\"purchaseLines\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_362366\",\"label\":\"Location Inventory\",\"clientKey\":\"section_362366\",\"order\":0,\"rows\":[{\"name\":\"section_362366_row_494098\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_b87ff500-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_b87ff500-c5da-11ee-b77d-d797341c053c\",\"label\":\"Location Inventory\",\"type\":\"datagrid\",\"propName\":\"locationInventory\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_557626\",\"label\":\"Auto Replenishment\",\"clientKey\":\"section_557626\",\"order\":0,\"rows\":[{\"name\":\"section_557626_row_88800\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false}],\"layout\":\"collapse\"}",
+      "name": "Portal"
+    },
+    "-NsP6um7uy5t101fC4ox": {
+      "layout": "{\"sections\":[{\"name\":\"section_488035\",\"label\":\"Fields for purchasing\",\"clientKey\":\"section_488035\",\"order\":0,\"rows\":[{\"name\":\"section_488035_row_838820\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_026a1100-e20a-11ee-9017-5d5b9d9598f2\",\"fieldName\":\"control_026a1100-e20a-11ee-9017-5d5b9d9598f2\",\"label\":\"Parent Part\",\"type\":\"lookup\",\"propName\":\"parentPart\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false,\"ableToAddLookUpVal\":true},{\"name\":\"control_039857d0-e20a-11ee-9017-5d5b9d9598f2\",\"fieldName\":\"control_039857d0-e20a-11ee-9017-5d5b9d9598f2\",\"label\":\"Parts\",\"type\":\"datagrid\",\"propName\":\"parts_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_e40ee240-e5eb-11ee-a450-5d9c1c43955b\",\"fieldName\":\"control_e40ee240-e5eb-11ee-a450-5d9c1c43955b\",\"label\":\"Materials Cost\",\"type\":\"number\",\"propName\":\"materialsCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_ebf82ed0-e5eb-11ee-a450-5d9c1c43955b\",\"fieldName\":\"control_ebf82ed0-e5eb-11ee-a450-5d9c1c43955b\",\"label\":\"Operations Cost\",\"type\":\"number\",\"propName\":\"operationsCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_02690080-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_02690080-e7a5-11ee-9862-538140391a39\",\"label\":\"Estimate Operations\",\"type\":\"number\",\"propName\":\"estimateOperations\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_09c54f50-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_09c54f50-e7a5-11ee-9862-538140391a39\",\"label\":\"Estimate Materials\",\"type\":\"number\",\"propName\":\"estimateMaterials\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_12f17c20-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_12f17c20-e7a5-11ee-9862-538140391a39\",\"label\":\"Subtotal\",\"type\":\"number\",\"propName\":\"subtotal\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_1a83cf10-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_1a83cf10-e7a5-11ee-9862-538140391a39\",\"label\":\"Markup %\",\"type\":\"number\",\"propName\":\"markup\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_239261c0-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_239261c0-e7a5-11ee-9862-538140391a39\",\"label\":\"Markup Amount\",\"type\":\"number\",\"propName\":\"markupAmount\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_2e1f08f0-e7a5-11ee-9862-538140391a39\",\"fieldName\":\"control_2e1f08f0-e7a5-11ee-9862-538140391a39\",\"label\":\"Markedup Estimate\",\"type\":\"number\",\"propName\":\"markedupEstimate\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_1442be10-f0d6-11ee-a0c7-41873f58d964\",\"fieldName\":\"control_1442be10-f0d6-11ee-a0c7-41873f58d964\",\"label\":\"Estimated Time To Make\",\"type\":\"number\",\"propName\":\"estimatedTimeToMake\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_edbe8780-0e1a-11ef-b904-eb37b229548c\",\"fieldName\":\"control_edbe8780-0e1a-11ef-b904-eb37b229548c\",\"label\":\"Sales Lines\",\"type\":\"datagrid\",\"propName\":\"salesLines_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_28e56ae0-0ee8-11ef-8d9e-75e79a3544cc\",\"fieldName\":\"control_28e56ae0-0ee8-11ef-8d9e-75e79a3544cc\",\"label\":\"Method Materials\",\"type\":\"datagrid\",\"propName\":\"methodMaterials_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_87a87350-121d-11ef-8bbb-53ce8f5540de\",\"fieldName\":\"control_87a87350-121d-11ef-8bbb-53ce8f5540de\",\"label\":\"Create Work Order\",\"type\":\"custom\",\"propName\":\"createWorkOrder\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_d0a3dcc0-5af2-11ef-8b34-a1868ab57973\",\"fieldName\":\"control_d0a3dcc0-5af2-11ef-8b34-a1868ab57973\",\"label\":\"Notes Description\",\"type\":\"multiline_text\",\"propName\":\"notesDescription\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_04ab9e10-a682-11ef-ac2a-7ff21e1f59bb\",\"fieldName\":\"control_04ab9e10-a682-11ef-ac2a-7ff21e1f59bb\",\"label\":\"Full Cost Tree\",\"type\":\"custom\",\"propName\":\"fullCostTree\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_54bb33f0-e54a-11ef-b3ab-a34e997b7454\",\"fieldName\":\"control_54bb33f0-e54a-11ef-b3ab-a34e997b7454\",\"label\":\"UoM\",\"type\":\"lookup\",\"propName\":\"uoM\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false,\"ableToAddLookUpVal\":true},{\"name\":\"control_351d0350-e87b-11ef-a601-e127c716e39b\",\"fieldName\":\"control_351d0350-e87b-11ef-a601-e127c716e39b\",\"label\":\"Last Purchase Cost\",\"type\":\"number\",\"propName\":\"lastPurchaseCost\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_bd7b7d10-1faf-11f0-a3c0-efdaa8f56a9d\",\"fieldName\":\"control_bd7b7d10-1faf-11f0-a3c0-efdaa8f56a9d\",\"label\":\"Minimum Quantity\",\"type\":\"number\",\"propName\":\"minimumQuantity\",\"className\":\"col-md-6\",\"decimalPlace\":2},{\"name\":\"control_adb732c0-2f7c-11f0-ad3a-b3cdedca7948\",\"fieldName\":\"control_adb732c0-2f7c-11f0-ad3a-b3cdedca7948\",\"label\":\"Rev\",\"type\":\"text\",\"propName\":\"rev\",\"className\":\"col-md-6\"},{\"name\":\"control_ee2692c0-3570-11f0-8447-ab0aebc040b7\",\"fieldName\":\"control_ee2692c0-3570-11f0-8447-ab0aebc040b7\",\"label\":\"Type1\",\"type\":\"select\",\"propName\":\"type1\",\"className\":\"col-md-6\",\"dataOptions\":[]},{\"name\":\"control_38b56040-3572-11f0-8447-ab0aebc040b7\",\"fieldName\":\"control_38b56040-3572-11f0-8447-ab0aebc040b7\",\"label\":\"Parent Part v2\",\"type\":\"multi_lookup\",\"propName\":\"parentPartv2\",\"className\":\"col-md-6\",\"ableToAddLookUpVal\":true}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false},{\"name\":\"section_107049\",\"label\":\"Part\",\"clientKey\":\"section_107049\",\"order\":0,\"rows\":[{\"name\":\"section_107049_row_267038\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Part\",\"type\":\"text\",\"propName\":\"name\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisibleInDataGrid\":false,\"gridId\":\"parts\"},{\"name\":\"control_5cc79ef0-dc98-11ee-b71b-255475fda85a\",\"fieldName\":\"control_5cc79ef0-dc98-11ee-b71b-255475fda85a\",\"label\":\"Drawing file\",\"type\":\"files\",\"propName\":\"drawingfile\",\"className\":\"col-md-6\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_dcee09c0-aa2a-11ee-88be-ffaa114ba029\",\"fieldName\":\"control_dcee09c0-aa2a-11ee-88be-ffaa114ba029\",\"label\":\"Part Image\",\"type\":\"profile_image\",\"propName\":\"partImage\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"isForDownload\":false,\"openInNewTab\":false,\"skipCrop\":true,\"disableRoundedStyle\":true,\"gridId\":\"parts\"},{\"name\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Current Unit Cost\",\"type\":\"number\",\"propName\":\"totalCurrentUnitCost\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"methodOperations.estimatedUnitCost\",\"groupBy\":\"parentPart\"},{\"name\":\"control_ef5df070-b556-11ee-834c-8529dd7366a1\",\"fieldName\":\"control_ef5df070-b556-11ee-834c-8529dd7366a1\",\"label\":\"Price (For Sale)\",\"type\":\"number\",\"propName\":\"price\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\"},{\"name\":\"control_d40293c0-c5e7-11ee-b77d-d797341c053c\",\"fieldName\":\"control_d40293c0-c5e7-11ee-b77d-d797341c053c\",\"label\":\"Demand\",\"type\":\"number\",\"propName\":\"demand\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"workOrderMaterials.remainingToAssign\",\"groupBy\":\"part\"},{\"name\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Type\",\"type\":\"lookup\",\"propName\":\"type\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"lookUpTable\":\"partTypes\"},{\"name\":\"control_f3fb6440-c5e7-11ee-b77d-d797341c053c\",\"fieldName\":\"control_f3fb6440-c5e7-11ee-b77d-d797341c053c\",\"label\":\"Quantity Remaining\",\"type\":\"number\",\"propName\":\"quantityRemaining\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false,\"gridId\":\"parts\",\"sum\":false,\"groupBy\":\"part\"},{\"name\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Description\",\"type\":\"text\",\"propName\":\"description\",\"className\":\"col-md-6\",\"decimalPlace\":0},{\"name\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"On Hand\",\"type\":\"number\",\"propName\":\"onHand\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"sumField\":\"locationInventory.quantity\",\"groupBy\":\"part\"},{\"name\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Availability\",\"type\":\"number\",\"propName\":\"totalAvailability\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"gridId\":\"parts\",\"sum\":true,\"expression\":\"(rowData.onHand + rowData.quantityRemaining) - rowData.demand\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"readonly\":true},{\"cleintKey\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"instances\":[],\"isDynamic\":false,\"label\":\"Hidden Section\",\"vif\":\"false\",\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"order\":1,\"rows\":[{\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6_row_279f7621-2574-11ee-8577-0b3fe3a7f8e6\",\"controls\":[{\"name\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Layout\",\"type\":\"select\",\"propName\":\"layout\",\"className\":\"col-md-6\",\"dataOptions\":[],\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Owner\",\"type\":\"user\",\"propName\":\"owner\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Created Date\",\"type\":\"datepicker\",\"propName\":\"createdDate\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"State\",\"type\":\"text\",\"propName\":\"state\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Next Events\",\"type\":\"text\",\"propName\":\"nextEvents\",\"className\":\"col-md-6\",\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edited by\",\"type\":\"user\",\"propName\":\"lastEditedBy\",\"className\":\"col-md-6\",\"readonly\":true,\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false},{\"name\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edit date\",\"type\":\"datepicker\",\"propName\":\"lastEditDate\",\"className\":\"col-md-6\",\"readonly\":true,\"decimalPlace\":0,\"invisible\":true,\"invisibleInDataGrid\":false}]}],\"readonly\":true},{\"name\":\"section_683051\",\"label\":\"Production Method\",\"clientKey\":\"section_683051\",\"order\":0,\"rows\":[{\"name\":\"section_683051_row_149634\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"fieldName\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"label\":\"Production Methods\",\"type\":\"datagrid\",\"propName\":\"productionMethods\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"decimalPlace\":0,\"isForDownload\":false,\"invisibleInDataGrid\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"readonly\":true},{\"name\":\"section_666222\",\"label\":\"Method Operations\",\"clientKey\":\"section_666222\",\"order\":0,\"rows\":[{\"name\":\"section_666222_row_216551\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d\",\"fieldName\":\"control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d\",\"label\":\"Method Operations\",\"type\":\"datagrid\",\"propName\":\"methodOperations_instance\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true},{\"name\":\"section_117091\",\"label\":\"Method Materials\",\"clientKey\":\"section_117091\",\"order\":0,\"rows\":[{\"name\":\"section_117091_row_182160\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d\",\"fieldName\":\"control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d\",\"label\":\"Method Materials\",\"type\":\"datagrid\",\"propName\":\"methodMaterials\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true},{\"name\":\"section_136209\",\"label\":\"Work Order Materials\",\"clientKey\":\"section_136209\",\"order\":0,\"rows\":[{\"name\":\"section_136209_row_938539\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_98185d20-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_98185d20-c5da-11ee-b77d-d797341c053c\",\"label\":\"Work Order Materials\",\"type\":\"datagrid\",\"propName\":\"workOrderMaterials\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true},{\"name\":\"section_360309\",\"label\":\"Purchase Lines\",\"clientKey\":\"section_360309\",\"order\":0,\"rows\":[{\"name\":\"section_360309_row_782752\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_acf6c560-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_acf6c560-c5da-11ee-b77d-d797341c053c\",\"label\":\"Purchase Lines\",\"type\":\"datagrid\",\"propName\":\"purchaseLines\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true},{\"name\":\"section_362366\",\"label\":\"Location Inventory\",\"clientKey\":\"section_362366\",\"order\":0,\"rows\":[{\"name\":\"section_362366_row_494098\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_b87ff500-c5da-11ee-b77d-d797341c053c\",\"fieldName\":\"control_b87ff500-c5da-11ee-b77d-d797341c053c\",\"label\":\"Location Inventory\",\"type\":\"datagrid\",\"propName\":\"locationInventory\",\"className\":\"col-md-12\",\"dataGridAvailableViews\":[],\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"isForDownload\":false,\"openInNewTab\":false,\"invisibleLabel\":true,\"gridId\":\"parts\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true},{\"name\":\"section_557626\",\"label\":\"Auto Replenishment\",\"clientKey\":\"section_557626\",\"order\":0,\"rows\":[{\"name\":\"section_557626_row_88800\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"readonly\":true}],\"layout\":\"collapse\"}",
+      "name": "Purchase Parts"
+    }
+  },
+  "formReadonly": false,
+  "isReactive": true,
+  "meta": {
+    "createWorkOrder": {
+      "displayName": "Create Work Order",
+      "invisible": true,
+      "order": 36,
+      "type": "custom"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 12,
+      "type": "date"
+    },
+    "demand": {
+      "displayName": "Demand",
+      "invisible": false,
+      "order": 4,
+      "type": "number"
+    },
+    "description": {
+      "displayName": "Description",
+      "invisible": false,
+      "order": 6,
+      "type": "string"
+    },
+    "drawingfile": {
+      "displayName": "Drawing file",
+      "invisible": true,
+      "order": 23,
+      "type": "files"
+    },
+    "estimateMaterials": {
+      "displayName": "Estimate Materials",
+      "invisible": true,
+      "order": 30,
+      "type": "number"
+    },
+    "estimateOperations": {
+      "displayName": "Estimate Operations",
+      "invisible": true,
+      "order": 28,
+      "type": "number"
+    },
+    "estimatedTimeToMake": {
+      "displayName": "Estimated Time To Make",
+      "invisible": true,
+      "order": 35,
+      "type": "number"
+    },
+    "fullCostTree": {
+      "displayName": "Full Cost Tree",
+      "invisible": true,
+      "order": 38,
+      "type": "custom"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 16,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 15,
+      "type": "user"
+    },
+    "lastPurchaseCost": {
+      "displayName": "Last Purchase Cost",
+      "invisible": true,
+      "order": 43,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 10,
+      "type": "select"
+    },
+    "locationInventory": {
+      "dataGrid": "locationInventory",
+      "displayName": "Location Inventory",
+      "filterColumn": "part",
+      "order": 29,
+      "type": "datagrid"
+    },
+    "markedupEstimate": {
+      "displayName": "Markedup Estimate",
+      "invisible": true,
+      "order": 34,
+      "type": "number"
+    },
+    "markup": {
+      "displayName": "Markup %",
+      "invisible": true,
+      "order": 32,
+      "type": "number"
+    },
+    "markupAmount": {
+      "displayName": "Markup Amount",
+      "invisible": true,
+      "order": 33,
+      "type": "number"
+    },
+    "materialsCost": {
+      "displayName": "Materials Cost",
+      "invisible": true,
+      "order": 25,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "methodMaterials": {
+      "dataGrid": "methodMaterials",
+      "displayName": "Method Materials",
+      "filterColumn": "parentPart",
+      "order": 21,
+      "type": "datagrid"
+    },
+    "methodMaterials_instance": {
+      "dataGrid": "methodMaterials",
+      "displayName": "Method Materials",
+      "filterColumn": "materialRequired",
+      "order": 42,
+      "type": "datagrid"
+    },
+    "methodOperations_instance": {
+      "dataGrid": "methodOperations",
+      "displayName": "Method Operations",
+      "filterColumn": "parentPart",
+      "order": 19,
+      "type": "datagrid"
+    },
+    "minimumQuantity": {
+      "displayName": "Minimum Quantity",
+      "order": 44,
+      "type": "number"
+    },
+    "name": {
+      "Width": "179px",
+      "displayName": "Part",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 14,
+      "type": "string"
+    },
+    "notesDescription": {
+      "displayName": "Notes Description",
+      "invisible": true,
+      "order": 37,
+      "type": "multiline_text"
+    },
+    "onHand": {
+      "displayName": "On Hand",
+      "invisible": false,
+      "order": 3,
+      "type": "number"
+    },
+    "operationsCost": {
+      "displayName": "Operations Cost",
+      "invisible": true,
+      "order": 27,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 11,
+      "type": "user"
+    },
+    "parentPart": {
+      "displayName": "Parent Part",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 1,
+      "skipParse": true,
+      "type": "lookup"
+    },
+    "parentPartv2": {
+      "displayName": "Parent Part v2",
+      "invisible": true,
+      "lookUpTable": "parts",
+      "order": 47,
+      "type": "multi_lookup"
+    },
+    "partImage": {
+      "Width": "300px",
+      "displayName": "Part Image",
+      "invisible": true,
+      "order": 9,
+      "type": "profile_image"
+    },
+    "parts_instance": {
+      "dataGrid": "parts",
+      "displayName": "Parts",
+      "filterColumn": "parentPart",
+      "order": 40,
+      "type": "datagrid"
+    },
+    "price": {
+      "displayName": "Price",
+      "invisible": true,
+      "order": 18,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "productionMethods": {
+      "dataGrid": "productionMethods",
+      "displayName": "Production Methods",
+      "filterColumn": "parts",
+      "order": 17,
+      "type": "datagrid"
+    },
+    "purchaseLines": {
+      "dataGrid": "purchaseLines",
+      "displayName": "Purchase Lines",
+      "filterColumn": "part",
+      "order": 26,
+      "type": "datagrid"
+    },
+    "quantityAwaitingToBeReceived": {
+      "displayName": "Quantity Awaiting To Be Received",
+      "invisible": true,
+      "order": 20,
+      "type": "number"
+    },
+    "quantityRemaining": {
+      "Width": 245,
+      "displayName": "Quantity On Order",
+      "invisible": false,
+      "onChange": "if(rowData.autoReplenish && (rowData.quantityRemaining + rowData.quantityOrdered) <= rowData.safetyStock) {\n    console.log('in replenish stock')\n    $vm.autoReplenish(rowData)\n}",
+      "order": 5,
+      "type": "number"
+    },
+    "quantityWaitingToBeReceived": {
+      "displayName": "Quantity Waiting To Be Received",
+      "invisible": true,
+      "order": 22,
+      "type": "number"
+    },
+    "rev": {
+      "displayName": "Rev",
+      "invisible": true,
+      "order": 45,
+      "type": "string"
+    },
+    "salesLines_instance": {
+      "dataGrid": "salesLines",
+      "displayName": "Sales Lines",
+      "filterColumn": "finish",
+      "order": 41,
+      "type": "datagrid"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 13,
+      "type": "string"
+    },
+    "subtotal": {
+      "displayName": "Subtotal",
+      "invisible": true,
+      "order": 31,
+      "type": "number"
+    },
+    "totalAvailability": {
+      "Width": "140px",
+      "displayName": "Total Availability",
+      "invisible": false,
+      "order": 2,
+      "type": "number"
+    },
+    "totalCurrentUnitCost": {
+      "displayName": "Total Current Unit Cost",
+      "invisible": false,
+      "order": 7,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "type": {
+      "Width": "130px",
+      "displayName": "Type",
+      "invisible": true,
+      "lookUpTable": "partTypes",
+      "order": 8,
+      "type": "lookup"
+    },
+    "type1": {
+      "displayName": "Type1",
+      "invisible": true,
+      "order": 46,
+      "type": "select"
+    },
+    "uoM": {
+      "displayName": "UoM",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "unitsOfMeasure",
+      "order": 39,
+      "type": "lookup"
+    },
+    "workOrderMaterials": {
+      "dataGrid": "workOrderMaterials",
+      "displayName": "Work Order Materials",
+      "filterColumn": "part",
+      "order": 24,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_435811",
+        "label": "",
+        "tooltip": "",
+        "clientKey": "section_435811",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_435811_row_283743",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Part",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "parts",
+                "sum": true,
+                "expression": "type - lentgh - thickness....."
+              },
+              {
+                "name": "control_dcee09c0-aa2a-11ee-88be-ffaa114ba029",
+                "fieldName": "control_dcee09c0-aa2a-11ee-88be-ffaa114ba029",
+                "label": "Part Image",
+                "type": "profile_image",
+                "propName": "partImage",
+                "className": "col-md-2",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "skipCrop": true,
+                "disableRoundedStyle": true,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_388b9120-3572-11f0-8447-ab0aebc040b7",
+                "fieldName": "control_388b9120-3572-11f0-8447-ab0aebc040b7",
+                "label": "Parent Part v2",
+                "type": "multi_lookup",
+                "propName": "parentPartv2",
+                "className": "col-md-3",
+                "ableToAddLookUpVal": true,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_02077ea0-e20a-11ee-9017-5d5b9d9598f2",
+                "fieldName": "control_02077ea0-e20a-11ee-9017-5d5b9d9598f2",
+                "label": "Parent Part",
+                "type": "lookup",
+                "propName": "parentPart",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_adb732c0-2f7c-11f0-ad3a-b3cdedca7948",
+                "fieldName": "control_adb732c0-2f7c-11f0-ad3a-b3cdedca7948",
+                "label": "Rev",
+                "type": "text",
+                "propName": "rev",
+                "className": "col-md-6"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_107049",
+        "label": "Part",
+        "clientKey": "section_107049",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_107049_row_267038",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_87729640-121d-11ef-8bbb-53ce8f5540de",
+                "fieldName": "control_87729640-121d-11ef-8bbb-53ce8f5540de",
+                "label": "Create Work Order",
+                "type": "custom",
+                "propName": "createWorkOrder",
+                "className": "col-md-3",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrderOnPart')\" />\n<b-button\nv-else\nvariant=\"success\"\n@click=\"createWorkOrderOnPart(rowData)\"\n>Create Work Order</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_edf39be0-3570-11f0-8447-ab0aebc040b7",
+                "fieldName": "control_edf39be0-3570-11f0-8447-ab0aebc040b7",
+                "label": "Type1",
+                "type": "select",
+                "propName": "type1",
+                "className": "col-md-3",
+                "dataOptions": [
+                  {
+                    "id": "Product",
+                    "text": "Product"
+                  },
+                  {
+                    "id": "Small Pieces",
+                    "text": "Small Pieces"
+                  }
+                ],
+                "gridId": "parts"
+              },
+              {
+                "name": "control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_",
+                "fieldName": "control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_",
+                "label": "Product Type",
+                "type": "lookup",
+                "propName": "type",
+                "className": "col-md-6",
+                "required": true,
+                "decimalPlace": 0,
+                "gridId": "parts",
+                "lookUpTable": "partTypes",
+                "tooltip": "Type Of Part (Dictates What Fields Are Visible On Form)"
+              },
+              {
+                "name": "control_5449ad70-e54a-11ef-b3ab-a34e997b7454",
+                "fieldName": "control_5449ad70-e54a-11ef-b3ab-a34e997b7454",
+                "label": "UoM",
+                "type": "lookup",
+                "propName": "uoM",
+                "className": "col-md-6",
+                "defaultValue": "-NpZpbFZmfwM5O6qx3R5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "parts",
+                "tooltip": "Unit Of Measure Lookup"
+              },
+              {
+                "name": "control_e3786ea0-e5eb-11ee-a450-5d9c1c43955b",
+                "fieldName": "control_e3786ea0-e5eb-11ee-a450-5d9c1c43955b",
+                "label": "Materials Cost",
+                "type": "number",
+                "propName": "materialsCost",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "vif": "rowData.type?.includes('-NbZDcppXP8D5LNb_K86') || rowData.type?.includes('-O0FQvChrOSBRYBWKprI')",
+                "sum": true,
+                "sumField": "methodMaterials.totalCost",
+                "groupBy": "parentPart",
+                "gridId": "parts",
+                "tooltip": "Sum Of Method Materials (Total Cost)"
+              },
+              {
+                "name": "control_eb94b210-e5eb-11ee-a450-5d9c1c43955b",
+                "fieldName": "control_eb94b210-e5eb-11ee-a450-5d9c1c43955b",
+                "label": "Operations Cost",
+                "type": "number",
+                "propName": "operationsCost",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "vif": "rowData.type?.includes('-NbZDcppXP8D5LNb_K86') || rowData.type?.includes('-O0FQvChrOSBRYBWKprI')",
+                "gridId": "parts",
+                "sum": true,
+                "sumField": "methodOperations.estimatedUnitCost",
+                "groupBy": "parentPart",
+                "tooltip": "Sum Of Method Operations (Estimated Unit Cost)"
+              },
+              {
+                "name": "control_60a90388-2573-11ee-9f74-edcf5cd83ff1_",
+                "fieldName": "control_60a90388-2573-11ee-9f74-edcf5cd83ff1_",
+                "label": "Cost To Manufacture",
+                "type": "number",
+                "propName": "totalCurrentUnitCost",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "vif": "rowData.type?.includes('-NbZDcppXP8D5LNb_K86') || rowData.type?.includes('-O0FQvChrOSBRYBWKprI')",
+                "gridId": "parts",
+                "sum": true,
+                "groupBy": "parentPart",
+                "expression": "rowData.materialsCost + rowData.operationsCost",
+                "sumField": null,
+                "tooltip": "The Cost Of All Operations + Materials Combined",
+                "runMassUpdateInClientSide": true
+              },
+              {
+                "name": "control_d40293c0-c5e7-11ee-b77d-d797341c053c",
+                "fieldName": "control_d40293c0-c5e7-11ee-b77d-d797341c053c",
+                "label": "Work Order Demand",
+                "type": "number",
+                "propName": "demand",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "defaultValue": "0",
+                "value": "0",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts",
+                "sum": true,
+                "sumField": "workOrderMaterials.remainingToAssign",
+                "groupBy": "part",
+                "description": "From Work Order Material Remaining To Assign",
+                "tooltip": "Sum Of Work Order Materials Remaining To Assign"
+              },
+              {
+                "name": "control_f3fb6440-c5e7-11ee-b77d-d797341c053c",
+                "fieldName": "control_f3fb6440-c5e7-11ee-b77d-d797341c053c",
+                "label": "Quantity On Order",
+                "type": "number",
+                "propName": "quantityRemaining",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts",
+                "sum": true,
+                "groupBy": "part",
+                "sumField": "purchaseLines.remainingQuantity",
+                "description": "From The Remaining Quantity On Purchase Line",
+                "tooltip": "Sum From Purchase Lines"
+              },
+              {
+                "name": "control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_",
+                "fieldName": "control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_",
+                "label": "On Hand Quantity",
+                "type": "number",
+                "propName": "onHand",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "parts",
+                "sum": true,
+                "sumField": "locationInventory.quantity",
+                "groupBy": "part",
+                "description": "From Location Inventory Quantity",
+                "tooltip": "Sum From Location Inventory "
+              },
+              {
+                "name": "control_60a90386-2573-11ee-9f74-edcf5cd83ff1_",
+                "fieldName": "control_60a90386-2573-11ee-9f74-edcf5cd83ff1_",
+                "label": "Total Availability",
+                "type": "number",
+                "propName": "totalAvailability",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "parts",
+                "sum": true,
+                "expression": "((rowData.onHand || 0) + (rowData.quantityRemaining||0)) - (rowData.demand||0)",
+                "tooltip": "Total Of All 3 Quantity Fields"
+              },
+              {
+                "name": "control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_",
+                "fieldName": "control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_",
+                "label": "Description",
+                "type": "text",
+                "propName": "description",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "parts",
+                "tooltip": "Description Of Part"
+              },
+              {
+                "name": "control_13a14df0-f0d6-11ee-a0c7-41873f58d964",
+                "fieldName": "control_13a14df0-f0d6-11ee-a0c7-41873f58d964",
+                "label": "Estimated Time To Make",
+                "type": "number",
+                "propName": "estimatedTimeToMake",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "vif": "rowData.type?.includes('-NbZDcppXP8D5LNb_K86') || rowData.type?.includes('-O0FQvChrOSBRYBWKprI')",
+                "sum": true,
+                "sumField": "methodOperations.rateSpeedperUnit",
+                "groupBy": "parentPart",
+                "gridId": "parts",
+                "tooltip": "Sum Of Method Operations Estimated Time",
+                "description": "Only Displays When Type is Make To Stock Or Make To Order"
+              },
+              {
+                "name": "control_34d30200-e87b-11ef-a601-e127c716e39b",
+                "fieldName": "control_34d30200-e87b-11ef-a601-e127c716e39b",
+                "label": "Last Purchase Cost",
+                "type": "number",
+                "propName": "lastPurchaseCost",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "vif": "rowData.type?.includes('-NbZDcpoxp37H_VTf9C0')",
+                "gridId": "parts",
+                "description": "Only Displays When Type is Purchased"
+              },
+              {
+                "name": "control_ef5df070-b556-11ee-834c-8529dd7366a1",
+                "fieldName": "control_ef5df070-b556-11ee-834c-8529dd7366a1",
+                "label": "Sales Price",
+                "type": "number",
+                "propName": "price",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts",
+                "tooltip": "Price To Sell For"
+              },
+              {
+                "name": "control_bd4aa910-1faf-11f0-a3c0-efdaa8f56a9d",
+                "fieldName": "control_bd4aa910-1faf-11f0-a3c0-efdaa8f56a9d",
+                "label": "Minimum Quantity To Keep In Stock",
+                "type": "number",
+                "propName": "minimumQuantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "collapsedByDefault": false,
+        "vif": "",
+        "readonly": false
+      },
+      {
+        "name": "section_355285",
+        "label": "Sub - Parts",
+        "clientKey": "section_355285",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_355285_row_179019",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_033c0700-e20a-11ee-9017-5d5b9d9598f2",
+                "fieldName": "control_033c0700-e20a-11ee-9017-5d5b9d9598f2",
+                "label": "Parts",
+                "type": "datagrid",
+                "propName": "parts_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "extraFields"
+      },
+      {
+        "cleintKey": "hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6_row_279f7621-2574-11ee-8577-0b3fe3a7f8e6",
+            "controls": [
+              {
+                "name": "control_d04939a0-5af2-11ef-8b34-a1868ab57973",
+                "fieldName": "control_d04939a0-5af2-11ef-8b34-a1868ab57973",
+                "label": "Notes Description",
+                "type": "multiline_text",
+                "propName": "notesDescription",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_ed5c4340-0e1a-11ef-b904-eb37b229548c",
+                "fieldName": "control_ed5c4340-0e1a-11ef-b904-eb37b229548c",
+                "label": "Sales Lines",
+                "type": "datagrid",
+                "propName": "salesLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_27b85550-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_27b85550-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5cc79ef0-dc98-11ee-b71b-255475fda85a",
+                "fieldName": "control_5cc79ef0-dc98-11ee-b71b-255475fda85a",
+                "label": "Drawing file",
+                "type": "files",
+                "propName": "drawingfile",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_2896fcc0-0ee8-11ef-8d9e-75e79a3544cc",
+                "fieldName": "control_2896fcc0-0ee8-11ef-8d9e-75e79a3544cc",
+                "label": "Method Materials",
+                "type": "datagrid",
+                "propName": "methodMaterials_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_280738a0-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_280738a0-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_284245d0-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_284245d0-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_285de420-2574-11ee-8577-0b3fe3a7f8e6",
+                "fieldName": "control_285de420-2574-11ee-8577-0b3fe3a7f8e6",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_688913",
+        "label": "Estimates",
+        "clientKey": "section_688913",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_688913_row_124975",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_0204e780-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_0204e780-e7a5-11ee-9862-538140391a39",
+                "label": "Estimate Operations",
+                "type": "number",
+                "propName": "estimateOperations",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_096cf620-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_096cf620-e7a5-11ee-9862-538140391a39",
+                "label": "Estimate Materials",
+                "type": "number",
+                "propName": "estimateMaterials",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_129181d0-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_129181d0-e7a5-11ee-9862-538140391a39",
+                "label": "Subtotal",
+                "type": "number",
+                "propName": "subtotal",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_1a2e3500-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_1a2e3500-e7a5-11ee-9862-538140391a39",
+                "label": "Markup %",
+                "type": "number",
+                "propName": "markup",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_23263270-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_23263270-e7a5-11ee-9862-538140391a39",
+                "label": "Markup Amount",
+                "type": "number",
+                "propName": "markupAmount",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              },
+              {
+                "name": "control_2dc29110-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_2dc29110-e7a5-11ee-9862-538140391a39",
+                "label": "Markedup Estimate",
+                "type": "number",
+                "propName": "markedupEstimate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "extraFields"
+      },
+      {
+        "name": "section_117091",
+        "label": "Method Materials",
+        "clientKey": "section_117091",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_117091_row_182160",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d",
+                "fieldName": "control_278a4380-c5b1-11ee-a737-4b6f56ae1d1d",
+                "label": "Method Materials",
+                "type": "datagrid",
+                "propName": "methodMaterials",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "bOM"
+      },
+      {
+        "name": "section_666222",
+        "label": "Method Operations",
+        "clientKey": "section_666222",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_666222_row_216551",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d",
+                "fieldName": "control_e8d3ba90-c5b0-11ee-a737-4b6f56ae1d1d",
+                "label": "Method Operations",
+                "type": "datagrid",
+                "propName": "methodOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "bOM"
+      },
+      {
+        "name": "section_136209",
+        "label": "Work Order Materials",
+        "clientKey": "section_136209",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_136209_row_938539",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_98185d20-c5da-11ee-b77d-d797341c053c",
+                "fieldName": "control_98185d20-c5da-11ee-b77d-d797341c053c",
+                "label": "Work Order Materials",
+                "type": "datagrid",
+                "propName": "workOrderMaterials",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_683051",
+        "label": "Production Method",
+        "clientKey": "section_683051",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_683051_row_149634",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd",
+                "fieldName": "control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd",
+                "label": "Production Methods",
+                "type": "datagrid",
+                "propName": "productionMethods",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": ""
+      },
+      {
+        "name": "section_360309",
+        "label": "Purchase Lines",
+        "clientKey": "section_360309",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_360309_row_782752",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_acf6c560-c5da-11ee-b77d-d797341c053c",
+                "fieldName": "control_acf6c560-c5da-11ee-b77d-d797341c053c",
+                "label": "Purchase Lines",
+                "type": "datagrid",
+                "propName": "purchaseLines",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_362366",
+        "label": "Location Inventory",
+        "clientKey": "section_362366",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_362366_row_494098",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b87ff500-c5da-11ee-b77d-d797341c053c",
+                "fieldName": "control_b87ff500-c5da-11ee-b77d-d797341c053c",
+                "label": "Location Inventory",
+                "type": "datagrid",
+                "propName": "locationInventory",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_220548",
+        "label": "Full Cost Tree",
+        "tooltip": "",
+        "clientKey": "section_220548",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_220548_row_786131",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_0436e340-a682-11ef-ac2a-7ff21e1f59bb",
+                "fieldName": "control_0436e340-a682-11ef-ac2a-7ff21e1f59bb",
+                "label": "Full Cost Tree",
+                "type": "custom",
+                "propName": "fullCostTree",
+                "className": "col-md-12",
+                "customCode": "<u-bom-node-parent \r\n:rowKey=\"rowData.rowKey\" \r\n\r\n />",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "parts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      }
+    ],
+    "layout": "Tabs and Sections"
+  },
+  "showRowId": true,
+  "source": "parts",
+  "storageType": "dashboard",
+  "tabs": {
+    "bOM": {
+      "readOnly": false,
+      "title": "BOM"
+    },
+    "default": {
+      "title": "Part"
+    },
+    "extraFields": {
+      "readOnly": false,
+      "title": "Extra Fields"
+    }
+  },
+  "tabsOrder": [
+    "default",
+    "extraFields",
+    "bOM"
+  ],
+  "title": "Parts",
+  "useInGlobalSearch": true,
+  "views": {
+    "default": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "asc"
+      },
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "createWorkOrder": {
+          "displayName": "Create Work Order",
+          "invisible": true,
+          "order": 36
+        },
+        "createdDate": {
+          "invisible": true,
+          "order": 13
+        },
+        "demand": {
+          "displayName": "Demand",
+          "order": 2
+        },
+        "description": {
+          "order": 7
+        },
+        "drawingfile": {
+          "displayName": "Drawing file",
+          "invisible": true,
+          "order": 24
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "invisible": true,
+          "order": 30
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "invisible": true,
+          "order": 29
+        },
+        "estimatedTimeToMake": {
+          "displayName": "Estimated Time To Make",
+          "invisible": true,
+          "order": 35
+        },
+        "fullCostTree": {
+          "displayName": "Full Cost Tree",
+          "invisible": true,
+          "order": 40
+        },
+        "lastEditDate": {
+          "invisible": true,
+          "order": 20
+        },
+        "lastEditedBy": {
+          "invisible": true,
+          "order": 16
+        },
+        "lastPurchaseCost": {
+          "displayName": "Last Purchase Cost",
+          "invisible": false,
+          "order": 42
+        },
+        "layout": {
+          "invisible": true,
+          "order": 11
+        },
+        "locationInventory": {
+          "displayName": "Location Inventory",
+          "order": 10
+        },
+        "markedupEstimate": {
+          "displayName": "Markedup Estimate",
+          "invisible": true,
+          "order": 34
+        },
+        "markup": {
+          "displayName": "Markup %",
+          "invisible": true,
+          "order": 32
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "invisible": true,
+          "order": 33
+        },
+        "materialsCost": {
+          "displayName": "Materials Cost",
+          "invisible": true,
+          "order": 27
+        },
+        "methodMaterials": {
+          "displayName": "Method Materials",
+          "order": 6
+        },
+        "methodMaterials_instance": {
+          "displayName": "Method Materials",
+          "order": 38
+        },
+        "methodOperations_instance": {
+          "displayName": "Method Operations",
+          "order": 5
+        },
+        "minimumQuantity": {
+          "displayName": "Minimum Quantity",
+          "order": 43
+        },
+        "name": {
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "invisible": true,
+          "order": 15
+        },
+        "notesDescription": {
+          "displayName": "Notes Description",
+          "invisible": true,
+          "order": 39
+        },
+        "onHand": {
+          "invisible": false,
+          "order": 1
+        },
+        "operationsCost": {
+          "displayName": "Operations Cost",
+          "invisible": true,
+          "order": 28
+        },
+        "owner": {
+          "invisible": true,
+          "order": 12
+        },
+        "parentPart": {
+          "displayName": "Parent Part",
+          "invisible": false,
+          "order": 26
+        },
+        "parentPartv2": {
+          "displayName": "Parent Part v2",
+          "invisible": true,
+          "order": 47
+        },
+        "partImage": {
+          "displayName": "Part Image",
+          "invisible": true,
+          "order": 17
+        },
+        "parts_instance": {
+          "displayName": "Parts",
+          "order": 22
+        },
+        "price": {
+          "displayName": "Price",
+          "invisible": true,
+          "order": 18
+        },
+        "purchaseLines": {
+          "displayName": "Purchase Lines",
+          "order": 9
+        },
+        "quantityAwaitingToBeReceived": {
+          "displayName": "Quantity Awaiting To Be Received",
+          "invisible": true,
+          "order": 21
+        },
+        "quantityRemaining": {
+          "displayName": "Quantity Remaining",
+          "order": 3
+        },
+        "quantityWaitingToBeReceived": {
+          "displayName": "Quantity Waiting To Be Received",
+          "invisible": true,
+          "order": 23
+        },
+        "rev": {
+          "displayName": "Rev",
+          "invisible": true,
+          "order": 44
+        },
+        "salesLines_instance": {
+          "displayName": "Sales Lines",
+          "order": 37
+        },
+        "state": {
+          "invisible": true,
+          "order": 14
+        },
+        "subtotal": {
+          "displayName": "Subtotal",
+          "invisible": true,
+          "order": 31
+        },
+        "totalAvailability": {
+          "invisible": false,
+          "order": 4
+        },
+        "totalCurrentUnitCost": {
+          "order": 25
+        },
+        "type": {
+          "invisible": true,
+          "order": 19
+        },
+        "type1": {
+          "displayName": "Type1",
+          "invisible": true,
+          "order": 45
+        },
+        "uoM": {
+          "displayName": "UoM",
+          "invisible": true,
+          "order": 41
+        },
+        "workOrderMaterials": {
+          "displayName": "Work Order Materials",
+          "order": 8
+        }
+      },
+      "rowEditorFieldsForm": "{\"sections\":[{\"name\":\"section_107049\",\"label\":\"Part\",\"clientKey\":\"section_107049\",\"order\":0,\"rows\":[{\"name\":\"section_107049_row_267038\",\"label\":\"\",\"order\":0,\"controls\":[{\"type\":\"text\",\"name\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_279f9d30-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Name\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":false,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"name\"},{\"type\":\"lookup\",\"name\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc50-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Type\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"type\",\"gridId\":\"parts\",\"lookUpTable\":\"partTypes\"},{\"type\":\"checkbox\",\"name\":\"control_60a8dc51-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc51-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Ready for Production\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"readyforProduction\"},{\"type\":\"lookup\",\"name\":\"control_fabe5510-3ac5-11ee-a910-d7458a38fd1d\",\"fieldName\":\"control_fabe5510-3ac5-11ee-a910-d7458a38fd1d\",\"label\":\"Primary Production Method\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":false,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"primaryProductionMethod\",\"ableToAddLookUpVal\":true},{\"type\":\"checkbox\",\"name\":\"control_60a8dc52-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc52-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Build Part from Product\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"buildPartfromProduct\"},{\"type\":\"checkbox\",\"name\":\"control_60a8dc53-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc53-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Inactive\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"inactive\"},{\"type\":\"text\",\"name\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a8dc54-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Description\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"description\"},{\"type\":\"text\",\"name\":\"control_60a90360-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90360-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Extended Description\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"extendedDescription\"},{\"type\":\"text\",\"name\":\"control_60a90361-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90361-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Manufacturer\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"manufacturer\"},{\"type\":\"text\",\"name\":\"control_60a90362-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90362-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Manufacturer's Part Number\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"manufacturersPartNumber\",\"invisibleInDataGrid\":false},{\"type\":\"lookup\",\"name\":\"control_60a90363-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90363-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Sales Group\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"salesGroup\",\"gridId\":\"parts\",\"lookUpTable\":\"salesGroups\"},{\"type\":\"lookup\",\"name\":\"control_60a90364-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90364-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Material Class\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"materialClass\",\"gridId\":\"parts\",\"lookUpTable\":\"materialClasses\"},{\"type\":\"text\",\"name\":\"control_60a90365-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90365-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Material Category\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"materialCategory\"},{\"type\":\"text\",\"name\":\"control_60a90366-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90366-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Tax Category\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"taxCategory\"},{\"type\":\"text\",\"name\":\"control_60a90367-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90367-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Modified By\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"modifiedBy\"},{\"type\":\"datepicker\",\"name\":\"control_60a90368-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90368-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Modified Date\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"modifiedDate\"},{\"type\":\"text\",\"name\":\"control_60a90369-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90369-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Created By\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"createdBy\"},{\"type\":\"number\",\"name\":\"control_60a9036a-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036a-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"[Id]\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"id\"},{\"type\":\"text\",\"name\":\"control_60a9036b-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036b-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"IUM\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"iUM\",\"gridId\":\"parts\"},{\"type\":\"number\",\"name\":\"control_60a9036c-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036c-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Purchase Conversion Factor\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"purchaseConversionFactor\"},{\"type\":\"text\",\"name\":\"control_60a9036d-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036d-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"PUM\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"pUM\"},{\"type\":\"lookup\",\"name\":\"control_60a9036e-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036e-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Replenishment\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"replenishment\",\"gridId\":\"parts\",\"lookUpTable\":\"partTypes\"},{\"type\":\"text\",\"name\":\"control_60a9036f-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9036f-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Preferred Vendor\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"preferredVendor\"},{\"type\":\"text\",\"name\":\"control_60a90370-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90370-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Preferred Method\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"preferredMethod\"},{\"type\":\"number\",\"name\":\"control_60a90371-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90371-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Stocking\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"stocking\"},{\"type\":\"number\",\"name\":\"control_60a90372-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90372-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Order Policy\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"orderPolicy\"},{\"type\":\"checkbox\",\"name\":\"control_60a90373-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90373-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Reorder To Maximum\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"reorderToMaximum\"},{\"type\":\"number\",\"name\":\"control_60a90374-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90374-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Safety Stock\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"safetyStock\"},{\"type\":\"number\",\"name\":\"control_60a90375-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90375-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Minimum On Hand\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"minimumOnHand\"},{\"type\":\"number\",\"name\":\"control_60a90376-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90376-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Reorder Point\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"reorderPoint\"},{\"type\":\"checkbox\",\"name\":\"control_60a90377-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90377-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Lot Tracked\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"lotTracked\"},{\"type\":\"checkbox\",\"name\":\"control_60a90378-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90378-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Serial Tracked\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"serialTracked\"},{\"type\":\"checkbox\",\"name\":\"control_60a90379-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90379-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Auto-Receive\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"autoReceive\"},{\"type\":\"text\",\"name\":\"control_60a9037a-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037a-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Default Location\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"defaultLocation\"},{\"type\":\"checkbox\",\"name\":\"control_60a9037b-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037b-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Backflush\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"backflush\"},{\"type\":\"checkbox\",\"name\":\"control_60a9037c-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037c-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Backflush at Operation Completion\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"backflushatOperationCompletion\"},{\"type\":\"checkbox\",\"name\":\"control_60a9037d-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037d-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Manual ABC Code\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"manualABCCode\"},{\"type\":\"number\",\"name\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037e-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"On Hand\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"onHand\"},{\"type\":\"number\",\"name\":\"control_60a9037f-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9037f-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Non-Nettable\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"nonNettable\"},{\"type\":\"number\",\"name\":\"control_60a90380-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90380-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Production Demand\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"productionDemand\"},{\"type\":\"number\",\"name\":\"control_60a90381-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90381-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Sales Demand\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"salesDemand\"},{\"type\":\"number\",\"name\":\"control_60a90382-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90382-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Currently Available\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"currentlyAvailable\"},{\"type\":\"number\",\"name\":\"control_60a90383-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90383-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"In Production\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"inProduction\"},{\"type\":\"number\",\"name\":\"control_60a90384-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90384-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"On Order (IUM)\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"onOrderIUM\"},{\"type\":\"number\",\"name\":\"control_60a90385-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90385-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Future Availability\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"futureAvailability\"},{\"type\":\"number\",\"name\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90386-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Availability\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"totalAvailability\"},{\"type\":\"number\",\"name\":\"control_60a90387-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90387-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Material\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"material\"},{\"type\":\"number\",\"name\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90388-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Current Unit Cost\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"totalCurrentUnitCost\"},{\"type\":\"number\",\"name\":\"control_60a90389-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90389-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Costing Method\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"costingMethod\"},{\"type\":\"number\",\"name\":\"control_60a9038a-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038a-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Costing Quantity\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"costingQuantity\"},{\"type\":\"number\",\"name\":\"control_60a9038b-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038b-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Standard Material\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"standardMaterial\"},{\"type\":\"number\",\"name\":\"control_60a9038c-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038c-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Standard Cost\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"totalStandardCost\"},{\"type\":\"checkbox\",\"name\":\"control_60a9038d-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038d-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Archived\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"archived\"},{\"type\":\"number\",\"name\":\"control_60a9038e-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038e-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Last Material\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"lastMaterial\"},{\"type\":\"number\",\"name\":\"control_60a9038f-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a9038f-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Last Cost\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"totalLastCost\"},{\"type\":\"number\",\"name\":\"control_60a90390-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90390-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Average Material\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"averageMaterial\"},{\"type\":\"number\",\"name\":\"control_60a90391-2573-11ee-9f74-edcf5cd83ff1_\",\"fieldName\":\"control_60a90391-2573-11ee-9f74-edcf5cd83ff1_\",\"label\":\"Total Average Cost\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"required\":false,\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"propName\":\"totalAverageCost\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[]},{\"cleintKey\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"instances\":[],\"isDynamic\":false,\"label\":\"Hidden Section\",\"vif\":\"false\",\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6\",\"order\":1,\"rows\":[{\"name\":\"hidden_section_279f7620-2574-11ee-8577-0b3fe3a7f8e6_row_279f7621-2574-11ee-8577-0b3fe3a7f8e6\",\"controls\":[{\"type\":\"select\",\"name\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27b85550-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Layout\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"layout\"},{\"type\":\"user\",\"name\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27d1f7d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Owner\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"owner\"},{\"type\":\"datepicker\",\"name\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_27ed6f10-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Created Date\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"createdDate\"},{\"type\":\"text\",\"name\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_280738a0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"State\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"state\"},{\"type\":\"text\",\"name\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_28223ab0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Next Events\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"nextEvents\"},{\"type\":\"user\",\"name\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_284245d0-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edited by\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":true,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"lastEditedBy\"},{\"type\":\"datepicker\",\"name\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"fieldName\":\"control_285de420-2574-11ee-8577-0b3fe3a7f8e6\",\"label\":\"Last edit date\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-6\",\"readonly\":true,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":true,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"propName\":\"lastEditDate\"}]}]},{\"name\":\"section_683051\",\"label\":\"Production Method\",\"clientKey\":\"section_683051\",\"order\":0,\"rows\":[{\"name\":\"section_683051_row_149634\",\"label\":\"\",\"order\":0,\"controls\":[{\"type\":\"datagrid\",\"name\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"fieldName\":\"control_707f8e80-434b-11ee-bb1f-2f6eff3ce5cd\",\"label\":\"Production Methods\",\"order\":0,\"defaultValue\":\"\",\"value\":\"\",\"className\":\"col-md-12\",\"readonly\":false,\"readonlyCondition\":\"\",\"placeholder\":\"\",\"required\":false,\"requiredCondition\":\"\",\"isMultiLine\":false,\"isInteger\":false,\"decimalPlace\":0,\"isTodayValue\":false,\"isTodayValueCreated\":true,\"dateFormat\":\"mm/dd/yy hh:mm p\",\"timezone\":null,\"selectedDataGrid\":null,\"printedFileName\":null,\"dataForTemplate\":null,\"selectedOutputDataGrid\":null,\"templateRowKey\":null,\"isForDownload\":false,\"isCurrentUser\":false,\"isCurrentUserOwner\":true,\"isNowTimeValue\":false,\"timeFormat\":\"HH:mm\",\"isMultiple\":false,\"isAjax\":false,\"dataOptions\":[],\"ajaxDataUrl\":\"\",\"isChecked\":false,\"vif\":\"\",\"customCode\":\"\",\"invisible\":false,\"invisibleCondition\":\"\",\"invisibleInDataGrid\":false,\"invisibleLabel\":false,\"enableCustomValidation\":false,\"customValidationRule\":\"\",\"customValidationErrorMessage\":\"\",\"mask\":\"\",\"lookupOpenInModalDisabled\":false,\"editorMode\":\"javascript\",\"dataGridAvailableViews\":[],\"dataGridView\":null,\"dataGridAddRecordsText\":\"\",\"dataGridAddRecordText\":\"\",\"propName\":\"productionMethods\"}]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\"}],\"layout\":\"collapse\"}",
+      "title": "Parts"
+    }
+  }
+}

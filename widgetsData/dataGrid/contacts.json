@@ -1,0 +1,623 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"vendor\",\"operator\":\"contains\",\"value\":null,\"name\":\"Vendor\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"customer\",\"operator\":\"contains\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "campaign": {
+      "displayName": "Campaign",
+      "lookUpTable": "campaign",
+      "order": 16,
+      "type": "lookup"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "lookUpTable": "customers",
+      "order": 8,
+      "skipParse": true,
+      "type": "lookup"
+    },
+    "firstName": {
+      "displayName": "First Name",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "jobTitle": {
+      "displayName": "Job Title",
+      "invisible": true,
+      "order": 13,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "lastName": {
+      "displayName": "Last Name",
+      "invisible": true,
+      "order": 12,
+      "type": "string"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "primaryEmail": {
+      "Width": "182px",
+      "displayName": "Primary Email",
+      "order": 15,
+      "type": "string"
+    },
+    "primaryPhoneNumber": {
+      "displayName": "Primary Phone Number",
+      "order": 14,
+      "type": "string"
+    },
+    "salutation": {
+      "displayName": "Salutation",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "vendor": {
+      "displayName": "Vendor",
+      "lookUpTable": "vendors",
+      "order": 9,
+      "skipParse": true,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_611199",
+        "label": "Contact",
+        "clientKey": "section_611199",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_611199_row_672642",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_7881d462-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_7881d462-1995-11ee-a563-95edeb999dc8",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701891-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701891-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts",
+                "lookUpTable": "customers"
+              },
+              {
+                "name": "control_71701892-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701892-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Vendor",
+                "type": "lookup",
+                "propName": "vendor",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts",
+                "lookUpTable": "vendors"
+              },
+              {
+                "name": "control_71701893-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701893-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Salutation",
+                "type": "text",
+                "propName": "salutation",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701894-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701894-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "First Name",
+                "type": "text",
+                "propName": "firstName",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701895-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701895-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Last Name",
+                "type": "text",
+                "propName": "lastName",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701896-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701896-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Job Title",
+                "type": "text",
+                "propName": "jobTitle",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": true,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701897-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701897-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Primary Phone Number",
+                "type": "text",
+                "propName": "primaryPhoneNumber",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_71701898-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_71701898-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Primary Email",
+                "type": "text",
+                "propName": "primaryEmail",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "contacts"
+              },
+              {
+                "name": "control_fe4cf030-dd3e-11ee-b71b-255475fda85a",
+                "fieldName": "control_fe4cf030-dd3e-11ee-b71b-255475fda85a",
+                "label": "Campaign",
+                "type": "lookup",
+                "propName": "campaign",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "contacts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_7881d460-1995-11ee-a563-95edeb999dc8",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_7881d460-1995-11ee-a563-95edeb999dc8",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_7881d460-1995-11ee-a563-95edeb999dc8_row_7881d461-1995-11ee-a563-95edeb999dc8",
+            "controls": [
+              {
+                "name": "control_7898ded0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_7898ded0-1995-11ee-a563-95edeb999dc8",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_78b121c0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_78b121c0-1995-11ee-a563-95edeb999dc8",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_78c9b2d0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_78c9b2d0-1995-11ee-a563-95edeb999dc8",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_78e2b910-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_78e2b910-1995-11ee-a563-95edeb999dc8",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_79000510-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_79000510-1995-11ee-a563-95edeb999dc8",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_791ab900-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_791ab900-1995-11ee-a563-95edeb999dc8",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_7934a9a0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_7934a9a0-1995-11ee-a563-95edeb999dc8",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "contacts",
+  "storageType": "dashboard",
+  "title": "Contacts",
+  "views": {
+    "customer": {
+      "displayInTab": true,
+      "displayTotalValue": false,
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"customer\",\"operator\":\"not null\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "campaign": {
+          "displayName": "Campaign",
+          "order": 16
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "order": 8
+        },
+        "firstName": {
+          "displayName": "First Name",
+          "invisible": true,
+          "order": 11
+        },
+        "jobTitle": {
+          "displayName": "Job Title",
+          "invisible": true,
+          "order": 13
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "lastName": {
+          "displayName": "Last Name",
+          "invisible": true,
+          "order": 12
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "primaryEmail": {
+          "displayName": "Primary Email",
+          "order": 15
+        },
+        "primaryPhoneNumber": {
+          "displayName": "Primary Phone Number",
+          "order": 14
+        },
+        "salutation": {
+          "displayName": "Salutation",
+          "invisible": true,
+          "order": 10
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "invisible": true,
+          "order": 9
+        }
+      },
+      "readOnly": false,
+      "title": "Customer"
+    },
+    "default": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "desc"
+      },
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": true,
+      "displayTotalValue": false,
+      "meta": {
+        "campaign": {
+          "displayName": "Campaign",
+          "order": 16
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "invisible": false,
+          "order": 8
+        },
+        "firstName": {
+          "displayName": "First Name",
+          "invisible": true,
+          "order": 11
+        },
+        "jobTitle": {
+          "displayName": "Job Title",
+          "invisible": true,
+          "order": 13
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "lastName": {
+          "displayName": "Last Name",
+          "invisible": true,
+          "order": 12
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "name": {
+          "displayName": "Name",
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "primaryEmail": {
+          "displayName": "Primary Email",
+          "invisible": false,
+          "order": 15
+        },
+        "primaryPhoneNumber": {
+          "displayName": "Primary Phone Number",
+          "invisible": false,
+          "order": 14
+        },
+        "salutation": {
+          "displayName": "Salutation",
+          "invisible": true,
+          "order": 10
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "invisible": false,
+          "order": 9
+        }
+      },
+      "nestedDataGrid": "",
+      "readOnly": false,
+      "recordCustomCode": "",
+      "title": "Default"
+    },
+    "vendor": {
+      "displayInTab": true,
+      "displayTotalValue": false,
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"vendor\",\"operator\":\"not null\",\"value\":null,\"name\":\"Vendor\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "campaign": {
+          "displayName": "Campaign",
+          "order": 16
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "invisible": true,
+          "order": 8
+        },
+        "firstName": {
+          "displayName": "First Name",
+          "invisible": true,
+          "order": 11
+        },
+        "jobTitle": {
+          "displayName": "Job Title",
+          "invisible": true,
+          "order": 13
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "lastName": {
+          "displayName": "Last Name",
+          "invisible": true,
+          "order": 12
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "primaryEmail": {
+          "displayName": "Primary Email",
+          "order": 15
+        },
+        "primaryPhoneNumber": {
+          "displayName": "Primary Phone Number",
+          "order": 14
+        },
+        "salutation": {
+          "displayName": "Salutation",
+          "invisible": true,
+          "order": 10
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "order": 9
+        }
+      },
+      "readOnly": false,
+      "title": "Vendor"
+    }
+  },
+  "viewsOrder": [
+    "customer",
+    "vendor"
+  ]
+}

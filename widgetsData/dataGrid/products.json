@@ -1,0 +1,497 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "a": {
+      "displayName": "\"A\"",
+      "order": 22,
+      "type": "string"
+    },
+    "angle": {
+      "displayName": "Angle",
+      "order": 21,
+      "type": "string"
+    },
+    "armNumber": {
+      "displayName": "Arm Number",
+      "order": 19,
+      "type": "string"
+    },
+    "catalogueNumber": {
+      "displayName": "Catalogue Number",
+      "order": 8,
+      "type": "number"
+    },
+    "category1": {
+      "displayName": "Category 1",
+      "lookUpTable": "category1",
+      "order": 9,
+      "type": "lookup"
+    },
+    "category2": {
+      "displayName": "Category 2",
+      "lookUpTable": "category2",
+      "order": 10,
+      "type": "lookup"
+    },
+    "centerlineC": {
+      "displayName": "Centerline \"C\"",
+      "order": 16,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "d": {
+      "displayName": "\"D\"",
+      "order": 18,
+      "type": "string"
+    },
+    "file": {
+      "displayName": "File",
+      "invisible": true,
+      "order": 26,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "materialConsumed_instance": {
+      "dataGrid": "materialConsumed",
+      "displayName": "Material Consumed",
+      "filterColumn": "product",
+      "order": 28,
+      "type": "datagrid"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "nominalLengthL": {
+      "displayName": "Nominal Length \"L\"",
+      "order": 13,
+      "type": "number"
+    },
+    "notes": {
+      "displayName": "Notes",
+      "order": 25,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "pipeDiameter": {
+      "displayName": "Pipe Diameter",
+      "order": 17,
+      "type": "number"
+    },
+    "poleMounting": {
+      "displayName": "Pole Mounting",
+      "order": 11,
+      "type": "string"
+    },
+    "riseR": {
+      "displayName": "Rise \"R\"",
+      "order": 14,
+      "type": "number"
+    },
+    "shipWeight": {
+      "displayName": "Ship Weight",
+      "order": 23,
+      "type": "number"
+    },
+    "spanS": {
+      "displayName": "Span \"S\"",
+      "order": 15,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "tenonSize": {
+      "displayName": "Tenon Size",
+      "order": 24,
+      "type": "string"
+    },
+    "tensions": {
+      "displayName": "Tensions",
+      "order": 20,
+      "type": "string"
+    },
+    "tieRod": {
+      "displayName": "Tie Rod",
+      "order": 12,
+      "type": "number"
+    },
+    "upcomingDemand_instance": {
+      "dataGrid": "upcomingDemand",
+      "displayName": "Upcoming Demand",
+      "filterColumn": "product",
+      "order": 27,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_152924",
+        "label": "",
+        "clientKey": "section_152924",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_152924_row_790712",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_f1cf7450-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f1cf7450-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_799461c0-e207-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_799461c0-e207-11ee-b30e-b1b55db3f0ec",
+                "label": "File",
+                "type": "files",
+                "propName": "file",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_30e70900-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e70900-e207-11ee-874a-21415c9366c6_",
+                "label": "Catalogue Number",
+                "type": "number",
+                "propName": "catalogueNumber",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e70901-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e70901-e207-11ee-874a-21415c9366c6_",
+                "label": "Category 1",
+                "type": "lookup",
+                "propName": "category1",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e73010-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e73010-e207-11ee-874a-21415c9366c6_",
+                "label": "Category 2",
+                "type": "lookup",
+                "propName": "category2",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e73011-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e73011-e207-11ee-874a-21415c9366c6_",
+                "label": "Pole Mounting",
+                "type": "text",
+                "propName": "poleMounting",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e7cc50-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e7cc50-e207-11ee-874a-21415c9366c6_",
+                "label": "Tie Rod",
+                "type": "number",
+                "propName": "tieRod",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e81a70-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e81a70-e207-11ee-874a-21415c9366c6_",
+                "label": "Nominal Length \"L\"",
+                "type": "number",
+                "propName": "nominalLengthL",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e81a71-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e81a71-e207-11ee-874a-21415c9366c6_",
+                "label": "Rise \"R\"",
+                "type": "number",
+                "propName": "riseR",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e81a72-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e81a72-e207-11ee-874a-21415c9366c6_",
+                "label": "Span \"S\"",
+                "type": "text",
+                "propName": "spanS",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e81a73-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e81a73-e207-11ee-874a-21415c9366c6_",
+                "label": "Centerline \"C\"",
+                "type": "text",
+                "propName": "centerlineC",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e84180-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e84180-e207-11ee-874a-21415c9366c6_",
+                "label": "Pipe Diameter",
+                "type": "number",
+                "propName": "pipeDiameter",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e84181-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e84181-e207-11ee-874a-21415c9366c6_",
+                "label": "\"D\"",
+                "type": "text",
+                "propName": "d",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e84182-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e84182-e207-11ee-874a-21415c9366c6_",
+                "label": "Arm Number",
+                "type": "text",
+                "propName": "armNumber",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e86890-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e86890-e207-11ee-874a-21415c9366c6_",
+                "label": "Tensions",
+                "type": "text",
+                "propName": "tensions",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e88fa0-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e88fa0-e207-11ee-874a-21415c9366c6_",
+                "label": "Angle",
+                "type": "text",
+                "propName": "angle",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e88fa1-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e88fa1-e207-11ee-874a-21415c9366c6_",
+                "label": "\"A\"",
+                "type": "text",
+                "propName": "a",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e88fa2-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e88fa2-e207-11ee-874a-21415c9366c6_",
+                "label": "Ship Weight",
+                "type": "number",
+                "propName": "shipWeight",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e88fa3-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e88fa3-e207-11ee-874a-21415c9366c6_",
+                "label": "Tenon Size",
+                "type": "text",
+                "propName": "tenonSize",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_30e8b6b0-e207-11ee-874a-21415c9366c6_",
+                "fieldName": "control_30e8b6b0-e207-11ee-874a-21415c9366c6_",
+                "label": "Notes",
+                "type": "text",
+                "propName": "notes",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_3010a980-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_3010a980-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Upcoming Demand",
+                "type": "datagrid",
+                "propName": "upcomingDemand_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_5d6fd140-f680-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_5d6fd140-f680-11ee-b5cd-eb4d3d8714f4",
+                "label": "Material Consumed",
+                "type": "datagrid",
+                "propName": "materialConsumed_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_f1cf4d40-e206-11ee-b30e-b1b55db3f0ec",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_f1cf4d40-e206-11ee-b30e-b1b55db3f0ec",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_f1cf4d40-e206-11ee-b30e-b1b55db3f0ec_row_f1cf4d41-e206-11ee-b30e-b1b55db3f0ec",
+            "controls": [
+              {
+                "name": "control_f21704a0-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f21704a0-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f24f52b0-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f24f52b0-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f285cc00-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f285cc00-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f2c60950-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f2c60950-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f2fafc00-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f2fafc00-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f32bd000-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f32bd000-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f3559f20-e206-11ee-b30e-b1b55db3f0ec",
+                "fieldName": "control_f3559f20-e206-11ee-b30e-b1b55db3f0ec",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "products",
+  "storageType": "dashboard",
+  "title": "Products"
+}

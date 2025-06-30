@@ -1,0 +1,207 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "jeeterProductLines_instance": {
+      "dataGrid": "jeeterProductLines",
+      "displayName": "Jeeter Product Lines",
+      "filterColumn": "lines",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_360017",
+        "label": "",
+        "clientKey": "section_360017",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_360017_row_589295",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_4ff8e7b2-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_4ff8e7b2-e5f3-11ee-a096-e3f8608db780",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_88607320-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_88607320-e5f3-11ee-a096-e3f8608db780",
+                "label": "Jeeter Product Lines",
+                "type": "datagrid",
+                "propName": "jeeterProductLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_4ff8e7b0-e5f3-11ee-a096-e3f8608db780",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_4ff8e7b0-e5f3-11ee-a096-e3f8608db780",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_4ff8e7b0-e5f3-11ee-a096-e3f8608db780_row_4ff8e7b1-e5f3-11ee-a096-e3f8608db780",
+            "controls": [
+              {
+                "name": "control_5027e6f0-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_5027e6f0-e5f3-11ee-a096-e3f8608db780",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_505c1650-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_505c1650-e5f3-11ee-a096-e3f8608db780",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_50991f50-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_50991f50-e5f3-11ee-a096-e3f8608db780",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_50ca4170-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_50ca4170-e5f3-11ee-a096-e3f8608db780",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_51024160-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_51024160-e5f3-11ee-a096-e3f8608db780",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5142ccd0-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_5142ccd0-e5f3-11ee-a096-e3f8608db780",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_518b2070-e5f3-11ee-a096-e3f8608db780",
+                "fieldName": "control_518b2070-e5f3-11ee-a096-e3f8608db780",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "lines",
+  "storageType": "dashboard",
+  "title": "Lines"
+}

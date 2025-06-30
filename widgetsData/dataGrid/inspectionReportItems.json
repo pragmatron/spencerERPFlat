@@ -1,0 +1,221 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "measurement": {
+      "displayName": "Measurement",
+      "order": 9,
+      "type": "number"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "workOrderOperation": {
+      "displayName": "Work Order Operation",
+      "indexed": true,
+      "lookUpTable": "workOrderOperations",
+      "order": 8,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_599020",
+        "label": "",
+        "clientKey": "section_599020",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_599020_row_442104",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_297ec6c2-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_297ec6c2-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_33798e30-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_33798e30-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Work Order Operation",
+                "type": "lookup",
+                "propName": "workOrderOperation",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_3b3477c0-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_3b3477c0-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Measurement",
+                "type": "number",
+                "propName": "measurement",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_297ec6c0-28e9-11ef-bbba-bd8bab098b39",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_297ec6c0-28e9-11ef-bbba-bd8bab098b39",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_297ec6c0-28e9-11ef-bbba-bd8bab098b39_row_297ec6c1-28e9-11ef-bbba-bd8bab098b39",
+            "controls": [
+              {
+                "name": "control_29c08ab0-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_29c08ab0-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2a042360-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2a042360-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2a4b3e80-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2a4b3e80-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2a919650-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2a919650-28e9-11ef-bbba-bd8bab098b39",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2ad703c0-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2ad703c0-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2b210510-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2b210510-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2b63da70-28e9-11ef-bbba-bd8bab098b39",
+                "fieldName": "control_2b63da70-28e9-11ef-bbba-bd8bab098b39",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "inspectionReportItems",
+  "storageType": "dashboard",
+  "title": "Inspection Report Items"
+}

@@ -1,0 +1,242 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "test1": {
+      "displayName": "test1",
+      "invisible": true,
+      "order": 8,
+      "type": "number"
+    },
+    "test2": {
+      "displayName": "test2",
+      "invisible": true,
+      "order": 9,
+      "type": "number"
+    },
+    "test3": {
+      "displayName": "test3",
+      "invisible": true,
+      "order": 10,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_973611",
+        "label": "",
+        "clientKey": "section_973611",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_973611_row_836608",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e422d9b0-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e422d9b0-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_20328a20-eb0d-11ef-896d-23704338eaed",
+                "fieldName": "control_20328a20-eb0d-11ef-896d-23704338eaed",
+                "label": "test1",
+                "type": "number",
+                "propName": "test1",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_23827870-eb0d-11ef-896d-23704338eaed",
+                "fieldName": "control_23827870-eb0d-11ef-896d-23704338eaed",
+                "label": "test2",
+                "type": "number",
+                "propName": "test2",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.test1",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              },
+              {
+                "name": "control_26dd6340-eb0d-11ef-896d-23704338eaed",
+                "fieldName": "control_26dd6340-eb0d-11ef-896d-23704338eaed",
+                "label": "test3",
+                "type": "number",
+                "propName": "test3",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.test2 +  rowData.test1",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_e422b2a0-eac9-11ef-bf9c-df32369d48d0",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_e422b2a0-eac9-11ef-bf9c-df32369d48d0",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_e422b2a0-eac9-11ef-bf9c-df32369d48d0_row_e422b2a1-eac9-11ef-bf9c-df32369d48d0",
+            "controls": [
+              {
+                "name": "control_e442bdc0-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e442bdc0-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e469a6b0-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e469a6b0-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e48cbf10-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e48cbf10-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e4ae50d0-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e4ae50d0-eac9-11ef-bf9c-df32369d48d0",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e4d40140-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e4d40140-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e4f7dcf0-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e4f7dcf0-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e518d270-eac9-11ef-bf9c-df32369d48d0",
+                "fieldName": "control_e518d270-eac9-11ef-bf9c-df32369d48d0",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "testpage",
+  "storageType": "dashboard",
+  "title": "test page"
+}

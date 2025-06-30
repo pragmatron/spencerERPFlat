@@ -1,0 +1,237 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "hours": {
+      "displayName": "Hours",
+      "order": 10,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "methodOperation": {
+      "displayName": "Method Operation",
+      "lookUpTable": "methodOperations",
+      "order": 9,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "part": {
+      "displayName": "Part",
+      "lookUpTable": "parts",
+      "order": 8,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_872718",
+        "label": "",
+        "clientKey": "section_872718",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_872718_row_469636",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_8379e542-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_8379e542-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_96bcc5f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_96bcc5f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_a38e05f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_a38e05f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Method Operation",
+                "type": "lookup",
+                "propName": "methodOperation",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_a8a7b7c0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_a8a7b7c0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Hours",
+                "type": "number",
+                "propName": "hours",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_8379e540-0cc1-11ef-9c64-39f1fc93b91d",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_8379e540-0cc1-11ef-9c64-39f1fc93b91d",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_8379e540-0cc1-11ef-9c64-39f1fc93b91d_row_8379e541-0cc1-11ef-9c64-39f1fc93b91d",
+            "controls": [
+              {
+                "name": "control_83c434b0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_83c434b0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_840b28c0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_840b28c0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_8451a7a0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_8451a7a0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_84b21720-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_84b21720-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_85016fa0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_85016fa0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_85558310-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_85558310-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_85a836f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_85a836f0-0cc1-11ef-9c64-39f1fc93b91d",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "engravedItemSizes",
+  "storageType": "dashboard",
+  "title": "Engraved Item Sizes"
+}

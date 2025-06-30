@@ -1,0 +1,257 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "costperweight": {
+      "displayName": "Cost per weight",
+      "invisible": true,
+      "order": 10,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": false,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "serial": {
+      "displayName": "Serial",
+      "order": 8,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "total": {
+      "displayName": "Total",
+      "invisible": true,
+      "order": 11,
+      "type": "number"
+    },
+    "weight": {
+      "displayName": "Weight",
+      "invisible": true,
+      "order": 9,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_769256",
+        "label": "",
+        "clientKey": "section_769256",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_769256_row_843124",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_27776160-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_27776160-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Serial",
+                "type": "text",
+                "propName": "serial",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "shippingContainers"
+              },
+              {
+                "name": "control_23053a32-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_23053a32-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "shippingContainers"
+              },
+              {
+                "name": "control_36834f20-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_36834f20-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Weight",
+                "type": "number",
+                "propName": "weight",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3a5e1850-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_3a5e1850-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Cost per weight",
+                "type": "number",
+                "propName": "costperweight",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3dda6dd0-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_3dda6dd0-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Total",
+                "type": "number",
+                "propName": "total",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "(rowData.weight * rowData.costperweight)",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_23053a30-eed3-11ef-8e10-fb0c259f6eca",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_23053a30-eed3-11ef-8e10-fb0c259f6eca",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_23053a30-eed3-11ef-8e10-fb0c259f6eca_row_23053a31-eed3-11ef-8e10-fb0c259f6eca",
+            "controls": [
+              {
+                "name": "control_2325e190-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_2325e190-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23472530-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_23472530-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_236645f0-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_236645f0-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2384ca70-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_2384ca70-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23a85800-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_23a85800-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23c8ff60-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_23c8ff60-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23eb0650-eed3-11ef-8e10-fb0c259f6eca",
+                "fieldName": "control_23eb0650-eed3-11ef-8e10-fb0c259f6eca",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "shippingContainers",
+  "storageType": "dashboard",
+  "title": "Shipping Containers"
+}

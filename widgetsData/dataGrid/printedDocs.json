@@ -1,0 +1,353 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "aRInvoices": {
+      "Width": "169px",
+      "displayName": "AR Invoices",
+      "lookUpTable": "aRInvoices",
+      "order": 12,
+      "type": "lookup"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "datePrinted": {
+      "Width": "200px",
+      "displayName": "Date Printed",
+      "order": 8,
+      "type": "date"
+    },
+    "file": {
+      "displayName": "File",
+      "order": 9,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "236px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "purchaseOrders": {
+      "Width": "202px",
+      "displayName": "Purchase Orders",
+      "lookUpTable": "purchaseOrders",
+      "order": 10,
+      "type": "lookup"
+    },
+    "quotes": {
+      "Width": "132px",
+      "displayName": "Quotes",
+      "lookUpTable": "opportunities",
+      "order": 13,
+      "type": "lookup"
+    },
+    "salesOrders": {
+      "displayName": "Sales Orders",
+      "lookUpTable": "opportunities",
+      "order": 15,
+      "type": "lookup"
+    },
+    "shipping": {
+      "Width": "162px",
+      "displayName": "Shipping",
+      "lookUpTable": "shipping",
+      "order": 11,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "workOrders": {
+      "Width": "155px",
+      "displayName": "Work Orders",
+      "lookUpTable": "opportunityLines",
+      "order": 14,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_285323",
+        "label": "",
+        "clientKey": "section_285323",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_285323_row_875521",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_fdd22312-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fdd22312-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_0aa3ff50-2fb5-11ee-9718-b5ac341d3604",
+                "fieldName": "control_0aa3ff50-2fb5-11ee-9718-b5ac341d3604",
+                "label": "Date Printed",
+                "type": "datepicker",
+                "propName": "datePrinted",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_1269be50-2fb5-11ee-9718-b5ac341d3604",
+                "fieldName": "control_1269be50-2fb5-11ee-9718-b5ac341d3604",
+                "label": "File",
+                "type": "files",
+                "propName": "file",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_6c8fed10-4d78-11ee-a8c6-bb13f6379b67",
+                "fieldName": "control_6c8fed10-4d78-11ee-a8c6-bb13f6379b67",
+                "label": "Purchase Orders",
+                "type": "lookup",
+                "propName": "purchaseOrders",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_82db06e0-4d87-11ee-a55f-571a2bbfa7a8",
+                "fieldName": "control_82db06e0-4d87-11ee-a55f-571a2bbfa7a8",
+                "label": "Shipping",
+                "type": "lookup",
+                "propName": "shipping",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_9a295db0-4d87-11ee-a55f-571a2bbfa7a8",
+                "fieldName": "control_9a295db0-4d87-11ee-a55f-571a2bbfa7a8",
+                "label": "AR Invoices",
+                "type": "lookup",
+                "propName": "aRInvoices",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_bcadc8d0-4d8c-11ee-a55f-571a2bbfa7a8",
+                "fieldName": "control_bcadc8d0-4d8c-11ee-a55f-571a2bbfa7a8",
+                "label": "Quotes",
+                "type": "lookup",
+                "propName": "quotes",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_c540c2e0-4d8c-11ee-a55f-571a2bbfa7a8",
+                "fieldName": "control_c540c2e0-4d8c-11ee-a55f-571a2bbfa7a8",
+                "label": "Work Orders",
+                "type": "lookup",
+                "propName": "workOrders",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              },
+              {
+                "name": "control_3426a000-4d90-11ee-a55f-571a2bbfa7a8",
+                "fieldName": "control_3426a000-4d90-11ee-a55f-571a2bbfa7a8",
+                "label": "Sales Orders",
+                "type": "lookup",
+                "propName": "salesOrders",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "printedDocs"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_fdd22310-2fb4-11ee-9718-b5ac341d3604",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_fdd22310-2fb4-11ee-9718-b5ac341d3604",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_fdd22310-2fb4-11ee-9718-b5ac341d3604_row_fdd22311-2fb4-11ee-9718-b5ac341d3604",
+            "controls": [
+              {
+                "name": "control_fdf7d380-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fdf7d380-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fe12fca0-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fe12fca0-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fe306fb0-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fe306fb0-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fe4aae70-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fe4aae70-2fb4-11ee-9718-b5ac341d3604",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fe686fa0-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fe686fa0-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fe834aa0-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fe834aa0-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fea3a3e0-2fb4-11ee-9718-b5ac341d3604",
+                "fieldName": "control_fea3a3e0-2fb4-11ee-9718-b5ac341d3604",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "printedDocs",
+  "storageType": "dashboard",
+  "title": "Printed Docs",
+  "views": {
+    "default": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "desc"
+      }
+    }
+  }
+}

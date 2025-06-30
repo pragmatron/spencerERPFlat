@@ -1,0 +1,203 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "blah": {
+      "displayName": "blah",
+      "order": 8,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_971032",
+        "label": "",
+        "clientKey": "section_971032",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_971032_row_240042",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_a55316a2-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a55316a2-2563-11ee-a213-a7d45900b530",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_abb3c760-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_abb3c760-2563-11ee-a213-a7d45900b530",
+                "label": "blah",
+                "type": "checkbox",
+                "propName": "blah",
+                "className": "col-md-6",
+                "isChecked": false,
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_a55316a0-2563-11ee-a213-a7d45900b530",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_a55316a0-2563-11ee-a213-a7d45900b530",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_a55316a0-2563-11ee-a213-a7d45900b530_row_a55316a1-2563-11ee-a213-a7d45900b530",
+            "controls": [
+              {
+                "name": "control_a5678900-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a5678900-2563-11ee-a213-a7d45900b530",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a57bd450-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a57bd450-2563-11ee-a213-a7d45900b530",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a59094d0-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a59094d0-2563-11ee-a213-a7d45900b530",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a5a57c60-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a5a57c60-2563-11ee-a213-a7d45900b530",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a5bad920-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a5bad920-2563-11ee-a213-a7d45900b530",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a5d39140-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a5d39140-2563-11ee-a213-a7d45900b530",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_a5ec7070-2563-11ee-a213-a7d45900b530",
+                "fieldName": "control_a5ec7070-2563-11ee-a213-a7d45900b530",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "testingcheckbox",
+  "storageType": "dashboard",
+  "title": "testing checkbox"
+}

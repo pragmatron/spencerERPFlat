@@ -1,0 +1,328 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "attachments": {
+      "displayName": "Attachments",
+      "invisible": true,
+      "order": 13,
+      "type": "files"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "purchaseOrder": {
+      "displayName": "Purchase Order",
+      "lookUpTable": "purchaseOrders",
+      "order": 8,
+      "type": "lookup"
+    },
+    "receiptLines_instance": {
+      "dataGrid": "receiptLines",
+      "displayName": "Receipt Lines",
+      "filterColumn": "receipt",
+      "order": 10,
+      "type": "datagrid"
+    },
+    "receiveAllLines": {
+      "displayName": "Receive All Lines",
+      "invisible": true,
+      "order": 11,
+      "type": "custom"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "totalReceiptPrice": {
+      "displayName": "Total Receipt Price",
+      "invisible": true,
+      "order": 12,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "vendor": {
+      "displayName": "Vendor",
+      "lookUpTable": "vendors",
+      "order": 9,
+      "type": "lookup"
+    }
+  },
+  "onRecordCreate": "  setTimeout(() => {\nif(!rowData.name) {\n    console.log('in receipt name')\n\n    let nextId = $getGlobalModel('receiptIndex') ? $getGlobalModel('receiptIndex') : 1000\n\n\n\n    $dgSetRowVals('receipts', rowData.rowKey, {\n        name: `Receipt-${nextId}`\n    })\n\n    $setGlobalModel('receiptIndex', nextId+1)\n\n\n}\n}, 200)  \n\n",
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_108792",
+        "label": "Receipt",
+        "clientKey": "section_108792",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_108792_row_932426",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_87b3c9f2-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_87b3c9f2-c5ea-11ee-b77d-d797341c053c",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-4",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receipts",
+                "sum": true
+              },
+              {
+                "name": "control_bd6ab450-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_bd6ab450-c5ea-11ee-b77d-d797341c053c",
+                "label": "Purchase Order",
+                "type": "lookup",
+                "propName": "purchaseOrder",
+                "className": "col-md-4",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "receipts"
+              },
+              {
+                "name": "control_f4f24b00-3f83-11ef-bcae-4f78889207e1",
+                "fieldName": "control_f4f24b00-3f83-11ef-bcae-4f78889207e1",
+                "label": "Total Receipt Price",
+                "type": "number",
+                "propName": "totalReceiptPrice",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "sumField": "receiptLines.price",
+                "groupBy": "receipt",
+                "gridId": "receipts"
+              },
+              {
+                "name": "control_226cb4c0-ed54-11ef-9a8d-0ded85875fc6",
+                "fieldName": "control_226cb4c0-ed54-11ef-9a8d-0ded85875fc6",
+                "label": "Attachments",
+                "type": "files",
+                "propName": "attachments",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_87b3c9f0-c5ea-11ee-b77d-d797341c053c",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_87b3c9f0-c5ea-11ee-b77d-d797341c053c",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_87b3c9f0-c5ea-11ee-b77d-d797341c053c_row_87b3c9f1-c5ea-11ee-b77d-d797341c053c",
+            "controls": [
+              {
+                "name": "control_87f71480-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_87f71480-c5ea-11ee-b77d-d797341c053c",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4189a2a0-e062-11ee-a8d2-af7448b35bb4",
+                "fieldName": "control_4189a2a0-e062-11ee-a8d2-af7448b35bb4",
+                "label": "Receive All Lines",
+                "type": "custom",
+                "propName": "receiveAllLines",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\nvariant=\"success\"\r\n@click='receiveToInventory(rowData)'\r\n>Receive All Lines\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "receipts"
+              },
+              {
+                "name": "control_d32572d0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_d32572d0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Vendor",
+                "type": "lookup",
+                "propName": "vendor",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true,
+                "expression": "rowData.$purchaseOrder.vendor"
+              },
+              {
+                "name": "control_88386340-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_88386340-c5ea-11ee-b77d-d797341c053c",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_887f5750-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_887f5750-c5ea-11ee-b77d-d797341c053c",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_88cb0650-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_88cb0650-c5ea-11ee-b77d-d797341c053c",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_8901cdc0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8901cdc0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_8936e780-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8936e780-c5ea-11ee-b77d-d797341c053c",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_896d39c0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_896d39c0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_85490",
+        "label": "Receipt Lines",
+        "clientKey": "section_85490",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_85490_row_723186",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b228aa60-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_b228aa60-c5eb-11ee-b77d-d797341c053c",
+                "label": "Receipt Lines",
+                "type": "datagrid",
+                "propName": "receiptLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "receipts"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "receipts",
+  "storageType": "dashboard",
+  "title": "Receipts"
+}

@@ -1,0 +1,1666 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"part\",\"operator\":\"in\",\"value\":null,\"name\":\"Part\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"customer\",\"operator\":\"in\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"quote\",\"operator\":\"in\",\"value\":null,\"name\":\"Quote\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "address1": {
+      "displayName": "address1",
+      "invisible": true,
+      "type": "string"
+    },
+    "address2": {
+      "displayName": "address2",
+      "invisible": true,
+      "type": "string"
+    },
+    "addressName": {
+      "displayName": "addressName",
+      "invisible": true,
+      "lookUpTable": "addresses",
+      "type": "lookup"
+    },
+    "city": {
+      "displayName": "city",
+      "invisible": true,
+      "type": "string"
+    },
+    "country": {
+      "displayName": "country",
+      "invisible": true,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "invisible": false,
+      "lookUpTable": "customers",
+      "order": 1,
+      "type": "lookup"
+    },
+    "customerNotes": {
+      "displayName": "Customer Notes",
+      "invisible": true,
+      "type": "string"
+    },
+    "description": {
+      "displayName": "description",
+      "invisible": true,
+      "type": "multiline_text"
+    },
+    "detail": {
+      "displayName": "Detail",
+      "invisible": true,
+      "type": "string"
+    },
+    "discount": {
+      "displayName": "Discount",
+      "invisible": true,
+      "type": "number"
+    },
+    "dueDate": {
+      "displayName": "Due Date",
+      "invisible": true,
+      "onChange": "$setDataGridVal('quotes', `${rowData.$quote}.dueDate`, rowData.dueDate)",
+      "type": "date"
+    },
+    "estimateMarkup": {
+      "displayName": "Estimate Markup",
+      "invisible": true,
+      "type": "number"
+    },
+    "estimateMarkupAmount": {
+      "displayName": "Estimate Markup Amount",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimateMaterials": {
+      "displayName": "Estimate Materials",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimateMaterials_instance": {
+      "dataGrid": "estimateMaterials",
+      "displayName": "Estimate Materials",
+      "filterColumn": "quoteLine",
+      "order": 34,
+      "type": "datagrid"
+    },
+    "estimateOperations": {
+      "displayName": "Estimate Operations",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimateOperations_instance": {
+      "dataGrid": "estimateOperations",
+      "displayName": "Estimate Operations",
+      "filterColumn": "quoteLine",
+      "order": 31,
+      "type": "datagrid"
+    },
+    "estimateSubtotal": {
+      "displayName": "Estimate Subtotal",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimatedHours": {
+      "displayName": "Estimated Hours",
+      "invisible": true,
+      "type": "number"
+    },
+    "estimatedStartDate": {
+      "displayName": "Estimated Start Date",
+      "invisible": true,
+      "type": "date"
+    },
+    "extendedPrice": {
+      "Width": 159,
+      "displayName": "Total Cost",
+      "invisible": false,
+      "order": 6,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "extraNotes": {
+      "displayName": "Extra Notes",
+      "invisible": true,
+      "type": "string"
+    },
+    "finalTotal": {
+      "displayName": "Final Total",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "ft": {
+      "displayName": "Ft",
+      "invisible": true,
+      "type": "number"
+    },
+    "heightInches": {
+      "displayName": "Height Inches",
+      "invisible": true,
+      "type": "number"
+    },
+    "in": {
+      "displayName": "In",
+      "invisible": true,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "type": "select"
+    },
+    "lbFt": {
+      "displayName": "Lb/Ft",
+      "invisible": true,
+      "type": "number"
+    },
+    "markedupEstimate": {
+      "displayName": "Markedup Estimate",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "markup": {
+      "Width": "142px",
+      "displayName": "Markup",
+      "invisible": true,
+      "type": "number"
+    },
+    "markupAmount": {
+      "Width": "147px",
+      "displayName": "Markup Amount",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "name": {
+      "Width": "155px",
+      "displayName": "Name",
+      "invisible": false,
+      "order": 3,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "type": "string"
+    },
+    "observ": {
+      "displayName": "Observ.",
+      "invisible": true,
+      "type": "string"
+    },
+    "open": {
+      "displayName": "Open",
+      "invisible": true,
+      "type": "checkbox"
+    },
+    "opportunity": {
+      "displayName": "Opportunity",
+      "invisible": true,
+      "lookUpTable": "opportunity",
+      "type": "lookup"
+    },
+    "opportunityLine": {
+      "displayName": "Opportunity Line",
+      "invisible": true,
+      "lookUpTable": "opportunityLine",
+      "type": "lookup"
+    },
+    "optionsCost": {
+      "displayName": "Options Cost",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "type": "user"
+    },
+    "part": {
+      "Width": "133px",
+      "displayName": "Part",
+      "invisible": false,
+      "lookUpTable": "parts",
+      "onChange": "let productionMethods = $getGrid(\"productionMethods\")\r\n\r\nlet productionMethodFiltered = productionMethods.filter((productionMethod) => {\r\n    return productionMethod.part === rowData.part\r\n}) \r\nconsole.log('prod filtered method: ',productionMethodFiltered)\r\n$dgSetRowVals(\"quoteLines\", rowData.rowKey, {\r\n    sourceProductionMethod: productionMethodFiltered[0]?.rowKey\r\n})",
+      "order": 0,
+      "type": "lookup"
+    },
+    "partImage": {
+      "displayName": "Part Image",
+      "invisible": true,
+      "type": "profile_image"
+    },
+    "partOptions_instance": {
+      "dataGrid": "partOptions",
+      "displayName": "Part Options",
+      "filterColumn": "quoteLine",
+      "order": 50,
+      "type": "datagrid"
+    },
+    "postalCode": {
+      "displayName": "postalCode",
+      "invisible": true,
+      "type": "string"
+    },
+    "productionMethod": {
+      "displayName": "productionMethod",
+      "invisible": true,
+      "lookUpTable": "productionMethods",
+      "type": "lookup"
+    },
+    "qtytoMfg": {
+      "displayName": "Quantity",
+      "invisible": false,
+      "order": 4,
+      "type": "number"
+    },
+    "quote": {
+      "displayName": "Quote",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "quotes",
+      "order": 2,
+      "type": "lookup"
+    },
+    "salesGroup": {
+      "Width": "149px",
+      "displayName": "salesGroup",
+      "invisible": true,
+      "lookUpTable": "salesGroups",
+      "type": "lookup"
+    },
+    "salesperson": {
+      "Width": "151px",
+      "displayName": "Salesperson",
+      "invisible": false,
+      "lookUpTable": "salesperson",
+      "order": 7,
+      "type": "lookup"
+    },
+    "sqft": {
+      "displayName": "Sqft",
+      "invisible": true,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "type": "string"
+    },
+    "stateProvince": {
+      "displayName": "stateProvince",
+      "invisible": true,
+      "type": "string"
+    },
+    "totalEstimatedTime": {
+      "displayName": "Total Estimated Time",
+      "invisible": true,
+      "type": "number"
+    },
+    "totalFt": {
+      "displayName": "Total Ft",
+      "invisible": true,
+      "type": "number"
+    },
+    "totalLb": {
+      "displayName": "Total Lb",
+      "invisible": true,
+      "type": "number"
+    },
+    "totalLineAmountWithOptions": {
+      "displayName": "Total Line Amount With Options",
+      "invisible": true,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "unitPrice": {
+      "Width": "144px",
+      "displayName": "Unit Price",
+      "invisible": false,
+      "order": 5,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "widthInches": {
+      "displayName": "Width Inches",
+      "invisible": true,
+      "type": "number"
+    }
+  },
+  "onRecordCreate": "if(!rowData.name) {\r\nconsole.log('going in lines')\r\nsetTimeout(() => {\r\n    console.log('data in here: ', rowData);\r\n    const quoteLinesFiltered = $getGrid('quoteLines').filter((line) => line.quote === rowData.quote);\r\n\r\n    const parentId = rowData.$quote$display;\r\n    const lineIndex = quoteLinesFiltered.length; // Incrementing to get the next index\r\n    const newId = `${parentId}-${String(lineIndex).padStart(2, '0')}`; // Formatted ID\r\n\r\n    $dgSetRowVals('quoteLines', rowData.rowKey, {\r\n        name: newId\r\n    });\r\n}, 1000);\r\n}",
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_968385",
+        "label": "Quote Line",
+        "clientKey": "section_968385",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_968385_row_399690",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_cf338152-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf338152-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Quote",
+                "type": "lookup",
+                "propName": "quote",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "quotes"
+              },
+              {
+                "name": "control_418ca350-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_418ca350-afa3-11ee-9997-694902a69bce",
+                "label": "Quote Line Number",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-3",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_f7c1c460-c421-11ee-bcfd-b161829205a7",
+                "fieldName": "control_f7c1c460-c421-11ee-bcfd-b161829205a7",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.opportunityLine ? rowData.$opportunityLine.customer : rowData.$quote.soldToCustomer",
+                "tooltip": "From Opportunity Line Or Quote",
+                "calculateRelated": "quotes/soldToCustomer/quote"
+              },
+              {
+                "name": "control_cf48de10-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf48de10-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Salesperson",
+                "type": "lookup",
+                "propName": "salesperson",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "salesperson",
+                "sum": true,
+                "expression": "rowData.$quote.salesperson ",
+                "tooltip": "From Quote",
+                "calculateRelated": "quotes/salesperson/quote"
+              },
+              {
+                "name": "control_b3607ee0-c9a0-11ee-9b2a-25c2fbdbbe51",
+                "fieldName": "control_b3607ee0-c9a0-11ee-9b2a-25c2fbdbbe51",
+                "label": "Opportunity",
+                "type": "lookup",
+                "propName": "opportunity",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_ac856e00-c9a0-11ee-9b2a-25c2fbdbbe51",
+                "fieldName": "control_ac856e00-c9a0-11ee-9b2a-25c2fbdbbe51",
+                "label": "Opportunity Line",
+                "type": "lookup",
+                "propName": "opportunityLine",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_6a902dd0-dfe6-11ee-af39-db9ca2c39803",
+                "fieldName": "control_6a902dd0-dfe6-11ee-af39-db9ca2c39803",
+                "label": "Due Date",
+                "type": "datepicker",
+                "propName": "dueDate",
+                "className": "col-md-3",
+                "expression": "rowData.$quote.dueDate",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "tooltip": "From Quote / Due Date",
+                "calculateRelated": "quotes/dueDate/quote"
+              },
+              {
+                "name": "control_73e29560-dfe8-11ee-af39-db9ca2c39803",
+                "fieldName": "control_73e29560-dfe8-11ee-af39-db9ca2c39803",
+                "label": "Scheduled Start Date",
+                "type": "datepicker",
+                "propName": "estimatedStartDate",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_745bbcf0-33ae-11ef-87b5-a5985e57e492",
+                "fieldName": "control_745bbcf0-33ae-11ef-87b5-a5985e57e492",
+                "label": "Customer Notes",
+                "type": "text",
+                "propName": "customerNotes",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "tooltip": "Manual Entry"
+              },
+              {
+                "name": "control_65568370-b39d-11ee-819e-6bf5f66f2f4b",
+                "fieldName": "control_65568370-b39d-11ee-819e-6bf5f66f2f4b",
+                "label": "Open",
+                "type": "checkbox",
+                "propName": "open",
+                "className": "col-md-3",
+                "isChecked": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "tooltip": "Open As Default"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "name": "section_392338",
+        "label": "Part And Quantity",
+        "clientKey": "section_392338",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_392338_row_529325",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_cf326fe1-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf326fe1-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "parts",
+                "sum": true,
+                "expression": "rowData.$opportunityLine.part",
+                "lookUpSearch": "purchasingDashboard"
+              },
+              {
+                "name": "control_cf326fe2-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf326fe2-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Description",
+                "type": "multiline_text",
+                "propName": "description",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.$part.description",
+                "tooltip": "From Part / Description"
+              },
+              {
+                "name": "control_cf381530-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf381530-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Quantity (PCS)",
+                "type": "number",
+                "propName": "qtytoMfg",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "defaultValue": "1",
+                "value": "1",
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.$opportunityLine.quantity",
+                "tooltip": "From Opportunity Line / Quantity Or Manual Entry"
+              },
+              {
+                "name": "control_c03cd090-b556-11ee-834c-8529dd7366a1",
+                "fieldName": "control_c03cd090-b556-11ee-834c-8529dd7366a1",
+                "label": "Unit Price",
+                "type": "number",
+                "propName": "unitPrice",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.part && rowData.$part.price",
+                "tooltip": "From Part / Sales Price"
+              },
+              {
+                "name": "control_cf3296f2-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf3296f2-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Total Amount",
+                "type": "number",
+                "propName": "extendedPrice",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.unitPrice ? (rowData.qtytoMfg * rowData.unitPrice) : (rowData.qtytoMfg * rowData.totalLb)",
+                "tooltip": "Unit Price * Quantity"
+              },
+              {
+                "name": "control_17713080-e7a8-11ee-9862-538140391a39",
+                "fieldName": "control_17713080-e7a8-11ee-9862-538140391a39",
+                "label": "Part Options",
+                "type": "number",
+                "propName": "optionsCost",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "sumField": "partOptions.totalPrice",
+                "groupBy": "quoteLine",
+                "gridId": "quoteLines",
+                "tooltip": "Sum Of Part Options / Total Price"
+              },
+              {
+                "name": "control_4048d450-e7ac-11ee-9862-538140391a39",
+                "fieldName": "control_4048d450-e7ac-11ee-9862-538140391a39",
+                "label": "Total Amount With Options",
+                "type": "number",
+                "propName": "totalLineAmountWithOptions",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.extendedPrice + rowData.optionsCost",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines",
+                "tooltip": "Total Amount + Part Options"
+              },
+              {
+                "name": "control_df6847c0-c103-11ee-8433-4f93c020f70e",
+                "fieldName": "control_df6847c0-c103-11ee-8433-4f93c020f70e",
+                "label": "Markup %",
+                "type": "number",
+                "propName": "markup",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "tooltip": "A Markup Percentage To Add"
+              },
+              {
+                "name": "control_ef052ae0-c103-11ee-8433-4f93c020f70e",
+                "fieldName": "control_ef052ae0-c103-11ee-8433-4f93c020f70e",
+                "label": "Markup Amount",
+                "type": "number",
+                "propName": "markupAmount",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.totalLineAmountWithOptions * (rowData.markup / 100)\n\n",
+                "tooltip": "The Value Of The Markup"
+              },
+              {
+                "name": "control_92c13c50-0ef1-11f0-bd50-6f53e83d0a51",
+                "fieldName": "control_92c13c50-0ef1-11f0-bd50-6f53e83d0a51",
+                "label": "Final Total",
+                "type": "number",
+                "propName": "finalTotal",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.totalLineAmountWithOptions * (1 + rowData.markup / 100)\n",
+                "sum": true,
+                "gridId": "quoteLines",
+                "tooltip": "Total Line Amount With Options Plus The Markup Amount"
+              },
+              {
+                "name": "control_8ea68060-dfe7-11ee-af39-db9ca2c39803",
+                "fieldName": "control_8ea68060-dfe7-11ee-af39-db9ca2c39803",
+                "label": "Estimated Hours Per Unit",
+                "type": "number",
+                "propName": "estimatedHours",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.$part.estimatedTimeToMake",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "tooltip": "From Part / Estimated Time To Make"
+              },
+              {
+                "name": "control_a4ca60c0-f0d9-11ee-8745-19a793ab19b0",
+                "fieldName": "control_a4ca60c0-f0d9-11ee-8745-19a793ab19b0",
+                "label": "Total Estimated Time",
+                "type": "number",
+                "propName": "totalEstimatedTime",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.estimatedHours *  rowData.qtytoMfg",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines",
+                "tooltip": "Estimated Hours * Quantity"
+              },
+              {
+                "name": "control_81e722b0-b39d-11ee-819e-6bf5f66f2f4b",
+                "fieldName": "control_81e722b0-b39d-11ee-819e-6bf5f66f2f4b",
+                "label": "Part Image",
+                "type": "profile_image",
+                "propName": "partImage",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "skipCrop": true,
+                "disableRoundedStyle": true,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.$part.partImage",
+                "tooltip": "From Part / Part Image"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "cleintKey": "hidden_section_418c5530-afa3-11ee-9997-694902a69bce",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_418c5530-afa3-11ee-9997-694902a69bce",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_418c5530-afa3-11ee-9997-694902a69bce_row_418c5531-afa3-11ee-9997-694902a69bce",
+            "controls": [
+              {
+                "name": "control_41b27ad0-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_41b27ad0-afa3-11ee-9997-694902a69bce",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_41d85250-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_41d85250-afa3-11ee-9997-694902a69bce",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_41ffb070-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_41ffb070-afa3-11ee-9997-694902a69bce",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4228bc40-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_4228bc40-afa3-11ee-9997-694902a69bce",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4250ddb0-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_4250ddb0-afa3-11ee-9997-694902a69bce",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_427889f0-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_427889f0-afa3-11ee-9997-694902a69bce",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_42a05d40-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_42a05d40-afa3-11ee-9997-694902a69bce",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_cf33f680-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf33f680-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Production Method",
+                "type": "lookup",
+                "propName": "productionMethod",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "productionMethods"
+              },
+              {
+                "name": "control_cf32be00-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf32be00-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Sales Group",
+                "type": "lookup",
+                "propName": "salesGroup",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "salesGroups",
+                "sum": true,
+                "expression": "rowData.part && rowData.$part.salesGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_301065",
+        "label": "Estimates",
+        "clientKey": "section_301065",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_301065_row_530339",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b1130360-c103-11ee-8433-4f93c020f70e",
+                "fieldName": "control_b1130360-c103-11ee-8433-4f93c020f70e",
+                "label": "Estimate Operations",
+                "type": "number",
+                "propName": "estimateOperations",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "groupBy": "quoteLine",
+                "sumField": "estimateOperations.total",
+                "expression": "$sum('estimateOperations.total', 'quoteLine', rowData.quoteLine)"
+              },
+              {
+                "name": "control_bfbc10a0-c103-11ee-8433-4f93c020f70e",
+                "fieldName": "control_bfbc10a0-c103-11ee-8433-4f93c020f70e",
+                "label": "Estimate Materials",
+                "type": "number",
+                "propName": "estimateMaterials",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true,
+                "groupBy": "quoteLine",
+                "sumField": "estimateMaterials.total",
+                "expression": "$sum('estimateMaterials.total', 'quoteLine', rowData.quoteLine)"
+              },
+              {
+                "name": "control_e29b0c30-0eef-11f0-bd50-6f53e83d0a51",
+                "fieldName": "control_e29b0c30-0eef-11f0-bd50-6f53e83d0a51",
+                "label": "Estimate Markup %",
+                "type": "number",
+                "propName": "estimateMarkup",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_e8d0b550-0eef-11f0-bd50-6f53e83d0a51",
+                "fieldName": "control_e8d0b550-0eef-11f0-bd50-6f53e83d0a51",
+                "label": "Estimate Markup Amount",
+                "type": "number",
+                "propName": "estimateMarkupAmount",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "(rowData.estimateOperations + rowData.estimateMaterials) * (rowData.estimateMarkup / 100)",
+                "sum": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_d3b04590-0ef0-11f0-bd50-6f53e83d0a51",
+                "fieldName": "control_d3b04590-0ef0-11f0-bd50-6f53e83d0a51",
+                "label": "Estimate Subtotal",
+                "type": "number",
+                "propName": "estimateSubtotal",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "(rowData.estimateOperations + rowData.estimateMaterials) * (1 + rowData.estimateMarkup / 100)",
+                "gridId": "quoteLines",
+                "sum": true
+              },
+              {
+                "name": "control_00b50f80-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_00b50f80-c104-11ee-8433-4f93c020f70e",
+                "label": "Markedup Estimate",
+                "type": "number",
+                "propName": "markedupEstimate",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "description": "Final Total",
+                "sum": true,
+                "expression": "rowData.qtytoMfg * rowData.estimateSubtotal"
+              },
+              {
+                "name": "control_439bc230-ced2-11ef-8ceb-03c28fd90431",
+                "fieldName": "control_439bc230-ced2-11ef-8ceb-03c28fd90431",
+                "label": "Discount",
+                "type": "number",
+                "propName": "discount",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.$customer.discount",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_84c26b60-dcb5-11ef-8afb-732a7fed8144",
+                "fieldName": "control_84c26b60-dcb5-11ef-8afb-732a7fed8144",
+                "label": "Height Inches",
+                "type": "number",
+                "propName": "heightInches",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_8a2fe280-dcb5-11ef-8afb-732a7fed8144",
+                "fieldName": "control_8a2fe280-dcb5-11ef-8afb-732a7fed8144",
+                "label": "Width Inches",
+                "type": "number",
+                "propName": "widthInches",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_8f05ad80-dcb5-11ef-8afb-732a7fed8144",
+                "fieldName": "control_8f05ad80-dcb5-11ef-8afb-732a7fed8144",
+                "label": "Sqft",
+                "type": "number",
+                "propName": "sqft",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "((Math.ceil(rowData.heightInches / 2) * 2) * (Math.ceil(rowData.widthInches / 2) * 2)) / 144",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_9806f720-bd63-11ef-8541-9709662a3eb5",
+                "fieldName": "control_9806f720-bd63-11ef-8541-9709662a3eb5",
+                "label": "Extra Notes",
+                "type": "text",
+                "propName": "extraNotes",
+                "className": "col-md-6",
+                "placeholder": "notes",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "description": "cool field"
+              },
+              {
+                "name": "control_39416100-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_39416100-c104-11ee-8433-4f93c020f70e",
+                "label": "Estimate Operations",
+                "type": "datagrid",
+                "propName": "estimateOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_9ef684d0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_9ef684d0-c104-11ee-8433-4f93c020f70e",
+                "label": "Estimate Materials",
+                "type": "datagrid",
+                "propName": "estimateMaterials_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "quoteLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "estimates"
+      },
+      {
+        "name": "section_419692",
+        "label": "Shipping Address",
+        "clientKey": "section_419692",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_419692_row_618676",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_cf338150-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf338150-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Address Name",
+                "type": "lookup",
+                "propName": "addressName",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "lookUpTable": "addresses",
+                "sum": true,
+                "expression": "rowData.quote && rowData.$quote.addressName",
+                "calculateRelated": "quotes/addressName/quote",
+                "tooltip": "From Quote / Address"
+              },
+              {
+                "name": "control_cf338151-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf338151-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Address 1",
+                "type": "text",
+                "propName": "address1",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.address1",
+                "tooltip": "From Address Name / Address 1"
+              },
+              {
+                "name": "control_cf338153-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf338153-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Address 2",
+                "type": "text",
+                "propName": "address2",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.address2",
+                "tooltip": "From Address Name / Address 2"
+              },
+              {
+                "name": "control_cf33a862-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf33a862-afb3-11ee-8e99-55c5047ec780_",
+                "label": "State/Province",
+                "type": "text",
+                "propName": "stateProvince",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.stateProvince",
+                "tooltip": "From Address Name / State/Province"
+              },
+              {
+                "name": "control_cf33a861-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf33a861-afb3-11ee-8e99-55c5047ec780_",
+                "label": "City",
+                "type": "text",
+                "propName": "city",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.city",
+                "tooltip": "From Address Name / City"
+              },
+              {
+                "name": "control_cf33cf72-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf33cf72-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Postal Code",
+                "type": "text",
+                "propName": "postalCode",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.postalCode",
+                "tooltip": "From Address Name / Postal Code"
+              },
+              {
+                "name": "control_cf33cf70-afb3-11ee-8e99-55c5047ec780_",
+                "fieldName": "control_cf33cf70-afb3-11ee-8e99-55c5047ec780_",
+                "label": "Country",
+                "type": "text",
+                "propName": "country",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "quoteLines",
+                "sum": true,
+                "expression": "rowData.addressName && rowData.$addressName.country",
+                "tooltip": "From Address Name / Country"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_882357",
+        "label": "Files",
+        "clientKey": "section_882357",
+        "order": 0,
+        "rows": [],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "files"
+      },
+      {
+        "name": "section_338707",
+        "label": "Notifications",
+        "clientKey": "section_338707",
+        "order": 0,
+        "rows": [],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "notifications"
+      },
+      {
+        "name": "section_57723",
+        "label": "Drawing Info",
+        "clientKey": "section_57723",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_57723_row_104709",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_9e97e220-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_9e97e220-cf3e-11ee-a477-11a4155b21b0",
+                "label": "Ft",
+                "type": "number",
+                "propName": "ft",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_a23999f0-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_a23999f0-cf3e-11ee-a477-11a4155b21b0",
+                "label": "In",
+                "type": "number",
+                "propName": "in",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_a8630e10-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_a8630e10-cf3e-11ee-a477-11a4155b21b0",
+                "label": "Total Ft",
+                "type": "number",
+                "propName": "totalFt",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "expression": "rowData.ft + rowData.in",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "quoteLines",
+                "sum": true
+              },
+              {
+                "name": "control_bada1340-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_bada1340-cf3e-11ee-a477-11a4155b21b0",
+                "label": "Lb/Ft",
+                "type": "number",
+                "propName": "lbFt",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.$part.lbFt",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_c05768e0-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_c05768e0-cf3e-11ee-a477-11a4155b21b0",
+                "label": "Total Lb",
+                "type": "number",
+                "propName": "totalLb",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.lbFt * rowData.qtytoMfg",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "gridId": "quoteLines"
+              },
+              {
+                "name": "control_c8476c30-cf3e-11ee-a477-11a4155b21b0",
+                "fieldName": "control_c8476c30-cf3e-11ee-a477-11a4155b21b0",
+                "label": "Observ.",
+                "type": "text",
+                "propName": "observ",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_8e70a3e0-cf3f-11ee-a477-11a4155b21b0",
+                "fieldName": "control_8e70a3e0-cf3f-11ee-a477-11a4155b21b0",
+                "label": "Detail",
+                "type": "text",
+                "propName": "detail",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": true,
+        "tab": "estimates"
+      },
+      {
+        "name": "section_140048",
+        "label": "Part Options",
+        "tooltip": "",
+        "clientKey": "section_140048",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_140048_row_251376",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_ac357a30-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_ac357a30-e7a5-11ee-9862-538140391a39",
+                "label": "Part Options",
+                "type": "datagrid",
+                "propName": "partOptions_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [
+                  "partOptionsQuote"
+                ],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "dataGridView": "partOptionsQuote",
+                "gridId": "quoteLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      }
+    ],
+    "layout": "Tabs and Sections"
+  },
+  "source": "quoteLines",
+  "storageType": "dashboard",
+  "tabs": {
+    "default": {
+      "title": "Quote Line"
+    },
+    "estimates": {
+      "readOnly": false,
+      "title": "Estimates"
+    },
+    "shippingAddress": {
+      "readOnly": false,
+      "title": "Shipping Address"
+    }
+  },
+  "tabsOrder": [
+    "default",
+    "estimates",
+    "shippingAddress"
+  ],
+  "title": "Quote Lines",
+  "views": {
+    "default": {
+      "meta": {
+        "address1": {
+          "displayName": "address1",
+          "invisible": false,
+          "order": 13
+        },
+        "address2": {
+          "displayName": "address2",
+          "invisible": false,
+          "order": 15
+        },
+        "addressName": {
+          "displayName": "addressName",
+          "invisible": false,
+          "order": 11
+        },
+        "city": {
+          "displayName": "city",
+          "invisible": false,
+          "order": 16
+        },
+        "country": {
+          "displayName": "country",
+          "invisible": false,
+          "order": 18
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "order": 33
+        },
+        "customerNotes": {
+          "displayName": "Customer Notes",
+          "invisible": true,
+          "order": 50
+        },
+        "description": {
+          "displayName": "description",
+          "invisible": true,
+          "order": 12,
+          "type": "multiline_text"
+        },
+        "detail": {
+          "displayName": "Detail",
+          "invisible": true,
+          "order": 42
+        },
+        "discount": {
+          "displayName": "Discount",
+          "invisible": true,
+          "order": 52
+        },
+        "dueDate": {
+          "displayName": "Due Date",
+          "invisible": true,
+          "order": 43
+        },
+        "estimateMarkup": {
+          "displayName": "Estimate Markup",
+          "invisible": true,
+          "order": 56
+        },
+        "estimateMarkupAmount": {
+          "displayName": "Estimate Markup Amount",
+          "invisible": true,
+          "order": 57
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "order": 27
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "order": 32
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "order": 26
+        },
+        "estimateOperations_instance": {
+          "displayName": "Estimate Operations",
+          "order": 31
+        },
+        "estimateSubtotal": {
+          "displayName": "Estimate Subtotal",
+          "invisible": true,
+          "order": 58
+        },
+        "estimatedHours": {
+          "displayName": "Estimated Hours",
+          "invisible": true,
+          "order": 44
+        },
+        "estimatedStartDate": {
+          "displayName": "Estimated Start Date",
+          "invisible": true,
+          "order": 45
+        },
+        "extendedPrice": {
+          "displayName": "extended Price",
+          "invisible": true,
+          "order": 9
+        },
+        "extraNotes": {
+          "displayName": "Extra Notes",
+          "invisible": true,
+          "order": 51
+        },
+        "finalTotal": {
+          "displayName": "Final Total",
+          "invisible": true,
+          "order": 59
+        },
+        "ft": {
+          "displayName": "Ft",
+          "invisible": true,
+          "order": 36
+        },
+        "heightInches": {
+          "displayName": "Height Inches",
+          "invisible": true,
+          "order": 53
+        },
+        "in": {
+          "displayName": "In",
+          "invisible": true,
+          "order": 37
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "lbFt": {
+          "displayName": "Lb/Ft",
+          "invisible": true,
+          "order": 39
+        },
+        "markedupEstimate": {
+          "displayName": "Markedup Estimate",
+          "order": 30
+        },
+        "markup": {
+          "displayName": "Markup",
+          "order": 28
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "order": 29
+        },
+        "name": {
+          "displayName": "Quote Line Number",
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "observ": {
+          "displayName": "Observ.",
+          "invisible": true,
+          "order": 41
+        },
+        "open": {
+          "displayName": "Open",
+          "invisible": false,
+          "order": 23
+        },
+        "opportunity": {
+          "displayName": "Opportunity",
+          "invisible": true,
+          "order": 35
+        },
+        "opportunityLine": {
+          "displayName": "Opportunity Line",
+          "invisible": true,
+          "order": 34
+        },
+        "optionsCost": {
+          "displayName": "Options Cost",
+          "invisible": true,
+          "order": 47
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "part": {
+          "displayName": "part",
+          "invisible": true,
+          "order": 8
+        },
+        "partImage": {
+          "displayName": "Part Image",
+          "invisible": false,
+          "order": 24
+        },
+        "partOptions_instance": {
+          "displayName": "Part Options",
+          "order": 46
+        },
+        "postalCode": {
+          "displayName": "postalCode",
+          "invisible": false,
+          "order": 19
+        },
+        "productionMethod": {
+          "displayName": "productionMethod",
+          "invisible": false,
+          "order": 20
+        },
+        "qtytoMfg": {
+          "displayName": "quantity",
+          "invisible": false,
+          "order": 21
+        },
+        "quote": {
+          "displayName": "quote",
+          "invisible": false,
+          "order": 14
+        },
+        "salesGroup": {
+          "displayName": "sales Group",
+          "invisible": false,
+          "order": 10
+        },
+        "salesperson": {
+          "displayName": "salesperson",
+          "invisible": true,
+          "order": 22
+        },
+        "sqft": {
+          "displayName": "Sqft",
+          "invisible": true,
+          "order": 55
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "stateProvince": {
+          "displayName": "stateProvince",
+          "invisible": false,
+          "order": 17
+        },
+        "totalEstimatedTime": {
+          "displayName": "Total Estimated Time",
+          "invisible": true,
+          "order": 49
+        },
+        "totalFt": {
+          "displayName": "Total Ft",
+          "invisible": true,
+          "order": 38
+        },
+        "totalLb": {
+          "displayName": "Total Lb",
+          "invisible": true,
+          "order": 40
+        },
+        "totalLineAmountWithOptions": {
+          "displayName": "Total Line Amount With Options",
+          "invisible": true,
+          "order": 48
+        },
+        "unitPrice": {
+          "displayName": "Unit Price",
+          "invisible": false,
+          "order": 25
+        },
+        "widthInches": {
+          "displayName": "Width Inches",
+          "invisible": true,
+          "order": 54
+        }
+      }
+    }
+  }
+}

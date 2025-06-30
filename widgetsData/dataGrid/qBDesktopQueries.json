@@ -1,0 +1,233 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "query": {
+      "Width": "581px",
+      "displayName": "Query",
+      "order": 8,
+      "type": "multiline_text"
+    },
+    "queryType": {
+      "displayName": "Query Type",
+      "order": 9,
+      "type": "string"
+    },
+    "result": {
+      "displayName": "Result",
+      "order": 10,
+      "type": "multiline_text"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_585587",
+        "label": "",
+        "clientKey": "section_585587",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_585587_row_707731",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_25f34652-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_25f34652-4b28-11ef-a514-61e18460bcec",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2da07440-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_2da07440-4b28-11ef-a514-61e18460bcec",
+                "label": "Query",
+                "type": "multiline_text",
+                "propName": "query",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_adb07620-4b29-11ef-a514-61e18460bcec",
+                "fieldName": "control_adb07620-4b29-11ef-a514-61e18460bcec",
+                "label": "Query Type",
+                "type": "text",
+                "propName": "queryType",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b293b930-4b2a-11ef-a514-61e18460bcec",
+                "fieldName": "control_b293b930-4b2a-11ef-a514-61e18460bcec",
+                "label": "Result",
+                "type": "multiline_text",
+                "propName": "result",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_25f34650-4b28-11ef-a514-61e18460bcec",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_25f34650-4b28-11ef-a514-61e18460bcec",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_25f34650-4b28-11ef-a514-61e18460bcec_row_25f34651-4b28-11ef-a514-61e18460bcec",
+            "controls": [
+              {
+                "name": "control_264cb0f0-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_264cb0f0-4b28-11ef-a514-61e18460bcec",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_26b277a0-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_26b277a0-4b28-11ef-a514-61e18460bcec",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_27305a30-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_27305a30-4b28-11ef-a514-61e18460bcec",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_278b4b70-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_278b4b70-4b28-11ef-a514-61e18460bcec",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_27f24aa0-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_27f24aa0-4b28-11ef-a514-61e18460bcec",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2858d4a0-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_2858d4a0-4b28-11ef-a514-61e18460bcec",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_28b52570-4b28-11ef-a514-61e18460bcec",
+                "fieldName": "control_28b52570-4b28-11ef-a514-61e18460bcec",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "qBDesktopQueries",
+  "storageType": "dashboard",
+  "title": "QB Desktop Queries"
+}

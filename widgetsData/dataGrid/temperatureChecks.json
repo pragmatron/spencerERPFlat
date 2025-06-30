@@ -1,0 +1,204 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "qualityAssessment": {
+      "displayName": "Quality Assessment",
+      "lookUpTable": "qualityAssessment",
+      "order": 8,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_875824",
+        "label": "",
+        "clientKey": "section_875824",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_875824_row_195704",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_626d53e2-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_626d53e2-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_7abcee10-e2c9-11ee-9287-d9416c932928",
+                "fieldName": "control_7abcee10-e2c9-11ee-9287-d9416c932928",
+                "label": "Quality Assessment",
+                "type": "lookup",
+                "propName": "qualityAssessment",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_626d53e0-e2c9-11ee-95d8-69eaa7ef5210",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_626d53e0-e2c9-11ee-95d8-69eaa7ef5210",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_626d53e0-e2c9-11ee-95d8-69eaa7ef5210_row_626d53e1-e2c9-11ee-95d8-69eaa7ef5210",
+            "controls": [
+              {
+                "name": "control_62c70ca0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_62c70ca0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_6354cdb0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_6354cdb0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_63ef8710-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_63ef8710-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_646c7f40-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_646c7f40-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_64df1730-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_64df1730-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_654b94a0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_654b94a0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_65d9a3d0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_65d9a3d0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "temperatureChecks",
+  "storageType": "dashboard",
+  "title": "Temperature Checks"
+}

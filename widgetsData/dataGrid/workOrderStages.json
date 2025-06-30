@@ -1,0 +1,187 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_886860",
+        "label": "",
+        "clientKey": "section_886860",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_886860_row_757116",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_f2ab9572-7316-11ee-8416-894197346209",
+                "fieldName": "control_f2ab9572-7316-11ee-8416-894197346209",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_f2ab9570-7316-11ee-8416-894197346209",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_f2ab9570-7316-11ee-8416-894197346209",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_f2ab9570-7316-11ee-8416-894197346209_row_f2ab9571-7316-11ee-8416-894197346209",
+            "controls": [
+              {
+                "name": "control_f2da6da0-7316-11ee-8416-894197346209",
+                "fieldName": "control_f2da6da0-7316-11ee-8416-894197346209",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f2fd10d0-7316-11ee-8416-894197346209",
+                "fieldName": "control_f2fd10d0-7316-11ee-8416-894197346209",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f31fb400-7316-11ee-8416-894197346209",
+                "fieldName": "control_f31fb400-7316-11ee-8416-894197346209",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f342f370-7316-11ee-8416-894197346209",
+                "fieldName": "control_f342f370-7316-11ee-8416-894197346209",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f3648530-7316-11ee-8416-894197346209",
+                "fieldName": "control_f3648530-7316-11ee-8416-894197346209",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f3892430-7316-11ee-8416-894197346209",
+                "fieldName": "control_f3892430-7316-11ee-8416-894197346209",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f3ad9c20-7316-11ee-8416-894197346209",
+                "fieldName": "control_f3ad9c20-7316-11ee-8416-894197346209",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "workOrderStages",
+  "storageType": "dashboard",
+  "title": "Work Order Stages"
+}

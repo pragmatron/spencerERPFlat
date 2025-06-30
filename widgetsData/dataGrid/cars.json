@@ -1,0 +1,204 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "carModel": {
+      "displayName": "Car Model",
+      "order": 1,
+      "type": "string"
+    },
+    "color": {
+      "displayName": "Color",
+      "order": 5,
+      "type": "string"
+    },
+    "condition": {
+      "displayName": "Condition",
+      "order": 6,
+      "type": "select"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 9,
+      "type": "select"
+    },
+    "manufacturer": {
+      "displayName": "Manufacturer",
+      "order": 2,
+      "type": "string"
+    },
+    "mileage": {
+      "displayName": "Mileage",
+      "order": 7,
+      "type": "number"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "price": {
+      "displayName": "Price",
+      "order": 4,
+      "type": "number"
+    },
+    "vIN": {
+      "displayName": "VIN",
+      "order": 8,
+      "type": "string"
+    },
+    "year": {
+      "displayName": "Year",
+      "order": 3,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_685961",
+        "label": "",
+        "clientKey": "section_685961",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_685961_row_525297",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_09f57742-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_09f57742-b0ac-11ef-9ffa-95970389c560",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0a1b27b0-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0a1b27b0-b0ac-11ef-9ffa-95970389c560",
+                "label": "Car Model",
+                "type": "text",
+                "propName": "carModel",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0a487940-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0a487940-b0ac-11ef-9ffa-95970389c560",
+                "label": "Manufacturer",
+                "type": "text",
+                "propName": "manufacturer",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0a6d6660-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0a6d6660-b0ac-11ef-9ffa-95970389c560",
+                "label": "Year",
+                "type": "number",
+                "propName": "year",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0a91de50-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0a91de50-b0ac-11ef-9ffa-95970389c560",
+                "label": "Price",
+                "type": "number",
+                "propName": "price",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0ab803f0-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0ab803f0-b0ac-11ef-9ffa-95970389c560",
+                "label": "Color",
+                "type": "text",
+                "propName": "color",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0add3f30-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0add3f30-b0ac-11ef-9ffa-95970389c560",
+                "label": "Condition",
+                "type": "select",
+                "propName": "condition",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0b022c50-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0b022c50-b0ac-11ef-9ffa-95970389c560",
+                "label": "Mileage",
+                "type": "number",
+                "propName": "mileage",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_0b26f260-b0ac-11ef-9ffa-95970389c560",
+                "fieldName": "control_0b26f260-b0ac-11ef-9ffa-95970389c560",
+                "label": "VIN",
+                "type": "text",
+                "propName": "vIN",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b6462370-b0af-11ef-ab28-11a3a7a8eb2e",
+                "fieldName": "control_b6462370-b0af-11ef-ab28-11a3a7a8eb2e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_09f57740-b0ac-11ef-9ffa-95970389c560",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_09f57740-b0ac-11ef-9ffa-95970389c560",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_09f57740-b0ac-11ef-9ffa-95970389c560_row_09f57741-b0ac-11ef-9ffa-95970389c560",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "cars",
+  "storageType": "dashboard",
+  "title": "cars"
+}

@@ -1,0 +1,217 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "assignedTo": {
+      "displayName": "Assigned To",
+      "order": 7,
+      "type": "user"
+    },
+    "complaintType": {
+      "displayName": "Complaint Type",
+      "order": 2,
+      "type": "select"
+    },
+    "dateFiled": {
+      "displayName": "Date Filed",
+      "order": 3,
+      "type": "date"
+    },
+    "details": {
+      "displayName": "Details",
+      "order": 6,
+      "type": "multiline_text"
+    },
+    "employeeName": {
+      "displayName": "Employee Name",
+      "order": 1,
+      "type": "string"
+    },
+    "followupDate": {
+      "displayName": "Follow-up Date",
+      "order": 9,
+      "type": "date"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 10,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "resolution": {
+      "displayName": "Resolution",
+      "order": 8,
+      "type": "text_editor"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 4,
+      "type": "workflow"
+    },
+    "urgency": {
+      "displayName": "Urgency",
+      "order": 5,
+      "type": "select"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_796114",
+        "label": "",
+        "clientKey": "section_796114",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_796114_row_339589",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_342a19f2-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_342a19f2-f2b9-11ee-a455-adeec78f747c",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_345dfb30-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_345dfb30-f2b9-11ee-a455-adeec78f747c",
+                "label": "Employee Name",
+                "type": "text",
+                "propName": "employeeName",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_34a0f7a0-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_34a0f7a0-f2b9-11ee-a455-adeec78f747c",
+                "label": "Complaint Type",
+                "type": "select",
+                "propName": "complaintType",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_34e3cd00-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_34e3cd00-f2b9-11ee-a455-adeec78f747c",
+                "label": "Date Filed",
+                "type": "datepicker",
+                "propName": "dateFiled",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_353fa8a0-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_353fa8a0-f2b9-11ee-a455-adeec78f747c",
+                "label": "Status",
+                "type": "workflow",
+                "propName": "status",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_35842bb0-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_35842bb0-f2b9-11ee-a455-adeec78f747c",
+                "label": "Urgency",
+                "type": "select",
+                "propName": "urgency",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_35c6b2f0-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_35c6b2f0-f2b9-11ee-a455-adeec78f747c",
+                "label": "Details",
+                "type": "multiline_text",
+                "propName": "details",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_360bab30-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_360bab30-f2b9-11ee-a455-adeec78f747c",
+                "label": "Assigned To",
+                "type": "user",
+                "propName": "assignedTo",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_36507c60-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_36507c60-f2b9-11ee-a455-adeec78f747c",
+                "label": "Resolution",
+                "type": "text_editor",
+                "propName": "resolution",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_36a923b0-f2b9-11ee-a455-adeec78f747c",
+                "fieldName": "control_36a923b0-f2b9-11ee-a455-adeec78f747c",
+                "label": "Follow-up Date",
+                "type": "datepicker",
+                "propName": "followupDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_bbe74990-f295-11ee-becb-d3f0a261955d",
+                "fieldName": "control_bbe74990-f295-11ee-becb-d3f0a261955d",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_342a19f0-f2b9-11ee-a455-adeec78f747c",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_342a19f0-f2b9-11ee-a455-adeec78f747c",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_342a19f0-f2b9-11ee-a455-adeec78f747c_row_342a19f1-f2b9-11ee-a455-adeec78f747c",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "hRComplaints",
+  "storageType": "dashboard",
+  "title": "hRComplaints"
+}

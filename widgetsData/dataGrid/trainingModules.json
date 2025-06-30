@@ -1,0 +1,140 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "date": {
+      "displayName": "Date",
+      "order": 1,
+      "type": "date"
+    },
+    "description": {
+      "displayName": "Description",
+      "order": 4,
+      "type": "string"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 5,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "renewal": {
+      "displayName": "Renewal",
+      "order": 2,
+      "type": "date"
+    },
+    "type": {
+      "displayName": "Type",
+      "order": 3,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_266344",
+        "label": "",
+        "clientKey": "section_266344",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_266344_row_233975",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_86b95152-f100-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_86b95152-f100-11ee-97a7-85c48e2e611b",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_86e5df90-f100-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_86e5df90-f100-11ee-97a7-85c48e2e611b",
+                "label": "Date",
+                "type": "datepicker",
+                "propName": "date",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_87135830-f100-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_87135830-f100-11ee-97a7-85c48e2e611b",
+                "label": "Renewal",
+                "type": "datepicker",
+                "propName": "renewal",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_874b5820-f100-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_874b5820-f100-11ee-97a7-85c48e2e611b",
+                "label": "Type",
+                "type": "text",
+                "propName": "type",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a7c19600-f100-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_a7c19600-f100-11ee-97a7-85c48e2e611b",
+                "label": "Description",
+                "type": "text",
+                "propName": "description",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9dc87180-f0da-11ee-a0f0-7feaedc6b4e5",
+                "fieldName": "control_9dc87180-f0da-11ee-a0f0-7feaedc6b4e5",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_86b95150-f100-11ee-97a7-85c48e2e611b",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_86b95150-f100-11ee-97a7-85c48e2e611b",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_86b95150-f100-11ee-97a7-85c48e2e611b_row_86b95151-f100-11ee-97a7-85c48e2e611b",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "trainingModules",
+  "storageType": "dashboard",
+  "title": "trainingModules"
+}

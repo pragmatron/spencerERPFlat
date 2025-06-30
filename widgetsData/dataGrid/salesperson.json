@@ -1,0 +1,263 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "commissionRate": {
+      "displayName": "Commission Rate",
+      "order": 11,
+      "type": "number"
+    },
+    "complaintTracker_instance": {
+      "dataGrid": "complaintTracker",
+      "displayName": "Complaint Tracker",
+      "filterColumn": "salesperson",
+      "order": 10,
+      "type": "datagrid"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "opportunities_instance": {
+      "dataGrid": "opportunities",
+      "displayName": "Opportunities",
+      "filterColumn": "salesperson",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "workOrderBatches_instance": {
+      "dataGrid": "workOrderBatches",
+      "displayName": "Work Order Batches",
+      "filterColumn": "salesperson",
+      "order": 9,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_784323",
+        "label": "",
+        "clientKey": "section_784323",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_784323_row_505769",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_24edf982-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_24edf982-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_c85939d0-71a4-11ee-843b-6b0c4d379554",
+                "fieldName": "control_c85939d0-71a4-11ee-843b-6b0c4d379554",
+                "label": "Opportunities",
+                "type": "datagrid",
+                "propName": "opportunities_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_ecae5bd0-c433-11ee-ace7-41002e992cd1",
+                "fieldName": "control_ecae5bd0-c433-11ee-ace7-41002e992cd1",
+                "label": "Work Order Batches",
+                "type": "datagrid",
+                "propName": "workOrderBatches_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_1ff7bef0-e2fc-11ee-b382-07d0637641dc",
+                "fieldName": "control_1ff7bef0-e2fc-11ee-b382-07d0637641dc",
+                "label": "Complaint Tracker",
+                "type": "datagrid",
+                "propName": "complaintTracker_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_dc10fb20-b703-11ef-8468-add8ce7c729d",
+                "fieldName": "control_dc10fb20-b703-11ef-8468-add8ce7c729d",
+                "label": "Commission Rate",
+                "type": "number",
+                "propName": "commissionRate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_24edf980-3832-11ee-ab03-71422a7e0b6a",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_24edf980-3832-11ee-ab03-71422a7e0b6a",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_24edf980-3832-11ee-ab03-71422a7e0b6a_row_24edf981-3832-11ee-ab03-71422a7e0b6a",
+            "controls": [
+              {
+                "name": "control_250ad050-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_250ad050-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_2525f970-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_2525f970-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_254e41f0-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_254e41f0-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_2574dcc0-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_2574dcc0-3832-11ee-ab03-71422a7e0b6a",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_2591daa0-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_2591daa0-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_25afe9f0-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_25afe9f0-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_25cfce00-3832-11ee-ab03-71422a7e0b6a",
+                "fieldName": "control_25cfce00-3832-11ee-ab03-71422a7e0b6a",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "salesperson",
+  "storageType": "dashboard",
+  "title": "Salesperson"
+}

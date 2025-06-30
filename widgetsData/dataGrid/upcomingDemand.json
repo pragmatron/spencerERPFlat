@@ -1,0 +1,256 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"dateWeek\",\"operator\":\"date\",\"value\":null,\"name\":\"Date Week\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "dateWeek": {
+      "displayName": "Date Week",
+      "order": 9,
+      "type": "date"
+    },
+    "estimatedQuantity": {
+      "displayName": "Estimated Quantity",
+      "order": 10,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "materialConsumed_instance": {
+      "dataGrid": "materialConsumed",
+      "displayName": "Material Consumed",
+      "filterColumn": "upcomingDemand",
+      "order": 11,
+      "type": "datagrid"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "product": {
+      "displayName": "Product",
+      "lookUpTable": "products",
+      "order": 8,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_762996",
+        "label": "",
+        "clientKey": "section_762996",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_762996_row_761825",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_2872bdd2-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_2872bdd2-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2fadf010-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_2fadf010-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Product",
+                "type": "lookup",
+                "propName": "product",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_35514440-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_35514440-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Date Week",
+                "type": "datepicker",
+                "propName": "dateWeek",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3ac79500-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_3ac79500-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Estimated Quantity",
+                "type": "number",
+                "propName": "estimatedQuantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_67427740-f680-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_67427740-f680-11ee-b5cd-eb4d3d8714f4",
+                "label": "Material Consumed",
+                "type": "datagrid",
+                "propName": "materialConsumed_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_2872bdd0-f67c-11ee-b5cd-eb4d3d8714f4",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_2872bdd0-f67c-11ee-b5cd-eb4d3d8714f4",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_2872bdd0-f67c-11ee-b5cd-eb4d3d8714f4_row_2872bdd1-f67c-11ee-b5cd-eb4d3d8714f4",
+            "controls": [
+              {
+                "name": "control_28af0380-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_28af0380-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_28dd1860-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_28dd1860-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2912f570-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_2912f570-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_29474be0-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_29474be0-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_29871400-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_29871400-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_29bf3b00-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_29bf3b00-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2a5bf030-f67c-11ee-b5cd-eb4d3d8714f4",
+                "fieldName": "control_2a5bf030-f67c-11ee-b5cd-eb4d3d8714f4",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "upcomingDemand",
+  "storageType": "dashboard",
+  "title": "Upcoming Demand"
+}

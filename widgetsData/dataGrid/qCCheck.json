@@ -1,0 +1,279 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"completed\",\"operator\":\"checkbox\",\"value\":false,\"name\":\"Completed\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "assignedTo": {
+      "displayName": "Assigned To",
+      "order": 9,
+      "type": "user"
+    },
+    "attachment": {
+      "displayName": "Attachment",
+      "order": 11,
+      "type": "files"
+    },
+    "completed": {
+      "displayName": "Completed",
+      "order": 10,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "image": {
+      "displayName": "Image",
+      "order": 12,
+      "type": "profile_image"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "notes": {
+      "displayName": "Notes",
+      "order": 8,
+      "type": "multiline_text"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_755495",
+        "label": "",
+        "clientKey": "section_755495",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_755495_row_995120",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_46bf6960-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_46bf6960-9910-11ee-8faa-77799c325b04",
+                "label": "Notes",
+                "type": "multiline_text",
+                "propName": "notes",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_4b9b4ee0-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_4b9b4ee0-9910-11ee-8faa-77799c325b04",
+                "label": "Assigned To",
+                "type": "user",
+                "propName": "assignedTo",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_401098a1-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_401098a1-9910-11ee-8faa-77799c325b04",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_53184510-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_53184510-9910-11ee-8faa-77799c325b04",
+                "label": "Attachment",
+                "type": "files",
+                "propName": "attachment",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_4f786200-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_4f786200-9910-11ee-8faa-77799c325b04",
+                "label": "Completed",
+                "type": "checkbox",
+                "propName": "completed",
+                "className": "col-md-6",
+                "isChecked": false,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_5949a870-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_5949a870-9910-11ee-8faa-77799c325b04",
+                "label": "Image",
+                "type": "profile_image",
+                "propName": "image",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "skipCrop": true,
+                "gridId": "qCCheck"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_40107190-9910-11ee-8faa-77799c325b04",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_40107190-9910-11ee-8faa-77799c325b04",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_40107190-9910-11ee-8faa-77799c325b04_row_401098a0-9910-11ee-8faa-77799c325b04",
+            "controls": [
+              {
+                "name": "control_403d9c10-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_403d9c10-9910-11ee-8faa-77799c325b04",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4062d750-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_4062d750-9910-11ee-8faa-77799c325b04",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_40841af0-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_40841af0-9910-11ee-8faa-77799c325b04",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_40a67000-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_40a67000-9910-11ee-8faa-77799c325b04",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_40c62d00-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_40c62d00-9910-11ee-8faa-77799c325b04",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_410c0fa0-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_410c0fa0-9910-11ee-8faa-77799c325b04",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4141ecb0-9910-11ee-8faa-77799c325b04",
+                "fieldName": "control_4141ecb0-9910-11ee-8faa-77799c325b04",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "qCCheck",
+  "storageType": "dashboard",
+  "title": "QC Check"
+}

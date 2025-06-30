@@ -1,0 +1,173 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "date": {
+      "displayName": "Date",
+      "order": 3,
+      "type": "date"
+    },
+    "efficiencyScore": {
+      "displayName": "Efficiency Score",
+      "order": 6,
+      "type": "number"
+    },
+    "employeeID": {
+      "displayName": "Employee ID",
+      "order": 2,
+      "type": "number"
+    },
+    "employeeName": {
+      "displayName": "Employee Name",
+      "order": 1,
+      "type": "string"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "taskCompleted": {
+      "displayName": "Task Completed",
+      "order": 5,
+      "type": "multiline_text"
+    },
+    "timeSpent": {
+      "displayName": "Time Spent",
+      "order": 4,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_794633",
+        "label": "",
+        "clientKey": "section_794633",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_794633_row_178947",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e506e672-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e506e672-3311-11ef-b140-0dc0f029d22e",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e5599a50-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e5599a50-3311-11ef-b140-0dc0f029d22e",
+                "label": "Employee Name",
+                "type": "text",
+                "propName": "employeeName",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e5b15740-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e5b15740-3311-11ef-b140-0dc0f029d22e",
+                "label": "Employee ID",
+                "type": "number",
+                "propName": "employeeID",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e614acf0-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e614acf0-3311-11ef-b140-0dc0f029d22e",
+                "label": "Date",
+                "type": "datepicker",
+                "propName": "date",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e66d5440-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e66d5440-3311-11ef-b140-0dc0f029d22e",
+                "label": "Time Spent",
+                "type": "number",
+                "propName": "timeSpent",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e6bd21f0-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e6bd21f0-3311-11ef-b140-0dc0f029d22e",
+                "label": "Task Completed",
+                "type": "multiline_text",
+                "propName": "taskCompleted",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e70fd5d0-3311-11ef-b140-0dc0f029d22e",
+                "fieldName": "control_e70fd5d0-3311-11ef-b140-0dc0f029d22e",
+                "label": "Efficiency Score",
+                "type": "number",
+                "propName": "efficiencyScore",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a60ffc50-3315-11ef-aeae-17f749742976",
+                "fieldName": "control_a60ffc50-3315-11ef-aeae-17f749742976",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_e506e670-3311-11ef-b140-0dc0f029d22e",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_e506e670-3311-11ef-b140-0dc0f029d22e",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_e506e670-3311-11ef-b140-0dc0f029d22e_row_e506e671-3311-11ef-b140-0dc0f029d22e",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "employeeEfficiency",
+  "storageType": "dashboard",
+  "title": "employeeEfficiency"
+}

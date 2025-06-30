@@ -1,0 +1,9 @@
+{
+  "cardBackgroundColor": "white",
+  "cardOutlineTheme": "darkBoxShadow",
+  "dataGridTheme": "striped",
+  "leftNavBarTheme": "none",
+  "mainBackgroundColor": "dark",
+  "navBarTheme": "dark",
+  "navPlacement": "sidebar"
+}

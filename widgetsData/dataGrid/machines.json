@@ -1,0 +1,224 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "age": {
+      "displayName": "Age",
+      "order": 2,
+      "type": "number"
+    },
+    "lastMaintenanceDate": {
+      "displayName": "Last Maintenance Date",
+      "order": 3,
+      "type": "date"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 8,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "order": 1,
+      "type": "string"
+    },
+    "machinefixticket_instance": {
+      "dataGrid": "machinefixticket",
+      "displayName": "Machine fix ticket",
+      "filterColumn": "machines",
+      "order": 9,
+      "type": "datagrid"
+    },
+    "manufacturer": {
+      "displayName": "Manufacturer",
+      "order": 7,
+      "type": "string"
+    },
+    "model": {
+      "displayName": "Model",
+      "order": 6,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextMaintDate": {
+      "displayName": "Next Maint Date",
+      "invisible": true,
+      "order": 10,
+      "type": "date"
+    },
+    "serialNumber": {
+      "displayName": "Serial Number",
+      "order": 5,
+      "type": "string"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 4,
+      "type": "select"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_759147",
+        "label": "",
+        "clientKey": "section_759147",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_759147_row_62732",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_3e2a8920-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3e2a8920-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3e7a08b0-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3e7a08b0-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Location",
+                "type": "text",
+                "propName": "location",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3ecb8410-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3ecb8410-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Age",
+                "type": "number",
+                "propName": "age",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3f1a6760-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3f1a6760-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Last Maintenance Date",
+                "type": "datepicker",
+                "propName": "lastMaintenanceDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "machines"
+              },
+              {
+                "name": "control_3f68d580-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3f68d580-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Status",
+                "type": "select",
+                "propName": "status",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_146c94a0-9613-11ef-8b25-15cd42c598b4",
+                "fieldName": "control_146c94a0-9613-11ef-8b25-15cd42c598b4",
+                "label": "Next Maint Date",
+                "type": "datepicker",
+                "propName": "nextMaintDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_4054bc20-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_4054bc20-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Manufacturer",
+                "type": "text",
+                "propName": "manufacturer",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3fb8ca40-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_3fb8ca40-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Serial Number",
+                "type": "text",
+                "propName": "serialNumber",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_40047940-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_40047940-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Model",
+                "type": "text",
+                "propName": "model",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_10fc2b50-37b3-11ef-9590-a72a59501f06",
+                "fieldName": "control_10fc2b50-37b3-11ef-9590-a72a59501f06",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_ea95b5f0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_ea95b5f0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Machine fix ticket",
+                "type": "datagrid",
+                "propName": "machinefixticket_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_3e2a6210-3685-11ef-b24a-b96ad8d1a9b3",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_3e2a6210-3685-11ef-b24a-b96ad8d1a9b3",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_3e2a6210-3685-11ef-b24a-b96ad8d1a9b3_row_3e2a6211-3685-11ef-b24a-b96ad8d1a9b3",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "machines",
+  "storageType": "dashboard",
+  "title": "machines"
+}

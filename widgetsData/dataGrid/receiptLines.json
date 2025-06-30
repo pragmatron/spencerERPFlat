@@ -1,0 +1,559 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "closed": {
+      "displayName": "Closed",
+      "invisible": true,
+      "order": 19,
+      "type": "checkbox"
+    },
+    "closedShort": {
+      "displayName": "Closed Short",
+      "invisible": true,
+      "order": 21,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 8,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 12,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 11,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 6,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "invisible": false,
+      "lookUpTable": "locations",
+      "order": 0,
+      "type": "lookup"
+    },
+    "locationInventory_instance": {
+      "dataGrid": "locationInventory",
+      "displayName": "Location Inventory",
+      "filterColumn": "receiptLine",
+      "order": 23,
+      "type": "datagrid"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 1,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 7,
+      "type": "user"
+    },
+    "part": {
+      "Width": "120px",
+      "displayName": "Part",
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 5,
+      "type": "lookup"
+    },
+    "price": {
+      "displayName": "Price",
+      "invisible": false,
+      "order": 14,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "purchaseLine": {
+      "Width": "168px",
+      "displayName": "Purchase Line",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "purchaseLines",
+      "order": 4,
+      "type": "lookup"
+    },
+    "purchaseOrder": {
+      "Width": "171px",
+      "displayName": "Purchase Order",
+      "invisible": false,
+      "lookUpTable": "purchaseOrders",
+      "order": 3,
+      "type": "lookup"
+    },
+    "quantityOrdered": {
+      "displayName": "Quantity Ordered",
+      "invisible": true,
+      "order": 13,
+      "type": "number"
+    },
+    "quantityReceived": {
+      "Width": "133px",
+      "displayName": "Quantity Received",
+      "invisible": false,
+      "order": 2,
+      "type": "number"
+    },
+    "receipt": {
+      "displayName": "Receipt",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "receipts",
+      "order": 15,
+      "type": "lookup"
+    },
+    "receiveToInventory": {
+      "displayName": "Receive To Inventory",
+      "invisible": false,
+      "order": 23,
+      "type": "custom"
+    },
+    "received": {
+      "displayName": "Received",
+      "invisible": true,
+      "order": 18,
+      "type": "checkbox"
+    },
+    "receivedDate": {
+      "Width": "175px",
+      "displayName": "Received Date",
+      "invisible": true,
+      "order": 17,
+      "type": "date"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 9,
+      "type": "string"
+    },
+    "vendor": {
+      "displayName": "Vendor",
+      "invisible": true,
+      "lookUpTable": "vendors",
+      "order": 16,
+      "type": "lookup"
+    },
+    "vendorBillAmount": {
+      "displayName": "Vendor Bill Amount",
+      "invisible": true,
+      "order": 22,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "vendorBillNumber": {
+      "displayName": "Vendor Bill Number",
+      "invisible": true,
+      "order": 20,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_974446",
+        "label": "Receipt Line",
+        "clientKey": "section_974446",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_974446_row_6448",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b1e38b10-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_b1e38b10-c5eb-11ee-b77d-d797341c053c",
+                "label": "Receipt",
+                "type": "lookup",
+                "propName": "receipt",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "receiptLines",
+                "tooltip": "wdadad"
+              },
+              {
+                "name": "control_8f2156d0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8f2156d0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Receipt Line",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_e7f2c410-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_e7f2c410-c5ea-11ee-b77d-d797341c053c",
+                "label": "Quantity Ordered",
+                "type": "number",
+                "propName": "quantityOrdered",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true,
+                "expression": "rowData.$purchaseLine.quantity",
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_fe09dd40-d0c8-11ee-ac55-831304816281",
+                "fieldName": "control_fe09dd40-d0c8-11ee-ac55-831304816281",
+                "label": "Location",
+                "type": "lookup",
+                "propName": "location",
+                "className": "col-md-6",
+                "required": true,
+                "expression": "rowData.$part.defaultLocation",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true,
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_f0e93ae0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_f0e93ae0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Purchase Order",
+                "type": "lookup",
+                "propName": "purchaseOrder",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "receiptLines",
+                "sum": true,
+                "expression": "rowData.$purchaseLine.purchaseOrder"
+              },
+              {
+                "name": "control_f7254ca0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_f7254ca0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Purchase Line",
+                "type": "lookup",
+                "propName": "purchaseLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_206b1860-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_206b1860-c5eb-11ee-b77d-d797341c053c",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "receiptLines",
+                "sum": true,
+                "expression": "rowData.purchaseLine && rowData.$purchaseLine.part"
+              },
+              {
+                "name": "control_9555f910-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_9555f910-c5eb-11ee-b77d-d797341c053c",
+                "label": "Price",
+                "type": "number",
+                "propName": "price",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receiptLines",
+                "sum": true,
+                "expression": "rowData.$purchaseLine.totalLinePrice"
+              },
+              {
+                "name": "control_dbd37980-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_dbd37980-c5eb-11ee-b77d-d797341c053c",
+                "label": "Vendor",
+                "type": "lookup",
+                "propName": "vendor",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true,
+                "expression": "rowData.$purchaseOrder.vendor",
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_e4e42f10-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_e4e42f10-c5eb-11ee-b77d-d797341c053c",
+                "label": "Received Date",
+                "type": "datepicker",
+                "propName": "receivedDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_ecf30500-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_ecf30500-c5eb-11ee-b77d-d797341c053c",
+                "label": "Received",
+                "type": "checkbox",
+                "propName": "received",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_f45e6f00-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_f45e6f00-c5eb-11ee-b77d-d797341c053c",
+                "label": "Quantity Received",
+                "type": "number",
+                "propName": "quantityReceived",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "required": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receiptLines",
+                "sum": false
+              },
+              {
+                "name": "control_fa5f4c80-c5eb-11ee-b77d-d797341c053c",
+                "fieldName": "control_fa5f4c80-c5eb-11ee-b77d-d797341c053c",
+                "label": "Closed",
+                "type": "checkbox",
+                "propName": "closed",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_08b44650-c5ec-11ee-b77d-d797341c053c",
+                "fieldName": "control_08b44650-c5ec-11ee-b77d-d797341c053c",
+                "label": "Vendor Bill Number",
+                "type": "text",
+                "propName": "vendorBillNumber",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_13df2950-c5ec-11ee-b77d-d797341c053c",
+                "fieldName": "control_13df2950-c5ec-11ee-b77d-d797341c053c",
+                "label": "Closed Short",
+                "type": "checkbox",
+                "propName": "closedShort",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_8f212fc0-c5ea-11ee-b77d-d797341c053c",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_8f212fc0-c5ea-11ee-b77d-d797341c053c",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_8f212fc0-c5ea-11ee-b77d-d797341c053c_row_8f212fc1-c5ea-11ee-b77d-d797341c053c",
+            "controls": [
+              {
+                "name": "control_8f5e5fd0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8f5e5fd0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_8f8fd010-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8f8fd010-c5ea-11ee-b77d-d797341c053c",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1f58efa0-c5ec-11ee-b77d-d797341c053c",
+                "fieldName": "control_1f58efa0-c5ec-11ee-b77d-d797341c053c",
+                "label": "Vendor Bill Amount",
+                "type": "number",
+                "propName": "vendorBillAmount",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receiptLines"
+              },
+              {
+                "name": "control_8fcbeeb0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_8fcbeeb0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_90152cb0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_90152cb0-c5ea-11ee-b77d-d797341c053c",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_90540a70-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_90540a70-c5ea-11ee-b77d-d797341c053c",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_908553a0-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_908553a0-c5ea-11ee-b77d-d797341c053c",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_90bc4220-c5ea-11ee-b77d-d797341c053c",
+                "fieldName": "control_90bc4220-c5ea-11ee-b77d-d797341c053c",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_33a26ae0-c5ec-11ee-b77d-d797341c053c",
+                "fieldName": "control_33a26ae0-c5ec-11ee-b77d-d797341c053c",
+                "label": "Receive To Inventory",
+                "type": "custom",
+                "propName": "receiveToInventory",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\nvariant=\"success\"\r\n\r\n:disabled='rowData.received || rowData.closed'\r\n\r\n\r\n@click='receiveToInventory(rowData)'\r\n\r\n>\r\n\r\nReceive to Inventory\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "receiptLines"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_176244",
+        "label": "Location Inventory",
+        "clientKey": "section_176244",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_176244_row_747210",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_36b4be80-c5ed-11ee-b77d-d797341c053c",
+                "fieldName": "control_36b4be80-c5ed-11ee-b77d-d797341c053c",
+                "label": "Location Inventory",
+                "type": "datagrid",
+                "propName": "locationInventory_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "receiptLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "receiptLines",
+  "storageType": "dashboard",
+  "title": "Receipt Lines",
+  "views": {
+    "default": {
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": true,
+      "displayTotalValue": false,
+      "readOnly": false,
+      "recordCustomCode": "<template>\r\n  <!-- Using rowData.rowKey for unique identifier -->\r\n  <div \r\n    \r\n  >\r\n    <!-- Wrapper with border -->\r\n    <div :style=\"{border: '2px solid #ddd', marginBottom: '10px' }\">\r\n      <!-- Toggle header -->\r\n      <div \r\n        @click=\"$setGlobalModel('collapse_grid_'+rowData.rowKey,!$getGlobalModel('collapse_grid_'+rowData.rowKey)? true:false)\"\r\n  \r\n      >\r\n        <span :style=\"{ marginRight: '5px' }\">\r\n          {{ $getGlobalModel('collapse_grid_'+rowData.rowKey) ? '▼' : '▶' }}\r\n        </span>\r\n        <span>Toggle Details</span>\r\n      </div>\r\n\r\n      <!-- Grid content -->\r\n      <div\r\n        v-if=\"$getGlobalModel('collapse_grid_'+rowData.rowKey)\"\r\n        :style=\"{ padding: '0 0 0 10px' }\"\r\n      >\r\n        <data-grid \r\n          gridId=\"inventoryTransaction\"\r\n          parentGridId=\"receiptLines\"\r\n          view=\"default\"\r\n          fbField=\"receiptLine\"\r\n          :fbFieldFilterValue=\"rowData.rowKey\"\r\n          :parentRowKey=\"rowData.rowKey\"\r\n          :hideToolbar=\"true\"\r\n          :disableControls=\"true\"\r\n          :displayCompact=\"true\"\r\n\t\tclass=\"_compact\"\r\n        ></data-grid>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n",
+      "title": "Default"
+    }
+  },
+  "viewsOrder": [
+    "default"
+  ]
+}

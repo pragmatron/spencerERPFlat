@@ -1,0 +1,203 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "files": {
+      "displayName": "files",
+      "order": 8,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_675036",
+        "label": "",
+        "clientKey": "section_675036",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_675036_row_552239",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_cfd4b1f0-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_cfd4b1f0-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_d3ff21c0-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d3ff21c0-ceda-11ef-a16c-653a8f9b523d",
+                "label": "files",
+                "type": "files",
+                "propName": "files",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_cfd48ae0-ceda-11ef-a16c-653a8f9b523d",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_cfd48ae0-ceda-11ef-a16c-653a8f9b523d",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_cfd48ae0-ceda-11ef-a16c-653a8f9b523d_row_cfd48ae1-ceda-11ef-a16c-653a8f9b523d",
+            "controls": [
+              {
+                "name": "control_d005ad00-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d005ad00-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d04aa540-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d04aa540-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d080a960-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d080a960-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d0b35220-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d0b35220-ceda-11ef-a16c-653a8f9b523d",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d0e47440-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d0e47440-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d11bff00-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d11bff00-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d1640480-ceda-11ef-a16c-653a8f9b523d",
+                "fieldName": "control_d1640480-ceda-11ef-a16c-653a8f9b523d",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "instructionspage",
+  "storageType": "dashboard",
+  "title": "instructions page"
+}

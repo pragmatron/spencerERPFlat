@@ -1,0 +1,1158 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"nCRStatus\",\"operator\":\"in\",\"value\":[],\"name\":\"NCR Status\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "attachments": {
+      "displayName": "Attachments",
+      "invisible": true,
+      "order": 29,
+      "type": "files"
+    },
+    "capaNotes_instance": {
+      "dataGrid": "capaNotes",
+      "displayName": "Capa Notes",
+      "filterColumn": "nCR",
+      "order": 33,
+      "type": "datagrid"
+    },
+    "contact": {
+      "displayName": "Contact",
+      "invisible": false,
+      "lookUpTable": "contacts",
+      "order": 14,
+      "type": "lookup"
+    },
+    "correctiveActionRequired": {
+      "displayName": "Corrective Action Required?",
+      "invisible": true,
+      "order": 10,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "invisible": false,
+      "lookUpTable": "customers",
+      "order": 12,
+      "type": "lookup"
+    },
+    "departmentResponsibleForError": {
+      "displayName": "Department Responsible For Error",
+      "invisible": true,
+      "order": 21,
+      "type": "select"
+    },
+    "detailedPlan": {
+      "displayName": "Detailed Plan",
+      "invisible": true,
+      "order": 26,
+      "type": "custom"
+    },
+    "initiatedByCustomer": {
+      "displayName": "Initiated By Customer?",
+      "invisible": true,
+      "order": 16,
+      "type": "checkbox"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "nCRCreationDate": {
+      "displayName": "NCR Creation Date",
+      "invisible": true,
+      "order": 11,
+      "type": "date"
+    },
+    "nCRStage": {
+      "displayName": "NCR Stage",
+      "invisible": true,
+      "lookUpTable": "nCRStage",
+      "order": 8,
+      "type": "lookup"
+    },
+    "nCRStatus": {
+      "displayName": "NCR Status",
+      "invisible": true,
+      "lookUpTable": "nCRStatus",
+      "order": 32,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "operatorResponsibleForError": {
+      "displayName": "Operator Responsible For Error",
+      "invisible": true,
+      "lookUpTable": "operators",
+      "order": 19,
+      "type": "lookup"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "part": {
+      "displayName": "Part",
+      "invisible": true,
+      "lookUpTable": "parts",
+      "order": 9,
+      "type": "lookup"
+    },
+    "pictures": {
+      "displayName": "Pictures",
+      "invisible": true,
+      "order": 25,
+      "type": "profile_image"
+    },
+    "project": {
+      "displayName": "Project",
+      "invisible": true,
+      "lookUpTable": "projects",
+      "order": 20,
+      "type": "lookup"
+    },
+    "purchaseOrder": {
+      "displayName": "Purchase Order",
+      "invisible": true,
+      "lookUpTable": "purchaseOrders",
+      "order": 22,
+      "type": "lookup"
+    },
+    "qualityAlertIssued": {
+      "displayName": "Quality Alert Issued?",
+      "invisible": true,
+      "order": 30,
+      "type": "checkbox"
+    },
+    "quantity": {
+      "displayName": "Quantity",
+      "invisible": true,
+      "order": 15,
+      "type": "number"
+    },
+    "rootCause": {
+      "displayName": "Root Cause",
+      "invisible": true,
+      "order": 28,
+      "type": "multiline_text"
+    },
+    "rootCauseCategory": {
+      "displayName": "Root Cause Category",
+      "invisible": true,
+      "lookUpTable": "rootCauseCategory",
+      "order": 27,
+      "type": "lookup"
+    },
+    "salesOrder": {
+      "displayName": "Sales Order",
+      "invisible": true,
+      "lookUpTable": "opportunities",
+      "order": 17,
+      "type": "lookup"
+    },
+    "solution": {
+      "displayName": "Solution",
+      "invisible": true,
+      "order": 24,
+      "type": "multiline_text"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "submitNCR": {
+      "displayName": "Submit NCR",
+      "invisible": true,
+      "order": 31,
+      "startTitle": "Submit NCR",
+      "type": "workflow",
+      "workflow": "-NsNmIeoebs_F360rj5o"
+    },
+    "vendor": {
+      "displayName": "Vendor",
+      "invisible": false,
+      "lookUpTable": "vendors",
+      "order": 13,
+      "type": "lookup"
+    },
+    "vendorContact": {
+      "displayName": "Vendor Contact",
+      "invisible": true,
+      "lookUpTable": "contacts",
+      "order": 23,
+      "type": "lookup"
+    },
+    "workOrder": {
+      "displayName": "Work Order",
+      "invisible": true,
+      "lookUpTable": "opportunityLines",
+      "order": 18,
+      "type": "lookup"
+    }
+  },
+  "onRecordCreate": "let id = $getSharedModel('ncrIdIndex')\r\n  $setSharedModel('ncrIdIndex', id+1) \r\n\r\n\r\nlet nextID = 'NCR' + String(id).padStart(4,'0')\r\n  \r\nconsole.log('Next id NCR: ', nextID)\r\n    \r\nsetTimeout(() => {\r\n    $dgSetRowVals( 'nCR', rowKey, {\r\n        nCR: nextID,\r\n        name: nextID\r\n    })\r\n\r\n}, 250)",
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_459689",
+        "label": "NCR",
+        "clientKey": "section_459689",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_459689_row_368503",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b9d554d2-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_b9d554d2-ccca-11ee-b897-91e7572d9ee8",
+                "label": "NCR Title",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_f4307dc0-dc7f-11ee-ab5e-db257442dce7",
+                "fieldName": "control_f4307dc0-dc7f-11ee-ab5e-db257442dce7",
+                "label": "Submit NCR",
+                "type": "workflow",
+                "propName": "submitNCR",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_e52cec80-cfde-11ee-88b4-b999e885e16c",
+                "fieldName": "control_e52cec80-cfde-11ee-88b4-b999e885e16c",
+                "label": "NCR stage",
+                "type": "lookup",
+                "propName": "nCRStage",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_32022790-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_32022790-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_eceb5880-cfde-11ee-88b4-b999e885e16c",
+                "fieldName": "control_eceb5880-cfde-11ee-88b4-b999e885e16c",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_0007c570-cfdf-11ee-88b4-b999e885e16c",
+                "fieldName": "control_0007c570-cfdf-11ee-88b4-b999e885e16c",
+                "label": "NCR Creation Date",
+                "type": "datepicker",
+                "propName": "nCRCreationDate",
+                "className": "col-md-6",
+                "isTodayValue": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_f5a5b0b0-cfde-11ee-88b4-b999e885e16c",
+                "fieldName": "control_f5a5b0b0-cfde-11ee-88b4-b999e885e16c",
+                "label": "Corrective Action Required?",
+                "type": "checkbox",
+                "propName": "correctiveActionRequired",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_599f4f90-cfe4-11ee-88b4-b999e885e16c",
+                "fieldName": "control_599f4f90-cfe4-11ee-88b4-b999e885e16c",
+                "label": "Quality Alert Issued?",
+                "type": "checkbox",
+                "propName": "qualityAlertIssued",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_740352c0-dc85-11ee-9d4e-b3093faae09d",
+                "fieldName": "control_740352c0-dc85-11ee-9d4e-b3093faae09d",
+                "label": "NCR Status",
+                "type": "lookup",
+                "propName": "nCRStatus",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_e8cf3cc0-fc21-11ee-be2e-19f564ac19c4",
+                "fieldName": "control_e8cf3cc0-fc21-11ee-be2e-19f564ac19c4",
+                "label": "Capa Notes",
+                "type": "datagrid",
+                "propName": "capaNotes_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_b9d554d0-ccca-11ee-b897-91e7572d9ee8",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_b9d554d0-ccca-11ee-b897-91e7572d9ee8",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_b9d554d0-ccca-11ee-b897-91e7572d9ee8_row_b9d554d1-ccca-11ee-b897-91e7572d9ee8",
+            "controls": [
+              {
+                "name": "control_ba5692c0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_ba5692c0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_ba8cbdf0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_ba8cbdf0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_bac33740-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_bac33740-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_baf7dbd0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_baf7dbd0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_bb2f1870-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_bb2f1870-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_bb689f00-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_bb689f00-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_bba86720-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_bba86720-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_168480",
+        "label": "Customer",
+        "clientKey": "section_168480",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_168480_row_674606",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_6c0f4cb0-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_6c0f4cb0-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Initiated By Customer?",
+                "type": "checkbox",
+                "propName": "initiatedByCustomer",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_770b3070-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_770b3070-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Sales Order",
+                "type": "lookup",
+                "propName": "salesOrder",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_13ac7530-cfdf-11ee-88b4-b999e885e16c",
+                "fieldName": "control_13ac7530-cfdf-11ee-88b4-b999e885e16c",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-6",
+                "expression": "rowData.$salesOrder.soldToCustomer",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true
+              },
+              {
+                "name": "control_3953e480-cfdf-11ee-88b4-b999e885e16c",
+                "fieldName": "control_3953e480-cfdf-11ee-88b4-b999e885e16c",
+                "label": "Contact",
+                "type": "lookup",
+                "propName": "contact",
+                "className": "col-md-6",
+                "expression": "rowData.$customer.primaryContact",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "name": "section_37785",
+        "label": "Production",
+        "clientKey": "section_37785",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_37785_row_262444",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_9fea9940-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_9fea9940-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Work Order",
+                "type": "lookup",
+                "propName": "workOrder",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_c4f441f0-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_c4f441f0-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Operator Responsible For Error",
+                "type": "lookup",
+                "propName": "operatorResponsibleForError",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_cec205f0-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_cec205f0-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Project",
+                "type": "lookup",
+                "propName": "project",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_db97b2c0-cfe0-11ee-88b4-b999e885e16c",
+                "fieldName": "control_db97b2c0-cfe0-11ee-88b4-b999e885e16c",
+                "label": "Department Responsible For Error",
+                "type": "select",
+                "propName": "departmentResponsibleForError",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "Welding",
+                    "text": "Welding"
+                  },
+                  {
+                    "id": "Drilling",
+                    "text": "Drilling"
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "name": "section_714019",
+        "label": "Costs",
+        "clientKey": "section_714019",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_714019_row_20924",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "costs"
+      },
+      {
+        "name": "section_802505",
+        "label": "Vendor",
+        "clientKey": "section_802505",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_802505_row_963964",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_19683360-cfdf-11ee-88b4-b999e885e16c",
+                "fieldName": "control_19683360-cfdf-11ee-88b4-b999e885e16c",
+                "label": "Vendor",
+                "type": "lookup",
+                "propName": "vendor",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_8eb3a340-cfe2-11ee-88b4-b999e885e16c",
+                "fieldName": "control_8eb3a340-cfe2-11ee-88b4-b999e885e16c",
+                "label": "Purchase Order",
+                "type": "lookup",
+                "propName": "purchaseOrder",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_9cae4810-cfe2-11ee-88b4-b999e885e16c",
+                "fieldName": "control_9cae4810-cfe2-11ee-88b4-b999e885e16c",
+                "label": "Vendor Contact",
+                "type": "lookup",
+                "propName": "vendorContact",
+                "className": "col-md-6",
+                "expression": "rowData.$vendor.primaryContact",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true
+              },
+              {
+                "name": "control_a49068b0-cfe2-11ee-88b4-b999e885e16c",
+                "fieldName": "control_a49068b0-cfe2-11ee-88b4-b999e885e16c",
+                "label": "Solution",
+                "type": "multiline_text",
+                "propName": "solution",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_bc8bef70-cfe2-11ee-88b4-b999e885e16c",
+                "fieldName": "control_bc8bef70-cfe2-11ee-88b4-b999e885e16c",
+                "label": "Pictures",
+                "type": "profile_image",
+                "propName": "pictures",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "name": "section_983495",
+        "label": "Corrective Action",
+        "clientKey": "section_983495",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_983495_row_689671",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e698dbc0-cfe2-11ee-88b4-b999e885e16c",
+                "fieldName": "control_e698dbc0-cfe2-11ee-88b4-b999e885e16c",
+                "label": "Detailed Plan",
+                "type": "custom",
+                "propName": "detailedPlan",
+                "className": "col-md-12",
+                "customCode": "<h1>Provide detailed plan of action to correct the non-conformance discovered.</h1>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_2797b190-cfe4-11ee-88b4-b999e885e16c",
+                "fieldName": "control_2797b190-cfe4-11ee-88b4-b999e885e16c",
+                "label": "Root Cause Category",
+                "type": "lookup",
+                "propName": "rootCauseCategory",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_37a9ebc0-cfe4-11ee-88b4-b999e885e16c",
+                "fieldName": "control_37a9ebc0-cfe4-11ee-88b4-b999e885e16c",
+                "label": "Root Cause",
+                "type": "multiline_text",
+                "propName": "rootCause",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "nCR"
+              },
+              {
+                "name": "control_3c440d50-cfe4-11ee-88b4-b999e885e16c",
+                "fieldName": "control_3c440d50-cfe4-11ee-88b4-b999e885e16c",
+                "label": "Attachments",
+                "type": "files",
+                "propName": "attachments",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "Tabs and Sections"
+  },
+  "source": "nCR",
+  "storageType": "dashboard",
+  "tabs": {
+    "costs": {
+      "readOnly": false,
+      "title": "Costs"
+    },
+    "default": {
+      "title": "NCR"
+    }
+  },
+  "tabsOrder": [
+    "default",
+    "costs"
+  ],
+  "title": "NCR",
+  "views": {
+    "completed": {
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"nCRStatus\",\"operator\":\"in\",\"value\":[{\"value\":\"-NsO3ErNOfR_ItbMRxAp\",\"name\":\"Completed\"}],\"name\":\"NCR Status\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "attachments": {
+          "displayName": "Attachments",
+          "invisible": true,
+          "order": 29
+        },
+        "capaNotes_instance": {
+          "displayName": "Capa Notes",
+          "order": 33
+        },
+        "contact": {
+          "displayName": "Contact",
+          "invisible": true,
+          "order": 14
+        },
+        "correctiveActionRequired": {
+          "displayName": "Corrective Action Required?",
+          "invisible": true,
+          "order": 10
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "invisible": false,
+          "order": 12
+        },
+        "departmentResponsibleForError": {
+          "displayName": "Department Responsible For Error",
+          "invisible": true,
+          "order": 21
+        },
+        "detailedPlan": {
+          "displayName": "Detailed Plan",
+          "invisible": true,
+          "order": 26
+        },
+        "initiatedByCustomer": {
+          "displayName": "Initiated By Customer?",
+          "invisible": true,
+          "order": 16
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "nCRCreationDate": {
+          "displayName": "NCR Creation Date",
+          "invisible": true,
+          "order": 11
+        },
+        "nCRStage": {
+          "displayName": "NCR Stage",
+          "invisible": true,
+          "order": 8
+        },
+        "nCRStatus": {
+          "displayName": "NCR Status",
+          "invisible": true,
+          "order": 32
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "operatorResponsibleForError": {
+          "displayName": "Operator Responsible For Error",
+          "invisible": true,
+          "order": 19
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": true,
+          "order": 9
+        },
+        "pictures": {
+          "displayName": "Pictures",
+          "invisible": true,
+          "order": 25
+        },
+        "project": {
+          "displayName": "Project",
+          "invisible": true,
+          "order": 20
+        },
+        "purchaseOrder": {
+          "displayName": "Purchase Order",
+          "invisible": true,
+          "order": 22
+        },
+        "qualityAlertIssued": {
+          "displayName": "Quality Alert Issued?",
+          "invisible": true,
+          "order": 30
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": true,
+          "order": 15
+        },
+        "rootCause": {
+          "displayName": "Root Cause",
+          "invisible": true,
+          "order": 28
+        },
+        "rootCauseCategory": {
+          "displayName": "Root Cause Category",
+          "invisible": true,
+          "order": 27
+        },
+        "salesOrder": {
+          "displayName": "Sales Order",
+          "invisible": true,
+          "order": 17
+        },
+        "solution": {
+          "displayName": "Solution",
+          "invisible": true,
+          "order": 24
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "submitNCR": {
+          "displayName": "Submit NCR",
+          "invisible": true,
+          "order": 31
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "invisible": false,
+          "order": 13
+        },
+        "vendorContact": {
+          "displayName": "Vendor Contact",
+          "invisible": true,
+          "order": 23
+        },
+        "workOrder": {
+          "displayName": "Work Order",
+          "invisible": true,
+          "order": 18
+        }
+      },
+      "readOnly": false,
+      "title": "Completed"
+    },
+    "default": {
+      "title": "Overdue"
+    },
+    "iNP": {
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"nCRStatus\",\"operator\":\"in\",\"value\":[{\"value\":\"-NsO3DliAo7LUccQpZyJ\",\"name\":\"In Progress\"}],\"name\":\"NCR Status\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "attachments": {
+          "displayName": "Attachments",
+          "invisible": true,
+          "order": 29
+        },
+        "capaNotes_instance": {
+          "displayName": "Capa Notes",
+          "order": 33
+        },
+        "contact": {
+          "displayName": "Contact",
+          "invisible": true,
+          "order": 14
+        },
+        "correctiveActionRequired": {
+          "displayName": "Corrective Action Required?",
+          "invisible": true,
+          "order": 10
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "Customer",
+          "invisible": false,
+          "order": 12
+        },
+        "departmentResponsibleForError": {
+          "displayName": "Department Responsible For Error",
+          "invisible": true,
+          "order": 21
+        },
+        "detailedPlan": {
+          "displayName": "Detailed Plan",
+          "invisible": true,
+          "order": 26
+        },
+        "initiatedByCustomer": {
+          "displayName": "Initiated By Customer?",
+          "invisible": true,
+          "order": 16
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "nCRCreationDate": {
+          "displayName": "NCR Creation Date",
+          "invisible": true,
+          "order": 11
+        },
+        "nCRStage": {
+          "displayName": "NCR Stage",
+          "invisible": true,
+          "order": 8
+        },
+        "nCRStatus": {
+          "displayName": "NCR Status",
+          "invisible": true,
+          "order": 32
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "operatorResponsibleForError": {
+          "displayName": "Operator Responsible For Error",
+          "invisible": true,
+          "order": 19
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": true,
+          "order": 9
+        },
+        "pictures": {
+          "displayName": "Pictures",
+          "invisible": true,
+          "order": 25
+        },
+        "project": {
+          "displayName": "Project",
+          "invisible": true,
+          "order": 20
+        },
+        "purchaseOrder": {
+          "displayName": "Purchase Order",
+          "invisible": true,
+          "order": 22
+        },
+        "qualityAlertIssued": {
+          "displayName": "Quality Alert Issued?",
+          "invisible": true,
+          "order": 30
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": true,
+          "order": 15
+        },
+        "rootCause": {
+          "displayName": "Root Cause",
+          "invisible": true,
+          "order": 28
+        },
+        "rootCauseCategory": {
+          "displayName": "Root Cause Category",
+          "invisible": true,
+          "order": 27
+        },
+        "salesOrder": {
+          "displayName": "Sales Order",
+          "invisible": true,
+          "order": 17
+        },
+        "solution": {
+          "displayName": "Solution",
+          "invisible": true,
+          "order": 24
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "status": {
+          "displayName": "Status",
+          "invisible": true,
+          "order": 32
+        },
+        "submitNCR": {
+          "displayName": "Submit NCR",
+          "invisible": true,
+          "order": 31
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "invisible": false,
+          "order": 13
+        },
+        "vendorContact": {
+          "displayName": "Vendor Contact",
+          "invisible": true,
+          "order": 23
+        },
+        "workOrder": {
+          "displayName": "Work Order",
+          "invisible": true,
+          "order": 18
+        }
+      },
+      "readOnly": false,
+      "title": "In Progress"
+    }
+  },
+  "viewsOrder": [
+    "iNP",
+    "completed"
+  ]
+}

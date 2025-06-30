@@ -1,0 +1,695 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "dateHired": {
+      "displayName": "Date Hired",
+      "invisible": true,
+      "order": 13,
+      "type": "date"
+    },
+    "dateofbirth": {
+      "displayName": "Date of birth",
+      "invisible": true,
+      "order": 16,
+      "type": "date"
+    },
+    "documentation": {
+      "displayName": "Documentation",
+      "invisible": false,
+      "order": 10,
+      "type": "files"
+    },
+    "employeeStage": {
+      "displayName": "Employee Stage",
+      "invisible": true,
+      "lookUpTable": "employeeStage",
+      "order": 11,
+      "type": "lookup"
+    },
+    "hRPTO_instance": {
+      "dataGrid": "hRPTO",
+      "displayName": "HR PTO",
+      "filterColumn": "employee",
+      "order": 15,
+      "type": "datagrid"
+    },
+    "laborRate": {
+      "displayName": "Labor Rate",
+      "invisible": true,
+      "order": 17,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "nextReviewDate": {
+      "displayName": "Next Review Date",
+      "invisible": true,
+      "order": 14,
+      "type": "date"
+    },
+    "notesAndComments": {
+      "displayName": "Notes And Comments",
+      "invisible": true,
+      "order": 12,
+      "type": "multiline_text"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "photo": {
+      "displayName": "Photo",
+      "invisible": false,
+      "order": 21,
+      "type": "profile_image"
+    },
+    "pin": {
+      "displayName": "pin",
+      "order": 23,
+      "type": "number"
+    },
+    "purchaseOrders_instance": {
+      "dataGrid": "purchaseOrders",
+      "displayName": "Purchase Orders",
+      "filterColumn": "employee",
+      "order": 25,
+      "type": "datagrid"
+    },
+    "rate": {
+      "displayName": "Rate",
+      "invisible": false,
+      "order": 8,
+      "type": "number"
+    },
+    "resume": {
+      "displayName": "Resume",
+      "invisible": false,
+      "order": 9,
+      "type": "files"
+    },
+    "skillLevel": {
+      "displayName": "Skill Level",
+      "invisible": true,
+      "order": 20,
+      "type": "select"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "techEfficiency_instance": {
+      "dataGrid": "techEfficiency",
+      "displayName": "Tech Efficiency",
+      "filterColumn": "employee",
+      "order": 19,
+      "type": "datagrid"
+    },
+    "timeCards_instance": {
+      "dataGrid": "timeCards",
+      "displayName": "Time Cards",
+      "filterColumn": "employee",
+      "order": 22,
+      "type": "datagrid"
+    },
+    "timeEntries_instance": {
+      "dataGrid": "timeEntries",
+      "displayName": "Time Entries",
+      "filterColumn": "employee",
+      "order": 24,
+      "type": "datagrid"
+    },
+    "trainingModule_instance": {
+      "dataGrid": "trainingModule",
+      "displayName": "Training Module",
+      "filterColumn": "employee",
+      "order": 18,
+      "type": "datagrid"
+    },
+    "workOrderOperations_instance": {
+      "dataGrid": "workOrderOperations",
+      "displayName": "Work Order Operations",
+      "filterColumn": "currentEmployee",
+      "order": 26,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_197454",
+        "label": "",
+        "clientKey": "section_197454",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_197454_row_735555",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_f88cc392-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f88cc392-db2d-11ee-b796-eb84c346f879",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_83e12bf0-e166-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_83e12bf0-e166-11ee-990f-2fd7633d41c4",
+                "label": "Labor Rate",
+                "type": "number",
+                "propName": "laborRate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "employees"
+              },
+              {
+                "name": "control_fca46ea0-0cc5-11ef-9c64-39f1fc93b91d",
+                "fieldName": "control_fca46ea0-0cc5-11ef-9c64-39f1fc93b91d",
+                "label": "Skill Level",
+                "type": "select",
+                "propName": "skillLevel",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "1",
+                    "text": "low"
+                  },
+                  {
+                    "id": "2",
+                    "text": "med"
+                  },
+                  {
+                    "id": "3",
+                    "text": "large"
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "employees"
+              },
+              {
+                "name": "control_3ce38100-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_3ce38100-e150-11ee-990f-2fd7633d41c4",
+                "label": "Date Hired",
+                "type": "datepicker",
+                "propName": "dateHired",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_221cbfc0-e165-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_221cbfc0-e165-11ee-990f-2fd7633d41c4",
+                "label": "Date of birth",
+                "type": "datepicker",
+                "propName": "dateofbirth",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_4284b250-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_4284b250-e150-11ee-990f-2fd7633d41c4",
+                "label": "Next Review Date",
+                "type": "datepicker",
+                "propName": "nextReviewDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_fe3c73d0-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_fe3c73d0-db2d-11ee-b796-eb84c346f879",
+                "label": "Rate",
+                "type": "number",
+                "propName": "rate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_1f3b0920-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_1f3b0920-e150-11ee-990f-2fd7633d41c4",
+                "label": "Employee Stage",
+                "type": "lookup",
+                "propName": "employeeStage",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_34054d20-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_34054d20-e150-11ee-990f-2fd7633d41c4",
+                "label": "Notes And Comments",
+                "type": "multiline_text",
+                "propName": "notesAndComments",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "employees"
+              },
+              {
+                "name": "control_039662f0-db2e-11ee-b796-eb84c346f879",
+                "fieldName": "control_039662f0-db2e-11ee-b796-eb84c346f879",
+                "label": "Resume",
+                "type": "files",
+                "propName": "resume",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_08f61e70-db2e-11ee-b796-eb84c346f879",
+                "fieldName": "control_08f61e70-db2e-11ee-b796-eb84c346f879",
+                "label": "Documentation",
+                "type": "files",
+                "propName": "documentation",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "employees"
+              },
+              {
+                "name": "control_83e61270-dd8b-11ee-b71b-255475fda85a",
+                "fieldName": "control_83e61270-dd8b-11ee-b71b-255475fda85a",
+                "label": "Work Order Operations",
+                "type": "datagrid",
+                "propName": "workOrderOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b8da4690-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_b8da4690-e150-11ee-990f-2fd7633d41c4",
+                "label": "HR PTO",
+                "type": "datagrid",
+                "propName": "hRPTO_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_203a6d80-f103-11ee-97a7-85c48e2e611b",
+                "fieldName": "control_203a6d80-f103-11ee-97a7-85c48e2e611b",
+                "label": "Training Module",
+                "type": "datagrid",
+                "propName": "trainingModule_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_45ee9f00-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_45ee9f00-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Tech Efficiency",
+                "type": "datagrid",
+                "propName": "techEfficiency_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c8fb5be0-8ad8-11ef-a87a-2f5ad9967f36",
+                "fieldName": "control_c8fb5be0-8ad8-11ef-a87a-2f5ad9967f36",
+                "label": "Photo",
+                "type": "profile_image",
+                "propName": "photo",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_67a9ce40-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_67a9ce40-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "Time Cards",
+                "type": "datagrid",
+                "propName": "timeCards_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_6ff86c50-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_6ff86c50-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "pin",
+                "type": "number",
+                "propName": "pin",
+                "className": "col-md-6",
+                "decimalPlace": null,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "employees"
+              },
+              {
+                "name": "control_86d14500-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_86d14500-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "Time Entries",
+                "type": "datagrid",
+                "propName": "timeEntries_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_962d9cb0-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_962d9cb0-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "Work Order Operations",
+                "type": "datagrid",
+                "propName": "workOrderOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_6835bf70-e326-11ef-9895-f16cd63edbae",
+                "fieldName": "control_6835bf70-e326-11ef-9895-f16cd63edbae",
+                "label": "Purchase Orders",
+                "type": "datagrid",
+                "propName": "purchaseOrders_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_f88cc390-db2d-11ee-b796-eb84c346f879",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_f88cc390-db2d-11ee-b796-eb84c346f879",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_f88cc390-db2d-11ee-b796-eb84c346f879_row_f88cc391-db2d-11ee-b796-eb84c346f879",
+            "controls": [
+              {
+                "name": "control_f8c75b90-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f8c75b90-db2d-11ee-b796-eb84c346f879",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f9068770-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f9068770-db2d-11ee-b796-eb84c346f879",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f93ed580-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f93ed580-db2d-11ee-b796-eb84c346f879",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f97d3e10-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f97d3e10-db2d-11ee-b796-eb84c346f879",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f9b64f70-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f9b64f70-db2d-11ee-b796-eb84c346f879",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_f9e85bf0-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_f9e85bf0-db2d-11ee-b796-eb84c346f879",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_fa17a950-db2d-11ee-b796-eb84c346f879",
+                "fieldName": "control_fa17a950-db2d-11ee-b796-eb84c346f879",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "employees",
+  "storageType": "dashboard",
+  "title": "Employees",
+  "views": {
+    "test": {
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "dateHired": {
+          "displayName": "Date Hired",
+          "invisible": true,
+          "order": 13
+        },
+        "dateofbirth": {
+          "displayName": "Date of birth",
+          "invisible": true,
+          "order": 16
+        },
+        "documentation": {
+          "displayName": "Documentation",
+          "invisible": false,
+          "order": 10
+        },
+        "employeeStage": {
+          "displayName": "Employee Stage",
+          "invisible": true,
+          "order": 11
+        },
+        "hRPTO_instance": {
+          "displayName": "HR PTO",
+          "order": 15
+        },
+        "laborRate": {
+          "displayName": "Labor Rate",
+          "invisible": true,
+          "order": 17
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "nextReviewDate": {
+          "displayName": "Next Review Date",
+          "invisible": true,
+          "order": 14
+        },
+        "notesAndComments": {
+          "displayName": "Notes And Comments",
+          "invisible": true,
+          "order": 12
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "photo": {
+          "displayName": "Photo",
+          "invisible": true,
+          "order": 21
+        },
+        "pin": {
+          "displayName": "pin",
+          "order": 23
+        },
+        "purchaseOrders_instance": {
+          "displayName": "Purchase Orders",
+          "order": 25
+        },
+        "rate": {
+          "displayName": "Rate",
+          "invisible": false,
+          "order": 8
+        },
+        "resume": {
+          "displayName": "Resume",
+          "invisible": false,
+          "order": 9
+        },
+        "skillLevel": {
+          "displayName": "Skill Level",
+          "invisible": true,
+          "order": 20
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "techEfficiency_instance": {
+          "displayName": "Tech Efficiency",
+          "order": 19
+        },
+        "timeCards_instance": {
+          "displayName": "Time Cards",
+          "order": 22
+        },
+        "timeEntries_instance": {
+          "displayName": "Time Entries",
+          "order": 24
+        },
+        "trainingModule_instance": {
+          "displayName": "Training Module",
+          "order": 18
+        },
+        "workOrderOperations_instance": {
+          "displayName": "Work Order Operations",
+          "order": 26
+        }
+      },
+      "readOnly": false,
+      "recordCustomCode": "{{rowData.name}}",
+      "title": "test"
+    }
+  },
+  "viewsOrder": [
+    "test"
+  ]
+}

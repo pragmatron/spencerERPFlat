@@ -1,0 +1,172 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "dateReported": {
+      "displayName": "Date Reported",
+      "order": 4,
+      "type": "date"
+    },
+    "description": {
+      "displayName": "Description",
+      "order": 3,
+      "type": "multiline_text"
+    },
+    "employeeID": {
+      "displayName": "Employee ID",
+      "order": 1,
+      "type": "string"
+    },
+    "issueType": {
+      "displayName": "Issue Type",
+      "order": 2,
+      "type": "select"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "resolutionDetail": {
+      "displayName": "Resolution Detail",
+      "order": 6,
+      "type": "multiline_text"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 5,
+      "type": "select"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_466620",
+        "label": "",
+        "clientKey": "section_466620",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_466620_row_492320",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_3e10a192-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_3e10a192-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3e9a1ce0-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_3e9a1ce0-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Employee ID",
+                "type": "text",
+                "propName": "employeeID",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3f0bf180-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_3f0bf180-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Issue Type",
+                "type": "select",
+                "propName": "issueType",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3f7820d0-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_3f7820d0-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Description",
+                "type": "multiline_text",
+                "propName": "description",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_3ff4a3d0-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_3ff4a3d0-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Date Reported",
+                "type": "datepicker",
+                "propName": "dateReported",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_40662a50-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_40662a50-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Status",
+                "type": "select",
+                "propName": "status",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_40dda440-0e4e-11ef-8b2d-03c7719644a7",
+                "fieldName": "control_40dda440-0e4e-11ef-8b2d-03c7719644a7",
+                "label": "Resolution Detail",
+                "type": "multiline_text",
+                "propName": "resolutionDetail",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_6040d2c0-0ec2-11ef-92f5-6d305a7ba947",
+                "fieldName": "control_6040d2c0-0ec2-11ef-92f5-6d305a7ba947",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_3e10a190-0e4e-11ef-8b2d-03c7719644a7",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_3e10a190-0e4e-11ef-8b2d-03c7719644a7",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_3e10a190-0e4e-11ef-8b2d-03c7719644a7_row_3e10a191-0e4e-11ef-8b2d-03c7719644a7",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "hRIssues",
+  "storageType": "dashboard",
+  "title": "hRIssues"
+}

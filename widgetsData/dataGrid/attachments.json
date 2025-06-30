@@ -1,0 +1,231 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "files": {
+      "Width": "691px",
+      "displayName": "Files",
+      "order": 8,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "177px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "salesLine": {
+      "displayName": "Sales Line",
+      "lookUpTable": "opportunityLines",
+      "order": 9,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_620991",
+        "label": "",
+        "clientKey": "section_620991",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_620991_row_528143",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b2af2c22-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b2af2c22-5624-11ee-b617-d70ce54c0e63",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b871ef30-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b871ef30-5624-11ee-b617-d70ce54c0e63",
+                "label": "Files",
+                "type": "files",
+                "propName": "files",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_c9e937a0-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_c9e937a0-5624-11ee-b617-d70ce54c0e63",
+                "label": "Sales Line",
+                "type": "lookup",
+                "propName": "salesLine",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "ableToAddLookUpVal": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_b2af2c20-5624-11ee-b617-d70ce54c0e63",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_b2af2c20-5624-11ee-b617-d70ce54c0e63",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_b2af2c20-5624-11ee-b617-d70ce54c0e63_row_b2af2c21-5624-11ee-b617-d70ce54c0e63",
+            "controls": [
+              {
+                "name": "control_b2d26b90-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b2d26b90-5624-11ee-b617-d70ce54c0e63",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b2e7a140-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b2e7a140-5624-11ee-b617-d70ce54c0e63",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b2fb7760-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b2fb7760-5624-11ee-b617-d70ce54c0e63",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b30f2670-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b30f2670-5624-11ee-b617-d70ce54c0e63",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b3206480-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b3206480-5624-11ee-b617-d70ce54c0e63",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b3337750-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b3337750-5624-11ee-b617-d70ce54c0e63",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b348d410-5624-11ee-b617-d70ce54c0e63",
+                "fieldName": "control_b348d410-5624-11ee-b617-d70ce54c0e63",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "attachments",
+  "storageType": "dashboard",
+  "title": "Attachments"
+}

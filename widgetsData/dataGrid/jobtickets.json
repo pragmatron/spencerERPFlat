@@ -1,0 +1,305 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"_customDate\",\"operator\":\"=\",\"value\":null,\"name\":\"Custom\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "aaaaa": {
+      "displayName": "aaaaa",
+      "order": 12,
+      "type": "string"
+    },
+    "asdfasdf": {
+      "displayName": "asdfasdf",
+      "order": 11,
+      "type": "string"
+    },
+    "asfd": {
+      "displayName": "asfd",
+      "order": 10,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 4,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "customer",
+      "lookUpTable": "customers",
+      "order": 14,
+      "type": "lookup"
+    },
+    "job": {
+      "displayName": "job",
+      "order": 13,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 8,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 7,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 2,
+      "type": "select"
+    },
+    "machine": {
+      "displayName": "machine",
+      "order": 15,
+      "type": "string"
+    },
+    "machinename": {
+      "displayName": "machine name",
+      "invisible": false,
+      "order": 1,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 6,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 3,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "uNKNOWN2": {
+      "displayName": "UNKNOWN 2",
+      "order": 9,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_778",
+        "label": "",
+        "clientKey": "section_778",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_778_row_833090",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_0aefd950-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0aefd950-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_12713c50-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_12713c50-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "machine name",
+                "type": "text",
+                "propName": "machinename",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a16d6460-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d6460-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "UNKNOWN 2",
+                "type": "text",
+                "propName": "uNKNOWN2",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_a16d6461-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d6461-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "asfd",
+                "type": "text",
+                "propName": "asfd",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_a16d6462-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d6462-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "asdfasdf",
+                "type": "text",
+                "propName": "asdfasdf",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_a16d8b70-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d8b70-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "aaaaa",
+                "type": "text",
+                "propName": "aaaaa",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_a16d8b71-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d8b71-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "job",
+                "type": "text",
+                "propName": "job",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_a16d8b72-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d8b72-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "lookUpTable": "customers"
+              },
+              {
+                "name": "control_a16d8b73-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "fieldName": "control_a16d8b73-bbcf-11ef-8812-4d1f0fdef4e0_",
+                "label": "machine",
+                "type": "text",
+                "propName": "machine",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_0aefb240-bbcf-11ef-8a8d-09e1406af1e1",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_0aefb240-bbcf-11ef-8a8d-09e1406af1e1",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_0aefb240-bbcf-11ef-8a8d-09e1406af1e1_row_0aefb241-bbcf-11ef-8a8d-09e1406af1e1",
+            "controls": [
+              {
+                "name": "control_0b169b30-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0b169b30-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0b3e9590-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0b3e9590-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0b64bb30-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0b64bb30-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0b8c6770-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0b8c6770-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0bb57340-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0bb57340-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0bdcaa50-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0bdcaa50-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0c0540f0-bbcf-11ef-8a8d-09e1406af1e1",
+                "fieldName": "control_0c0540f0-bbcf-11ef-8a8d-09e1406af1e1",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "jobtickets",
+  "storageType": "dashboard",
+  "title": "job tickets"
+}

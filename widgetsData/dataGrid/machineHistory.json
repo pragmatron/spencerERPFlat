@@ -1,0 +1,170 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "dateofEvent": {
+      "displayName": "Date of Event",
+      "order": 3,
+      "type": "date"
+    },
+    "eventDescription": {
+      "displayName": "Event Description",
+      "order": 4,
+      "type": "multiline_text"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "machineID": {
+      "displayName": "Machine ID",
+      "order": 1,
+      "type": "string"
+    },
+    "machineName": {
+      "displayName": "Machine Name",
+      "order": 2,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "notes": {
+      "displayName": "Notes",
+      "order": 6,
+      "type": "multiline_text"
+    },
+    "performedBy": {
+      "displayName": "Performed By",
+      "order": 5,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_480235",
+        "label": "",
+        "clientKey": "section_480235",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_480235_row_809677",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_bc6140f2-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_bc6140f2-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_bd39c6a0-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_bd39c6a0-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Machine ID",
+                "type": "text",
+                "propName": "machineID",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_be45df70-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_be45df70-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Machine Name",
+                "type": "text",
+                "propName": "machineName",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_bf2a24f0-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_bf2a24f0-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Date of Event",
+                "type": "datepicker",
+                "propName": "dateofEvent",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c0140fc0-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_c0140fc0-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Event Description",
+                "type": "multiline_text",
+                "propName": "eventDescription",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c12bc150-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_c12bc150-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Performed By",
+                "type": "text",
+                "propName": "performedBy",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c25462d0-55b0-11ef-b4b2-0b900c3d9594",
+                "fieldName": "control_c25462d0-55b0-11ef-b4b2-0b900c3d9594",
+                "label": "Notes",
+                "type": "multiline_text",
+                "propName": "notes",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_213b97e0-562f-11ef-a073-51e7a1040f91",
+                "fieldName": "control_213b97e0-562f-11ef-a073-51e7a1040f91",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_bc6140f0-55b0-11ef-b4b2-0b900c3d9594",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_bc6140f0-55b0-11ef-b4b2-0b900c3d9594",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_bc6140f0-55b0-11ef-b4b2-0b900c3d9594_row_bc6140f1-55b0-11ef-b4b2-0b900c3d9594",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "machineHistory",
+  "storageType": "dashboard",
+  "title": "machineHistory"
+}

@@ -1,0 +1,315 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "accruedPTO": {
+      "displayName": "Accrued PTO",
+      "invisible": true,
+      "order": 14,
+      "type": "number"
+    },
+    "approved": {
+      "displayName": "Approved",
+      "order": 11,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "employee": {
+      "displayName": "Employee",
+      "invisible": true,
+      "lookUpTable": "employees",
+      "order": 13,
+      "type": "lookup"
+    },
+    "end": {
+      "displayName": "End",
+      "order": 10,
+      "type": "date"
+    },
+    "files": {
+      "displayName": "Files",
+      "invisible": true,
+      "order": 15,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "reason": {
+      "displayName": "Reason",
+      "order": 8,
+      "type": "multiline_text"
+    },
+    "start": {
+      "displayName": "Start",
+      "order": 9,
+      "type": "date"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "user": {
+      "displayName": "User",
+      "order": 12,
+      "type": "user"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_40836",
+        "label": "",
+        "clientKey": "section_40836",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_40836_row_783497",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b4d4f952-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b4d4f952-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_b83246c0-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_b83246c0-e150-11ee-990f-2fd7633d41c4",
+                "label": "Employee",
+                "type": "lookup",
+                "propName": "employee",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_bbbc3f30-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_bbbc3f30-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Reason",
+                "type": "multiline_text",
+                "propName": "reason",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_77d63ea0-e165-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_77d63ea0-e165-11ee-990f-2fd7633d41c4",
+                "label": "Accrued PTO",
+                "type": "number",
+                "propName": "accruedPTO",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "hRPTO"
+              },
+              {
+                "name": "control_c0a56b20-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_c0a56b20-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Start",
+                "type": "datepicker",
+                "propName": "start",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_c28ec490-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_c28ec490-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "End",
+                "type": "datepicker",
+                "propName": "end",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_c5912f20-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_c5912f20-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Approved",
+                "type": "checkbox",
+                "propName": "approved",
+                "className": "col-md-6",
+                "isChecked": false,
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_c846d940-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_c846d940-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "User",
+                "type": "user",
+                "propName": "user",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_05c5f700-58cb-11ef-a309-f72d196adf37",
+                "fieldName": "control_05c5f700-58cb-11ef-a309-f72d196adf37",
+                "label": "Files",
+                "type": "files",
+                "propName": "files",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_b4d4f950-7a76-11ee-a0d5-59c9b51e94ab",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_b4d4f950-7a76-11ee-a0d5-59c9b51e94ab",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_b4d4f950-7a76-11ee-a0d5-59c9b51e94ab_row_b4d4f951-7a76-11ee-a0d5-59c9b51e94ab",
+            "controls": [
+              {
+                "name": "control_b4f308a0-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b4f308a0-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b506b7b0-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b506b7b0-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b5166f20-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b5166f20-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b52b2fa0-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b52b2fa0-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b53baa60-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b53baa60-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b5506ae0-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b5506ae0-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_b561a8f0-7a76-11ee-a0d5-59c9b51e94ab",
+                "fieldName": "control_b561a8f0-7a76-11ee-a0d5-59c9b51e94ab",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "hRPTO",
+  "storageType": "dashboard",
+  "title": "HR PTO"
+}

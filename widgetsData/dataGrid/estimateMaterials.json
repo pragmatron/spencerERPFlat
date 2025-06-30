@@ -1,0 +1,463 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "cost": {
+      "Width": "119px",
+      "displayName": "Cost",
+      "invisible": false,
+      "order": 3,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 8,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 12,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 11,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 6,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 7,
+      "type": "user"
+    },
+    "part": {
+      "Width": "186px",
+      "displayName": "Part",
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 1,
+      "type": "lookup"
+    },
+    "quantity": {
+      "Width": "148px",
+      "displayName": "Quantity Per",
+      "invisible": false,
+      "order": 2,
+      "type": "number"
+    },
+    "quoteLine": {
+      "Width": "182px",
+      "displayName": "Quote Line",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "quoteLines",
+      "order": 13,
+      "type": "lookup"
+    },
+    "quoteNumber": {
+      "displayName": "Quote Number",
+      "invisible": true,
+      "order": 15,
+      "type": "string"
+    },
+    "salesLine": {
+      "displayName": "Sales Line",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "salesLines",
+      "order": 14,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 9,
+      "type": "string"
+    },
+    "total": {
+      "Width": "114px",
+      "displayName": "Total",
+      "invisible": false,
+      "order": 4,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "uoM": {
+      "Width": "234px",
+      "displayName": "UoM",
+      "invisible": false,
+      "lookUpTable": "unitsOfMeasure",
+      "order": 5,
+      "type": "lookup"
+    },
+    "vendor": {
+      "displayName": "Vendor",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "vendors",
+      "order": 16,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_824067",
+        "label": "Estimate Material",
+        "clientKey": "section_824067",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_824067_row_659565",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_1dd803b2-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1dd803b2-c104-11ee-8433-4f93c020f70e",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "estimateMaterials",
+                "sum": true,
+                "expression": "rowData.part && rowData.$part.name"
+              },
+              {
+                "name": "control_a0364190-96fc-11ef-b774-ddb2a337b1a9",
+                "fieldName": "control_a0364190-96fc-11ef-b774-ddb2a337b1a9",
+                "label": "Quote Number",
+                "type": "text",
+                "propName": "quoteNumber",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9eb758f0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_9eb758f0-c104-11ee-8433-4f93c020f70e",
+                "label": "Quote Line",
+                "type": "lookup",
+                "propName": "quoteLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_a6ddbf50-96fc-11ef-b774-ddb2a337b1a9",
+                "fieldName": "control_a6ddbf50-96fc-11ef-b774-ddb2a337b1a9",
+                "label": "Vendor",
+                "type": "lookup",
+                "propName": "vendor",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_c8b689a0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_c8b689a0-c104-11ee-8433-4f93c020f70e",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "estimateMaterials",
+                "lookUpSearch": "partDemand"
+              },
+              {
+                "name": "control_cedfafa0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_cedfafa0-c104-11ee-8433-4f93c020f70e",
+                "label": "Quantity Per",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "defaultValue": "1",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "estimateMaterials"
+              },
+              {
+                "name": "control_d65f3de0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_d65f3de0-c104-11ee-8433-4f93c020f70e",
+                "label": "Cost",
+                "type": "number",
+                "propName": "cost",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_de94d5b0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_de94d5b0-c104-11ee-8433-4f93c020f70e",
+                "label": "Total",
+                "type": "number",
+                "propName": "total",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_25f53c10-c105-11ee-8433-4f93c020f70e",
+                "fieldName": "control_25f53c10-c105-11ee-8433-4f93c020f70e",
+                "label": "UoM",
+                "type": "lookup",
+                "propName": "uoM",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_b927bcf0-c1d8-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_b927bcf0-c1d8-11ee-99a2-8d4194ff50ca",
+                "label": "Sales Line",
+                "type": "lookup",
+                "propName": "salesLine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_1dd803b0-c104-11ee-8433-4f93c020f70e",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_1dd803b0-c104-11ee-8433-4f93c020f70e",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_1dd803b0-c104-11ee-8433-4f93c020f70e_row_1dd803b1-c104-11ee-8433-4f93c020f70e",
+            "controls": [
+              {
+                "name": "control_1e1cfbf0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1e1cfbf0-c104-11ee-8433-4f93c020f70e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1e568280-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1e568280-c104-11ee-8433-4f93c020f70e",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1ef55a90-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1ef55a90-c104-11ee-8433-4f93c020f70e",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1f4157b0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1f4157b0-c104-11ee-8433-4f93c020f70e",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1f820a30-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1f820a30-c104-11ee-8433-4f93c020f70e",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_1fc2bcb0-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_1fc2bcb0-c104-11ee-8433-4f93c020f70e",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_20045990-c104-11ee-8433-4f93c020f70e",
+                "fieldName": "control_20045990-c104-11ee-8433-4f93c020f70e",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "estimateMaterials",
+  "storageType": "dashboard",
+  "title": "Estimate Materials",
+  "views": {
+    "importexcelview": {
+      "displayAsExcel": true,
+      "displayCompact": false,
+      "displayInTab": false,
+      "meta": {
+        "cost": {
+          "displayName": "Cost",
+          "invisible": false,
+          "order": 3
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 8
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 12
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 11
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 6
+        },
+        "name": {
+          "displayName": "Name",
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 10
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 7
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": false,
+          "order": 1
+        },
+        "quantity": {
+          "displayName": "Quantity Per",
+          "invisible": false,
+          "order": 2
+        },
+        "quoteLine": {
+          "displayName": "Quote Line",
+          "invisible": false,
+          "order": 13
+        },
+        "quoteNumber": {
+          "displayName": "Quote Number",
+          "invisible": true,
+          "order": 15
+        },
+        "salesLine": {
+          "displayName": "Sales Line",
+          "invisible": true,
+          "order": 14
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 9
+        },
+        "total": {
+          "displayName": "Total",
+          "invisible": false,
+          "order": 4
+        },
+        "uoM": {
+          "displayName": "UoM",
+          "invisible": false,
+          "order": 5
+        },
+        "vendor": {
+          "displayName": "Vendor",
+          "invisible": true,
+          "order": 16
+        }
+      },
+      "readOnly": false,
+      "recordCustomCode": "",
+      "title": "import excel view"
+    }
+  },
+  "viewsOrder": [
+    "importexcelview"
+  ]
+}

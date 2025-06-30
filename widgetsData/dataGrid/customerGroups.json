@@ -1,0 +1,329 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "aRAccountingCode": {
+      "displayName": "AR Accounting Code",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "aRDepositsReceivableAccountingCode": {
+      "displayName": "AR Deposits Receivable Accounting Code",
+      "invisible": true,
+      "order": 12,
+      "type": "string"
+    },
+    "aRDiscountsAccountingCode": {
+      "displayName": "AR Discounts Accounting Code",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customerGroupPricing_instance": {
+      "dataGrid": "customerGroupPricing",
+      "displayName": "Customer Group Pricing",
+      "filterColumn": "customerGroup",
+      "order": 16,
+      "type": "datagrid"
+    },
+    "depositsReceivedAccountingCode": {
+      "displayName": "Deposits Received Accounting Code",
+      "invisible": true,
+      "order": 13,
+      "type": "string"
+    },
+    "description": {
+      "displayName": "Description",
+      "invisible": true,
+      "order": 9,
+      "type": "string"
+    },
+    "group": {
+      "displayName": "Group",
+      "invisible": true,
+      "order": 8,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "387px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "status": {
+      "displayName": "Status",
+      "invisible": true,
+      "order": 15,
+      "type": "string"
+    },
+    "unappliedCashAccountingCode": {
+      "displayName": "Unapplied Cash Accounting Code",
+      "invisible": true,
+      "order": 14,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_45159",
+        "label": "",
+        "clientKey": "section_45159",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_45159_row_631275",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_699e8612-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_699e8612-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_e7b70fa0-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa0-27b2-11ee-b29c-d53984a660c6_",
+                "label": "Group",
+                "type": "text",
+                "propName": "group",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa1-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa1-27b2-11ee-b29c-d53984a660c6_",
+                "label": "Description",
+                "type": "text",
+                "propName": "description",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa2-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa2-27b2-11ee-b29c-d53984a660c6_",
+                "label": "AR Accounting Code",
+                "type": "text",
+                "propName": "aRAccountingCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa3-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa3-27b2-11ee-b29c-d53984a660c6_",
+                "label": "AR Discounts Accounting Code",
+                "type": "text",
+                "propName": "aRDiscountsAccountingCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa4-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa4-27b2-11ee-b29c-d53984a660c6_",
+                "label": "AR Deposits Receivable Accounting Code",
+                "type": "text",
+                "propName": "aRDepositsReceivableAccountingCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa5-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa5-27b2-11ee-b29c-d53984a660c6_",
+                "label": "Deposits Received Accounting Code",
+                "type": "text",
+                "propName": "depositsReceivedAccountingCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b70fa6-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b70fa6-27b2-11ee-b29c-d53984a660c6_",
+                "label": "Unapplied Cash Accounting Code",
+                "type": "text",
+                "propName": "unappliedCashAccountingCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_e7b736b0-27b2-11ee-b29c-d53984a660c6_",
+                "fieldName": "control_e7b736b0-27b2-11ee-b29c-d53984a660c6_",
+                "label": "Status",
+                "type": "text",
+                "propName": "status",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_63f35630-952e-11ee-9085-77db4e708e5b",
+                "fieldName": "control_63f35630-952e-11ee-9085-77db4e708e5b",
+                "label": "Customer Group Pricing",
+                "type": "datagrid",
+                "propName": "customerGroupPricing_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_699e8610-27b3-11ee-9b6a-7728adae53b3",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_699e8610-27b3-11ee-9b6a-7728adae53b3",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_699e8610-27b3-11ee-9b6a-7728adae53b3_row_699e8611-27b3-11ee-9b6a-7728adae53b3",
+            "controls": [
+              {
+                "name": "control_69c40f70-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_69c40f70-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_69df5fa0-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_69df5fa0-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_69fb2500-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_69fb2500-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_6a153cb0-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_6a153cb0-27b3-11ee-9b6a-7728adae53b3",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_6a312920-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_6a312920-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_6a4e7520-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_6a4e7520-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_6a699e40-27b3-11ee-9b6a-7728adae53b3",
+                "fieldName": "control_6a699e40-27b3-11ee-9b6a-7728adae53b3",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "customerGroups",
+  "storageType": "dashboard",
+  "title": "Customer Groups"
+}

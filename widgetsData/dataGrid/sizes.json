@@ -1,0 +1,207 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "salesLines_instance": {
+      "dataGrid": "salesLines",
+      "displayName": "Sales Lines",
+      "filterColumn": "size",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_53734",
+        "label": "",
+        "clientKey": "section_53734",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_53734_row_298890",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_a368e892-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a368e892-033b-11ef-a2cc-492401461a61",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c5155c80-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_c5155c80-033b-11ef-a2cc-492401461a61",
+                "label": "Sales Lines",
+                "type": "datagrid",
+                "propName": "salesLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_a368e890-033b-11ef-a2cc-492401461a61",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_a368e890-033b-11ef-a2cc-492401461a61",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_a368e890-033b-11ef-a2cc-492401461a61_row_a368e891-033b-11ef-a2cc-492401461a61",
+            "controls": [
+              {
+                "name": "control_a3f7bb10-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a3f7bb10-033b-11ef-a2cc-492401461a61",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a4944930-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a4944930-033b-11ef-a2cc-492401461a61",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a5439c00-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a5439c00-033b-11ef-a2cc-492401461a61",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a5c74af0-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a5c74af0-033b-11ef-a2cc-492401461a61",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a62f3480-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a62f3480-033b-11ef-a2cc-492401461a61",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a6aa7f00-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a6aa7f00-033b-11ef-a2cc-492401461a61",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a74cd980-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_a74cd980-033b-11ef-a2cc-492401461a61",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "sizes",
+  "storageType": "dashboard",
+  "title": "Sizes"
+}

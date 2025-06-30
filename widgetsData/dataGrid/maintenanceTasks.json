@@ -1,0 +1,374 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "assetDescription": {
+      "displayName": "Asset Description",
+      "order": 16,
+      "type": "string"
+    },
+    "assetID": {
+      "displayName": "Asset ID",
+      "order": 15,
+      "type": "string"
+    },
+    "assignedTo": {
+      "displayName": "Assigned To",
+      "order": 3,
+      "type": "user"
+    },
+    "comments": {
+      "displayName": "Comments",
+      "order": 7,
+      "type": "multiline_text"
+    },
+    "completionDate": {
+      "displayName": "Completion Date",
+      "order": 5,
+      "type": "date"
+    },
+    "details": {
+      "displayName": "Details",
+      "order": 18,
+      "type": "multiline_text"
+    },
+    "dueDate": {
+      "displayName": "Due Date",
+      "order": 4,
+      "type": "date"
+    },
+    "email": {
+      "displayName": "Email",
+      "order": 14,
+      "type": "email"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 19,
+      "type": "select"
+    },
+    "machine": {
+      "displayName": "Machine",
+      "indexed": true,
+      "order": 1,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 8,
+      "type": "string"
+    },
+    "requestDate": {
+      "displayName": "Request Date",
+      "order": 9,
+      "type": "date"
+    },
+    "requestNumber": {
+      "displayName": "Request Number",
+      "order": 8,
+      "type": "string"
+    },
+    "requestTime": {
+      "displayName": "Request Time",
+      "order": 10,
+      "type": "timepicker"
+    },
+    "requestType": {
+      "displayName": "Request Type",
+      "order": 11,
+      "type": "string"
+    },
+    "requestedBy": {
+      "displayName": "Requested By",
+      "order": 12,
+      "type": "string"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 9,
+      "type": "string"
+    },
+    "subject": {
+      "displayName": "Subject",
+      "order": 17,
+      "type": "string"
+    },
+    "taskDescription": {
+      "displayName": "Task Description",
+      "order": 2,
+      "type": "multiline_text"
+    },
+    "telephone": {
+      "displayName": "Telephone",
+      "order": 13,
+      "type": "phone"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_154118",
+        "label": "",
+        "clientKey": "section_154118",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_154118_row_749758",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_652a0e62-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_652a0e62-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_657b3ba0-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_657b3ba0-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Machine",
+                "type": "lookup",
+                "propName": "machine",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_65d43110-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_65d43110-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Task Description",
+                "type": "multiline_text",
+                "propName": "taskDescription",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_66231460-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_66231460-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Assigned To",
+                "type": "user",
+                "propName": "assignedTo",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_66721ec0-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_66721ec0-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Due Date",
+                "type": "datepicker",
+                "propName": "dueDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_66c17740-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_66c17740-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Completion Date",
+                "type": "datepicker",
+                "propName": "completionDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_67100c70-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_67100c70-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Status",
+                "type": "select",
+                "propName": "status",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_677054e0-3685-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_677054e0-3685-11ef-b24a-b96ad8d1a9b3",
+                "label": "Comments",
+                "type": "multiline_text",
+                "propName": "comments",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2bb5aa00-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2bb5aa00-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2c188a80-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2c188a80-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Request Number",
+                "type": "text",
+                "propName": "requestNumber",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2c66d190-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2c66d190-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Status",
+                "type": "text",
+                "propName": "status",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2cbf9ff0-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2cbf9ff0-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Request Date",
+                "type": "datepicker",
+                "propName": "requestDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2d14c4d0-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2d14c4d0-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Request Time",
+                "type": "timepicker",
+                "propName": "requestTime",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2d700430-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2d700430-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Request Type",
+                "type": "text",
+                "propName": "requestType",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2dcaf570-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2dcaf570-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Requested By",
+                "type": "text",
+                "propName": "requestedBy",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2e252360-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2e252360-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Telephone",
+                "type": "phone",
+                "propName": "telephone",
+                "className": "col-md-6",
+                "mask": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2e839710-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2e839710-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Email",
+                "type": "email",
+                "propName": "email",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2edf72b0-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2edf72b0-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Asset ID",
+                "type": "text",
+                "propName": "assetID",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2f3ab210-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2f3ab210-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Asset Description",
+                "type": "text",
+                "propName": "assetDescription",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2f975100-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2f975100-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Subject",
+                "type": "text",
+                "propName": "subject",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_2ff46520-3689-11ef-b24a-b96ad8d1a9b3",
+                "fieldName": "control_2ff46520-3689-11ef-b24a-b96ad8d1a9b3",
+                "label": "Details",
+                "type": "multiline_text",
+                "propName": "details",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_112d4d70-37b3-11ef-9590-a72a59501f06",
+                "fieldName": "control_112d4d70-37b3-11ef-9590-a72a59501f06",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_652a0e60-3685-11ef-b24a-b96ad8d1a9b3",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_652a0e60-3685-11ef-b24a-b96ad8d1a9b3",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_652a0e60-3685-11ef-b24a-b96ad8d1a9b3_row_652a0e61-3685-11ef-b24a-b96ad8d1a9b3",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "maintenanceTasks",
+  "storageType": "dashboard",
+  "title": "maintenanceTasks"
+}

@@ -1,0 +1,326 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "cloneWorkOrder": {
+      "displayName": "Clone Work Order",
+      "invisible": true,
+      "order": 12,
+      "type": "custom"
+    },
+    "createShipment": {
+      "displayName": "Create Shipment",
+      "invisible": true,
+      "order": 10,
+      "type": "custom"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "emailClient": {
+      "displayName": "Email Client",
+      "invisible": true,
+      "order": 9,
+      "type": "custom"
+    },
+    "estimateCompletionDate": {
+      "displayName": "Estimate Completion Date",
+      "invisible": true,
+      "order": 11,
+      "type": "custom"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Work Orders",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "owners": {
+      "Width": "227px",
+      "displayName": "Owners",
+      "order": 8,
+      "type": "string"
+    },
+    "parts": {
+      "displayName": "Part",
+      "indexed": true,
+      "lookUpTable": "parts",
+      "onChange": "let productionMethods = $getGrid(\"productionMethods\")\r\n\r\nlet productionMethodFiltered = productionMethods.filter((productionMethod) => {\r\n    return productionMethod.part === rowData.part\r\n}) \r\nconsole.log('prod filtered method: ',productionMethodFiltered)\r\n$dgSetRowVals(\"opportunityLines\", rowData.rowKey, {\r\n    sourceProductionMethod: productionMethodFiltered[0]?.rowKey\r\n})",
+      "order": 14,
+      "type": "lookup"
+    },
+    "printWO": {
+      "displayName": "Print WO",
+      "invisible": true,
+      "order": 13,
+      "type": "oneDriveFiles"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_826039",
+        "label": "",
+        "clientKey": "section_826039",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_826039_row_234433",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_2cc2cb20-953a-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_2cc2cb20-953a-11ef-bef0-895de77f4bbe",
+                "label": "Email Client",
+                "type": "custom",
+                "propName": "emailClient",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\nvariant=\"warning\"\r\n\r\n>Email Client</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_38070280-953a-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_38070280-953a-11ef-bef0-895de77f4bbe",
+                "label": "Create Shipment",
+                "type": "custom",
+                "propName": "createShipment",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\nvariant='primary'\r\n@click=\"createShipmentFromWorkOrder(rowData)\"\r\n>Create Shipment</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_13c3e8b0-953b-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_13c3e8b0-953b-11ef-bef0-895de77f4bbe",
+                "label": "Estimate Completion Date",
+                "type": "custom",
+                "propName": "estimateCompletionDate",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\n@click=\"estimateCompletionDate(rowData)\"\r\nvariant=\"success\"\r\n>Estimate Completion Date</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_1c2e9a40-953b-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_1c2e9a40-953b-11ef-bef0-895de77f4bbe",
+                "label": "Clone Work Order",
+                "type": "custom",
+                "propName": "cloneWorkOrder",
+                "className": "col-md-6",
+                "customCode": "<b-button\r\nvariant=\"primary\"\r\n@click='cloneWorkOrder(rowData)'\r\n>Clone Work Order</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_6187bef0-953b-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_6187bef0-953b-11ef-bef0-895de77f4bbe",
+                "label": "Print WO",
+                "type": "oneDriveFiles",
+                "propName": "printWO",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_944b8862-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_944b8862-9538-11ef-bef0-895de77f4bbe",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e42b87e0-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_e42b87e0-9538-11ef-bef0-895de77f4bbe",
+                "label": "Owners",
+                "type": "text",
+                "propName": "owners",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_716ab650-953c-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_716ab650-953c-11ef-bef0-895de77f4bbe",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "parts",
+                "className": "col-md-6",
+                "expression": "rowData.salesLine && rowData.$salesLine.part",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "sum": true,
+                "gridId": "workOrders"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_944b8860-9538-11ef-bef0-895de77f4bbe",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_944b8860-9538-11ef-bef0-895de77f4bbe",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_944b8860-9538-11ef-bef0-895de77f4bbe_row_944b8861-9538-11ef-bef0-895de77f4bbe",
+            "controls": [
+              {
+                "name": "control_94802cf0-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_94802cf0-9538-11ef-bef0-895de77f4bbe",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "",
+                    "text": ""
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_94b4aa70-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_94b4aa70-9538-11ef-bef0-895de77f4bbe",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_94e7a150-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_94e7a150-9538-11ef-bef0-895de77f4bbe",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_9519fbf0-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_9519fbf0-9538-11ef-bef0-895de77f4bbe",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_954e7970-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_954e7970-9538-11ef-bef0-895de77f4bbe",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_95860430-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_95860430-9538-11ef-bef0-895de77f4bbe",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              },
+              {
+                "name": "control_95bc7d80-9538-11ef-bef0-895de77f4bbe",
+                "fieldName": "control_95bc7d80-9538-11ef-bef0-895de77f4bbe",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "workOrders"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "workOrders",
+  "storageType": "dashboard",
+  "title": "Work Orders"
+}

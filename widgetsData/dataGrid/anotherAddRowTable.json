@@ -1,0 +1,260 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "addRecord": {
+      "displayName": "Add Record",
+      "invisible": true,
+      "order": 9,
+      "type": "custom"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "onChangeTest": {
+      "displayName": "On Change Test",
+      "invisible": true,
+      "order": 10,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "quantity": {
+      "displayName": "quantity",
+      "invisible": true,
+      "order": 11,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "testingAddRowSum_instance": {
+      "dataGrid": "testingAddRowSum",
+      "displayName": "Testing Add Row Sum",
+      "filterColumn": "anotherAddRowTable",
+      "order": 8,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_76596",
+        "label": "",
+        "clientKey": "section_76596",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_76596_row_954988",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_82d15982-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_82d15982-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_d8a962c0-441b-11ef-ac1c-91bd387dad1d",
+                "fieldName": "control_d8a962c0-441b-11ef-ac1c-91bd387dad1d",
+                "label": "On Change Test",
+                "type": "number",
+                "propName": "onChangeTest",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a1173340-441c-11ef-ac1c-91bd387dad1d",
+                "fieldName": "control_a1173340-441c-11ef-ac1c-91bd387dad1d",
+                "label": "quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "anotherAddRowTable"
+              },
+              {
+                "name": "control_0495b790-42d6-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_0495b790-42d6-11ef-b1a9-99508d9aad42",
+                "label": "Add Record",
+                "type": "custom",
+                "propName": "addRecord",
+                "className": "col-md-6",
+                "customCode": "<b-button\n@click=\"addRecordToTable(rowData)\"\n>Add Record</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "anotherAddRowTable"
+              },
+              {
+                "name": "control_8e96ced0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_8e96ced0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Testing Add Row Sum",
+                "type": "datagrid",
+                "propName": "testingAddRowSum_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_82d15980-42d5-11ef-b1a9-99508d9aad42",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_82d15980-42d5-11ef-b1a9-99508d9aad42",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_82d15980-42d5-11ef-b1a9-99508d9aad42_row_82d15981-42d5-11ef-b1a9-99508d9aad42",
+            "controls": [
+              {
+                "name": "control_83045060-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_83045060-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_8337bc70-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_8337bc70-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_836b9db0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_836b9db0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_839f57e0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_839f57e0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_83d33920-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_83d33920-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_84074170-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_84074170-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_843b97e0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_843b97e0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "anotherAddRowTable",
+  "storageType": "dashboard",
+  "title": "Another Add Row Table"
+}

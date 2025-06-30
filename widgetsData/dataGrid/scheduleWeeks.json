@@ -1,0 +1,278 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "availableCapacity": {
+      "displayName": "Available Capacity",
+      "invisible": false,
+      "order": 10,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "opportunityLines_instance": {
+      "dataGrid": "opportunityLines",
+      "displayName": "Opportunity Lines",
+      "filterColumn": "weekScheduled",
+      "order": 9,
+      "type": "datagrid"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "salesLines_instance": {
+      "dataGrid": "salesLines",
+      "displayName": "Sales Lines",
+      "filterColumn": "weeklySchedule",
+      "order": 9,
+      "type": "datagrid"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "weekStart": {
+      "displayName": "Week Start",
+      "invisible": false,
+      "order": 11,
+      "type": "date"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_941282",
+        "label": "",
+        "clientKey": "section_941282",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_941282_row_437375",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_ab06d342-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab06d342-d4e3-11ee-8e48-119961882c15",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "expression": "rowData.$weekStart$Date",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "scheduleWeeks",
+                "sum": true
+              },
+              {
+                "name": "control_b5476ba0-e2ec-11ee-9269-911bdfd40240",
+                "fieldName": "control_b5476ba0-e2ec-11ee-9269-911bdfd40240",
+                "label": "Available Capacity",
+                "type": "number",
+                "propName": "availableCapacity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "scheduleWeeks"
+              },
+              {
+                "name": "control_873e4740-e2f3-11ee-a44b-ff244eb5626c",
+                "fieldName": "control_873e4740-e2f3-11ee-a44b-ff244eb5626c",
+                "label": "Week Start",
+                "type": "datepicker",
+                "propName": "weekStart",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "scheduleWeeks"
+              },
+              {
+                "name": "control_1698d1d0-d4e4-11ee-8e48-119961882c15",
+                "fieldName": "control_1698d1d0-d4e4-11ee-8e48-119961882c15",
+                "label": "Opportunity Lines",
+                "type": "datagrid",
+                "propName": "opportunityLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_8d745ef0-d4e4-11ee-a2d1-8b1ff352d3ef",
+                "fieldName": "control_8d745ef0-d4e4-11ee-a2d1-8b1ff352d3ef",
+                "label": "Opportunity Lines",
+                "type": "datagrid",
+                "propName": "opportunityLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_6999e480-e2e7-11ee-98dd-ab3c59628994",
+                "fieldName": "control_6999e480-e2e7-11ee-98dd-ab3c59628994",
+                "label": "Sales Lines",
+                "type": "datagrid",
+                "propName": "salesLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_ab06d340-d4e3-11ee-8e48-119961882c15",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_ab06d340-d4e3-11ee-8e48-119961882c15",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_ab06d340-d4e3-11ee-8e48-119961882c15_row_ab06d341-d4e3-11ee-8e48-119961882c15",
+            "controls": [
+              {
+                "name": "control_ab25a5e0-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab25a5e0-d4e3-11ee-8e48-119961882c15",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_ab42a3c0-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab42a3c0-d4e3-11ee-8e48-119961882c15",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_ab5fefc0-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab5fefc0-d4e3-11ee-8e48-119961882c15",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_ab7cc690-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab7cc690-d4e3-11ee-8e48-119961882c15",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_ab99c470-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_ab99c470-d4e3-11ee-8e48-119961882c15",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_abb64d20-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_abb64d20-d4e3-11ee-8e48-119961882c15",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_abd37210-d4e3-11ee-8e48-119961882c15",
+                "fieldName": "control_abd37210-d4e3-11ee-8e48-119961882c15",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "scheduleWeeks",
+  "storageType": "dashboard",
+  "title": "Schedule Weeks"
+}

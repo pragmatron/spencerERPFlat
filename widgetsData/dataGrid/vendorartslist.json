@@ -1,0 +1,217 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "cost": {
+      "displayName": "Cost",
+      "order": 10,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "part": {
+      "displayName": "part",
+      "indexed": true,
+      "lookUpTable": "part",
+      "order": 9,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "vendors": {
+      "displayName": "Vendors",
+      "indexed": true,
+      "lookUpTable": "vendors",
+      "order": 8,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_633542",
+        "label": "",
+        "clientKey": "section_633542",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_633542_row_179507",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_afb340c2-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_afb340c2-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_ba0bdfa0-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_ba0bdfa0-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Vendors",
+                "type": "lookup",
+                "propName": "vendors",
+                "className": "col-md-6",
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_c4569bd0-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_c4569bd0-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_d13151b0-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_d13151b0-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Cost",
+                "type": "number",
+                "propName": "cost",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_afb340c0-1bbb-11f0-8293-69a4dc1749b7",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_afb340c0-1bbb-11f0-8293-69a4dc1749b7",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_afb340c0-1bbb-11f0-8293-69a4dc1749b7_row_afb340c1-1bbb-11f0-8293-69a4dc1749b7",
+            "controls": [
+              {
+                "name": "control_afe43bd0-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_afe43bd0-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "invisible": true
+              },
+              {
+                "name": "control_b00cf980-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b00cf980-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "invisible": true
+              },
+              {
+                "name": "control_b0389d60-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b0389d60-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "invisible": true
+              },
+              {
+                "name": "control_b06e5360-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b06e5360-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "invisible": true
+              },
+              {
+                "name": "control_b0990ce0-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b0990ce0-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "invisible": true
+              },
+              {
+                "name": "control_b1062690-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b1062690-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "invisible": true
+              },
+              {
+                "name": "control_b133c640-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_b133c640-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "vendorartslist",
+  "storageType": "dashboard",
+  "title": "vendor arts list"
+}

@@ -1,0 +1,233 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "assignedAssembly": {
+      "displayName": "assignedAssembly",
+      "lookUpTable": "assemblies",
+      "order": 10,
+      "type": "lookup"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "mainAssembly": {
+      "displayName": "mainAssembly",
+      "lookUpTable": "assemblies",
+      "order": 9,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "part": {
+      "displayName": "part",
+      "lookUpTable": "parts",
+      "order": 8,
+      "type": "lookup"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_303809",
+        "label": "",
+        "clientKey": "section_303809",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_303809_row_656660",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_04269090-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_04269090-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_45b89b20-dbd4-11ee-be36-abc56f50b183_",
+                "fieldName": "control_45b89b20-dbd4-11ee-be36-abc56f50b183_",
+                "label": "part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_45b89b21-dbd4-11ee-be36-abc56f50b183_",
+                "fieldName": "control_45b89b21-dbd4-11ee-be36-abc56f50b183_",
+                "label": "mainAssembly",
+                "type": "lookup",
+                "propName": "mainAssembly",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "subAssemblies"
+              },
+              {
+                "name": "control_45b89b22-dbd4-11ee-be36-abc56f50b183_",
+                "fieldName": "control_45b89b22-dbd4-11ee-be36-abc56f50b183_",
+                "label": "assignedAssembly",
+                "type": "lookup",
+                "propName": "assignedAssembly",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_04266980-dbd4-11ee-b1e7-cd8c05e6d9b6",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_04266980-dbd4-11ee-b1e7-cd8c05e6d9b6",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_04266980-dbd4-11ee-b1e7-cd8c05e6d9b6_row_04266981-dbd4-11ee-b1e7-cd8c05e6d9b6",
+            "controls": [
+              {
+                "name": "control_04536cf0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_04536cf0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_047a2ed0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_047a2ed0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_04a117c0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_04a117c0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_04cfc8e0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_04cfc8e0-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_04f74e10-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_04f74e10-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_051e8520-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_051e8520-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_054a9e30-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "fieldName": "control_054a9e30-dbd4-11ee-b1e7-cd8c05e6d9b6",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "subAssemblies",
+  "storageType": "dashboard",
+  "title": "Sub Assemblies"
+}

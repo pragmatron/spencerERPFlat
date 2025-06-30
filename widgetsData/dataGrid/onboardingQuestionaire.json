@@ -1,0 +1,733 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "checkbox": {
+      "displayName": "Checkbox",
+      "invisible": true,
+      "order": 9,
+      "type": "checkbox"
+    },
+    "checkbox10": {
+      "displayName": "Checkbox 10",
+      "invisible": true,
+      "order": 27,
+      "type": "checkbox"
+    },
+    "checkbox2": {
+      "displayName": "Checkbox 2",
+      "invisible": true,
+      "order": 11,
+      "type": "checkbox"
+    },
+    "checkbox3": {
+      "displayName": "Checkbox 3",
+      "invisible": true,
+      "order": 13,
+      "type": "checkbox"
+    },
+    "checkbox4": {
+      "displayName": "Checkbox 4",
+      "invisible": true,
+      "order": 15,
+      "type": "checkbox"
+    },
+    "checkbox5": {
+      "displayName": "Checkbox 5",
+      "invisible": true,
+      "order": 17,
+      "type": "checkbox"
+    },
+    "checkbox6": {
+      "displayName": "Checkbox 6",
+      "invisible": true,
+      "order": 19,
+      "type": "checkbox"
+    },
+    "checkbox7": {
+      "displayName": "Checkbox 7",
+      "invisible": true,
+      "order": 21,
+      "type": "checkbox"
+    },
+    "checkbox8": {
+      "displayName": "Checkbox 8",
+      "invisible": true,
+      "order": 23,
+      "type": "checkbox"
+    },
+    "checkbox9": {
+      "displayName": "Checkbox 9",
+      "invisible": true,
+      "order": 25,
+      "type": "checkbox"
+    },
+    "cloneFromERPDemo": {
+      "displayName": "Clone From ERP Demo",
+      "invisible": true,
+      "order": 8,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customerTasks_instance": {
+      "dataGrid": "customerTasks",
+      "displayName": "Customer Tasks",
+      "filterColumn": "onboardingQuestionaire",
+      "order": 32,
+      "type": "datagrid"
+    },
+    "doYouUseLots": {
+      "displayName": "Do You Use Lots",
+      "invisible": true,
+      "order": 28,
+      "type": "multiline_text"
+    },
+    "establishWorkOrderCreationMethod": {
+      "displayName": "Establish Work Order Creation Method",
+      "invisible": true,
+      "order": 22,
+      "type": "string"
+    },
+    "getCustomersData": {
+      "displayName": "Get Customers Data",
+      "invisible": true,
+      "order": 14,
+      "type": "string"
+    },
+    "getCustomersTemplates": {
+      "displayName": "Get Customers Templates",
+      "invisible": true,
+      "order": 16,
+      "type": "string"
+    },
+    "getWorkOrderCreationWorking": {
+      "displayName": "Get Work Order Creation Working",
+      "invisible": true,
+      "order": 26,
+      "type": "string"
+    },
+    "importData": {
+      "displayName": "Import Data",
+      "invisible": true,
+      "order": 20,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "projects_instance": {
+      "dataGrid": "projects",
+      "displayName": "Projects",
+      "filterColumn": "supportHub",
+      "order": 33,
+      "type": "datagrid"
+    },
+    "setupGDriveFolder": {
+      "displayName": "Setup GDrive Folder",
+      "invisible": true,
+      "order": 12,
+      "type": "string"
+    },
+    "setupOnedriveFolder": {
+      "displayName": "Setup Onedrive Folder",
+      "invisible": true,
+      "order": 18,
+      "type": "string"
+    },
+    "setupTemplates": {
+      "displayName": "Setup Templates",
+      "invisible": true,
+      "order": 24,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "whatIsYourWorkOrderCreationMethod": {
+      "displayName": "What Is Your Work Order Creation Method",
+      "invisible": true,
+      "order": 29,
+      "type": "multiline_text"
+    },
+    "whatSystemAreWeImportingFrom": {
+      "displayName": "What System Are We Importing From",
+      "invisible": true,
+      "order": 31,
+      "type": "multiline_text"
+    },
+    "whatTypeOfShopFloor": {
+      "displayName": "What Type Of Shop Floor",
+      "invisible": true,
+      "order": 30,
+      "type": "multiline_text"
+    },
+    "wipeDummyDataFromClone": {
+      "displayName": "Wipe Dummy Data From Clone",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_174578",
+        "label": "Onboarding",
+        "clientKey": "section_174578",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_174578_row_939114",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_58acf990-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_58acf990-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Clone From ERP Demo",
+                "type": "text",
+                "propName": "cloneFromERPDemo",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_60ea0b70-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_60ea0b70-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Checkbox",
+                "type": "checkbox",
+                "propName": "checkbox",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_6a3950a0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_6a3950a0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Wipe Dummy Data From Clone",
+                "type": "text",
+                "propName": "wipeDummyDataFromClone",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_6e1bbaf0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_6e1bbaf0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Checkbox 2",
+                "type": "checkbox",
+                "propName": "checkbox2",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_76d13120-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_76d13120-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Setup GDrive Folder",
+                "type": "text",
+                "propName": "setupGDriveFolder",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_7b6956e0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_7b6956e0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Checkbox 3",
+                "type": "checkbox",
+                "propName": "checkbox3",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_80090330-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_80090330-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Get Customers Data",
+                "type": "text",
+                "propName": "getCustomersData",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_84cd4200-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_84cd4200-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 4",
+                "type": "checkbox",
+                "propName": "checkbox4",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_8b36f370-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_8b36f370-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Get Customers Templates",
+                "type": "text",
+                "propName": "getCustomersTemplates",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_902fafc0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_902fafc0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 5",
+                "type": "checkbox",
+                "propName": "checkbox5",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_9d3434c0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_9d3434c0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Setup Onedrive Folder",
+                "type": "text",
+                "propName": "setupOnedriveFolder",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_a24226c0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_a24226c0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 6",
+                "type": "checkbox",
+                "propName": "checkbox6",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_aabd04f0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_aabd04f0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Import Data",
+                "type": "text",
+                "propName": "importData",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_b20b7110-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_b20b7110-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 7",
+                "type": "checkbox",
+                "propName": "checkbox7",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_bbb77c40-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_bbb77c40-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Work Order Creation Method",
+                "type": "text",
+                "propName": "establishWorkOrderCreationMethod",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_c31d40f0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_c31d40f0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 8",
+                "type": "checkbox",
+                "propName": "checkbox8",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_cce5d4d0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_cce5d4d0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Setup Templates",
+                "type": "text",
+                "propName": "setupTemplates",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_d1f378b0-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_d1f378b0-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 9",
+                "type": "checkbox",
+                "propName": "checkbox9",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_ee97ee10-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_ee97ee10-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Get Work Order Creation Working",
+                "type": "text",
+                "propName": "getWorkOrderCreationWorking",
+                "className": "col-md-5",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_f42d3880-da5e-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_f42d3880-da5e-11ef-a9e7-9da221c6925f",
+                "label": "Checkbox 10",
+                "type": "checkbox",
+                "propName": "checkbox10",
+                "className": "col-md-1",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "left",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_32f8e010-d9af-11ef-a751-bd34a4c3586b",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_32f8e010-d9af-11ef-a751-bd34a4c3586b",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_32f8e010-d9af-11ef-a751-bd34a4c3586b_row_32f8e011-d9af-11ef-a751-bd34a4c3586b",
+            "controls": [
+              {
+                "name": "control_32f8e012-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_32f8e012-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_334d41a0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_334d41a0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_33a832e0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_33a832e0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3411f130-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_3411f130-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_346da5c0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_346da5c0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_34d7b230-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_34d7b230-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_352eabd0-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_352eabd0-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_35822300-d9af-11ef-a751-bd34a4c3586b",
+                "fieldName": "control_35822300-d9af-11ef-a751-bd34a4c3586b",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_342910",
+        "label": "Questionaire",
+        "tooltip": "",
+        "clientKey": "section_342910",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_342910_row_967998",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_d69238b0-da5f-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_d69238b0-da5f-11ef-a9e7-9da221c6925f",
+                "label": "Do You Use Lots",
+                "type": "multiline_text",
+                "propName": "doYouUseLots",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_f3d70cc0-da5f-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_f3d70cc0-da5f-11ef-a9e7-9da221c6925f",
+                "label": "What Is Your Work Order Creation Method",
+                "type": "multiline_text",
+                "propName": "whatIsYourWorkOrderCreationMethod",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire",
+                "description": "Multi Level, Production Method etc"
+              },
+              {
+                "name": "control_25b41850-da60-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_25b41850-da60-11ef-a9e7-9da221c6925f",
+                "label": "What Type Of Shop Floor",
+                "type": "multiline_text",
+                "propName": "whatTypeOfShopFloor",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              },
+              {
+                "name": "control_34c7ce40-da60-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_34c7ce40-da60-11ef-a9e7-9da221c6925f",
+                "label": "What System Are We Importing From",
+                "type": "multiline_text",
+                "propName": "whatSystemAreWeImportingFrom",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "onboardingQuestionaire"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_169064",
+        "label": "Customer Tasks",
+        "tooltip": "",
+        "clientKey": "section_169064",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_169064_row_541746",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_715e3650-da60-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_715e3650-da60-11ef-a9e7-9da221c6925f",
+                "label": "Customer Tasks",
+                "type": "datagrid",
+                "propName": "customerTasks_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "name": "section_674247",
+        "label": "Projects",
+        "tooltip": "",
+        "clientKey": "section_674247",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_674247_row_169595",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e74885a0-da60-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_e74885a0-da60-11ef-a9e7-9da221c6925f",
+                "label": "Projects",
+                "type": "datagrid",
+                "propName": "projects_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "onboardingQuestionaire"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "onboardingQuestionaire",
+  "storageType": "dashboard",
+  "title": "Onboarding-Questionaire"
+}

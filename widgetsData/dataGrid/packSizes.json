@@ -1,0 +1,268 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "lowerLimit": {
+      "displayName": "Lower Limit (lbs)",
+      "invisible": false,
+      "order": 11,
+      "type": "number"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "qualityAssessment": {
+      "displayName": "Quality Assessment",
+      "lookUpTable": "qualityAssessment",
+      "order": 8,
+      "type": "lookup"
+    },
+    "size": {
+      "displayName": "Size",
+      "invisible": false,
+      "order": 9,
+      "type": "number"
+    },
+    "sizeUnit": {
+      "displayName": "Size Unit",
+      "invisible": true,
+      "order": 10,
+      "type": "select"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_560141",
+        "label": "",
+        "clientKey": "section_560141",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_560141_row_388572",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_52dc7eb0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_52dc7eb0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "packSizes"
+              },
+              {
+                "name": "control_89d9a4b0-e2c9-11ee-9287-d9416c932928",
+                "fieldName": "control_89d9a4b0-e2c9-11ee-9287-d9416c932928",
+                "label": "Quality Assessment",
+                "type": "lookup",
+                "propName": "qualityAssessment",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_72d48f10-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_72d48f10-e2cd-11ee-9287-d9416c932928",
+                "label": "Pack Size",
+                "type": "number",
+                "propName": "size",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "packSizes"
+              },
+              {
+                "name": "control_7a2e93f0-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_7a2e93f0-e2cd-11ee-9287-d9416c932928",
+                "label": "Size Unit",
+                "type": "select",
+                "propName": "sizeUnit",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "pails",
+                    "text": "Pails"
+                  },
+                  {
+                    "id": "buckets",
+                    "text": "Buckets"
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "packSizes"
+              },
+              {
+                "name": "control_98740f20-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_98740f20-e2cd-11ee-9287-d9416c932928",
+                "label": "Lower Limit (lbs)",
+                "type": "number",
+                "propName": "lowerLimit",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "packSizes"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_52dc57a0-e2c9-11ee-95d8-69eaa7ef5210",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_52dc57a0-e2c9-11ee-95d8-69eaa7ef5210",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_52dc57a0-e2c9-11ee-95d8-69eaa7ef5210_row_52dc57a1-e2c9-11ee-95d8-69eaa7ef5210",
+            "controls": [
+              {
+                "name": "control_531a23f0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_531a23f0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_53511270-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_53511270-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_53a12e40-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_53a12e40-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_53db9f30-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_53db9f30-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_541329f0-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_541329f0-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_545a4510-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_545a4510-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_54955240-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_54955240-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "packSizes",
+  "storageType": "dashboard",
+  "title": "Pack Sizes"
+}

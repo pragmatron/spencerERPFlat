@@ -1,0 +1,245 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "anotherAddRowTable": {
+      "displayName": "Another Add Row Table",
+      "indexed": true,
+      "lookUpTable": "anotherAddRowTable",
+      "order": 8,
+      "type": "lookup"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "onChangeTest": {
+      "displayName": "On Change Test",
+      "invisible": true,
+      "onChange": "console.log('working')",
+      "order": 10,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "test": {
+      "displayName": "test",
+      "invisible": true,
+      "order": 9,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_434055",
+        "label": "",
+        "clientKey": "section_434055",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_434055_row_841663",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_7bf3b092-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7bf3b092-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_8e622a40-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_8e622a40-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Another Add Row Table",
+                "type": "lookup",
+                "propName": "anotherAddRowTable",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "testingAddRowSum"
+              },
+              {
+                "name": "control_01407930-4372-11ef-b90f-274c93033df9",
+                "fieldName": "control_01407930-4372-11ef-b90f-274c93033df9",
+                "label": "test",
+                "type": "number",
+                "propName": "test",
+                "className": "col-md-6",
+                "decimalPlace": null,
+                "expression": "rowData.$anotherAddRowTable.quantity",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "testingAddRowSum",
+                "sum": true
+              },
+              {
+                "name": "control_cf3be730-441b-11ef-ac1c-91bd387dad1d",
+                "fieldName": "control_cf3be730-441b-11ef-ac1c-91bd387dad1d",
+                "label": "On Change Test",
+                "type": "number",
+                "propName": "onChangeTest",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "testingAddRowSum"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_7bf3b090-42d5-11ef-b1a9-99508d9aad42",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_7bf3b090-42d5-11ef-b1a9-99508d9aad42",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_7bf3b090-42d5-11ef-b1a9-99508d9aad42_row_7bf3b091-42d5-11ef-b1a9-99508d9aad42",
+            "controls": [
+              {
+                "name": "control_7c2743b0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7c2743b0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7c5ad6d0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7c5ad6d0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7c8f2d40-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7c8f2d40-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7cc50a50-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7cc50a50-42d5-11ef-b1a9-99508d9aad42",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7cf939b0-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7cf939b0-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7d2d4200-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7d2d4200-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_7d61e690-42d5-11ef-b1a9-99508d9aad42",
+                "fieldName": "control_7d61e690-42d5-11ef-b1a9-99508d9aad42",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "testingAddRowSum",
+  "storageType": "dashboard",
+  "title": "Testing Add Row Sum"
+}

@@ -1,0 +1,173 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "dueDate": {
+      "displayName": "Due Date",
+      "order": 4,
+      "type": "date"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "orderID": {
+      "displayName": "Order ID",
+      "order": 1,
+      "type": "string"
+    },
+    "priority": {
+      "displayName": "Priority",
+      "order": 5,
+      "type": "select"
+    },
+    "productName": {
+      "displayName": "Product Name",
+      "order": 2,
+      "type": "string"
+    },
+    "quantityDemanded": {
+      "displayName": "Quantity Demanded",
+      "order": 3,
+      "type": "number"
+    },
+    "status": {
+      "displayName": "Status",
+      "order": 6,
+      "type": "select"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_395776",
+        "label": "",
+        "clientKey": "section_395776",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_395776_row_563018",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_7863b852-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_7863b852-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_78a09a40-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_78a09a40-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Order ID",
+                "type": "text",
+                "propName": "orderID",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_78df9f10-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_78df9f10-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Product Name",
+                "type": "text",
+                "propName": "productName",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_791e07a0-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_791e07a0-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Quantity Demanded",
+                "type": "number",
+                "propName": "quantityDemanded",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_795c4920-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_795c4920-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Due Date",
+                "type": "datepicker",
+                "propName": "dueDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_7999c750-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_7999c750-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Priority",
+                "type": "select",
+                "propName": "priority",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_79ee01d0-03e5-11ef-8bfd-8be13bbc99c0",
+                "fieldName": "control_79ee01d0-03e5-11ef-8bfd-8be13bbc99c0",
+                "label": "Status",
+                "type": "select",
+                "propName": "status",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_dfbae9c0-049d-11ef-9959-0d388d73d8cd",
+                "fieldName": "control_dfbae9c0-049d-11ef-9959-0d388d73d8cd",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_7863b850-03e5-11ef-8bfd-8be13bbc99c0",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_7863b850-03e5-11ef-8bfd-8be13bbc99c0",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_7863b850-03e5-11ef-8bfd-8be13bbc99c0_row_7863b851-03e5-11ef-8bfd-8be13bbc99c0",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "orderDemand",
+  "storageType": "dashboard",
+  "title": "orderDemand"
+}

@@ -1,0 +1,207 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "quotes_instance": {
+      "dataGrid": "quotes",
+      "displayName": "Quotes",
+      "filterColumn": "status",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_819857",
+        "label": "",
+        "clientKey": "section_819857",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_819857_row_61065",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_a4d35d72-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a4d35d72-0004-11f0-b31e-e347b160837f",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_ced155a0-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_ced155a0-0004-11f0-b31e-e347b160837f",
+                "label": "Quotes",
+                "type": "datagrid",
+                "propName": "quotes_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_a4d35d70-0004-11f0-b31e-e347b160837f",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_a4d35d70-0004-11f0-b31e-e347b160837f",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_a4d35d70-0004-11f0-b31e-e347b160837f_row_a4d35d71-0004-11f0-b31e-e347b160837f",
+            "controls": [
+              {
+                "name": "control_a523ee70-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a523ee70-0004-11f0-b31e-e347b160837f",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a5c25150-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a5c25150-0004-11f0-b31e-e347b160837f",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a61134a0-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a61134a0-0004-11f0-b31e-e347b160837f",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a66918a0-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a66918a0-0004-11f0-b31e-e347b160837f",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a6bcddf0-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a6bcddf0-0004-11f0-b31e-e347b160837f",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a709ec80-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a709ec80-0004-11f0-b31e-e347b160837f",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_a75d1590-0004-11f0-b31e-e347b160837f",
+                "fieldName": "control_a75d1590-0004-11f0-b31e-e347b160837f",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "quoteStatus",
+  "storageType": "dashboard",
+  "title": "Quote Status"
+}

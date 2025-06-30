@@ -1,0 +1,313 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "completed": {
+      "displayName": "completed",
+      "order": 14,
+      "type": "number"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "dueDate": {
+      "displayName": "dueDate",
+      "order": 11,
+      "type": "number"
+    },
+    "jobName": {
+      "displayName": "jobName",
+      "order": 8,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "operator": {
+      "displayName": "operator",
+      "order": 15,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "part": {
+      "displayName": "part",
+      "order": 10,
+      "type": "number"
+    },
+    "qtytoMfg": {
+      "displayName": "qtytoMfg",
+      "order": 12,
+      "type": "number"
+    },
+    "quantityCompleted": {
+      "displayName": "quantityCompleted",
+      "order": 13,
+      "type": "number"
+    },
+    "resource": {
+      "displayName": "resource",
+      "order": 9,
+      "type": "date"
+    },
+    "stage": {
+      "displayName": "stage",
+      "order": 16,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_249626",
+        "label": "",
+        "clientKey": "section_249626",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_249626_row_440610",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_48ab0882-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_48ab0882-f6a1-11ee-8345-198e48a21de1",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_8cc9b160-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9b160-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "jobName",
+                "type": "text",
+                "propName": "jobName",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9d870-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9d870-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "resource",
+                "type": "datepicker",
+                "propName": "resource",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9d871-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9d871-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "part",
+                "type": "number",
+                "propName": "part",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9d872-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9d872-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "dueDate",
+                "type": "number",
+                "propName": "dueDate",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9d873-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9d873-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "qtytoMfg",
+                "type": "number",
+                "propName": "qtytoMfg",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9d874-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9d874-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "quantityCompleted",
+                "type": "number",
+                "propName": "quantityCompleted",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9ff80-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9ff80-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "completed",
+                "type": "number",
+                "propName": "completed",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9ff81-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9ff81-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "operator",
+                "type": "number",
+                "propName": "operator",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_8cc9ff82-f6a1-11ee-a37e-df43382fbbc6_",
+                "fieldName": "control_8cc9ff82-f6a1-11ee-a37e-df43382fbbc6_",
+                "label": "stage",
+                "type": "text",
+                "propName": "stage",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_48ab0880-f6a1-11ee-8345-198e48a21de1",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_48ab0880-f6a1-11ee-8345-198e48a21de1",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_48ab0880-f6a1-11ee-8345-198e48a21de1_row_48ab0881-f6a1-11ee-8345-198e48a21de1",
+            "controls": [
+              {
+                "name": "control_48fd9550-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_48fd9550-f6a1-11ee-8345-198e48a21de1",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_494dff40-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_494dff40-f6a1-11ee-8345-198e48a21de1",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_49a40e80-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_49a40e80-f6a1-11ee-8345-198e48a21de1",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4a025b20-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_4a025b20-f6a1-11ee-8345-198e48a21de1",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4a6c8ea0-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_4a6c8ea0-f6a1-11ee-8345-198e48a21de1",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4abef460-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_4abef460-f6a1-11ee-8345-198e48a21de1",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_4b0dd7b0-f6a1-11ee-8345-198e48a21de1",
+                "fieldName": "control_4b0dd7b0-f6a1-11ee-8345-198e48a21de1",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "orderHistory",
+  "storageType": "dashboard",
+  "title": "Order History"
+}

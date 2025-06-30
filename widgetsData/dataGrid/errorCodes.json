@@ -1,0 +1,220 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "code": {
+      "displayName": "Code",
+      "invisible": false,
+      "order": 2,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 5,
+      "type": "date"
+    },
+    "description": {
+      "displayName": "Description",
+      "invisible": false,
+      "order": 1,
+      "type": "multiline_text"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 9,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 8,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 3,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 7,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 4,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 6,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_745076",
+        "label": "",
+        "clientKey": "section_745076",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_745076_row_375056",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_52e9df72-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_52e9df72-138d-11ef-9453-f751d75ac1e4",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_572edc20-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_572edc20-138d-11ef-9453-f751d75ac1e4",
+                "label": "Code",
+                "type": "text",
+                "propName": "code",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_5c6f01b0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_5c6f01b0-138d-11ef-9453-f751d75ac1e4",
+                "label": "Description",
+                "type": "multiline_text",
+                "propName": "description",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_52e9df70-138d-11ef-9453-f751d75ac1e4",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_52e9df70-138d-11ef-9453-f751d75ac1e4",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_52e9df70-138d-11ef-9453-f751d75ac1e4_row_52e9df71-138d-11ef-9453-f751d75ac1e4",
+            "controls": [
+              {
+                "name": "control_536af650-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_536af650-138d-11ef-9453-f751d75ac1e4",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_53fcfd20-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_53fcfd20-138d-11ef-9453-f751d75ac1e4",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_54847ca0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_54847ca0-138d-11ef-9453-f751d75ac1e4",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_55101ad0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_55101ad0-138d-11ef-9453-f751d75ac1e4",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_559e02f0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_559e02f0-138d-11ef-9453-f751d75ac1e4",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_561f19d0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_561f19d0-138d-11ef-9453-f751d75ac1e4",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_56a560d0-138d-11ef-9453-f751d75ac1e4",
+                "fieldName": "control_56a560d0-138d-11ef-9453-f751d75ac1e4",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "errorCodes",
+  "storageType": "dashboard",
+  "title": "Error Codes"
+}

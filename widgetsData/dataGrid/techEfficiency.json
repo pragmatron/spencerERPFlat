@@ -1,0 +1,204 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "employee": {
+      "displayName": "Employee",
+      "lookUpTable": "employees",
+      "order": 8,
+      "type": "lookup"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_625565",
+        "label": "",
+        "clientKey": "section_625565",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_625565_row_268257",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_3a4e16d2-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3a4e16d2-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_45958280-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_45958280-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Employee",
+                "type": "lookup",
+                "propName": "employee",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_3a4e16d0-f74e-11ee-bdb5-8dab01b38fbf",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_3a4e16d0-f74e-11ee-bdb5-8dab01b38fbf",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_3a4e16d0-f74e-11ee-bdb5-8dab01b38fbf_row_3a4e16d1-f74e-11ee-bdb5-8dab01b38fbf",
+            "controls": [
+              {
+                "name": "control_3a9c5de0-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3a9c5de0-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3ad213e0-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3ad213e0-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3b04bca0-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3b04bca0-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3b371740-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3b371740-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3b68ae90-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3b68ae90-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3b9ed9c0-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3b9ed9c0-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_3bd57a20-f74e-11ee-bdb5-8dab01b38fbf",
+                "fieldName": "control_3bd57a20-f74e-11ee-bdb5-8dab01b38fbf",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "techEfficiency",
+  "storageType": "dashboard",
+  "title": "Tech Efficiency"
+}

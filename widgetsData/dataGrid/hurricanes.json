@@ -1,0 +1,365 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "affectedAreas": {
+      "displayName": "Affected Areas",
+      "invisible": false,
+      "order": 4,
+      "type": "multiline_text"
+    },
+    "category": {
+      "displayName": "Category",
+      "invisible": false,
+      "order": 5,
+      "type": "number"
+    },
+    "dESCRIPTION": {
+      "displayName": "dESCRIPTION",
+      "order": 18,
+      "type": "string"
+    },
+    "dOCUMENTPREVIEW": {
+      "displayName": "dOCUMENTPREVIEW",
+      "order": 16,
+      "type": "profile_image"
+    },
+    "damageCostUSD": {
+      "displayName": "Damage Cost (USD)",
+      "invisible": false,
+      "order": 2,
+      "type": "number"
+    },
+    "damageUSD": {
+      "displayName": "Damage (USD)",
+      "invisible": false,
+      "order": 9,
+      "type": "number"
+    },
+    "dateDissipated": {
+      "displayName": "Date Dissipated",
+      "invisible": false,
+      "order": 6,
+      "type": "date"
+    },
+    "dateFormed": {
+      "displayName": "Date Formed",
+      "invisible": false,
+      "order": 7,
+      "type": "date"
+    },
+    "fatalities": {
+      "displayName": "Fatalities",
+      "invisible": false,
+      "order": 3,
+      "type": "number"
+    },
+    "iTEMNO": {
+      "displayName": "iTEMNO",
+      "order": 17,
+      "type": "number"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": false,
+      "order": 11,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "material": {
+      "displayName": "Material",
+      "order": 14,
+      "type": "string"
+    },
+    "maximumWindSpeedmph": {
+      "displayName": "Maximum Wind Speed (mph)",
+      "invisible": false,
+      "order": 10,
+      "type": "number"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 8,
+      "type": "string"
+    },
+    "pARTNUMBER": {
+      "displayName": "PART NUMBER",
+      "order": 12,
+      "type": "date"
+    },
+    "qTY": {
+      "displayName": "QTY",
+      "order": 13,
+      "type": "number"
+    },
+    "quote": {
+      "displayName": "Quote",
+      "order": 15,
+      "type": "string"
+    },
+    "windSpeed": {
+      "displayName": "Wind Speed",
+      "invisible": false,
+      "order": 1,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_469064",
+        "label": "",
+        "clientKey": "section_469064",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_469064_row_82880",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_0aa5e812-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0aa5e812-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0ae49ec0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0ae49ec0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Category",
+                "type": "number",
+                "propName": "category",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_0b0c23f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0b0c23f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Location",
+                "type": "text",
+                "propName": "location",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0b322280-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0b322280-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Wind Speed",
+                "type": "number",
+                "propName": "windSpeed",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_0b57d2f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0b57d2f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Date Formed",
+                "type": "datepicker",
+                "propName": "dateFormed",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0b7c71f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0b7c71f0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Date Dissipated",
+                "type": "datepicker",
+                "propName": "dateDissipated",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0ba1ad30-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0ba1ad30-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Damage Cost (USD)",
+                "type": "number",
+                "propName": "damageCostUSD",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_0bc7d2d0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_0bc7d2d0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Fatalities",
+                "type": "number",
+                "propName": "fatalities",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_11feb470-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_11feb470-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_12254f40-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_12254f40-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Category",
+                "type": "number",
+                "propName": "category",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_124b74e0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_124b74e0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Date Formed",
+                "type": "datepicker",
+                "propName": "dateFormed",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_1272d300-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_1272d300-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Date Dissipated",
+                "type": "datepicker",
+                "propName": "dateDissipated",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_12adb920-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_12adb920-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Affected Areas",
+                "type": "multiline_text",
+                "propName": "affectedAreas",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_12d4c920-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_12d4c920-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Damage (USD)",
+                "type": "number",
+                "propName": "damageUSD",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_12faeec0-25c7-11f0-b6fc-f9d062fb9a63",
+                "fieldName": "control_12faeec0-25c7-11f0-b6fc-f9d062fb9a63",
+                "label": "Maximum Wind Speed (mph)",
+                "type": "number",
+                "propName": "maximumWindSpeedmph",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_92f32c70-25d4-11f0-bd6b-35873215a24d",
+                "fieldName": "control_92f32c70-25d4-11f0-bd6b-35873215a24d",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": []
+              },
+              {
+                "name": "control_38cb3710-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "fieldName": "control_38cb3710-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "label": "PART NUMBER",
+                "type": "datepicker",
+                "propName": "pARTNUMBER",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_38cb3712-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "fieldName": "control_38cb3712-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "label": "QTY",
+                "type": "number",
+                "propName": "qTY",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_38cb5e20-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "fieldName": "control_38cb5e20-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "label": "Material",
+                "type": "text",
+                "propName": "material",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_38cb5e21-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "fieldName": "control_38cb5e21-2a8e-11f0-b1d0-bd53ddc595ab_",
+                "label": "Quote",
+                "type": "text",
+                "propName": "quote",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_03b59d50-2ab0-11f0-af4c-23021ec34df7",
+                "fieldName": "control_03b59d50-2ab0-11f0-af4c-23021ec34df7",
+                "label": "dOCUMENTPREVIEW",
+                "type": "profile_image",
+                "propName": "dOCUMENTPREVIEW",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_048bd910-2ab0-11f0-af4c-23021ec34df7",
+                "fieldName": "control_048bd910-2ab0-11f0-af4c-23021ec34df7",
+                "label": "iTEMNO",
+                "type": "number",
+                "propName": "iTEMNO",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_05abef10-2ab0-11f0-af4c-23021ec34df7",
+                "fieldName": "control_05abef10-2ab0-11f0-af4c-23021ec34df7",
+                "label": "dESCRIPTION",
+                "type": "text",
+                "propName": "dESCRIPTION",
+                "className": "col-md-6"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_0aa5e810-25c7-11f0-b6fc-f9d062fb9a63",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_0aa5e810-25c7-11f0-b6fc-f9d062fb9a63",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_0aa5e810-25c7-11f0-b6fc-f9d062fb9a63_row_0aa5e811-25c7-11f0-b6fc-f9d062fb9a63",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "hurricanes",
+  "storageType": "dashboard",
+  "title": "hurricanes",
+  "views": {
+    "default": {
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "nestedDataGrid": "",
+      "readOnly": false,
+      "recordCustomCode": "\r\n ",
+      "title": "Default"
+    }
+  }
+}

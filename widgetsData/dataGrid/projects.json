@@ -1,0 +1,369 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "color": {
+      "displayName": "Color",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "description": {
+      "displayName": "Description",
+      "invisible": true,
+      "order": 12,
+      "type": "multiline_text"
+    },
+    "endDate": {
+      "displayName": "End Date",
+      "invisible": true,
+      "order": 10,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "opportunities_instance": {
+      "dataGrid": "opportunities",
+      "displayName": "Opportunities",
+      "filterColumn": "project",
+      "order": 15,
+      "type": "datagrid"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "progress": {
+      "displayName": "Progress",
+      "invisible": true,
+      "order": 13,
+      "type": "number"
+    },
+    "resource": {
+      "displayName": "Resource",
+      "invisible": true,
+      "order": 14,
+      "type": "string"
+    },
+    "startDate": {
+      "displayName": "Start Date",
+      "invisible": true,
+      "order": 9,
+      "type": "date"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "supportHub": {
+      "displayName": "Support Hub",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "onboardingQuestionaire",
+      "order": 16,
+      "type": "lookup"
+    },
+    "workOrderOperations_instance": {
+      "dataGrid": "workOrderOperations",
+      "displayName": "Work Order Operations",
+      "filterColumn": "project",
+      "order": 8,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_394091",
+        "label": "Projects",
+        "clientKey": "section_394091",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_394091_row_771727",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_95f67130-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_95f67130-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_de12e9f0-cff6-11ee-88b4-b999e885e16c",
+                "fieldName": "control_de12e9f0-cff6-11ee-88b4-b999e885e16c",
+                "label": "Start Date",
+                "type": "datepicker",
+                "propName": "startDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "projects"
+              },
+              {
+                "name": "control_7193fde0-cff7-11ee-88b4-b999e885e16c",
+                "fieldName": "control_7193fde0-cff7-11ee-88b4-b999e885e16c",
+                "label": "End Date",
+                "type": "datepicker",
+                "propName": "endDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "projects"
+              },
+              {
+                "name": "control_962681e0-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_962681e0-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "gridId": "projects"
+              },
+              {
+                "name": "control_8deaef80-cff7-11ee-88b4-b999e885e16c",
+                "fieldName": "control_8deaef80-cff7-11ee-88b4-b999e885e16c",
+                "label": "Color",
+                "type": "text",
+                "propName": "color",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_940ce990-cff7-11ee-88b4-b999e885e16c",
+                "fieldName": "control_940ce990-cff7-11ee-88b4-b999e885e16c",
+                "label": "Description",
+                "type": "multiline_text",
+                "propName": "description",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9f72d9c0-cff7-11ee-88b4-b999e885e16c",
+                "fieldName": "control_9f72d9c0-cff7-11ee-88b4-b999e885e16c",
+                "label": "Progress",
+                "type": "number",
+                "propName": "progress",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_7bf1b060-cff8-11ee-88b4-b999e885e16c",
+                "fieldName": "control_7bf1b060-cff8-11ee-88b4-b999e885e16c",
+                "label": "Resource",
+                "type": "text",
+                "propName": "resource",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e6ba7670-da60-11ef-a9e7-9da221c6925f",
+                "fieldName": "control_e6ba7670-da60-11ef-a9e7-9da221c6925f",
+                "label": "Support Hub",
+                "type": "lookup",
+                "propName": "supportHub",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_9b1f7100-d590-11ee-8866-578b39ad3d7d",
+                "fieldName": "control_9b1f7100-d590-11ee-8866-578b39ad3d7d",
+                "label": "Opportunities",
+                "type": "datagrid",
+                "propName": "opportunities_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_95f64a20-8273-11ee-adcf-a56ed5716b4d",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_95f64a20-8273-11ee-adcf-a56ed5716b4d",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_95f64a20-8273-11ee-adcf-a56ed5716b4d_row_95f64a21-8273-11ee-adcf-a56ed5716b4d",
+            "controls": [
+              {
+                "name": "control_960f7770-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_960f7770-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_963f12f0-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_963f12f0-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9653d370-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_9653d370-8273-11ee-adcf-a56ed5716b4d",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_966893f0-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_966893f0-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_967b3190-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_967b3190-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_968ee0a0-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_968ee0a0-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_805449",
+        "label": "Work Order Operations",
+        "clientKey": "section_805449",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_805449_row_542213",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_be77b470-8273-11ee-adcf-a56ed5716b4d",
+                "fieldName": "control_be77b470-8273-11ee-adcf-a56ed5716b4d",
+                "label": "Work Order Operations",
+                "type": "datagrid",
+                "propName": "workOrderOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleLabel": true,
+                "gridId": "projects"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "projects",
+  "storageType": "dashboard",
+  "title": "Projects"
+}

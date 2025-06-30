@@ -1,0 +1,100 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "layout": {
+      "displayName": "Layout",
+      "order": 2,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "purchaseOrders_instance": {
+      "dataGrid": "purchaseOrders",
+      "displayName": "Purchase Orders",
+      "filterColumn": "subsidiary",
+      "order": 1,
+      "type": "datagrid"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_743593",
+        "label": "",
+        "clientKey": "section_743593",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_743593_row_383279",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_cabb7542-e326-11ef-9895-f16cd63edbae",
+                "fieldName": "control_cabb7542-e326-11ef-9895-f16cd63edbae",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_cb99c750-e326-11ef-9895-f16cd63edbae",
+                "fieldName": "control_cb99c750-e326-11ef-9895-f16cd63edbae",
+                "label": "Purchase Orders",
+                "type": "datagrid",
+                "propName": "purchaseOrders_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_78ff5400-e32c-11ef-87f8-e9860099ec7e",
+                "fieldName": "control_78ff5400-e32c-11ef-87f8-e9860099ec7e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_cabb7540-e326-11ef-9895-f16cd63edbae",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_cabb7540-e326-11ef-9895-f16cd63edbae",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_cabb7540-e326-11ef-9895-f16cd63edbae_row_cabb7541-e326-11ef-9895-f16cd63edbae",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "subsidiary",
+  "storageType": "dashboard",
+  "title": "Subsidiary"
+}

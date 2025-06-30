@@ -1,0 +1,173 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "email": {
+      "displayName": "Email",
+      "order": 1,
+      "type": "email"
+    },
+    "investmentAmount": {
+      "displayName": "Investment Amount",
+      "order": 3,
+      "type": "number"
+    },
+    "investmentDate": {
+      "displayName": "Investment Date",
+      "order": 4,
+      "type": "date"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "louoiu": {
+      "displayName": "louoiu",
+      "invisible": true,
+      "order": 6,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "notes": {
+      "displayName": "Notes",
+      "order": 5,
+      "type": "multiline_text"
+    },
+    "phoneNumber": {
+      "displayName": "Phone Number",
+      "order": 2,
+      "type": "phone"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_223099",
+        "label": "",
+        "clientKey": "section_223099",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_223099_row_695516",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_a2496d60-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a2496d60-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Email",
+                "type": "email",
+                "propName": "email",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_86e300d0-0d85-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_86e300d0-0d85-11ef-a2a6-5f8dbe759694",
+                "label": "louoiu",
+                "type": "text",
+                "propName": "louoiu",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a1fa3bf2-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a1fa3bf2-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a288e760-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a288e760-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Phone Number",
+                "type": "phone",
+                "propName": "phoneNumber",
+                "className": "col-md-6",
+                "mask": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a2c15c80-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a2c15c80-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Investment Amount",
+                "type": "number",
+                "propName": "investmentAmount",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a2fd05f0-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a2fd05f0-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Investment Date",
+                "type": "datepicker",
+                "propName": "investmentDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_a3388850-0d84-11ef-a2a6-5f8dbe759694",
+                "fieldName": "control_a3388850-0d84-11ef-a2a6-5f8dbe759694",
+                "label": "Notes",
+                "type": "multiline_text",
+                "propName": "notes",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_f7f318e0-0df4-11ef-986f-c701ce7e6c48",
+                "fieldName": "control_f7f318e0-0df4-11ef-986f-c701ce7e6c48",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_a1fa3bf0-0d84-11ef-a2a6-5f8dbe759694",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_a1fa3bf0-0d84-11ef-a2a6-5f8dbe759694",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_a1fa3bf0-0d84-11ef-a2a6-5f8dbe759694_row_a1fa3bf1-0d84-11ef-a2a6-5f8dbe759694",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "investors",
+  "storageType": "dashboard",
+  "title": "investors"
+}

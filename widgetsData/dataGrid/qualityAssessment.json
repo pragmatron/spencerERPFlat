@@ -1,0 +1,522 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "comments": {
+      "displayName": "Comments",
+      "invisible": true,
+      "order": 20,
+      "type": "multiline_text"
+    },
+    "containerIntegrityCheck": {
+      "displayName": "Container Integrity Check",
+      "invisible": false,
+      "order": 13,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "fillEndTime": {
+      "displayName": "Fill End Time",
+      "invisible": false,
+      "order": 18,
+      "type": "timepicker"
+    },
+    "fillStartTime": {
+      "displayName": "Fill Start Time",
+      "invisible": false,
+      "order": 15,
+      "type": "timepicker"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "lotCode": {
+      "displayName": "Lot Code",
+      "invisible": false,
+      "order": 12,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "packSizes_instance": {
+      "dataGrid": "packSizes",
+      "displayName": "Pack Sizes",
+      "filterColumn": "qualityAssessment",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "printAssessment": {
+      "dataForTemplate": "rowData;",
+      "displayName": "Print Assessment",
+      "invisible": true,
+      "order": 19,
+      "type": "print_template"
+    },
+    "productCode": {
+      "displayName": "Product Code",
+      "invisible": false,
+      "order": 11,
+      "type": "string"
+    },
+    "qualitySignOff": {
+      "displayName": "Quality Sign Off",
+      "invisible": true,
+      "order": 23,
+      "type": "checkbox"
+    },
+    "startTemperatureChecks": {
+      "displayName": "Start Temperature Checks",
+      "invisible": true,
+      "order": 16,
+      "type": "custom"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "stopTemperatureChecks": {
+      "displayName": "Stop Temperature Checks",
+      "invisible": true,
+      "order": 17,
+      "type": "custom"
+    },
+    "temperatureAndWeightChecks_instance": {
+      "dataGrid": "temperatureAndWeightChecks",
+      "displayName": "Temperature And Weight Checks",
+      "filterColumn": "qualityAssessment",
+      "order": 9,
+      "type": "datagrid"
+    },
+    "thermometerUsed": {
+      "displayName": "Thermometer Used",
+      "invisible": false,
+      "order": 10,
+      "type": "string"
+    },
+    "timeOfVerification": {
+      "displayName": "Time Of Verification",
+      "invisible": true,
+      "order": 22,
+      "type": "timepicker"
+    },
+    "verification": {
+      "displayName": "Verification",
+      "invisible": true,
+      "order": 21,
+      "type": "string"
+    },
+    "weighScaleTaredInitials": {
+      "displayName": "Weigh Scale Tared Initials",
+      "invisible": false,
+      "order": 14,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_561719",
+        "label": "Quality Assessment",
+        "clientKey": "section_561719",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_561719_row_155172",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_218d0d22-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_218d0d22-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_8f72f7e0-e2f7-11ee-b382-07d0637641dc",
+                "fieldName": "control_8f72f7e0-e2f7-11ee-b382-07d0637641dc",
+                "label": "Quality Sign Off",
+                "type": "checkbox",
+                "propName": "qualitySignOff",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_cc655080-e2d4-11ee-98dd-ab3c59628994",
+                "fieldName": "control_cc655080-e2d4-11ee-98dd-ab3c59628994",
+                "label": "Print Assessment",
+                "type": "print_template",
+                "propName": "printAssessment",
+                "className": "col-md-6",
+                "isForDownload": true,
+                "openInNewTab": false,
+                "selectedDataGrid": "qATemplate",
+                "printedFileName": "QA-Assessment",
+                "buttonLabel": "Print Assessment",
+                "dataForTemplate": "rowData;",
+                "selectedOutputDataGrid": "printedDocs",
+                "templateRowKey": "-Nt1gGBqEdsL5BUzjh12",
+                "invisibleLabel": true,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_bb78f910-e2cb-11ee-9287-d9416c932928",
+                "fieldName": "control_bb78f910-e2cb-11ee-9287-d9416c932928",
+                "label": "Thermometer Used",
+                "type": "text",
+                "propName": "thermometerUsed",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_ac10cfa0-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_ac10cfa0-e2cd-11ee-9287-d9416c932928",
+                "label": "Product Code",
+                "type": "text",
+                "propName": "productCode",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_afafa140-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_afafa140-e2cd-11ee-9287-d9416c932928",
+                "label": "Lot Code",
+                "type": "text",
+                "propName": "lotCode",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_b8522bb0-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_b8522bb0-e2cd-11ee-9287-d9416c932928",
+                "label": "Container Integrity Check",
+                "type": "text",
+                "propName": "containerIntegrityCheck",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_dae2be10-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_dae2be10-e2cd-11ee-9287-d9416c932928",
+                "label": "Fill Start Time",
+                "type": "timepicker",
+                "propName": "fillStartTime",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_eb2bd4d0-e2cf-11ee-9287-d9416c932928",
+                "fieldName": "control_eb2bd4d0-e2cf-11ee-9287-d9416c932928",
+                "label": "Fill End Time",
+                "type": "timepicker",
+                "propName": "fillEndTime",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_420c3260-e2ce-11ee-9287-d9416c932928",
+                "fieldName": "control_420c3260-e2ce-11ee-9287-d9416c932928",
+                "label": "Start Temperature Checks",
+                "type": "custom",
+                "propName": "startTemperatureChecks",
+                "className": "col-md-6",
+                "customCode": "<b-button\nv-if=\"!$getUser('tempCheckInProgress')\"\nvariant=\"success\"\n@click=\"startTempChecks(rowData)\"\n>Start Temp Checks</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_a57b6860-e2cf-11ee-9287-d9416c932928",
+                "fieldName": "control_a57b6860-e2cf-11ee-9287-d9416c932928",
+                "label": "Stop Temperature Checks",
+                "type": "custom",
+                "propName": "stopTemperatureChecks",
+                "className": "col-md-6",
+                "customCode": "<b-button\nv-if=\"$getUser('tempCheckInProgress')\"\nvariant=\"danger\"\n@click=\"stopTempChecks(rowData)\"\n>Stop Temp Checks</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_c18cd770-e2cd-11ee-9287-d9416c932928",
+                "fieldName": "control_c18cd770-e2cd-11ee-9287-d9416c932928",
+                "label": "Weigh Scale Tared Initials",
+                "type": "text",
+                "propName": "weighScaleTaredInitials",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_9097cad0-e2e1-11ee-95f0-ab83aaf1b4c8",
+                "fieldName": "control_9097cad0-e2e1-11ee-95f0-ab83aaf1b4c8",
+                "label": "Verification",
+                "type": "text",
+                "propName": "verification",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_995ea620-e2e1-11ee-95f0-ab83aaf1b4c8",
+                "fieldName": "control_995ea620-e2e1-11ee-95f0-ab83aaf1b4c8",
+                "label": "Time Of Verification",
+                "type": "timepicker",
+                "propName": "timeOfVerification",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              },
+              {
+                "name": "control_88fdfed0-e2d6-11ee-98dd-ab3c59628994",
+                "fieldName": "control_88fdfed0-e2d6-11ee-98dd-ab3c59628994",
+                "label": "Comments",
+                "type": "multiline_text",
+                "propName": "comments",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "qualityAssessment"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "name": "section_651550",
+        "label": "Temperature And Weight Checks",
+        "clientKey": "section_651550",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_651550_row_191539",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_f19fa720-e2c9-11ee-95d8-69eaa7ef5210",
+                "fieldName": "control_f19fa720-e2c9-11ee-95d8-69eaa7ef5210",
+                "label": "Temperature And Weight Checks",
+                "type": "datagrid",
+                "propName": "temperatureAndWeightChecks_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "qualityAssessment"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "cleintKey": "hidden_section_218d0d20-e2c9-11ee-a94e-fd36dfff0483",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_218d0d20-e2c9-11ee-a94e-fd36dfff0483",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_218d0d20-e2c9-11ee-a94e-fd36dfff0483_row_218d0d21-e2c9-11ee-a94e-fd36dfff0483",
+            "controls": [
+              {
+                "name": "control_21b15e00-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_21b15e00-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_21d81fe0-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_21d81fe0-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_2201a0e0-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_2201a0e0-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_222d6bd0-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_222d6bd0-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_225d2e60-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_225d2e60-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_228ca2d0-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_228ca2d0-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_22c3df70-e2c9-11ee-a94e-fd36dfff0483",
+                "fieldName": "control_22c3df70-e2c9-11ee-a94e-fd36dfff0483",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_942189",
+        "label": "Pack Sizes",
+        "clientKey": "section_942189",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_942189_row_869793",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_8a0c9b90-e2c9-11ee-9287-d9416c932928",
+                "fieldName": "control_8a0c9b90-e2c9-11ee-9287-d9416c932928",
+                "label": "Pack Sizes",
+                "type": "datagrid",
+                "propName": "packSizes_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "qualityAssessment"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "qualityAssessment",
+  "storageType": "dashboard",
+  "title": "Quality Assessment"
+}

@@ -1,0 +1,207 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "calibrations_instance": {
+      "dataGrid": "calibrations",
+      "displayName": "Calibrations",
+      "filterColumn": "calibrationTool",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_228969",
+        "label": "",
+        "clientKey": "section_228969",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_228969_row_903135",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_d8a19ce0-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d8a19ce0-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_78411b90-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_78411b90-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Calibrations",
+                "type": "datagrid",
+                "propName": "calibrations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_d8a175d0-d254-11ee-be77-eb006ae4ac9e",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_d8a175d0-d254-11ee-be77-eb006ae4ac9e",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_d8a175d0-d254-11ee-be77-eb006ae4ac9e_row_d8a175d1-d254-11ee-be77-eb006ae4ac9e",
+            "controls": [
+              {
+                "name": "control_d8c1cf10-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d8c1cf10-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d8ddbb80-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d8ddbb80-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d8fa1d20-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d8fa1d20-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d9160990-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d9160990-d254-11ee-be77-eb006ae4ac9e",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d932e060-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d932e060-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d95116c0-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d95116c0-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d96fc250-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d96fc250-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "calibrationTools",
+  "storageType": "dashboard",
+  "title": "Calibration Tools"
+}

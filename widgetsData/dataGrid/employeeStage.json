@@ -1,0 +1,207 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "employees_instance": {
+      "dataGrid": "employees",
+      "displayName": "Employees",
+      "filterColumn": "employeeStage",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_436410",
+        "label": "",
+        "clientKey": "section_436410",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_436410_row_117457",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_00ded1a2-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_00ded1a2-e150-11ee-990f-2fd7633d41c4",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_1ff6b800-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_1ff6b800-e150-11ee-990f-2fd7633d41c4",
+                "label": "Employees",
+                "type": "datagrid",
+                "propName": "employees_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_00ded1a0-e150-11ee-990f-2fd7633d41c4",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_00ded1a0-e150-11ee-990f-2fd7633d41c4",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_00ded1a0-e150-11ee-990f-2fd7633d41c4_row_00ded1a1-e150-11ee-990f-2fd7633d41c4",
+            "controls": [
+              {
+                "name": "control_01123db0-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_01123db0-e150-11ee-990f-2fd7633d41c4",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_01909570-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_01909570-e150-11ee-990f-2fd7633d41c4",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_01cdec90-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_01cdec90-e150-11ee-990f-2fd7633d41c4",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0201f4e0-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_0201f4e0-e150-11ee-990f-2fd7633d41c4",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0303d480-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_0303d480-e150-11ee-990f-2fd7633d41c4",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_0342d950-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_0342d950-e150-11ee-990f-2fd7633d41c4",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_03827a60-e150-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_03827a60-e150-11ee-990f-2fd7633d41c4",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "employeeStage",
+  "storageType": "dashboard",
+  "title": "Employee Stage"
+}

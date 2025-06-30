@@ -1,0 +1,286 @@
+<template>
+  <div class="onboarding-component">
+    <div class="card">
+      <div class="card-header">
+        <h3>{{ title }}</h3>
+        <p>{{ subtitle }}</p>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress">
+          <div 
+            class="progress-bar bg-success" 
+            role="progressbar" 
+            :style="{ width: progress + '%' }" 
+            :aria-valuenow="completedSteps" 
+            aria-valuemin="0" 
+            :aria-valuemax="totalSteps">
+            {{ completedSteps }} of {{ totalSteps }}
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="onboarding-steps">
+          <!-- Loop through steps -->
+          <div 
+            v-for="step in steps" 
+            :key="step.key" 
+            class="onboarding-step" 
+            :class="{ 'completed': step.visited }">
+            
+            <div class="step-indicator">
+              <i v-if="step.visited" class="fas fa-check-circle text-success"></i>
+              <i v-else class="far fa-circle"></i>
+            </div>
+            
+            <div class="step-content">
+              <h5>{{ step.title }}</h5>
+              <p>{{ step.subtitle }}</p>
+              <div class="d-flex align-items-center">
+                <b-button variant="primary" @click="navigateTo(step)">                                                     
+                  {{ step.buttonText || 'Go to ' + step.title }}
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </b-button>
+                <b-button 
+                  v-if="!step.visited" 
+                  variant="outline-secondary" 
+                  class="ml-2" 
+                  @click="markAsVisited(step.key)">
+                  Mark as Completed
+                </b-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer" v-if="allCompleted">
+        <div class="text-center">
+          <h5 class="text-success mb-3">
+            <i class="fas fa-award mr-2"></i>
+            {{ completionMessage }}
+          </h5>
+          <p>{{ completionDescription }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  data() {
+    return {
+      title: "Welcome to Tangle!",
+      subtitle: "Complete these steps to get started",
+      completionMessage: "All steps completed!",
+      completionDescription: "You're all set up and ready to use the full application.",
+      // Steps configuration with all necessary info for each step
+      steps: [
+        {
+          key: 'parts',
+          title: 'Visit the Parts Page',
+          subtitle: 'Explore our parts inventory and management system',
+          visited: false,
+          subtabId: '-O0PH2J2WHAomPGW20rK',
+          tabId: '-O0P6ggwL94dkCCs88Ue',
+          buttonText: 'Go to Parts'
+        },
+        {
+          key: 'customers',
+          title: 'Enter/ View Some of Your Customers',
+          subtitle: 'Learn how to create and manage your customers',
+          visited: false,
+          subtabId: '-NZQV1hmHfUb4G3-cXAR',
+          tabId: '-Nr16kQdMyZP5X_9exWf',
+          buttonText: 'Go to Customers'
+        },
+        {
+          key: 'workOrders',
+          title: 'Manage Work Orders',
+          subtitle: 'Discover how to create and track work orders for your business',
+          visited: false,
+          subtabId: '-O0PGo1HoCkJiWDYNURD',
+          tabId: '-O0P6ggwL94dkCCs88Ue',
+          buttonText: 'Go to Work Orders'
+        },
+        {
+          key: 'quotes',
+          title: 'Create Your First Quote',
+          subtitle: 'Learn how to create and manage quotes for your customers',
+          visited: false,
+          subtabId: '-O0PGZaCLfEsCnsw97Ct',
+          tabId: '-O0P6ggwL94dkCCs88Ue',
+          buttonText: 'Go to Quotes'
+        },
+        {
+          key: 'salesOrders',
+          title: 'Explore Sales Orders',
+          subtitle: 'Discover how to create and track sales orders for your business',
+          visited: false,
+          subtabId: '-O0PGeSeNXcFSYv9MzRC',
+          tabId: '-O0P6ggwL94dkCCs88Ue',
+          buttonText: 'Go to Sales Orders'
+        }
+      ]
+    };
+  },
+  computed: {
+    completedSteps() {
+      return this.steps.filter(step => step.visited).length;
+    },
+    totalSteps() {
+      return this.steps.length;
+    },
+    progress() {
+      return (this.completedSteps / this.totalSteps) * 100;
+    },
+    allCompleted() {
+      return this.completedSteps === this.totalSteps;
+    }
+  },
+  methods: {
+    // Unified navigation method using step config
+    navigateTo(step) {
+      this.$parent.$setCurrentSubTab(step.subtabId, step.tabId);
+    },
+    
+    // Mark a step as visited using the key
+    markAsVisited(key) {
+      const step = this.steps.find(s => s.key === key);
+      if (step) {
+        step.visited = true;
+        this.$parent.$setGlobalModel(`onboarding_visited_${key}`, true);
+      }
+    },
+    
+    // Check if current page matches any of our onboarding steps
+    checkCurrentPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const tab = urlParams.get('tab');
+      const subtab = urlParams.get('subtab');
+      
+      if (tab === '-O0P6ggwL94dkCCs88Ue') {
+        this.steps.forEach(step => {
+          if (subtab === step.subtabId) {
+            this.markAsVisited(step.key);
+          }
+        });
+      }
+    },
+    
+    // Load saved state for all steps
+    loadSavedState() {
+      this.steps.forEach(step => {
+        step.visited = this.$parent.$getGlobalModel(`onboarding_visited_${step.key}`) || false;
+      });
+    }
+  },
+  mounted() {
+    // Load the saved state when component mounts
+    this.loadSavedState();
+    
+    // Check if current page matches any of our target pages
+    this.checkCurrentPage();
+    
+    // Listen for route changes to detect when user navigates to target pages
+    this.$bus.$on('onTabChange', () => {
+      this.checkCurrentPage();
+    });
+  },
+  beforeDestroy() {
+    // Clean up event listener
+    this.$bus.$off('onTabChange');
+  }
+};
+</script>
+
+<style scoped>
+.onboarding-component {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.card-header h3 {
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.progress-container {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.onboarding-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.onboarding-step {
+  display: flex;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.onboarding-step:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.onboarding-step.completed {
+  border-left: 4px solid #28a745;
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+.step-indicator {
+  margin-right: 15px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  margin-bottom: 5px;
+  color: #343a40;
+}
+
+.step-content p {
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.card-footer {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+</style>

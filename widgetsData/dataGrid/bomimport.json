@@ -1,0 +1,280 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "componentStockCode": {
+      "displayName": "Component Stock Code",
+      "invisible": false,
+      "order": 1,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 9,
+      "type": "date"
+    },
+    "effectiveAfterYYYYMMDD": {
+      "displayName": "Effective After (YYYYMMDD)",
+      "invisible": false,
+      "order": 3,
+      "type": "date"
+    },
+    "effectiveToYYYYMMDD": {
+      "displayName": "Effective To (YYYYMMDD)",
+      "invisible": false,
+      "order": 4,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 13,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 12,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 7,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 6,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 11,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 8,
+      "type": "user"
+    },
+    "parentStockCode": {
+      "displayName": "Parent Stock Code",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "quantity": {
+      "displayName": "Quantity",
+      "invisible": false,
+      "order": 5,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "workCentreCode": {
+      "displayName": "Work Centre Code",
+      "invisible": false,
+      "order": 2,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_613316",
+        "label": "",
+        "clientKey": "section_613316",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_613316_row_265274",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_68465fd2-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_68465fd2-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "bomimport"
+              },
+              {
+                "name": "control_c12624f0-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c12624f0-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Parent Stock Code",
+                "type": "text",
+                "propName": "parentStockCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c1264c00-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c1264c00-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Component Stock Code",
+                "type": "text",
+                "propName": "componentStockCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c1264c01-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c1264c01-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Work Centre Code",
+                "type": "text",
+                "propName": "workCentreCode",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c1264c02-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c1264c02-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Effective After (YYYYMMDD)",
+                "type": "datepicker",
+                "propName": "effectiveAfterYYYYMMDD",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c1264c03-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c1264c03-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Effective To (YYYYMMDD)",
+                "type": "datepicker",
+                "propName": "effectiveToYYYYMMDD",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c1267310-d71d-11ee-9477-fb5ddaf2e736_",
+                "fieldName": "control_c1267310-d71d-11ee-9477-fb5ddaf2e736_",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 3,
+                "gridId": "bomimport"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_68465fd0-d71d-11ee-b6e8-a56609b84fc8",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_68465fd0-d71d-11ee-b6e8-a56609b84fc8",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_68465fd0-d71d-11ee-b6e8-a56609b84fc8_row_68465fd1-d71d-11ee-b6e8-a56609b84fc8",
+            "controls": [
+              {
+                "name": "control_687f7130-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_687f7130-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_68abb150-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_68abb150-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_68d29a40-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_68d29a40-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_68f98330-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_68f98330-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_692c5300-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_692c5300-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_69562220-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_69562220-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_697edfd0-d71d-11ee-b6e8-a56609b84fc8",
+                "fieldName": "control_697edfd0-d71d-11ee-b6e8-a56609b84fc8",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "bomimport",
+  "storageType": "dashboard",
+  "title": "Bom import"
+}

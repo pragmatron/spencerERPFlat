@@ -1,0 +1,248 @@
+{
+  "cloneData": true,
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "aRInvoices_instance": {
+      "dataGrid": "aRInvoices",
+      "displayName": "AR Invoices",
+      "filterColumn": "aRInvoiceTemplate",
+      "order": 10,
+      "type": "datagrid"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "file": {
+      "displayName": "File",
+      "order": 9,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "template": {
+      "displayName": "Template",
+      "invisible": true,
+      "order": 8,
+      "type": "files"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_726786",
+        "label": "",
+        "clientKey": "section_726786",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_726786_row_779852",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_45cade70-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_45cade70-4746-11ee-9589-e91bd5e6932f",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_8bc2b420-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_8bc2b420-4746-11ee-9589-e91bd5e6932f",
+                "label": "Template",
+                "type": "files",
+                "propName": "template",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_4e79b050-c9dc-11ee-a563-2174724ef4ee",
+                "fieldName": "control_4e79b050-c9dc-11ee-a563-2174724ef4ee",
+                "label": "File",
+                "type": "files",
+                "propName": "file",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_dafe2610-4a9b-11ef-a675-57c939275f47",
+                "fieldName": "control_dafe2610-4a9b-11ef-a675-57c939275f47",
+                "label": "AR Invoices",
+                "type": "datagrid",
+                "propName": "aRInvoices_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_45cab760-4746-11ee-9589-e91bd5e6932f",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_45cab760-4746-11ee-9589-e91bd5e6932f",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_45cab760-4746-11ee-9589-e91bd5e6932f_row_45cab761-4746-11ee-9589-e91bd5e6932f",
+            "controls": [
+              {
+                "name": "control_45ea2640-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_45ea2640-4746-11ee-9589-e91bd5e6932f",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_46054f60-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_46054f60-4746-11ee-9589-e91bd5e6932f",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_46224d40-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_46224d40-4746-11ee-9589-e91bd5e6932f",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_464369d0-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_464369d0-4746-11ee-9589-e91bd5e6932f",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_466e9880-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_466e9880-4746-11ee-9589-e91bd5e6932f",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_46aa41f0-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_46aa41f0-4746-11ee-9589-e91bd5e6932f",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_46ca2600-4746-11ee-9589-e91bd5e6932f",
+                "fieldName": "control_46ca2600-4746-11ee-9589-e91bd5e6932f",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "aRInvoiceTemplate",
+  "storageType": "dashboard",
+  "title": "AR Invoice Template"
+}

@@ -1,0 +1,202 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "file": {
+      "displayName": "File",
+      "order": 8,
+      "type": "files"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_53147",
+        "label": "",
+        "clientKey": "section_53147",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_53147_row_697393",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_d47f9da0-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d47f9da0-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e6fb5dc0-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_e6fb5dc0-dc7d-11ee-ab5e-db257442dce7",
+                "label": "File",
+                "type": "files",
+                "propName": "file",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_d47f7690-dc7d-11ee-ab5e-db257442dce7",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_d47f7690-dc7d-11ee-ab5e-db257442dce7",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_d47f7690-dc7d-11ee-ab5e-db257442dce7_row_d47f7691-dc7d-11ee-ab5e-db257442dce7",
+            "controls": [
+              {
+                "name": "control_d4b1d130-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d4b1d130-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d4eda1b0-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d4eda1b0-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d52b9510-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d52b9510-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d5665420-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d5665420-dc7d-11ee-ab5e-db257442dce7",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d5a58000-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d5a58000-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d5e484d0-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d5e484d0-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d627cf60-dc7d-11ee-ab5e-db257442dce7",
+                "fieldName": "control_d627cf60-dc7d-11ee-ab5e-db257442dce7",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "nCRTemplate",
+  "storageType": "dashboard",
+  "title": "NCR Template"
+}

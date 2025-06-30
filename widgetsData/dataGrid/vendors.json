@@ -1,0 +1,553 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "contacts": {
+      "dataGrid": "contacts",
+      "displayName": "Contacts",
+      "filterColumn": "vendor",
+      "order": 15,
+      "type": "datagrid"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "defaultPurchasingAddress": {
+      "Width": "333px",
+      "displayName": "Default Purchasing Address",
+      "invisible": true,
+      "lookUpTable": "addresses",
+      "order": 10,
+      "type": "lookup"
+    },
+    "estimateMaterials_instance": {
+      "dataGrid": "estimateMaterials",
+      "displayName": "Estimate Materials",
+      "filterColumn": "vendor",
+      "order": 18,
+      "type": "datagrid"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "methodMaterials_instance": {
+      "dataGrid": "methodMaterials",
+      "displayName": "Method Materials",
+      "filterColumn": "preferredVendor",
+      "order": 17,
+      "type": "datagrid"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "phone": {
+      "displayName": "Phone",
+      "invisible": true,
+      "order": 16,
+      "type": "phone"
+    },
+    "primaryContact": {
+      "displayName": "Primary Contact",
+      "invisible": false,
+      "lookUpTable": "contacts",
+      "order": 12,
+      "type": "lookup"
+    },
+    "primaryEmailAddress": {
+      "displayName": "Primary Email Address",
+      "invisible": false,
+      "order": 14,
+      "type": "string"
+    },
+    "primaryPhone": {
+      "displayName": "Primary Phone",
+      "invisible": false,
+      "order": 13,
+      "type": "string"
+    },
+    "resource": {
+      "displayName": "Resource",
+      "invisible": true,
+      "order": 9,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "terms": {
+      "displayName": "Terms",
+      "invisible": true,
+      "lookUpTable": "terms",
+      "order": 11,
+      "type": "lookup"
+    },
+    "vendorartslist_instance": {
+      "dataGrid": "vendorartslist",
+      "displayName": "Vendor Parts List",
+      "filterColumn": "vendors",
+      "order": 19,
+      "type": "datagrid"
+    },
+    "website": {
+      "displayName": "Website",
+      "invisible": true,
+      "order": 8,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_564325",
+        "label": "Vendor",
+        "clientKey": "section_564325",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_564325_row_106528",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_8041ee12-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_8041ee12-1995-11ee-a563-95edeb999dc8",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_fa540a92-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa540a92-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Website",
+                "type": "text",
+                "propName": "website",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_fa540a94-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa540a94-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Purchasing Address",
+                "type": "lookup",
+                "propName": "defaultPurchasingAddress",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "vendors",
+                "lookUpTable": "addresses"
+              },
+              {
+                "name": "control_fa540a95-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa540a95-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Terms",
+                "type": "lookup",
+                "propName": "terms",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "vendors",
+                "lookUpTable": "terms"
+              },
+              {
+                "name": "control_3b108340-61ef-11ee-93d0-317d6c7b2255",
+                "fieldName": "control_3b108340-61ef-11ee-93d0-317d6c7b2255",
+                "label": "Phone",
+                "type": "phone",
+                "propName": "phone",
+                "className": "col-md-6",
+                "mask": "",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_ba373560-1bbb-11f0-8293-69a4dc1749b7",
+                "fieldName": "control_ba373560-1bbb-11f0-8293-69a4dc1749b7",
+                "label": "Vendor Parts List",
+                "type": "datagrid",
+                "propName": "vendorartslist_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "gridId": "vendors"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_8041ee10-1995-11ee-a563-95edeb999dc8",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_8041ee10-1995-11ee-a563-95edeb999dc8",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_8041ee10-1995-11ee-a563-95edeb999dc8_row_8041ee11-1995-11ee-a563-95edeb999dc8",
+            "controls": [
+              {
+                "name": "control_a78e98c0-96fc-11ef-b774-ddb2a337b1a9",
+                "fieldName": "control_a78e98c0-96fc-11ef-b774-ddb2a337b1a9",
+                "label": "Estimate Materials",
+                "type": "datagrid",
+                "propName": "estimateMaterials_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_805946a0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_805946a0-1995-11ee-a563-95edeb999dc8",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_59edba10-3473-11ef-924c-b15949a0f2b0",
+                "fieldName": "control_59edba10-3473-11ef-924c-b15949a0f2b0",
+                "label": "Method Materials",
+                "type": "datagrid",
+                "propName": "methodMaterials_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_fa540a93-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa540a93-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Resource",
+                "type": "text",
+                "propName": "resource",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "vendors"
+              },
+              {
+                "name": "control_80718990-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_80718990-1995-11ee-a563-95edeb999dc8",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_8089cc80-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_8089cc80-1995-11ee-a563-95edeb999dc8",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_80a320e0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_80a320e0-1995-11ee-a563-95edeb999dc8",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_80bd1180-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_80bd1180-1995-11ee-a563-95edeb999dc8",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_80d99a30-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_80d99a30-1995-11ee-a563-95edeb999dc8",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_80f363c0-1995-11ee-a563-95edeb999dc8",
+                "fieldName": "control_80f363c0-1995-11ee-a563-95edeb999dc8",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_308662",
+        "label": "Primary Contact",
+        "clientKey": "section_308662",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_308662_row_339971",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_fa5431a6-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa5431a6-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Primary Contact",
+                "type": "lookup",
+                "propName": "primaryContact",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "vendors",
+                "lookUpTable": "contacts"
+              },
+              {
+                "name": "control_fa5431aa-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa5431aa-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Primary Email Address",
+                "type": "text",
+                "propName": "primaryEmailAddress",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_fa5431a9-1994-11ee-8ff1-c3a421ed9487_",
+                "fieldName": "control_fa5431a9-1994-11ee-8ff1-c3a421ed9487_",
+                "label": "Primary Phone",
+                "type": "text",
+                "propName": "primaryPhone",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      },
+      {
+        "name": "section_365732",
+        "label": "Contacts",
+        "clientKey": "section_365732",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_365732_row_78383",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_22d65cc0-3d17-11ee-ba01-4715ad75b284",
+                "fieldName": "control_22d65cc0-3d17-11ee-ba01-4715ad75b284",
+                "label": "Contacts",
+                "type": "datagrid",
+                "propName": "contacts",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "invisibleLabel": true,
+                "gridId": "vendors"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": ""
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "vendors",
+  "storageType": "dashboard",
+  "title": "Vendors",
+  "views": {
+    "default": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "desc"
+      },
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Name\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "contacts": {
+          "displayName": "Contacts",
+          "invisible": false,
+          "order": 15
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "defaultPurchasingAddress": {
+          "displayName": "Default Purchasing Address",
+          "invisible": false,
+          "order": 10
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "order": 18
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "methodMaterials_instance": {
+          "displayName": "Method Materials",
+          "order": 17
+        },
+        "name": {
+          "displayName": "Name",
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "phone": {
+          "displayName": "Phone",
+          "order": 16
+        },
+        "primaryContact": {
+          "displayName": "Primary Contact",
+          "invisible": true,
+          "order": 12
+        },
+        "primaryEmailAddress": {
+          "displayName": "Primary Email Address",
+          "invisible": true,
+          "order": 14
+        },
+        "primaryPhone": {
+          "displayName": "Primary Phone",
+          "invisible": true,
+          "order": 13
+        },
+        "resource": {
+          "displayName": "Resource",
+          "invisible": true,
+          "order": 9
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "terms": {
+          "displayName": "Terms",
+          "invisible": true,
+          "order": 11
+        },
+        "vendorartslist_instance": {
+          "displayName": "Vendor Parts List",
+          "order": 19
+        },
+        "website": {
+          "displayName": "Website",
+          "invisible": false,
+          "order": 8
+        }
+      }
+    }
+  }
+}

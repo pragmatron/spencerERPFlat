@@ -1,0 +1,171 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "assetName": {
+      "displayName": "Asset Name",
+      "order": 1,
+      "type": "string"
+    },
+    "assetType": {
+      "displayName": "Asset Type",
+      "order": 2,
+      "type": "string"
+    },
+    "condition": {
+      "displayName": "Condition",
+      "order": 6,
+      "type": "string"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 7,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "order": 5,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "purchaseDate": {
+      "displayName": "Purchase Date",
+      "order": 3,
+      "type": "date"
+    },
+    "value": {
+      "displayName": "Value",
+      "order": 4,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_370796",
+        "label": "",
+        "clientKey": "section_370796",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_370796_row_160664",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_98829af2-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_98829af2-408c-11ef-b256-5565b57f2047",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_98e0c080-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_98e0c080-408c-11ef-b256-5565b57f2047",
+                "label": "Asset Name",
+                "type": "text",
+                "propName": "assetName",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_99352210-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_99352210-408c-11ef-b256-5565b57f2047",
+                "label": "Asset Type",
+                "type": "text",
+                "propName": "assetType",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_998ae330-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_998ae330-408c-11ef-b256-5565b57f2047",
+                "label": "Purchase Date",
+                "type": "datepicker",
+                "propName": "purchaseDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_99de3350-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_99de3350-408c-11ef-b256-5565b57f2047",
+                "label": "Value",
+                "type": "number",
+                "propName": "value",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9a2bb710-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_9a2bb710-408c-11ef-b256-5565b57f2047",
+                "label": "Location",
+                "type": "text",
+                "propName": "location",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9a7e6af0-408c-11ef-b256-5565b57f2047",
+                "fieldName": "control_9a7e6af0-408c-11ef-b256-5565b57f2047",
+                "label": "Condition",
+                "type": "text",
+                "propName": "condition",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_47202ee0-42b5-11ef-b1d1-b733ad02b858",
+                "fieldName": "control_47202ee0-42b5-11ef-b1d1-b733ad02b858",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_98829af0-408c-11ef-b256-5565b57f2047",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_98829af0-408c-11ef-b256-5565b57f2047",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_98829af0-408c-11ef-b256-5565b57f2047_row_98829af1-408c-11ef-b256-5565b57f2047",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "assetManagement",
+  "storageType": "dashboard",
+  "title": "assetManagement"
+}

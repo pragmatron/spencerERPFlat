@@ -1,0 +1,253 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 6,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 10,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 9,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 4,
+      "type": "select"
+    },
+    "month": {
+      "displayName": "Month",
+      "invisible": false,
+      "order": 1,
+      "type": "date"
+    },
+    "name": {
+      "displayName": "Name",
+      "invisible": false,
+      "order": 3,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 8,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 5,
+      "type": "user"
+    },
+    "product": {
+      "displayName": "Product",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 0,
+      "type": "lookup"
+    },
+    "quantity": {
+      "displayName": "Quantity",
+      "invisible": false,
+      "order": 2,
+      "type": "number"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 7,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_20731",
+        "label": "",
+        "clientKey": "section_20731",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_20731_row_993022",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_5b602752-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5b602752-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_65f69280-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_65f69280-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Product",
+                "type": "lookup",
+                "propName": "product",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_6df22e90-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_6df22e90-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Month",
+                "type": "datepicker",
+                "propName": "month",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_75f28590-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_75f28590-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_5b602750-bc92-11ef-9a01-7127000dbbbe",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_5b602750-bc92-11ef-9a01-7127000dbbbe",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_5b602750-bc92-11ef-9a01-7127000dbbbe_row_5b602751-bc92-11ef-9a01-7127000dbbbe",
+            "controls": [
+              {
+                "name": "control_5ba51f90-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5ba51f90-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5be9a2a0-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5be9a2a0-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5c3132f0-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5c3132f0-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5c76c770-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5c76c770-bc92-11ef-9a01-7127000dbbbe",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5cbcf830-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5cbcf830-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5d06f980-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5d06f980-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5d72b3a0-bc92-11ef-9a01-7127000dbbbe",
+                "fieldName": "control_5d72b3a0-bc92-11ef-9a01-7127000dbbbe",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "showRowKey": false,
+  "source": "forecast",
+  "storageType": "dashboard",
+  "title": "forecast",
+  "views": {
+    "default": {
+      "displayAsExcel": true,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "nestedDataGrid": "",
+      "readOnly": false,
+      "recordCustomCode": "",
+      "title": "Default"
+    }
+  }
+}

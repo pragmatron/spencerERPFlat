@@ -1,0 +1,335 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "aCTUALDIMENSION": {
+      "displayName": "ACTUAL DIMENSION",
+      "order": 11,
+      "type": "string"
+    },
+    "cOMMENT": {
+      "displayName": "COMMENT",
+      "order": 13,
+      "type": "string"
+    },
+    "cUSTOMER": {
+      "displayName": "CUSTOMER",
+      "order": 8,
+      "type": "string"
+    },
+    "dATE": {
+      "displayName": "DATE",
+      "order": 8,
+      "type": "date"
+    },
+    "dESCRIPTION": {
+      "displayName": "DESCRIPTION",
+      "order": 8,
+      "type": "string"
+    },
+    "dIMENSION": {
+      "displayName": "DIMENSION",
+      "order": 9,
+      "type": "string"
+    },
+    "firstArticleReportItems_instance": {
+      "dataGrid": "firstArticleReportItems",
+      "displayName": "firstArticleReportItems",
+      "filterColumn": "firstArticleReport",
+      "order": 14,
+      "type": "datagrid"
+    },
+    "iNSPECTOR": {
+      "displayName": "INSPECTOR",
+      "order": 8,
+      "type": "string"
+    },
+    "iTEMNOTE": {
+      "displayName": "ITEM NOTE",
+      "order": 8,
+      "type": "string"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 15,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 8,
+      "type": "string"
+    },
+    "pARTNUMBER": {
+      "displayName": "PART NUMBER",
+      "order": 8,
+      "type": "string"
+    },
+    "rEV": {
+      "displayName": "REV",
+      "order": 8,
+      "type": "string"
+    },
+    "tOL": {
+      "displayName": "TOL.",
+      "order": 10,
+      "type": "string"
+    },
+    "tOLERANCE": {
+      "displayName": "TOLERANCE",
+      "order": 8,
+      "type": "string"
+    },
+    "tOOLSUSED": {
+      "displayName": "TOOLS USED",
+      "order": 12,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_621219",
+        "label": "",
+        "clientKey": "section_621219",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_621219_row_695489",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_ced32cc2-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_ced32cc2-0038-11f0-b444-f9f65eafd814",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cef92b50-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cef92b50-0038-11f0-b444-f9f65eafd814",
+                "label": "CUSTOMER",
+                "type": "text",
+                "propName": "cUSTOMER",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cf1fed30-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cf1fed30-0038-11f0-b444-f9f65eafd814",
+                "label": "PART NUMBER",
+                "type": "text",
+                "propName": "pARTNUMBER",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cf474b50-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cf474b50-0038-11f0-b444-f9f65eafd814",
+                "label": "REV",
+                "type": "text",
+                "propName": "rEV",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cf6e3440-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cf6e3440-0038-11f0-b444-f9f65eafd814",
+                "label": "DESCRIPTION",
+                "type": "text",
+                "propName": "dESCRIPTION",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cf9459e0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cf9459e0-0038-11f0-b444-f9f65eafd814",
+                "label": "TOLERANCE",
+                "type": "text",
+                "propName": "tOLERANCE",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cfbcc970-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cfbcc970-0038-11f0-b444-f9f65eafd814",
+                "label": "INSPECTOR",
+                "type": "text",
+                "propName": "iNSPECTOR",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_cfe5ae30-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_cfe5ae30-0038-11f0-b444-f9f65eafd814",
+                "label": "DATE",
+                "type": "datepicker",
+                "propName": "dATE",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_e8a436d0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_e8a436d0-0038-11f0-b444-f9f65eafd814",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fbabbc30-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fbabbc30-0038-11f0-b444-f9f65eafd814",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fbd42bc0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fbd42bc0-0038-11f0-b444-f9f65eafd814",
+                "label": "CUSTOMER",
+                "type": "text",
+                "propName": "cUSTOMER",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fbfbb0f0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fbfbb0f0-0038-11f0-b444-f9f65eafd814",
+                "label": "PART NUMBER",
+                "type": "text",
+                "propName": "pARTNUMBER",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fc2531f0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fc2531f0-0038-11f0-b444-f9f65eafd814",
+                "label": "REV",
+                "type": "text",
+                "propName": "rEV",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fc4c6900-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fc4c6900-0038-11f0-b444-f9f65eafd814",
+                "label": "DESCRIPTION",
+                "type": "text",
+                "propName": "dESCRIPTION",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fc754dc0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fc754dc0-0038-11f0-b444-f9f65eafd814",
+                "label": "TOLERANCE",
+                "type": "text",
+                "propName": "tOLERANCE",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fc9c36b0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fc9c36b0-0038-11f0-b444-f9f65eafd814",
+                "label": "INSPECTOR",
+                "type": "text",
+                "propName": "iNSPECTOR",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fcc40a00-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fcc40a00-0038-11f0-b444-f9f65eafd814",
+                "label": "DATE",
+                "type": "datepicker",
+                "propName": "dATE",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fcec2b70-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fcec2b70-0038-11f0-b444-f9f65eafd814",
+                "label": "ITEM NOTE",
+                "type": "text",
+                "propName": "iTEMNOTE",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fd1473f0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fd1473f0-0038-11f0-b444-f9f65eafd814",
+                "label": "DIMENSION",
+                "type": "text",
+                "propName": "dIMENSION",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fd3f5480-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fd3f5480-0038-11f0-b444-f9f65eafd814",
+                "label": "TOL.",
+                "type": "text",
+                "propName": "tOL",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fd6a3510-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fd6a3510-0038-11f0-b444-f9f65eafd814",
+                "label": "ACTUAL DIMENSION",
+                "type": "text",
+                "propName": "aCTUALDIMENSION",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fd9367f0-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fd9367f0-0038-11f0-b444-f9f65eafd814",
+                "label": "TOOLS USED",
+                "type": "text",
+                "propName": "tOOLSUSED",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_fdbd1000-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_fdbd1000-0038-11f0-b444-f9f65eafd814",
+                "label": "COMMENT",
+                "type": "text",
+                "propName": "cOMMENT",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0e9dbdc0-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_0e9dbdc0-0039-11f0-b444-f9f65eafd814",
+                "label": "firstArticleReportItems",
+                "type": "datagrid",
+                "propName": "firstArticleReportItems_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": ""
+              },
+              {
+                "name": "control_f48915d0-004a-11f0-a666-f5629c4c45a3",
+                "fieldName": "control_f48915d0-004a-11f0-a666-f5629c4c45a3",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": []
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_ced32cc0-0038-11f0-b444-f9f65eafd814",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_ced32cc0-0038-11f0-b444-f9f65eafd814",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_ced32cc0-0038-11f0-b444-f9f65eafd814_row_ced32cc1-0038-11f0-b444-f9f65eafd814",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "firstArticleReport",
+  "storageType": "dashboard",
+  "title": "firstArticleReport"
+}

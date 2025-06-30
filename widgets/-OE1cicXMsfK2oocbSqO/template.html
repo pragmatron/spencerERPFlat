@@ -1,0 +1,70 @@
+<template>
+  <div class="monitor">
+    <div v-for="(status, index) in statusList" :key="index" class="status-row">
+      <template v-for="(item, itemIndex) in status" :key="itemIndex">
+        <span :class="item.color">{{ item.name }}</span>
+        <span class="spacer" ></span>
+      </template>
+    </div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  name: 'StatusMonitor',
+  
+  data() {
+    return {
+      statusList: []
+    }
+  },
+  
+  async created() {
+    try {
+      // Fetch order status from 'orders' table
+      const orders = await $getGrid('opportunityLines');
+      
+      // Transform the order data to match the statusList format
+      this.statusList = orders.map(order => [
+        { text: order.status, color: order.color || 'yellow' }, // Use color from data if available
+        { text: order.manufacturingStage || '', color: order.stageColor || 'yellow' }, // Add more mappings as necessary
+        { text: order.date || '', color: 'yellow' }
+      ]);
+    } catch (err) {
+      console.error('Error fetching order statuses:', err);
+      this.statusList = []; // Fallback to an empty list on error
+    }
+  }
+}
+</script>
+
+<style scoped>
+.monitor {
+  background: #000000;
+  color: #ffffff;
+  font-family: monospace;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.status-row {
+  margin: 5px 0;
+}
+
+.spacer {
+  margin-right: 20px;
+}
+
+.yellow {
+  color: #FFD700;
+}
+
+.green {
+  color: #00FF00;
+}
+
+.project-number {
+  color: #ffa500;
+}
+</style>

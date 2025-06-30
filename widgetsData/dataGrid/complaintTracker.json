@@ -1,0 +1,273 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"salesperson\",\"operator\":\"=\",\"value\":null,\"name\":\"Salesperson\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "complaintNotes": {
+      "displayName": "Complaint Notes",
+      "invisible": false,
+      "order": 10,
+      "type": "multiline_text"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "invisible": false,
+      "lookUpTable": "customers",
+      "order": 8,
+      "type": "lookup"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "salesperson": {
+      "displayName": "Salesperson",
+      "invisible": false,
+      "lookUpTable": "salesperson",
+      "order": 11,
+      "type": "lookup"
+    },
+    "stage": {
+      "displayName": "Stage",
+      "invisible": false,
+      "order": 9,
+      "type": "select"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_660704",
+        "label": "",
+        "clientKey": "section_660704",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_660704_row_215155",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_d99567a2-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_d99567a2-e2fb-11ee-b382-07d0637641dc",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_e5a3a5c0-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_e5a3a5c0-e2fb-11ee-b382-07d0637641dc",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "complaintTracker"
+              },
+              {
+                "name": "control_f34c8110-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_f34c8110-e2fb-11ee-b382-07d0637641dc",
+                "label": "Stage",
+                "type": "select",
+                "propName": "stage",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "new",
+                    "text": "new"
+                  },
+                  {
+                    "id": "pending",
+                    "text": "pending"
+                  },
+                  {
+                    "id": "resolved",
+                    "text": "resolved"
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "complaintTracker"
+              },
+              {
+                "name": "control_1f6d8050-e2fc-11ee-b382-07d0637641dc",
+                "fieldName": "control_1f6d8050-e2fc-11ee-b382-07d0637641dc",
+                "label": "Salesperson",
+                "type": "lookup",
+                "propName": "salesperson",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_0b6a35d0-e2fc-11ee-b382-07d0637641dc",
+                "fieldName": "control_0b6a35d0-e2fc-11ee-b382-07d0637641dc",
+                "label": "Complaint Notes",
+                "type": "multiline_text",
+                "propName": "complaintNotes",
+                "className": "col-md-12",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "complaintTracker"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_d99567a0-e2fb-11ee-b382-07d0637641dc",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_d99567a0-e2fb-11ee-b382-07d0637641dc",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_d99567a0-e2fb-11ee-b382-07d0637641dc_row_d99567a1-e2fb-11ee-b382-07d0637641dc",
+            "controls": [
+              {
+                "name": "control_d9f27bc0-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_d9f27bc0-e2fb-11ee-b382-07d0637641dc",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_da4d1ee0-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_da4d1ee0-e2fb-11ee-b382-07d0637641dc",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_daac2ed0-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_daac2ed0-e2fb-11ee-b382-07d0637641dc",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_db1a8100-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_db1a8100-e2fb-11ee-b382-07d0637641dc",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_db861410-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_db861410-e2fb-11ee-b382-07d0637641dc",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_dbec01d0-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_dbec01d0-e2fb-11ee-b382-07d0637641dc",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_dc58a650-e2fb-11ee-b382-07d0637641dc",
+                "fieldName": "control_dc58a650-e2fb-11ee-b382-07d0637641dc",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "complaintTracker",
+  "storageType": "dashboard",
+  "title": "Complaint Tracker"
+}

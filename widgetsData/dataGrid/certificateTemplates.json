@@ -1,0 +1,212 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "template": {
+      "Width": "559px",
+      "displayName": "Template",
+      "order": 8,
+      "type": "files"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_845348",
+        "label": "",
+        "clientKey": "section_845348",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_845348_row_437098",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_58373f42-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_58373f42-530d-11ee-a3dd-431e5785bc00",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_754d8940-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_754d8940-530d-11ee-a3dd-431e5785bc00",
+                "label": "Template",
+                "type": "files",
+                "propName": "template",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_58373f40-530d-11ee-a3dd-431e5785bc00",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_58373f40-530d-11ee-a3dd-431e5785bc00",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_58373f40-530d-11ee-a3dd-431e5785bc00_row_58373f41-530d-11ee-a3dd-431e5785bc00",
+            "controls": [
+              {
+                "name": "control_585834c0-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_585834c0-530d-11ee-a3dd-431e5785bc00",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5875cee0-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_5875cee0-530d-11ee-a3dd-431e5785bc00",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_589760a0-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_589760a0-530d-11ee-a3dd-431e5785bc00",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": true
+              },
+              {
+                "name": "control_58b91970-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_58b91970-530d-11ee-a3dd-431e5785bc00",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_58dc58e0-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_58dc58e0-530d-11ee-a3dd-431e5785bc00",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_58fed500-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_58fed500-530d-11ee-a3dd-431e5785bc00",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_59208dd0-530d-11ee-a3dd-431e5785bc00",
+                "fieldName": "control_59208dd0-530d-11ee-a3dd-431e5785bc00",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "certificateTemplates",
+  "storageType": "dashboard",
+  "title": "Certificate Templates"
+}

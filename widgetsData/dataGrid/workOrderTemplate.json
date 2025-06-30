@@ -1,0 +1,236 @@
+{
+  "cloneData": true,
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "file": {
+      "displayName": "File",
+      "order": 9,
+      "type": "files"
+    },
+    "image": {
+      "displayName": "image",
+      "order": 10,
+      "type": "profile_image"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "template": {
+      "Width": "513px",
+      "displayName": "Template",
+      "invisible": false,
+      "order": 8,
+      "type": "files"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_538975",
+        "label": "",
+        "clientKey": "section_538975",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_538975_row_644032",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_3ef60840-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3ef60840-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_517dd650-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_517dd650-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Template",
+                "type": "files",
+                "propName": "template",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false,
+                "gridId": "workOrderTemplate"
+              },
+              {
+                "name": "control_88689ce0-c9cd-11ee-b687-b50b27c58225",
+                "fieldName": "control_88689ce0-c9cd-11ee-b687-b50b27c58225",
+                "label": "File",
+                "type": "files",
+                "propName": "file",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_98e61050-408f-11ef-b256-5565b57f2047",
+                "fieldName": "control_98e61050-408f-11ef-b256-5565b57f2047",
+                "label": "image",
+                "type": "profile_image",
+                "propName": "image",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_3ef5e130-3765-11ee-bf35-7b2a3d81f8b1",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_3ef5e130-3765-11ee-bf35-7b2a3d81f8b1",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_3ef5e130-3765-11ee-bf35-7b2a3d81f8b1_row_3ef5e131-3765-11ee-bf35-7b2a3d81f8b1",
+            "controls": [
+              {
+                "name": "control_3f132d30-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3f132d30-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3f2c8190-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3f2c8190-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3f46c050-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3f46c050-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3f6062d0-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3f6062d0-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3f7e9930-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3f7e9930-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3fa226c0-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3fa226c0-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_3fbc6580-3765-11ee-bf35-7b2a3d81f8b1",
+                "fieldName": "control_3fbc6580-3765-11ee-bf35-7b2a3d81f8b1",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "workOrderTemplate",
+  "storageType": "dashboard",
+  "title": "Work Order Template"
+}

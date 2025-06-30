@@ -1,0 +1,232 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "asdfasdf": {
+      "displayName": "asdfasdf",
+      "order": 8,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "test2": {
+      "displayName": "test2",
+      "order": 9,
+      "type": "string"
+    },
+    "test5": {
+      "displayName": "test5",
+      "order": 10,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_652134",
+        "label": "",
+        "clientKey": "section_652134",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_652134_row_751803",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_71283fc2-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_71283fc2-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_76e647e0-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_76e647e0-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "asdfasdf",
+                "type": "text",
+                "propName": "asdfasdf",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9b901d50-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_9b901d50-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "test2",
+                "type": "text",
+                "propName": "test2",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_9ec0eae0-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_9ec0eae0-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "test5",
+                "type": "text",
+                "propName": "test5",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_71283fc0-fe86-11ee-9843-d3ce2d4037cd",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_71283fc0-fe86-11ee-9843-d3ce2d4037cd",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_71283fc0-fe86-11ee-9843-d3ce2d4037cd_row_71283fc1-fe86-11ee-9843-d3ce2d4037cd",
+            "controls": [
+              {
+                "name": "control_7170e180-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_7170e180-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_71eb1a90-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_71eb1a90-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_723b8480-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_723b8480-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_728d4e00-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_728d4e00-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_72e24bd0-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_72e24bd0-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_73558000-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_73558000-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_73a3a000-fe86-11ee-9843-d3ce2d4037cd",
+                "fieldName": "control_73a3a000-fe86-11ee-9843-d3ce2d4037cd",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "testtable",
+  "storageType": "dashboard",
+  "title": "test table"
+}

@@ -1,0 +1,216 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "411px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "purchaseOrders_instance": {
+      "dataGrid": "purchaseOrders",
+      "displayName": "Purchase Orders",
+      "filterColumn": "class",
+      "order": 8,
+      "type": "datagrid"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_429040",
+        "label": "",
+        "clientKey": "section_429040",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_429040_row_1681",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_2122b2e0-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_2122b2e0-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_d4e95aa0-e326-11ef-9895-f16cd63edbae",
+                "fieldName": "control_d4e95aa0-e326-11ef-9895-f16cd63edbae",
+                "label": "Purchase Orders",
+                "type": "datagrid",
+                "propName": "purchaseOrders_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_21228bd0-27da-11ee-b4e2-b508ca9b2c48",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_21228bd0-27da-11ee-b4e2-b508ca9b2c48",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_21228bd0-27da-11ee-b4e2-b508ca9b2c48_row_21228bd1-27da-11ee-b4e2-b508ca9b2c48",
+            "controls": [
+              {
+                "name": "control_21457d20-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_21457d20-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_216735f0-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_216735f0-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_218fa580-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_218fa580-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_21bb4960-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_21bb4960-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_21ea2190-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_21ea2190-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_2215c570-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_2215c570-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_22419060-27da-11ee-b4e2-b508ca9b2c48",
+                "fieldName": "control_22419060-27da-11ee-b4e2-b508ca9b2c48",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "materialClasses",
+  "storageType": "dashboard",
+  "title": "Material Classes",
+  "views": {
+    "default": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "desc"
+      }
+    }
+  }
+}

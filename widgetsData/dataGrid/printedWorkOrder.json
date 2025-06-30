@@ -1,0 +1,211 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "pdf": {
+      "displayName": "pdf",
+      "order": 8,
+      "type": "files"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_64915",
+        "label": "",
+        "clientKey": "section_64915",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_64915_row_686127",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_9f0e6ed2-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f0e6ed2-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b2c790f0-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_b2c790f0-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "pdf",
+                "type": "files",
+                "propName": "pdf",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_9f0e6ed0-3dcc-11ee-b6dd-15be45db8b91",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_9f0e6ed0-3dcc-11ee-b6dd-15be45db8b91",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_9f0e6ed0-3dcc-11ee-b6dd-15be45db8b91_row_9f0e6ed1-3dcc-11ee-b6dd-15be45db8b91",
+            "controls": [
+              {
+                "name": "control_9f3557c0-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f3557c0-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9f48dfc0-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f48dfc0-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9f5c19a0-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f5c19a0-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9f6f0560-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f6f0560-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9f81ca10-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f81ca10-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9f957920-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9f957920-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9faafcf0-3dcc-11ee-b6dd-15be45db8b91",
+                "fieldName": "control_9faafcf0-3dcc-11ee-b6dd-15be45db8b91",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "printedWorkOrder",
+  "storageType": "dashboard",
+  "title": "Printed Work Order"
+}

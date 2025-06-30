@@ -1,0 +1,211 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "template": {
+      "displayName": "Template",
+      "order": 8,
+      "type": "files"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_847743",
+        "label": "",
+        "clientKey": "section_847743",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_847743_row_308322",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_b67f9b82-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b67f9b82-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_c36cc7f0-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_c36cc7f0-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Template",
+                "type": "files",
+                "propName": "template",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_b67f9b80-5568-11ee-9cd8-0b4691c7131a",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_b67f9b80-5568-11ee-9cd8-0b4691c7131a",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_b67f9b80-5568-11ee-9cd8-0b4691c7131a_row_b67f9b81-5568-11ee-9cd8-0b4691c7131a",
+            "controls": [
+              {
+                "name": "control_b69e9530-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b69e9530-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b6c41e90-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b6c41e90-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b6ebf1e0-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b6ebf1e0-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b711a250-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b711a250-5568-11ee-9cd8-0b4691c7131a",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b73a38f0-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b73a38f0-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b771c3b0-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b771c3b0-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_b7957850-5568-11ee-9cd8-0b4691c7131a",
+                "fieldName": "control_b7957850-5568-11ee-9cd8-0b4691c7131a",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "teardownformtemplate",
+  "storageType": "dashboard",
+  "title": "Teardown form template"
+}

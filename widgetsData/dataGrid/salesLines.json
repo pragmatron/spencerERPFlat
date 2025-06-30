@@ -1,0 +1,3297 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Sales Line Number\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"part\",\"operator\":\"in\",\"value\":null,\"name\":\"Part\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"customer\",\"operator\":\"in\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false}]}",
+  "formLayouts": {
+    "-ODNJ6nbCpbHc-JcXe1k": {
+      "layout": "{\"sections\":[{\"name\":\"section_51125\",\"label\":\"Sales Line\",\"clientKey\":\"section_51125\",\"order\":0,\"rows\":[{\"name\":\"section_51125_row_122510\",\"label\":\"\",\"order\":0,\"controls\":[{\"name\":\"control_c2ac0530-b0b4-11ef-abc8-5fe28acc1c98\",\"fieldName\":\"control_c2ac0530-b0b4-11ef-abc8-5fe28acc1c98\",\"label\":\"Total Line Price\",\"type\":\"number\",\"propName\":\"totalLinePrice\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"expression\":\"rowData.unitPrice * rowData.quantity\",\"isForDownload\":false,\"openInNewTab\":false,\"sum\":true},{\"name\":\"control_638d21d0-b62a-11ef-839f-cd939c662428\",\"fieldName\":\"control_638d21d0-b62a-11ef-839f-cd939c662428\",\"label\":\"Create Multi Level Work Order From Part\",\"type\":\"custom\",\"propName\":\"createMultiLevelWorkOrderFromPart\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_810fc230-b62a-11ef-839f-cd939c662428\",\"fieldName\":\"control_810fc230-b62a-11ef-839f-cd939c662428\",\"label\":\"Create Multi Level Work Order Via Production Method\",\"type\":\"custom\",\"propName\":\"createMultiLevelWorkOrderViaProductionMethod\",\"className\":\"col-md-6\",\"customCode\":\"\",\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_1377b860-b704-11ef-8468-add8ce7c729d\",\"fieldName\":\"control_1377b860-b704-11ef-8468-add8ce7c729d\",\"label\":\"Commission Rate\",\"type\":\"number\",\"propName\":\"commissionRate\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false},{\"name\":\"control_23445e10-b704-11ef-8468-add8ce7c729d\",\"fieldName\":\"control_23445e10-b704-11ef-8468-add8ce7c729d\",\"label\":\"Commission Due\",\"type\":\"number\",\"propName\":\"commissionDue\",\"className\":\"col-md-6\",\"decimalPlace\":2,\"isForDownload\":false,\"openInNewTab\":false}]},{\"name\":\"section_51125_row_356540\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[]},{\"cleintKey\":\"hidden_section_22b08d70-afa3-11ee-9997-694902a69bce\",\"instances\":[],\"isDynamic\":false,\"label\":\"Hidden Section\",\"vif\":\"false\",\"name\":\"hidden_section_22b08d70-afa3-11ee-9997-694902a69bce\",\"order\":1,\"rows\":[{\"name\":\"hidden_section_22b08d70-afa3-11ee-9997-694902a69bce_row_22b08d71-afa3-11ee-9997-694902a69bce\",\"controls\":[]}]},{\"name\":\"section_97899\",\"label\":\"Quantity And Pricing\",\"clientKey\":\"section_97899\",\"order\":0,\"rows\":[{\"name\":\"section_97899_row_829487\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"quantityAndPricing\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"quantityAndPricing--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_640354\",\"label\":\"Estimates\",\"clientKey\":\"section_640354\",\"order\":0,\"rows\":[{\"name\":\"section_640354_row_521488\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"estimates\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"estimates--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_699295\",\"label\":\"Shipping Address\",\"clientKey\":\"section_699295\",\"order\":0,\"rows\":[{\"name\":\"section_699295_row_77104\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_991812\",\"label\":\"Shipment Lines\",\"clientKey\":\"section_991812\",\"order\":0,\"rows\":[{\"name\":\"section_991812_row_481175\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_727076\",\"label\":\"Work Orders\",\"clientKey\":\"section_727076\",\"order\":0,\"rows\":[{\"name\":\"section_727076_row_915605\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_664491\",\"label\":\"Files\",\"clientKey\":\"section_664491\",\"order\":0,\"rows\":[{\"name\":\"section_664491_row_899408\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_585873\",\"label\":\"Notifications\",\"clientKey\":\"section_585873\",\"order\":0,\"rows\":[{\"name\":\"section_585873_row_147822\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_213278\",\"label\":\"Documents\",\"clientKey\":\"section_213278\",\"order\":0,\"rows\":[{\"name\":\"section_213278_row_888065\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"},{\"name\":\"section_620279\",\"label\":\"AR Invoice Lines\",\"clientKey\":\"section_620279\",\"order\":0,\"rows\":[{\"name\":\"section_620279_row_708511\",\"label\":\"\",\"order\":0,\"controls\":[]}],\"labelPosition\":\"top\",\"isDynamic\":false,\"minInstance\":1,\"maxInstance\":0,\"instances\":[],\"vif\":\"\",\"collapsedByDefault\":false,\"tab\":\"shippingAddress\",\"tab--ODNJ6nbCpbHc-JcXe1k\":\"shippingAddress--ODNJ6nbCpbHc-JcXe1k\"}],\"layout\":\"Tabs and Sections\"}",
+      "name": "Sales Line"
+    }
+  },
+  "isReactive": true,
+  "meta": {
+    "aRInvoiceLines_instance": {
+      "dataGrid": "aRInvoiceLines",
+      "displayName": "AR Invoice Lines",
+      "filterColumn": "salesLine",
+      "order": 19,
+      "type": "datagrid"
+    },
+    "address1": {
+      "displayName": "address1",
+      "invisible": true,
+      "order": 21,
+      "type": "string"
+    },
+    "address2": {
+      "displayName": "address2",
+      "invisible": true,
+      "order": 22,
+      "type": "string"
+    },
+    "addressName": {
+      "displayName": "addressName",
+      "invisible": true,
+      "lookUpTable": "addresses",
+      "order": 23,
+      "type": "lookup"
+    },
+    "brand": {
+      "displayName": "Brand",
+      "invisible": true,
+      "lookUpTable": "brands",
+      "order": 24,
+      "type": "lookup"
+    },
+    "calctest": {
+      "displayName": "calc test",
+      "invisible": true,
+      "order": 9,
+      "type": "select"
+    },
+    "carrier": {
+      "displayName": "carrier",
+      "invisible": true,
+      "lookUpTable": "carrier",
+      "order": 25,
+      "type": "lookup"
+    },
+    "city": {
+      "displayName": "city",
+      "invisible": true,
+      "order": 26,
+      "type": "string"
+    },
+    "commissionDue": {
+      "displayName": "Commission Due",
+      "invisible": true,
+      "order": 27,
+      "type": "number"
+    },
+    "commissionRate": {
+      "displayName": "Commission Rate",
+      "invisible": true,
+      "order": 28,
+      "type": "number"
+    },
+    "country": {
+      "displayName": "country",
+      "invisible": true,
+      "order": 29,
+      "type": "string"
+    },
+    "createMultiLevelWorkOrder": {
+      "displayName": "Create Multi Level Work Order",
+      "invisible": true,
+      "order": 11,
+      "type": "custom"
+    },
+    "createMultiLevelWorkOrderFromPart": {
+      "displayName": "Create Multi Level Work Order From Part",
+      "invisible": true,
+      "order": 30,
+      "type": "custom"
+    },
+    "createMultiLevelWorkOrderFromProductionMethod": {
+      "displayName": "Create Multi Level Work Order From Production Method",
+      "invisible": true,
+      "order": 14,
+      "type": "custom"
+    },
+    "createMultiLevelWorkOrderViaProductionMethod": {
+      "displayName": "Create Multi Level Work Order Via Production Method",
+      "invisible": true,
+      "order": 31,
+      "type": "custom"
+    },
+    "createWorkOrder": {
+      "displayName": "Create Work Order",
+      "invisible": true,
+      "order": 32,
+      "type": "custom"
+    },
+    "createWorkOrderFromEstimate": {
+      "displayName": "Create Work Order From Estimate",
+      "invisible": true,
+      "order": 33,
+      "type": "custom"
+    },
+    "createWorkOrderFromPart": {
+      "displayName": "Create Work Order From Part",
+      "invisible": false,
+      "order": 8,
+      "type": "custom"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 34,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "invisible": false,
+      "lookUpTable": "customers",
+      "order": 5,
+      "type": "lookup"
+    },
+    "customernotes": {
+      "displayName": "customernotes",
+      "invisible": true,
+      "order": 35,
+      "type": "string"
+    },
+    "deliveriesStart": {
+      "Width": "214px",
+      "displayName": "Deliveries Start",
+      "invisible": true,
+      "order": 36,
+      "type": "date"
+    },
+    "depth": {
+      "displayName": "Depth",
+      "invisible": true,
+      "order": 37,
+      "type": "number"
+    },
+    "description": {
+      "displayName": "description",
+      "invisible": true,
+      "order": 38,
+      "type": "multiline_text"
+    },
+    "dueDate": {
+      "displayName": "dueDate",
+      "invisible": true,
+      "order": 39,
+      "type": "date"
+    },
+    "endCustomerPrice": {
+      "displayName": "End Customer Price",
+      "invisible": true,
+      "order": 40,
+      "type": "number"
+    },
+    "estimateMaterials": {
+      "displayName": "Estimate Materials",
+      "invisible": true,
+      "order": 41,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimateMaterials_instance": {
+      "dataGrid": "estimateMaterials",
+      "displayName": "Estimate Materials",
+      "filterColumn": "salesLine",
+      "order": 17,
+      "type": "datagrid"
+    },
+    "estimateOperations": {
+      "displayName": "Estimate Operations",
+      "invisible": true,
+      "order": 42,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "estimateOperations_instance": {
+      "dataGrid": "estimateOperations",
+      "displayName": "Estimate Operations",
+      "filterColumn": "salesLine",
+      "order": 16,
+      "type": "datagrid"
+    },
+    "estimateTotal": {
+      "displayName": "Estimate Total",
+      "invisible": true,
+      "order": 43,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "finish": {
+      "displayName": "Finish",
+      "invisible": true,
+      "lookUpTable": "parts",
+      "order": 44,
+      "type": "lookup"
+    },
+    "labelInformation": {
+      "displayName": "Label Information",
+      "invisible": true,
+      "order": 45,
+      "type": "multiline_text"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 46,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 7,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 47,
+      "type": "select"
+    },
+    "lineItemNumber": {
+      "displayName": "Line Item Number",
+      "invisible": true,
+      "order": 48,
+      "type": "number"
+    },
+    "markup": {
+      "displayName": "Markup",
+      "invisible": true,
+      "order": 49,
+      "type": "number"
+    },
+    "markupAmount": {
+      "displayName": "Markup Amount",
+      "invisible": true,
+      "order": 50,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "materialClass": {
+      "displayName": "Material Class",
+      "invisible": true,
+      "lookUpTable": "materialClasses",
+      "order": 51,
+      "type": "lookup"
+    },
+    "name": {
+      "Width": "228px",
+      "displayName": "Name",
+      "invisible": false,
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 52,
+      "type": "string"
+    },
+    "numberofsides": {
+      "displayName": "Number of sides",
+      "invisible": true,
+      "order": 53,
+      "type": "number"
+    },
+    "numberofwelds": {
+      "displayName": "Number of welds",
+      "invisible": true,
+      "order": 54,
+      "type": "number"
+    },
+    "open": {
+      "displayName": "Open",
+      "invisible": true,
+      "order": 55,
+      "type": "checkbox"
+    },
+    "optionsCost": {
+      "displayName": "Options Cost",
+      "invisible": true,
+      "order": 56,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "orderDealerPrice": {
+      "displayName": "Order Dealer Price",
+      "invisible": true,
+      "order": 57,
+      "type": "number"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 58,
+      "type": "user"
+    },
+    "part": {
+      "Width": "296px",
+      "displayName": "Part",
+      "invisible": false,
+      "lookUpTable": "parts",
+      "order": 2,
+      "type": "lookup"
+    },
+    "partOptions_instance": {
+      "dataGrid": "partOptions",
+      "displayName": "Part Options",
+      "filterColumn": "salesLine",
+      "order": 20,
+      "type": "datagrid"
+    },
+    "postalCode": {
+      "displayName": "postalCode",
+      "invisible": true,
+      "order": 59,
+      "type": "string"
+    },
+    "powerType": {
+      "displayName": "Power Type",
+      "invisible": true,
+      "order": 60,
+      "type": "select"
+    },
+    "publishedPrice": {
+      "displayName": "Published Price",
+      "invisible": true,
+      "order": 61,
+      "type": "number"
+    },
+    "quantity": {
+      "Width": "135px",
+      "displayName": "Quantity",
+      "invisible": false,
+      "onChange": "if ($getDashboardModel('parts')['-NrqMPaSVOamGO815bTd'].onHand < rowData.quantity) {\r\n\r\n    alert('Warning: Inventory is low')\r\n}",
+      "order": 3,
+      "totalColumn": true,
+      "type": "number"
+    },
+    "quote": {
+      "displayName": "quote",
+      "invisible": true,
+      "lookUpTable": "quotes",
+      "order": 62,
+      "type": "lookup"
+    },
+    "quoteLine": {
+      "displayName": "Quote Line",
+      "invisible": true,
+      "lookUpTable": "quoteLines",
+      "order": 63,
+      "type": "lookup"
+    },
+    "requiredBy": {
+      "displayName": "requiredBy",
+      "invisible": true,
+      "order": 64,
+      "type": "date"
+    },
+    "salesGroup": {
+      "displayName": "Sales Group",
+      "invisible": true,
+      "lookUpTable": "salesGroups",
+      "order": 65,
+      "type": "lookup"
+    },
+    "salesOrder": {
+      "Width": "191px",
+      "displayName": "Sales Order",
+      "indexed": true,
+      "invisible": false,
+      "lookUpTable": "opportunities",
+      "order": 1,
+      "type": "lookup"
+    },
+    "salesTotal": {
+      "displayName": "Sales Total",
+      "invisible": true,
+      "order": 10,
+      "type": "text"
+    },
+    "salesperson": {
+      "displayName": "salesperson",
+      "invisible": true,
+      "lookUpTable": "salesperson",
+      "order": 66,
+      "type": "lookup"
+    },
+    "shipmentLines_instance": {
+      "dataGrid": "shipmentLines",
+      "displayName": "Shipment Lines",
+      "filterColumn": "salesLine",
+      "order": 18,
+      "type": "datagrid"
+    },
+    "size": {
+      "displayName": "Size",
+      "invisible": true,
+      "lookUpTable": "sizes",
+      "order": 67,
+      "type": "lookup"
+    },
+    "specNumber": {
+      "displayName": "Spec Number",
+      "invisible": true,
+      "order": 68,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 69,
+      "type": "string"
+    },
+    "stateProvince": {
+      "displayName": "stateProvince",
+      "invisible": true,
+      "order": 70,
+      "type": "string"
+    },
+    "status": {
+      "displayName": "Status",
+      "invisible": true,
+      "lookUpTable": "stages",
+      "order": 71,
+      "type": "lookup"
+    },
+    "subtotal": {
+      "displayName": "Subtotal",
+      "invisible": true,
+      "order": 72,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "timeandMaterialsBilling": {
+      "displayName": "timeandMaterialsBilling",
+      "invisible": true,
+      "order": 73,
+      "type": "checkbox"
+    },
+    "totalCost": {
+      "displayName": "Total Cost",
+      "invisible": true,
+      "order": 13,
+      "type": "number"
+    },
+    "totalItemCost": {
+      "displayName": "Total Item Cost",
+      "invisible": true,
+      "order": 12,
+      "type": "number"
+    },
+    "totalLineAmount": {
+      "Width": "230px",
+      "displayName": "Total Amount",
+      "invisible": false,
+      "order": 6,
+      "priceFormat": true,
+      "totalColumn": true,
+      "type": "number"
+    },
+    "totalLineAmountWithOptions": {
+      "displayName": "Total Line Amount With Options",
+      "invisible": true,
+      "order": 74,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "totalLinePrice": {
+      "displayName": "Total Line Price",
+      "invisible": true,
+      "order": 15,
+      "type": "number"
+    },
+    "unitPrice": {
+      "Width": "180px",
+      "displayName": "Unit Price",
+      "invisible": false,
+      "order": 4,
+      "priceFormat": true,
+      "type": "number"
+    },
+    "vendorRef": {
+      "displayName": "Vendor Ref",
+      "invisible": true,
+      "order": 75,
+      "type": "string"
+    },
+    "winchKit": {
+      "displayName": "Winch Kit",
+      "invisible": true,
+      "order": 76,
+      "type": "checkbox"
+    }
+  },
+  "onRecordCreate": "console.log('creating sales line')\nconsole.log('new sales line: ', rowData)\n\n$dgSetRowVals('salesLines', rowData.rowKey, {\n    open: true\n})\n\nsetTimeout(() => {\n    if (rowData.salesOrder) {\n        console.log('has sales order header');\n        const getSalesOrder = $getDashboardModel('opportunities')[rowData.salesOrder]\n        console.log('getSalesOrder: ', getSalesOrder);\n\n        const salesLinesOnSalesOrder = $getGrid('salesLines').filter((s) => s.salesOrder === getSalesOrder.rowKey);\n        console.log('saleslinesonsalesorder', salesLinesOnSalesOrder);\n        if(!rowData.name) {\n         $dgSetRowVals('salesLines', rowData.rowKey, {\n           name: `${getSalesOrder.name}-0${salesLinesOnSalesOrder.length}` || '',\n            });\n        }\n\n        $dgSetRowVals('salesLines', rowData.rowKey, {\n            pOLine: getSalesOrder.pO || '',\n            // project: getSalesOrder.project || null\n        });\n    }\n}, 1000);\n\n",
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_51125",
+        "label": "Sales Line",
+        "clientKey": "section_51125",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_51125_row_356540",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_80b28700-b62a-11ef-839f-cd939c662428",
+                "fieldName": "control_80b28700-b62a-11ef-839f-cd939c662428",
+                "label": "Create Multi Level Work Order Via Production Method",
+                "type": "custom",
+                "propName": "createMultiLevelWorkOrderViaProductionMethod",
+                "className": "col-md-4",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrderFromPart')\" />\r\n\r\n<b-button \r\nv-else\r\nvariant=\"primary\"\r\n@click='createMultiLevelWorkOrderFromProductionMethod(rowData)'\r\n\r\n>\r\n    Create Work Order From Production Method\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_6330d100-b62a-11ef-839f-cd939c662428",
+                "fieldName": "control_6330d100-b62a-11ef-839f-cd939c662428",
+                "label": "Create Multi Level Work Order From Part",
+                "type": "custom",
+                "propName": "createMultiLevelWorkOrderFromPart",
+                "className": "col-md-4",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrderFromPart')\" />\r\n<b-button\r\nv-else\r\nvariant=\"primary\"\r\n@click='createMultiLevelWorkOrderFromPart(rowData)'\r\n>\r\n    Create Work Order From Part\r\n</b-button>\r\n",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_25681d20-b3a5-11ee-819e-6bf5f66f2f4b",
+                "fieldName": "control_25681d20-b3a5-11ee-819e-6bf5f66f2f4b",
+                "label": "Create Work Order From Estimate",
+                "type": "custom",
+                "propName": "createWorkOrderFromEstimate",
+                "className": "col-md-4",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrderFromEstimate')\" />\r\n\r\n<b-button \r\nv-else\r\nvariant=\"success\"\r\n@click='createWorkOrderFromEstimate(rowData)'\r\n\r\n>\r\n    Create Work Order From Estimate\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_140d6e71-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140d6e71-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Sales Order",
+                "type": "lookup",
+                "propName": "salesOrder",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "opportunities"
+              },
+              {
+                "name": "control_22b0b480-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_22b0b480-afa3-11ee-9997-694902a69bce",
+                "label": "Sales Line Number",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_140be7d1-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140be7d1-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Quote",
+                "type": "lookup",
+                "propName": "quote",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "quotes"
+              },
+              {
+                "name": "control_b7658f60-b5f7-11ee-ba08-1b197d0be424",
+                "fieldName": "control_b7658f60-b5f7-11ee-ba08-1b197d0be424",
+                "label": "Quote Line",
+                "type": "lookup",
+                "propName": "quoteLine",
+                "className": "col-md-3",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_140f1c21-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140f1c21-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "customers",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.customer : rowData.$salesOrder.soldToCustomer"
+              },
+              {
+                "name": "control_141117f0-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_141117f0-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Due Date",
+                "type": "datepicker",
+                "propName": "requiredBy",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "(rowData.quote && rowData.$quote.dueDate) || null",
+                "calculateRelated": "opportunities/dueDate/salesOrder"
+              },
+              {
+                "name": "control_141d9b10-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_141d9b10-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Salesperson",
+                "type": "lookup",
+                "propName": "salesperson",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "salesperson",
+                "sum": true,
+                "expression": "rowData.quote ? rowData.$quote.salesperson : rowData.$salesOrder.salesperson",
+                "calculateRelated": "opportunities/salesperson/salesOrder"
+              },
+              {
+                "name": "control_141e8570-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_141e8570-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Customer Notes",
+                "type": "text",
+                "propName": "customernotes",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$quoteLine.customerNotes"
+              },
+              {
+                "name": "control_e612dc80-c134-11ee-976c-07b1b46dea7a",
+                "fieldName": "control_e612dc80-c134-11ee-976c-07b1b46dea7a",
+                "label": "Open",
+                "type": "checkbox",
+                "propName": "open",
+                "className": "col-md-3",
+                "isChecked": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "name": "section_97899",
+        "label": "Part And Quantity",
+        "clientKey": "section_97899",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_97899_row_829487",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_140a8841-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140a8841-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Part",
+                "type": "lookup",
+                "propName": "part",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "parts",
+                "sum": true,
+                "expression": "rowData.$quoteLine.part",
+                "ableToAddLookUpVal": true,
+                "lookUpSearch": "purchasingDashboard"
+              },
+              {
+                "name": "control_140aaf50-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140aaf50-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Description",
+                "type": "multiline_text",
+                "propName": "description",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$part.description"
+              },
+              {
+                "name": "control_a3676220-b328-11ef-98ec-f58c3a213e30",
+                "fieldName": "control_a3676220-b328-11ef-98ec-f58c3a213e30",
+                "label": "Get Options",
+                "type": "custom",
+                "propName": "getOptions",
+                "className": "col-md-4",
+                "customCode": "<b-button \r\n\r\nvariant=\"primary\"\r\n@click='addAddons(rowData)'\r\n\r\n>\r\n    Add Addons\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_140aaf52-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140aaf52-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Unit Price",
+                "type": "number",
+                "propName": "unitPrice",
+                "className": "col-md-4",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.part && (rowData.$part.price + (rowData.winchKit ? 200 : 0))"
+              },
+              {
+                "name": "control_140aaf51-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140aaf51-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Quantity",
+                "type": "number",
+                "propName": "quantity",
+                "className": "col-md-4",
+                "decimalPlace": 0,
+                "defaultValue": "1",
+                "value": "1",
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine && rowData.$quoteLine.qtytoMfg"
+              },
+              {
+                "name": "control_88f86560-c41d-11ee-ace7-41002e992cd1",
+                "fieldName": "control_88f86560-c41d-11ee-ace7-41002e992cd1",
+                "label": "Total Amount",
+                "type": "number",
+                "propName": "totalLineAmount",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.finalTotal : rowData.estimateTotal ? rowData.estimateTotal :  (rowData.quantity * rowData.unitPrice)"
+              },
+              {
+                "name": "control_23278740-b704-11ef-8468-add8ce7c729d",
+                "fieldName": "control_23278740-b704-11ef-8468-add8ce7c729d",
+                "label": "Commission Due",
+                "type": "number",
+                "propName": "commissionDue",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.commissionRate *  (rowData.totalLineAmount /100)",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "sum": true
+              },
+              {
+                "name": "control_13645770-b704-11ef-8468-add8ce7c729d",
+                "fieldName": "control_13645770-b704-11ef-8468-add8ce7c729d",
+                "label": "Commission Rate",
+                "type": "number",
+                "propName": "commissionRate",
+                "className": "col-md-3",
+                "decimalPlace": 2,
+                "expression": "rowData.$salesperson.commissionRate",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true
+              },
+              {
+                "name": "control_7be117f0-e849-11ee-9ac2-9f79eb64b663",
+                "fieldName": "control_7be117f0-e849-11ee-9ac2-9f79eb64b663",
+                "label": "Part Options",
+                "type": "number",
+                "propName": "optionsCost",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.$quoteLine.optionsCost",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "sumField": "partOptions.totalPrice",
+                "groupBy": "salesLine"
+              },
+              {
+                "name": "control_85da7fd0-e849-11ee-9ac2-9f79eb64b663",
+                "fieldName": "control_85da7fd0-e849-11ee-9ac2-9f79eb64b663",
+                "label": "Total Amount With Options",
+                "type": "number",
+                "propName": "totalLineAmountWithOptions",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.quoteLine ? \n  rowData.$quoteLine.totalLineAmountWithOptions : \n  (rowData.optionsCost || 0) + (rowData.totalLineAmount || 0)\n\n",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true
+              },
+              {
+                "name": "control_b5907f30-e7a5-11ee-9862-538140391a39",
+                "fieldName": "control_b5907f30-e7a5-11ee-9862-538140391a39",
+                "label": "Part Options",
+                "type": "datagrid",
+                "propName": "partOptions_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "default"
+      },
+      {
+        "cleintKey": "hidden_section_22b08d70-afa3-11ee-9997-694902a69bce",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_22b08d70-afa3-11ee-9997-694902a69bce",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_22b08d70-afa3-11ee-9997-694902a69bce_row_22b08d71-afa3-11ee-9997-694902a69bce",
+            "controls": [
+              {
+                "name": "control_c03dd430-b3a4-11ee-819e-6bf5f66f2f4b",
+                "fieldName": "control_c03dd430-b3a4-11ee-819e-6bf5f66f2f4b",
+                "label": "Create Work Order",
+                "type": "custom",
+                "propName": "createWorkOrder",
+                "className": "col-md-4",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrder')\" />\r\n\r\n<b-button \r\nv-else\r\nvariant=\"primary\"\r\n@click='createWorkOrderFromProductionMethod(rowData, rowData.$salesOrder)'\r\n\r\n>\r\n    Create Work Order From Production Method\r\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines",
+                "description": ""
+              },
+              {
+                "name": "control_22d79d70-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_22d79d70-afa3-11ee-9997-694902a69bce",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_c6424d60-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c6424d60-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Vendor Ref",
+                "type": "text",
+                "propName": "vendorRef",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_14bcb600-c455-11ee-854f-152f2c78e202",
+                "fieldName": "control_14bcb600-c455-11ee-854f-152f2c78e202",
+                "label": "Create Work Order From Part",
+                "type": "custom",
+                "propName": "createWorkOrderFromPart",
+                "className": "col-md-4",
+                "customCode": "<b-spinner variant=\"primary\" v-if=\"$getGlobalModel('creatingWorkOrderFromPart')\" />\n\n<b-button \nv-else\nvariant=\"primary\"\n@click='createWorkOrderFromPart(rowData)'\n\n>\n    Create Work Order From Part\n</b-button>",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines",
+                "description": ""
+              },
+              {
+                "name": "control_fa0304d0-e14c-11ee-990f-2fd7633d41c4",
+                "fieldName": "control_fa0304d0-e14c-11ee-990f-2fd7633d41c4",
+                "label": "Label Information",
+                "type": "multiline_text",
+                "propName": "labelInformation",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "tooltip": "Using?"
+              },
+              {
+                "name": "control_140c0ee0-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140c0ee0-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Time And Materials Billing",
+                "type": "checkbox",
+                "propName": "timeandMaterialsBilling",
+                "className": "col-md-6",
+                "isChecked": false,
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_4a8939f0-fc29-11ee-be2e-19f564ac19c4",
+                "fieldName": "control_4a8939f0-fc29-11ee-be2e-19f564ac19c4",
+                "label": "Deliveries Start",
+                "type": "datepicker",
+                "propName": "deliveriesStart",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c642c290-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c642c290-1129-11ef-acb6-59193e9c4aed_",
+                "label": "End Customer Price",
+                "type": "number",
+                "propName": "endCustomerPrice",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_c64337c0-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c64337c0-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Spec Number",
+                "type": "text",
+                "propName": "specNumber",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_c641ff40-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c641ff40-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Line Item Number",
+                "type": "number",
+                "propName": "lineItemNumber",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_c642e9a0-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c642e9a0-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Order Dealer Price",
+                "type": "number",
+                "propName": "orderDealerPrice",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_c93bfa70-db28-11ee-b796-eb84c346f879",
+                "fieldName": "control_c93bfa70-db28-11ee-b796-eb84c346f879",
+                "label": "Number of sides",
+                "type": "number",
+                "propName": "numberofsides",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_c6429b80-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c6429b80-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Published Price",
+                "type": "number",
+                "propName": "publishedPrice",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_22fa8ec0-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_22fa8ec0-afa3-11ee-9997-694902a69bce",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_c6427470-1129-11ef-acb6-59193e9c4aed_",
+                "fieldName": "control_c6427470-1129-11ef-acb6-59193e9c4aed_",
+                "label": "Status",
+                "type": "lookup",
+                "propName": "status",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_140aaf54-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140aaf54-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Due Date",
+                "type": "datepicker",
+                "propName": "dueDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_c34c0c00-ed33-11ee-8566-dd5b2d44b680",
+                "fieldName": "control_c34c0c00-ed33-11ee-8566-dd5b2d44b680",
+                "label": "Power Type",
+                "type": "select",
+                "propName": "powerType",
+                "className": "col-md-6",
+                "dataOptions": [
+                  {
+                    "id": "UK",
+                    "text": "UK"
+                  },
+                  {
+                    "id": "US",
+                    "text": "US"
+                  }
+                ],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_ce5b9fb0-db28-11ee-b796-eb84c346f879",
+                "fieldName": "control_ce5b9fb0-db28-11ee-b796-eb84c346f879",
+                "label": "Number of welds",
+                "type": "number",
+                "propName": "numberofwelds",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_cd36aca0-e308-11ee-b382-07d0637641dc",
+                "fieldName": "control_cd36aca0-e308-11ee-b382-07d0637641dc",
+                "label": "Winch Kit",
+                "type": "checkbox",
+                "propName": "winchKit",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_23208d50-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_23208d50-afa3-11ee-9997-694902a69bce",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23474f30-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_23474f30-afa3-11ee-9997-694902a69bce",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23801270-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_23801270-afa3-11ee-9997-694902a69bce",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23b48ff0-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_23b48ff0-afa3-11ee-9997-694902a69bce",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_23dbc700-afa3-11ee-9997-694902a69bce",
+                "fieldName": "control_23dbc700-afa3-11ee-9997-694902a69bce",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_a1c51210-c67e-11ee-82b5-5154051a5701",
+                "fieldName": "control_a1c51210-c67e-11ee-82b5-5154051a5701",
+                "label": "Sales Group",
+                "type": "lookup",
+                "propName": "salesGroup",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.salesGroup : rowData.$part.salesGroup"
+              },
+              {
+                "name": "control_a6c91900-c67e-11ee-82b5-5154051a5701",
+                "fieldName": "control_a6c91900-c67e-11ee-82b5-5154051a5701",
+                "label": "Material Class",
+                "type": "lookup",
+                "propName": "materialClass",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.materialClass : rowData.$part.materialClass",
+                "description": "Comes from part"
+              },
+              {
+                "name": "control_c3394980-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_c3394980-033b-11ef-a2cc-492401461a61",
+                "label": "Size",
+                "type": "lookup",
+                "propName": "size",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines",
+                "tooltip": "Using?"
+              },
+              {
+                "name": "control_e4b83230-0e1a-11ef-b904-eb37b229548c",
+                "fieldName": "control_e4b83230-0e1a-11ef-b904-eb37b229548c",
+                "label": "Depth",
+                "type": "number",
+                "propName": "depth",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": false,
+                "tooltip": "Using?"
+              },
+              {
+                "name": "control_ca577de0-033b-11ef-a2cc-492401461a61",
+                "fieldName": "control_ca577de0-033b-11ef-a2cc-492401461a61",
+                "label": "Brand",
+                "type": "lookup",
+                "propName": "brand",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines",
+                "tooltip": "Using?"
+              },
+              {
+                "name": "control_ec5bea40-0e1a-11ef-b904-eb37b229548c",
+                "fieldName": "control_ec5bea40-0e1a-11ef-b904-eb37b229548c",
+                "label": "Finish",
+                "type": "lookup",
+                "propName": "finish",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "salesLines",
+                "tooltip": "Using?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_640354",
+        "label": "Estimates",
+        "clientKey": "section_640354",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_640354_row_521488",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_fa762ed0-c1d8-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_fa762ed0-c1d8-11ee-99a2-8d4194ff50ca",
+                "label": "Estimate Operations",
+                "type": "number",
+                "propName": "estimateOperations",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.estimateOperations",
+                "sumField": "estimateOperations.total",
+                "groupBy": "salesLine"
+              },
+              {
+                "name": "control_025198b0-c1d9-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_025198b0-c1d9-11ee-99a2-8d4194ff50ca",
+                "label": "Estimate Materials",
+                "type": "number",
+                "propName": "estimateMaterials",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.estimateMaterials",
+                "sumField": "estimateMaterials.total",
+                "groupBy": "salesLine"
+              },
+              {
+                "name": "control_6a467350-c1d9-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_6a467350-c1d9-11ee-99a2-8d4194ff50ca",
+                "label": "Subtotal",
+                "type": "number",
+                "propName": "subtotal",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "description": "Total Before The Quantity Is Added",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.subtotal :  \n(rowData.estimateOperations + rowData.estimateMaterials) * (1 + rowData.markup / 100)"
+              },
+              {
+                "name": "control_74977110-c1d9-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_74977110-c1d9-11ee-99a2-8d4194ff50ca",
+                "label": "Markup",
+                "type": "number",
+                "propName": "markup",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine && rowData.$quoteLine.markup"
+              },
+              {
+                "name": "control_7c5010b0-c1d9-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_7c5010b0-c1d9-11ee-99a2-8d4194ff50ca",
+                "label": "Markup Amount",
+                "type": "number",
+                "propName": "markupAmount",
+                "className": "col-md-4",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.markupAmount : \n(rowData.estimateOperations + rowData.estimateMaterials) * (rowData.markup / 100)\n"
+              },
+              {
+                "name": "control_986628c0-c1d9-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_986628c0-c1d9-11ee-99a2-8d4194ff50ca",
+                "label": "Estimate Total",
+                "type": "number",
+                "propName": "estimateTotal",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "salesLines",
+                "description": "Final Total",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.markedupEstimate : \nrowData.quantity * rowData.subtotal"
+              },
+              {
+                "name": "control_27dcdc80-751a-11ef-9c5b-07835cd2f2e3",
+                "fieldName": "control_27dcdc80-751a-11ef-9c5b-07835cd2f2e3",
+                "label": "Skin Tone",
+                "type": "lookup",
+                "propName": "skinTone",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_b42bf360-c1d8-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_b42bf360-c1d8-11ee-99a2-8d4194ff50ca",
+                "label": "Estimate Operations",
+                "type": "datagrid",
+                "propName": "estimateOperations_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              },
+              {
+                "name": "control_b9555ca0-c1d8-11ee-99a2-8d4194ff50ca",
+                "fieldName": "control_b9555ca0-c1d8-11ee-99a2-8d4194ff50ca",
+                "label": "Estimate Materials",
+                "type": "datagrid",
+                "propName": "estimateMaterials_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "estimates"
+      },
+      {
+        "name": "section_699295",
+        "label": "Shipping Address",
+        "clientKey": "section_699295",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_699295_row_77104",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_140bc0c1-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140bc0c1-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Address ",
+                "type": "lookup",
+                "propName": "addressName",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "addresses",
+                "sum": true,
+                "expression": "rowData.quoteLine ? rowData.$quoteLine.addressName : rowData.$customer.addressName"
+              },
+              {
+                "name": "control_140be7d0-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140be7d0-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Address 1",
+                "type": "text",
+                "propName": "address1",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.address1"
+              },
+              {
+                "name": "control_140be7d2-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140be7d2-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Address 2",
+                "type": "text",
+                "propName": "address2",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.address2"
+              },
+              {
+                "name": "control_140c0ee1-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140c0ee1-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "City",
+                "type": "text",
+                "propName": "city",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.city"
+              },
+              {
+                "name": "control_140c35f1-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140c35f1-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Country",
+                "type": "text",
+                "propName": "country",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.country"
+              },
+              {
+                "name": "control_140c35f0-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140c35f0-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "State/Province",
+                "type": "text",
+                "propName": "stateProvince",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.stateProvince"
+              },
+              {
+                "name": "control_140c5d00-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140c5d00-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Postal Code",
+                "type": "text",
+                "propName": "postalCode",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "sum": true,
+                "expression": "rowData.$addressName.postalCode"
+              },
+              {
+                "name": "control_140d9581-afb5-11ee-bf51-119c7cdb24fb_",
+                "fieldName": "control_140d9581-afb5-11ee-bf51-119c7cdb24fb_",
+                "label": "Carrier",
+                "type": "lookup",
+                "propName": "carrier",
+                "className": "col-md-3",
+                "decimalPlace": 0,
+                "gridId": "salesLines",
+                "lookUpTable": "carrier"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_991812",
+        "label": "Shipment Lines",
+        "clientKey": "section_991812",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_991812_row_481175",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_476b62c0-c5b0-11ee-a737-4b6f56ae1d1d",
+                "fieldName": "control_476b62c0-c5b0-11ee-a737-4b6f56ae1d1d",
+                "label": "Shipment Lines",
+                "type": "datagrid",
+                "propName": "shipmentLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_727076",
+        "label": "Work Orders",
+        "clientKey": "section_727076",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_727076_row_915605",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_664491",
+        "label": "Files",
+        "clientKey": "section_664491",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_664491_row_899408",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_585873",
+        "label": "Notifications",
+        "clientKey": "section_585873",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_585873_row_147822",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_213278",
+        "label": "Documents",
+        "clientKey": "section_213278",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_213278_row_888065",
+            "label": "",
+            "order": 0,
+            "controls": []
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      },
+      {
+        "name": "section_620279",
+        "label": "AR Invoice Lines",
+        "clientKey": "section_620279",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_620279_row_708511",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_84f70040-c5b0-11ee-a737-4b6f56ae1d1d",
+                "fieldName": "control_84f70040-c5b0-11ee-a737-4b6f56ae1d1d",
+                "label": "AR Invoice Lines",
+                "type": "datagrid",
+                "propName": "aRInvoiceLines_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "salesLines"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false,
+        "tab": "shippingAddress"
+      }
+    ],
+    "layout": "Tabs and Sections"
+  },
+  "source": "salesLines",
+  "storageType": "dashboard",
+  "tabs": {
+    "default": {
+      "title": "Sales Line"
+    },
+    "default--ODNJ6nbCpbHc-JcXe1k": {
+      "layoutKey": "-ODNJ6nbCpbHc-JcXe1k",
+      "title": "Sales Line",
+      "value": "default--ODNJ6nbCpbHc-JcXe1k"
+    },
+    "estimates": {
+      "readOnly": false,
+      "title": "Estimates"
+    },
+    "estimates--ODNJ6nbCpbHc-JcXe1k": {
+      "layoutKey": "-ODNJ6nbCpbHc-JcXe1k",
+      "title": "Estimates",
+      "value": "estimates--ODNJ6nbCpbHc-JcXe1k"
+    },
+    "quantityAndPricing--ODNJ6nbCpbHc-JcXe1k": {
+      "layoutKey": "-ODNJ6nbCpbHc-JcXe1k",
+      "title": "Quantity And Pricing",
+      "value": "quantityAndPricing--ODNJ6nbCpbHc-JcXe1k"
+    },
+    "shippingAddress": {
+      "readOnly": false,
+      "title": "Shipping"
+    },
+    "shippingAddress--ODNJ6nbCpbHc-JcXe1k": {
+      "layoutKey": "-ODNJ6nbCpbHc-JcXe1k",
+      "title": "Shipping",
+      "value": "shippingAddress--ODNJ6nbCpbHc-JcXe1k"
+    }
+  },
+  "tabsOrder": [
+    "default",
+    "estimates",
+    "shippingAddress"
+  ],
+  "tabsOrder--ODNJ6nbCpbHc-JcXe1k": [
+    "default",
+    "quantityAndPricing",
+    "estimates",
+    "shippingAddress"
+  ],
+  "title": "Sales Lines",
+  "views": {
+    "commisionsDue": {
+      "defaultSort": {
+        "column": "_id",
+        "direction": "desc"
+      },
+      "displayInTab": false,
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Sales Line Number\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"part\",\"operator\":\"in\",\"value\":null,\"name\":\"Part\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"customer\",\"operator\":\"in\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"carrier\",\"operator\":\"=\",\"value\":null,\"name\":\"carrier\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "aRInvoiceLines_instance": {
+          "displayName": "AR Invoice Lines",
+          "order": 46
+        },
+        "address1": {
+          "displayName": "address1",
+          "invisible": true,
+          "order": 27
+        },
+        "address2": {
+          "displayName": "address2",
+          "invisible": true,
+          "order": 29
+        },
+        "addressName": {
+          "displayName": "addressName",
+          "invisible": true,
+          "order": 26
+        },
+        "brand": {
+          "displayName": "Brand",
+          "invisible": true,
+          "order": 63
+        },
+        "calctest": {
+          "displayName": "calc test",
+          "invisible": true,
+          "order": 66
+        },
+        "carrier": {
+          "displayName": "carrier",
+          "invisible": true,
+          "order": 37
+        },
+        "city": {
+          "displayName": "city",
+          "invisible": true,
+          "order": 31
+        },
+        "commissionDue": {
+          "displayName": "Commission Due",
+          "invisible": false,
+          "order": 76
+        },
+        "commissionRate": {
+          "displayName": "Commission Rate",
+          "invisible": false,
+          "order": 75
+        },
+        "country": {
+          "displayName": "country",
+          "invisible": true,
+          "order": 33
+        },
+        "createMultiLevelWorkOrder": {
+          "displayName": "Create Multi Level Work Order",
+          "invisible": true,
+          "order": 68
+        },
+        "createMultiLevelWorkOrderFromPart": {
+          "displayName": "Create Multi Level Work Order From Part",
+          "invisible": true,
+          "order": 73
+        },
+        "createMultiLevelWorkOrderFromProductionMethod": {
+          "displayName": "Create Multi Level Work Order From Production Method",
+          "invisible": true,
+          "order": 71
+        },
+        "createMultiLevelWorkOrderViaProductionMethod": {
+          "displayName": "Create Multi Level Work Order Via Production Method",
+          "invisible": true,
+          "order": 74
+        },
+        "createWorkOrder": {
+          "displayName": "Create Work Order",
+          "invisible": true,
+          "order": 41
+        },
+        "createWorkOrderFromEstimate": {
+          "displayName": "Create Work Order From Estimate",
+          "invisible": true,
+          "order": 42
+        },
+        "createWorkOrderFromPart": {
+          "displayName": "Create Work Order From Part",
+          "invisible": false,
+          "order": 53
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 19
+        },
+        "customer": {
+          "displayName": "Customer",
+          "invisible": false,
+          "order": 5
+        },
+        "customernotes": {
+          "displayName": "customernotes",
+          "invisible": true,
+          "order": 40
+        },
+        "deliveriesStart": {
+          "displayName": "Deliveries Start",
+          "invisible": true,
+          "order": 8
+        },
+        "depth": {
+          "displayName": "Depth",
+          "invisible": true,
+          "order": 64
+        },
+        "description": {
+          "displayName": "description",
+          "invisible": true,
+          "order": 24
+        },
+        "dueDate": {
+          "displayName": "dueDate",
+          "invisible": true,
+          "order": 25
+        },
+        "endCustomerPrice": {
+          "displayName": "End Customer Price",
+          "invisible": true,
+          "order": 13
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "invisible": true,
+          "order": 48
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "order": 36
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "invisible": true,
+          "order": 47
+        },
+        "estimateOperations_instance": {
+          "displayName": "Estimate Operations",
+          "order": 34
+        },
+        "estimateTotal": {
+          "displayName": "Estimate Total",
+          "invisible": true,
+          "order": 52
+        },
+        "finish": {
+          "displayName": "Finish",
+          "invisible": true,
+          "order": 65
+        },
+        "labelInformation": {
+          "displayName": "Label Information",
+          "invisible": true,
+          "order": 56
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 23
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 22
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 17
+        },
+        "lineItemNumber": {
+          "displayName": "Line Item Number",
+          "invisible": true,
+          "order": 9
+        },
+        "markup": {
+          "displayName": "Markup",
+          "invisible": true,
+          "order": 50
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "invisible": true,
+          "order": 51
+        },
+        "materialClass": {
+          "displayName": "Material Class",
+          "invisible": true,
+          "order": 16
+        },
+        "name": {
+          "displayName": "Name",
+          "invisible": false,
+          "order": 1
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 21
+        },
+        "numberofsides": {
+          "displayName": "Number of sides",
+          "invisible": true,
+          "order": 54
+        },
+        "numberofwelds": {
+          "displayName": "Number of welds",
+          "invisible": true,
+          "order": 55
+        },
+        "open": {
+          "displayName": "Open",
+          "invisible": true,
+          "order": 44
+        },
+        "optionsCost": {
+          "displayName": "Options Cost",
+          "invisible": true,
+          "order": 59
+        },
+        "orderDealerPrice": {
+          "displayName": "Order Dealer Price",
+          "invisible": true,
+          "order": 14
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 18
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": false,
+          "order": 2
+        },
+        "partOptions_instance": {
+          "displayName": "Part Options",
+          "order": 57
+        },
+        "postalCode": {
+          "displayName": "postalCode",
+          "invisible": true,
+          "order": 35
+        },
+        "powerType": {
+          "displayName": "Power Type",
+          "invisible": true,
+          "order": 61
+        },
+        "publishedPrice": {
+          "displayName": "Published Price",
+          "invisible": true,
+          "order": 12
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": false,
+          "order": 3
+        },
+        "quote": {
+          "displayName": "quote",
+          "invisible": true,
+          "order": 28
+        },
+        "quoteLine": {
+          "displayName": "Quote Line",
+          "invisible": true,
+          "order": 43
+        },
+        "requiredBy": {
+          "displayName": "requiredBy",
+          "invisible": true,
+          "order": 38
+        },
+        "salesGroup": {
+          "displayName": "Sales Group",
+          "invisible": true,
+          "order": 7
+        },
+        "salesOrder": {
+          "displayName": "Sales Order",
+          "invisible": false,
+          "order": 0
+        },
+        "salesTotal": {
+          "displayName": "Sales Total",
+          "invisible": true,
+          "order": 67
+        },
+        "salesperson": {
+          "displayName": "salesperson",
+          "invisible": false,
+          "order": 39
+        },
+        "shipmentLines_instance": {
+          "displayName": "Shipment Lines",
+          "order": 45
+        },
+        "size": {
+          "displayName": "Size",
+          "invisible": true,
+          "order": 62
+        },
+        "specNumber": {
+          "displayName": "Spec Number",
+          "invisible": true,
+          "order": 15
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 20
+        },
+        "stateProvince": {
+          "displayName": "stateProvince",
+          "invisible": true,
+          "order": 32
+        },
+        "status": {
+          "displayName": "Status",
+          "invisible": true,
+          "order": 11
+        },
+        "subtotal": {
+          "displayName": "Subtotal",
+          "invisible": true,
+          "order": 49
+        },
+        "timeandMaterialsBilling": {
+          "displayName": "timeandMaterialsBilling",
+          "invisible": true,
+          "order": 30
+        },
+        "totalCost": {
+          "displayName": "Total Cost",
+          "invisible": true,
+          "order": 70
+        },
+        "totalItemCost": {
+          "displayName": "Total Item Cost",
+          "invisible": true,
+          "order": 69
+        },
+        "totalLineAmount": {
+          "displayName": "Total Amount",
+          "invisible": false,
+          "order": 6
+        },
+        "totalLineAmountWithOptions": {
+          "displayName": "Total Line Amount With Options",
+          "invisible": true,
+          "order": 60
+        },
+        "totalLinePrice": {
+          "displayName": "Total Line Price",
+          "invisible": true,
+          "order": 72
+        },
+        "unitPrice": {
+          "displayName": "Unit Price",
+          "invisible": false,
+          "order": 4
+        },
+        "vendorRef": {
+          "displayName": "Vendor Ref",
+          "invisible": true,
+          "order": 10
+        },
+        "winchKit": {
+          "displayName": "Winch Kit",
+          "invisible": true,
+          "order": 58
+        }
+      },
+      "readOnly": false,
+      "title": "Commisions Due"
+    },
+    "default": {
+      "meta": {
+        "aRInvoiceLines_instance": {
+          "displayName": "AR Invoice Lines",
+          "order": 43
+        },
+        "address1": {
+          "displayName": "address1",
+          "invisible": true,
+          "order": 14
+        },
+        "address2": {
+          "displayName": "address2",
+          "invisible": true,
+          "order": 16
+        },
+        "addressName": {
+          "displayName": "addressName",
+          "invisible": true,
+          "order": 13
+        },
+        "brand": {
+          "displayName": "Brand",
+          "invisible": true,
+          "order": 56
+        },
+        "calctest": {
+          "displayName": "calc test",
+          "invisible": true,
+          "order": 66
+        },
+        "carrier": {
+          "displayName": "carrier",
+          "invisible": true,
+          "order": 23
+        },
+        "city": {
+          "displayName": "city",
+          "invisible": true,
+          "order": 18
+        },
+        "commissionDue": {
+          "displayName": "Commission Due",
+          "invisible": true,
+          "order": 76
+        },
+        "commissionRate": {
+          "displayName": "Commission Rate",
+          "invisible": true,
+          "order": 75
+        },
+        "country": {
+          "displayName": "country",
+          "invisible": true,
+          "order": 20
+        },
+        "createMultiLevelWorkOrder": {
+          "displayName": "Create Multi Level Work Order",
+          "invisible": true,
+          "order": 68
+        },
+        "createMultiLevelWorkOrderFromPart": {
+          "displayName": "Create Multi Level Work Order From Part",
+          "invisible": true,
+          "order": 73
+        },
+        "createMultiLevelWorkOrderFromProductionMethod": {
+          "displayName": "Create Multi Level Work Order From Production Method",
+          "invisible": true,
+          "order": 71
+        },
+        "createMultiLevelWorkOrderViaProductionMethod": {
+          "displayName": "Create Multi Level Work Order Via Production Method",
+          "invisible": true,
+          "order": 74
+        },
+        "createWorkOrder": {
+          "displayName": "Create Work Order",
+          "invisible": true,
+          "order": 28
+        },
+        "createWorkOrderFromEstimate": {
+          "displayName": "Create Work Order From Estimate",
+          "invisible": true,
+          "order": 29
+        },
+        "createWorkOrderFromPart": {
+          "displayName": "Create Work Order From Part",
+          "order": 41
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 3
+        },
+        "customer": {
+          "displayName": "customer",
+          "invisible": true,
+          "lookUpTable": "customers",
+          "order": 24,
+          "type": "lookup"
+        },
+        "customernotes": {
+          "displayName": "customernotes",
+          "invisible": true,
+          "order": 27
+        },
+        "deliveriesStart": {
+          "displayName": "Deliveries Start",
+          "order": 54
+        },
+        "depth": {
+          "displayName": "Depth",
+          "invisible": true,
+          "order": 57
+        },
+        "description": {
+          "displayName": "description",
+          "invisible": true,
+          "order": 9
+        },
+        "dueDate": {
+          "displayName": "dueDate",
+          "invisible": true,
+          "order": 12
+        },
+        "endCustomerPrice": {
+          "displayName": "End Customer Price",
+          "order": 63,
+          "type": "number"
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "order": 35
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "invisible": false,
+          "order": 33
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "order": 34
+        },
+        "estimateOperations_instance": {
+          "displayName": "Estimate Operations",
+          "invisible": false,
+          "order": 32
+        },
+        "estimateTotal": {
+          "displayName": "Estimate Total",
+          "order": 39
+        },
+        "finish": {
+          "displayName": "Finish",
+          "invisible": true,
+          "order": 58
+        },
+        "labelInformation": {
+          "displayName": "Label Information",
+          "invisible": true,
+          "order": 48
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 7
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 6
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 1
+        },
+        "lineItemNumber": {
+          "displayName": "Line Item Number",
+          "order": 59,
+          "type": "number"
+        },
+        "markup": {
+          "displayName": "Markup",
+          "order": 37
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "order": 38
+        },
+        "materialClass": {
+          "displayName": "Material Class",
+          "order": 45
+        },
+        "name": {
+          "displayName": "Sales line Number",
+          "invisible": false,
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 5
+        },
+        "numberofsides": {
+          "displayName": "Number of sides",
+          "invisible": true,
+          "order": 46
+        },
+        "numberofwelds": {
+          "displayName": "Number of welds",
+          "invisible": true,
+          "order": 47
+        },
+        "open": {
+          "displayName": "Open",
+          "invisible": true,
+          "order": 31
+        },
+        "optionsCost": {
+          "displayName": "Options Cost",
+          "invisible": true,
+          "order": 51
+        },
+        "orderDealerPrice": {
+          "displayName": "Order Dealer Price",
+          "order": 64,
+          "type": "number"
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 2
+        },
+        "part": {
+          "Width": "135px",
+          "displayName": "part",
+          "invisible": false,
+          "lookUpTable": "parts",
+          "order": 8,
+          "type": "lookup"
+        },
+        "partOptions_instance": {
+          "displayName": "Part Options",
+          "order": 50
+        },
+        "postalCode": {
+          "displayName": "postalCode",
+          "invisible": true,
+          "order": 21
+        },
+        "powerType": {
+          "displayName": "Power Type",
+          "invisible": true,
+          "order": 53
+        },
+        "publishedPrice": {
+          "displayName": "Published Price",
+          "order": 62,
+          "type": "number"
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": false,
+          "order": 10
+        },
+        "quote": {
+          "displayName": "quote",
+          "invisible": true,
+          "order": 15
+        },
+        "quoteLine": {
+          "displayName": "Quote Line",
+          "invisible": true,
+          "order": 30
+        },
+        "requiredBy": {
+          "displayName": "requiredBy",
+          "invisible": true,
+          "order": 25
+        },
+        "salesGroup": {
+          "displayName": "Sales Group",
+          "order": 44
+        },
+        "salesOrder": {
+          "displayName": "Sales Order",
+          "invisible": false,
+          "order": 22
+        },
+        "salesTotal": {
+          "displayName": "Sales Total",
+          "order": 67
+        },
+        "salesperson": {
+          "displayName": "salesperson",
+          "invisible": true,
+          "lookUpTable": "salesperson",
+          "order": 26,
+          "type": "lookup"
+        },
+        "shipmentLines_instance": {
+          "displayName": "Shipment Lines",
+          "order": 42
+        },
+        "size": {
+          "displayName": "Size",
+          "invisible": true,
+          "order": 55
+        },
+        "specNumber": {
+          "displayName": "Spec Number",
+          "order": 65,
+          "type": "string"
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 4
+        },
+        "stateProvince": {
+          "displayName": "stateProvince",
+          "invisible": true,
+          "order": 19
+        },
+        "status": {
+          "displayName": "Status",
+          "lookUpTable": "stages",
+          "order": 61,
+          "type": "lookup"
+        },
+        "subtotal": {
+          "displayName": "Subtotal",
+          "order": 36
+        },
+        "timeandMaterialsBilling": {
+          "displayName": "timeandMaterialsBilling",
+          "invisible": true,
+          "order": 17
+        },
+        "totalCost": {
+          "displayName": "Total Cost",
+          "order": 70
+        },
+        "totalItemCost": {
+          "displayName": "Total Item Cost",
+          "order": 69
+        },
+        "totalLineAmount": {
+          "displayName": "Total Amount",
+          "order": 40
+        },
+        "totalLineAmountWithOptions": {
+          "displayName": "Total Line Amount With Options",
+          "invisible": true,
+          "order": 52
+        },
+        "totalLinePrice": {
+          "displayName": "Total Line Price",
+          "order": 72
+        },
+        "unitPrice": {
+          "displayName": "Unit Price",
+          "invisible": false,
+          "order": 11
+        },
+        "vendorRef": {
+          "displayName": "Vendor Ref",
+          "order": 60,
+          "type": "string"
+        },
+        "winchKit": {
+          "displayName": "Winch Kit",
+          "invisible": true,
+          "order": 49
+        }
+      }
+    },
+    "salesOrderSalesLine": {
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Sales Line Number\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"part\",\"operator\":\"start_with\",\"value\":null,\"name\":\"Part\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"customer\",\"operator\":\"in\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "aRInvoiceLines_instance": {
+          "displayName": "AR Invoice Lines",
+          "order": 46
+        },
+        "address1": {
+          "displayName": "address1",
+          "invisible": true,
+          "order": 16
+        },
+        "address2": {
+          "displayName": "address2",
+          "invisible": true,
+          "order": 18
+        },
+        "addressName": {
+          "displayName": "addressName",
+          "invisible": true,
+          "order": 15
+        },
+        "brand": {
+          "displayName": "Brand",
+          "invisible": true,
+          "order": 56
+        },
+        "calctest": {
+          "displayName": "calc test",
+          "invisible": true,
+          "order": 66
+        },
+        "carrier": {
+          "displayName": "carrier",
+          "invisible": true,
+          "order": 25
+        },
+        "city": {
+          "displayName": "city",
+          "invisible": true,
+          "order": 20
+        },
+        "commissionDue": {
+          "displayName": "Commission Due",
+          "invisible": true,
+          "order": 76
+        },
+        "commissionRate": {
+          "displayName": "Commission Rate",
+          "invisible": true,
+          "order": 75
+        },
+        "country": {
+          "displayName": "country",
+          "invisible": true,
+          "order": 22
+        },
+        "createMultiLevelWorkOrder": {
+          "displayName": "Create Multi Level Work Order",
+          "invisible": true,
+          "order": 68
+        },
+        "createMultiLevelWorkOrderFromPart": {
+          "displayName": "Create Multi Level Work Order From Part",
+          "invisible": true,
+          "order": 73
+        },
+        "createMultiLevelWorkOrderFromProductionMethod": {
+          "displayName": "Create Multi Level Work Order From Production Method",
+          "invisible": true,
+          "order": 71
+        },
+        "createMultiLevelWorkOrderViaProductionMethod": {
+          "displayName": "Create Multi Level Work Order Via Production Method",
+          "invisible": true,
+          "order": 74
+        },
+        "createWorkOrder": {
+          "displayName": "Create Work Order",
+          "invisible": true,
+          "order": 30
+        },
+        "createWorkOrderFromEstimate": {
+          "displayName": "Create Work Order From Estimate",
+          "invisible": true,
+          "order": 31
+        },
+        "createWorkOrderFromPart": {
+          "displayName": "Create Work Order From Part",
+          "order": 42
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 9
+        },
+        "customer": {
+          "displayName": "customer",
+          "invisible": true,
+          "order": 26
+        },
+        "customernotes": {
+          "displayName": "customernotes",
+          "invisible": true,
+          "order": 29
+        },
+        "deliveriesStart": {
+          "displayName": "Deliveries Start",
+          "invisible": true,
+          "order": 4
+        },
+        "depth": {
+          "displayName": "Depth",
+          "invisible": true,
+          "order": 57
+        },
+        "description": {
+          "displayName": "description",
+          "invisible": true,
+          "order": 14
+        },
+        "dueDate": {
+          "displayName": "Due Date",
+          "invisible": true,
+          "order": 5
+        },
+        "endCustomerPrice": {
+          "displayName": "End Customer Price",
+          "invisible": true,
+          "order": 63,
+          "type": "number"
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "invisible": true,
+          "order": 37
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "order": 34
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "invisible": true,
+          "order": 36
+        },
+        "estimateOperations_instance": {
+          "displayName": "Estimate Operations",
+          "order": 32
+        },
+        "estimateTotal": {
+          "displayName": "Estimate Total",
+          "invisible": true,
+          "order": 41
+        },
+        "finish": {
+          "displayName": "Finish",
+          "invisible": true,
+          "order": 58
+        },
+        "labelInformation": {
+          "displayName": "Label Information",
+          "invisible": true,
+          "order": 49
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 13
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 12
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 7
+        },
+        "lineItemNumber": {
+          "displayName": "Line Item Number",
+          "invisible": true,
+          "order": 59,
+          "type": "number"
+        },
+        "markup": {
+          "displayName": "Markup",
+          "invisible": true,
+          "order": 39
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "invisible": true,
+          "order": 40
+        },
+        "materialClass": {
+          "displayName": "Material Class",
+          "invisible": true,
+          "order": 44
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 11
+        },
+        "numberofsides": {
+          "displayName": "Number of sides",
+          "invisible": true,
+          "order": 47
+        },
+        "numberofwelds": {
+          "displayName": "Number of welds",
+          "invisible": true,
+          "order": 48
+        },
+        "open": {
+          "displayName": "Open",
+          "invisible": true,
+          "order": 35
+        },
+        "optionsCost": {
+          "displayName": "Options Cost",
+          "invisible": true,
+          "order": 51
+        },
+        "orderDealerPrice": {
+          "displayName": "Order Dealer Price",
+          "invisible": true,
+          "order": 64,
+          "type": "number"
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 8
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": false,
+          "order": 1
+        },
+        "partOptions_instance": {
+          "displayName": "Part Options",
+          "order": 54
+        },
+        "postalCode": {
+          "displayName": "postalCode",
+          "invisible": true,
+          "order": 23
+        },
+        "powerType": {
+          "displayName": "Power Type",
+          "invisible": true,
+          "order": 53
+        },
+        "publishedPrice": {
+          "displayName": "Published Price",
+          "invisible": true,
+          "order": 62,
+          "type": "number"
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": false,
+          "order": 2
+        },
+        "quote": {
+          "displayName": "quote",
+          "invisible": true,
+          "order": 17
+        },
+        "quoteLine": {
+          "displayName": "Quote Line",
+          "invisible": true,
+          "order": 33
+        },
+        "requiredBy": {
+          "displayName": "Due Date",
+          "invisible": false,
+          "order": 27
+        },
+        "salesGroup": {
+          "displayName": "Sales Group",
+          "invisible": true,
+          "order": 43
+        },
+        "salesOrder": {
+          "displayName": "salesOrder",
+          "invisible": false,
+          "order": 24
+        },
+        "salesTotal": {
+          "displayName": "Sales Total",
+          "invisible": true,
+          "order": 67
+        },
+        "salesperson": {
+          "displayName": "salesperson",
+          "invisible": false,
+          "order": 28
+        },
+        "shipmentLines_instance": {
+          "displayName": "Shipment Lines",
+          "order": 45
+        },
+        "size": {
+          "displayName": "Size",
+          "invisible": true,
+          "order": 55
+        },
+        "specNumber": {
+          "displayName": "Spec Number",
+          "invisible": true,
+          "order": 65,
+          "type": "string"
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 10
+        },
+        "stateProvince": {
+          "displayName": "stateProvince",
+          "invisible": true,
+          "order": 21
+        },
+        "status": {
+          "displayName": "Status",
+          "invisible": true,
+          "lookUpTable": "stages",
+          "order": 61,
+          "type": "lookup"
+        },
+        "subtotal": {
+          "displayName": "Subtotal",
+          "invisible": true,
+          "order": 38
+        },
+        "timeandMaterialsBilling": {
+          "displayName": "timeandMaterialsBilling",
+          "invisible": true,
+          "order": 19
+        },
+        "totalCost": {
+          "displayName": "Total Cost",
+          "invisible": true,
+          "order": 70
+        },
+        "totalItemCost": {
+          "displayName": "Total Item Cost",
+          "invisible": true,
+          "order": 69
+        },
+        "totalLineAmount": {
+          "displayName": "Total Amount",
+          "order": 6
+        },
+        "totalLineAmountWithOptions": {
+          "displayName": "Total Line Amount With Options",
+          "invisible": true,
+          "order": 52
+        },
+        "totalLinePrice": {
+          "displayName": "Total Line Price",
+          "invisible": true,
+          "order": 72
+        },
+        "unitPrice": {
+          "displayName": "Unit Price",
+          "invisible": false,
+          "order": 3
+        },
+        "vendorRef": {
+          "displayName": "Vendor Ref",
+          "invisible": true,
+          "order": 60,
+          "type": "string"
+        },
+        "winchKit": {
+          "displayName": "Winch Kit",
+          "invisible": true,
+          "order": 50
+        }
+      },
+      "readOnly": false,
+      "title": "Sales Order - Sales Line"
+    },
+    "saleslinesexcel": {
+      "displayAsExcel": true,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"name\",\"operator\":\"contains\",\"value\":null,\"name\":\"Sales Line Number\",\"expression\":false,\"hidden\":false},{\"andOr\":\"AND\",\"key\":\"part\",\"operator\":\"in\",\"value\":null,\"name\":\"Part\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"customer\",\"operator\":\"in\",\"value\":null,\"name\":\"Customer\",\"expression\":false,\"hidden\":false}]}",
+      "meta": {
+        "aRInvoiceLines_instance": {
+          "displayName": "AR Invoice Lines",
+          "order": 46
+        },
+        "address1": {
+          "displayName": "address1",
+          "invisible": true,
+          "order": 16
+        },
+        "address2": {
+          "displayName": "address2",
+          "invisible": true,
+          "order": 18
+        },
+        "addressName": {
+          "displayName": "addressName",
+          "invisible": true,
+          "order": 15
+        },
+        "brand": {
+          "displayName": "Brand",
+          "invisible": true,
+          "order": 56
+        },
+        "calctest": {
+          "displayName": "calc test",
+          "invisible": true,
+          "order": 66
+        },
+        "carrier": {
+          "displayName": "carrier",
+          "invisible": true,
+          "order": 25
+        },
+        "city": {
+          "displayName": "city",
+          "invisible": true,
+          "order": 20
+        },
+        "commissionDue": {
+          "displayName": "Commission Due",
+          "invisible": true,
+          "order": 76
+        },
+        "commissionRate": {
+          "displayName": "Commission Rate",
+          "invisible": true,
+          "order": 75
+        },
+        "country": {
+          "displayName": "country",
+          "invisible": true,
+          "order": 22
+        },
+        "createMultiLevelWorkOrder": {
+          "displayName": "Create Multi Level Work Order",
+          "invisible": true,
+          "order": 68
+        },
+        "createMultiLevelWorkOrderFromPart": {
+          "displayName": "Create Multi Level Work Order From Part",
+          "invisible": true,
+          "order": 73
+        },
+        "createMultiLevelWorkOrderFromProductionMethod": {
+          "displayName": "Create Multi Level Work Order From Production Method",
+          "invisible": true,
+          "order": 71
+        },
+        "createMultiLevelWorkOrderViaProductionMethod": {
+          "displayName": "Create Multi Level Work Order Via Production Method",
+          "invisible": true,
+          "order": 74
+        },
+        "createWorkOrder": {
+          "displayName": "Create Work Order",
+          "invisible": true,
+          "order": 30
+        },
+        "createWorkOrderFromEstimate": {
+          "displayName": "Create Work Order From Estimate",
+          "invisible": true,
+          "order": 31
+        },
+        "createWorkOrderFromPart": {
+          "displayName": "Create Work Order From Part",
+          "order": 42
+        },
+        "createdDate": {
+          "displayName": "Created Date",
+          "invisible": true,
+          "order": 9
+        },
+        "customer": {
+          "displayName": "customer",
+          "invisible": true,
+          "order": 26
+        },
+        "customernotes": {
+          "displayName": "customernotes",
+          "invisible": true,
+          "order": 29
+        },
+        "deliveriesStart": {
+          "displayName": "Deliveries Start",
+          "invisible": true,
+          "order": 4
+        },
+        "depth": {
+          "displayName": "Depth",
+          "invisible": true,
+          "order": 57
+        },
+        "description": {
+          "displayName": "description",
+          "invisible": true,
+          "order": 14
+        },
+        "dueDate": {
+          "displayName": "Due Date",
+          "invisible": true,
+          "order": 5
+        },
+        "endCustomerPrice": {
+          "displayName": "End Customer Price",
+          "invisible": true,
+          "order": 63,
+          "type": "number"
+        },
+        "estimateMaterials": {
+          "displayName": "Estimate Materials",
+          "invisible": true,
+          "order": 37
+        },
+        "estimateMaterials_instance": {
+          "displayName": "Estimate Materials",
+          "order": 34
+        },
+        "estimateOperations": {
+          "displayName": "Estimate Operations",
+          "invisible": true,
+          "order": 36
+        },
+        "estimateOperations_instance": {
+          "displayName": "Estimate Operations",
+          "order": 32
+        },
+        "estimateTotal": {
+          "displayName": "Estimate Total",
+          "invisible": true,
+          "order": 41
+        },
+        "finish": {
+          "displayName": "Finish",
+          "invisible": true,
+          "order": 58
+        },
+        "labelInformation": {
+          "displayName": "Label Information",
+          "invisible": true,
+          "order": 49
+        },
+        "lastEditDate": {
+          "displayName": "Last edit date",
+          "invisible": true,
+          "order": 13
+        },
+        "lastEditedBy": {
+          "displayName": "Last edited by",
+          "invisible": true,
+          "order": 12
+        },
+        "layout": {
+          "displayName": "Layout",
+          "invisible": true,
+          "order": 7
+        },
+        "lineItemNumber": {
+          "displayName": "Line Item Number",
+          "invisible": true,
+          "order": 59,
+          "type": "number"
+        },
+        "markup": {
+          "displayName": "Markup",
+          "invisible": true,
+          "order": 39
+        },
+        "markupAmount": {
+          "displayName": "Markup Amount",
+          "invisible": true,
+          "order": 40
+        },
+        "materialClass": {
+          "displayName": "Material Class",
+          "invisible": true,
+          "order": 44
+        },
+        "name": {
+          "displayName": "Name",
+          "order": 0
+        },
+        "nextEvents": {
+          "displayName": "Next Events",
+          "invisible": true,
+          "order": 11
+        },
+        "numberofsides": {
+          "displayName": "Number of sides",
+          "invisible": true,
+          "order": 47
+        },
+        "numberofwelds": {
+          "displayName": "Number of welds",
+          "invisible": true,
+          "order": 48
+        },
+        "open": {
+          "displayName": "Open",
+          "invisible": true,
+          "order": 35
+        },
+        "optionsCost": {
+          "displayName": "Options Cost",
+          "invisible": true,
+          "order": 51
+        },
+        "orderDealerPrice": {
+          "displayName": "Order Dealer Price",
+          "invisible": true,
+          "order": 64,
+          "type": "number"
+        },
+        "owner": {
+          "displayName": "Owner",
+          "invisible": true,
+          "order": 8
+        },
+        "part": {
+          "displayName": "Part",
+          "invisible": false,
+          "order": 1
+        },
+        "partOptions_instance": {
+          "displayName": "Part Options",
+          "order": 54
+        },
+        "postalCode": {
+          "displayName": "postalCode",
+          "invisible": true,
+          "order": 23
+        },
+        "powerType": {
+          "displayName": "Power Type",
+          "invisible": true,
+          "order": 53
+        },
+        "publishedPrice": {
+          "displayName": "Published Price",
+          "invisible": true,
+          "order": 62,
+          "type": "number"
+        },
+        "quantity": {
+          "displayName": "Quantity",
+          "invisible": false,
+          "order": 2
+        },
+        "quote": {
+          "displayName": "quote",
+          "invisible": true,
+          "order": 17
+        },
+        "quoteLine": {
+          "displayName": "Quote Line",
+          "invisible": true,
+          "order": 33
+        },
+        "requiredBy": {
+          "displayName": "Due Date",
+          "invisible": false,
+          "order": 27
+        },
+        "salesGroup": {
+          "displayName": "Sales Group",
+          "invisible": true,
+          "order": 43
+        },
+        "salesOrder": {
+          "displayName": "salesOrder",
+          "invisible": false,
+          "order": 24
+        },
+        "salesTotal": {
+          "displayName": "Sales Total",
+          "order": 67
+        },
+        "salesperson": {
+          "displayName": "salesperson",
+          "invisible": true,
+          "order": 28
+        },
+        "shipmentLines_instance": {
+          "displayName": "Shipment Lines",
+          "order": 45
+        },
+        "size": {
+          "displayName": "Size",
+          "invisible": true,
+          "order": 55
+        },
+        "specNumber": {
+          "displayName": "Spec Number",
+          "invisible": true,
+          "order": 65,
+          "type": "string"
+        },
+        "state": {
+          "displayName": "State",
+          "invisible": true,
+          "order": 10
+        },
+        "stateProvince": {
+          "displayName": "stateProvince",
+          "invisible": true,
+          "order": 21
+        },
+        "status": {
+          "displayName": "Status",
+          "invisible": true,
+          "lookUpTable": "stages",
+          "order": 61,
+          "type": "lookup"
+        },
+        "subtotal": {
+          "displayName": "Subtotal",
+          "invisible": true,
+          "order": 38
+        },
+        "timeandMaterialsBilling": {
+          "displayName": "timeandMaterialsBilling",
+          "invisible": true,
+          "order": 19
+        },
+        "totalCost": {
+          "displayName": "Total Cost",
+          "order": 70
+        },
+        "totalItemCost": {
+          "displayName": "Total Item Cost",
+          "order": 69
+        },
+        "totalLineAmount": {
+          "displayName": "Total Amount",
+          "order": 6
+        },
+        "totalLineAmountWithOptions": {
+          "displayName": "Total Line Amount With Options",
+          "invisible": true,
+          "order": 52
+        },
+        "totalLinePrice": {
+          "displayName": "Total Line Price",
+          "order": 72
+        },
+        "unitPrice": {
+          "displayName": "Unit Price",
+          "invisible": false,
+          "order": 3
+        },
+        "vendorRef": {
+          "displayName": "Vendor Ref",
+          "invisible": true,
+          "order": 60,
+          "type": "string"
+        },
+        "winchKit": {
+          "displayName": "Winch Kit",
+          "invisible": true,
+          "order": 50
+        }
+      },
+      "readOnly": false,
+      "recordCustomCode": "",
+      "title": "sales lines excel"
+    }
+  },
+  "viewsOrder": [
+    "salesOrderSalesLine",
+    "commisionsDue",
+    "saleslinesexcel"
+  ]
+}

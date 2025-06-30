@@ -1,0 +1,236 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "fixDate": {
+      "displayName": "Fix Date",
+      "order": 9,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "ljlkjl": {
+      "displayName": "ljlkjl",
+      "order": 10,
+      "type": "string"
+    },
+    "machines": {
+      "displayName": "machines",
+      "indexed": true,
+      "lookUpTable": "machines",
+      "order": 8,
+      "type": "lookup"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_844152",
+        "label": "",
+        "clientKey": "section_844152",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_844152_row_51976",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e26a5752-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e26a5752-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_f5eb2b60-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_f5eb2b60-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Fix Date",
+                "type": "datepicker",
+                "propName": "fixDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "machinefixticket"
+              },
+              {
+                "name": "control_ea380590-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_ea380590-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "machines",
+                "type": "lookup",
+                "propName": "machines",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_ea6e5bd0-43b4-11ef-8808-c9e8b3ae73d6",
+                "fieldName": "control_ea6e5bd0-43b4-11ef-8808-c9e8b3ae73d6",
+                "label": "ljlkjl",
+                "type": "text",
+                "propName": "ljlkjl",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_e26a5750-3a1c-11ef-9ded-ad7b2ead02c5",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_e26a5750-3a1c-11ef-9ded-ad7b2ead02c5",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_e26a5750-3a1c-11ef-9ded-ad7b2ead02c5_row_e26a5751-3a1c-11ef-9ded-ad7b2ead02c5",
+            "controls": [
+              {
+                "name": "control_e2be6ac0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e2be6ac0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e30dea50-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e30dea50-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e362e820-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e362e820-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e3b770c0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e3b770c0-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e4028380-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e4028380-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e457a860-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e457a860-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_e4a26d00-3a1c-11ef-9ded-ad7b2ead02c5",
+                "fieldName": "control_e4a26d00-3a1c-11ef-9ded-ad7b2ead02c5",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "machinefixticket",
+  "storageType": "dashboard",
+  "title": "Machine fix ticket"
+}

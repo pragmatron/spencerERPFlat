@@ -1,0 +1,414 @@
+{
+  "defaultSort": {
+    "column": "_id",
+    "direction": "desc"
+  },
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"AND\",\"key\":\"started\",\"operator\":\"time\",\"value\":null,\"name\":\"Started\",\"expression\":false,\"hidden\":false},{\"andOr\":\"\",\"key\":\"user\",\"operator\":\"=\",\"value\":null,\"name\":\"User\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "activeTimeCard": {
+      "displayName": "Active Time Card",
+      "order": 16,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "employee": {
+      "displayName": "Employee",
+      "indexed": true,
+      "invisible": true,
+      "lookUpTable": "employees",
+      "order": 17,
+      "type": "lookup"
+    },
+    "hours": {
+      "displayName": "Hours",
+      "order": 10,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "Width": "272px",
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "payableHours": {
+      "Width": "236px",
+      "displayName": "Payable Hours",
+      "order": 11,
+      "type": "number"
+    },
+    "started": {
+      "Width": "158px",
+      "displayName": "Started",
+      "order": 8,
+      "type": "timepicker"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    },
+    "stopped": {
+      "Width": "156px",
+      "displayName": "Stopped",
+      "order": 9,
+      "type": "timepicker"
+    },
+    "timeEntries_instance": {
+      "dataGrid": "timeEntries",
+      "displayName": "Time Entries",
+      "filterColumn": "timeCards",
+      "order": 14,
+      "type": "datagrid"
+    },
+    "user": {
+      "displayName": "User",
+      "order": 12,
+      "type": "user"
+    },
+    "userRate": {
+      "displayName": "User Rate",
+      "order": 15,
+      "type": "number"
+    },
+    "workLocation": {
+      "displayName": "Work Location",
+      "lookUpTable": "workLocation",
+      "order": 13,
+      "type": "lookup"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_704551",
+        "label": "Time Card",
+        "clientKey": "section_704551",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_704551_row_415814",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_5f0c4592-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f0c4592-5592-11ee-a06c-9380ed34ee40",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_745527b0-8d72-11ee-b5b5-cb3327671b57",
+                "fieldName": "control_745527b0-8d72-11ee-b5b5-cb3327671b57",
+                "label": "Work Location",
+                "type": "lookup",
+                "propName": "workLocation",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_65984c10-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_65984c10-5592-11ee-a06c-9380ed34ee40",
+                "label": "Started",
+                "type": "timepicker",
+                "propName": "started",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_6768cda0-dcf3-11ef-bf32-a9dc0aadedb1",
+                "fieldName": "control_6768cda0-dcf3-11ef-bf32-a9dc0aadedb1",
+                "label": "Employee",
+                "type": "lookup",
+                "propName": "employee",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true,
+                "gridId": "timeCards"
+              },
+              {
+                "name": "control_6a12d7b0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_6a12d7b0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Stopped",
+                "type": "timepicker",
+                "propName": "stopped",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_8135d8c0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_8135d8c0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Hours",
+                "type": "number",
+                "propName": "hours",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_8726b0b0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_8726b0b0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Payable Hours",
+                "type": "number",
+                "propName": "payableHours",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_edef8e70-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_edef8e70-5592-11ee-a06c-9380ed34ee40",
+                "label": "User",
+                "type": "user",
+                "propName": "user",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisibleInDataGrid": false,
+                "gridId": "timeCards"
+              },
+              {
+                "name": "control_3a74ba30-c691-11ee-82b5-5154051a5701",
+                "fieldName": "control_3a74ba30-c691-11ee-82b5-5154051a5701",
+                "label": "User Rate",
+                "type": "number",
+                "propName": "userRate",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "timeCards",
+                "sum": true
+              },
+              {
+                "name": "control_ba32bb80-c742-11ee-871d-39a68706dc25",
+                "fieldName": "control_ba32bb80-c742-11ee-871d-39a68706dc25",
+                "label": "Active Time Card",
+                "type": "checkbox",
+                "propName": "activeTimeCard",
+                "className": "col-md-6",
+                "isChecked": false,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "timeCards"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_5f0c4590-5592-11ee-a06c-9380ed34ee40",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_5f0c4590-5592-11ee-a06c-9380ed34ee40",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_5f0c4590-5592-11ee-a06c-9380ed34ee40_row_5f0c4591-5592-11ee-a06c-9380ed34ee40",
+            "controls": [
+              {
+                "name": "control_5f1a9d70-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f1a9d70-5592-11ee-a06c-9380ed34ee40",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f2524c0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f2524c0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f2f5df0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f2f5df0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f39e540-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f39e540-5592-11ee-a06c-9380ed34ee40",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f43d050-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f43d050-5592-11ee-a06c-9380ed34ee40",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f4e3090-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f4e3090-5592-11ee-a06c-9380ed34ee40",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_5f58def0-5592-11ee-a06c-9380ed34ee40",
+                "fieldName": "control_5f58def0-5592-11ee-a06c-9380ed34ee40",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "section_297919",
+        "label": "Time Entries",
+        "clientKey": "section_297919",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_297919_row_791072",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e23e5470-c690-11ee-82b5-5154051a5701",
+                "fieldName": "control_e23e5470-c690-11ee-82b5-5154051a5701",
+                "label": "Time Entries",
+                "type": "datagrid",
+                "propName": "timeEntries_instance",
+                "className": "col-md-12",
+                "dataGridAvailableViews": [],
+                "dataGridAddRecordsText": "",
+                "dataGridAddRecordText": "",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisibleLabel": true,
+                "gridId": "timeCards"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": [],
+        "vif": "",
+        "collapsedByDefault": false
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "timeCards",
+  "storageType": "dashboard",
+  "title": "Time Cards",
+  "views": {
+    "default": {
+      "displayAsExcel": false,
+      "displayCompact": false,
+      "displayInTab": false,
+      "displayTotalValue": false,
+      "nestedDataGrid": "",
+      "readOnly": true,
+      "recordCustomCode": "",
+      "title": "Default"
+    }
+  }
+}

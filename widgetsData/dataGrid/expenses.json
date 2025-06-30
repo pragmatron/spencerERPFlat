@@ -1,0 +1,235 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "amount": {
+      "displayName": "Amount",
+      "order": 8,
+      "type": "number"
+    },
+    "approved": {
+      "displayName": "Approved",
+      "order": 10,
+      "type": "checkbox"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "customer": {
+      "displayName": "Customer",
+      "lookUpTable": "customers",
+      "order": 9,
+      "type": "lookup"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_508496",
+        "label": "",
+        "clientKey": "section_508496",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_508496_row_620391",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_59128be2-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_59128be2-7e82-11ee-a72f-671090e04831",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_5f9c4870-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_5f9c4870-7e82-11ee-a72f-671090e04831",
+                "label": "Amount",
+                "type": "number",
+                "propName": "amount",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false
+              },
+              {
+                "name": "control_66247e60-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_66247e60-7e82-11ee-a72f-671090e04831",
+                "label": "Customer",
+                "type": "lookup",
+                "propName": "customer",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_6f77bb30-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_6f77bb30-7e82-11ee-a72f-671090e04831",
+                "label": "Approved",
+                "type": "checkbox",
+                "propName": "approved",
+                "className": "col-md-6",
+                "isChecked": false,
+                "decimalPlace": 0,
+                "isForDownload": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_59128be0-7e82-11ee-a72f-671090e04831",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_59128be0-7e82-11ee-a72f-671090e04831",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_59128be0-7e82-11ee-a72f-671090e04831_row_59128be1-7e82-11ee-a72f-671090e04831",
+            "controls": [
+              {
+                "name": "control_59424e70-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_59424e70-7e82-11ee-a72f-671090e04831",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_597a4e60-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_597a4e60-7e82-11ee-a72f-671090e04831",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_599f89a0-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_599f89a0-7e82-11ee-a72f-671090e04831",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_59c7f930-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_59c7f930-7e82-11ee-a72f-671090e04831",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_59ed5b80-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_59ed5b80-7e82-11ee-a72f-671090e04831",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5a19e9c0-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_5a19e9c0-7e82-11ee-a72f-671090e04831",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              },
+              {
+                "name": "control_5a419600-7e82-11ee-a72f-671090e04831",
+                "fieldName": "control_5a419600-7e82-11ee-a72f-671090e04831",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "isForDownload": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "expenses",
+  "storageType": "dashboard",
+  "title": "Expenses"
+}

@@ -1,0 +1,231 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "code": {
+      "displayName": "Code",
+      "order": 9,
+      "type": "string"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": true,
+      "order": 3,
+      "type": "date"
+    },
+    "display": {
+      "displayName": "Display",
+      "order": 8,
+      "type": "string"
+    },
+    "gainLossonConversionAccount": {
+      "Width": "412px",
+      "displayName": "Gain-Loss on Conversion Account",
+      "invisible": true,
+      "order": 10,
+      "type": "string"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": true,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_532632",
+        "label": "",
+        "clientKey": "section_532632",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_532632_row_227733",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_98a42750-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_98a42750-27b6-11ee-9192-091c312d3625",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_f4c32e60-27b5-11ee-82cf-63223aa1d9d2_",
+                "fieldName": "control_f4c32e60-27b5-11ee-82cf-63223aa1d9d2_",
+                "label": "Display",
+                "type": "text",
+                "propName": "display",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_f4c32e61-27b5-11ee-82cf-63223aa1d9d2_",
+                "fieldName": "control_f4c32e61-27b5-11ee-82cf-63223aa1d9d2_",
+                "label": "Code",
+                "type": "text",
+                "propName": "code",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              },
+              {
+                "name": "control_f4c32e62-27b5-11ee-82cf-63223aa1d9d2_",
+                "fieldName": "control_f4c32e62-27b5-11ee-82cf-63223aa1d9d2_",
+                "label": "Gain-Loss on Conversion Account",
+                "type": "text",
+                "propName": "gainLossonConversionAccount",
+                "className": "col-md-6",
+                "decimalPlace": 0
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_98a40040-27b6-11ee-9192-091c312d3625",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_98a40040-27b6-11ee-9192-091c312d3625",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_98a40040-27b6-11ee-9192-091c312d3625_row_98a40041-27b6-11ee-9192-091c312d3625",
+            "controls": [
+              {
+                "name": "control_98c0b000-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_98c0b000-27b6-11ee-9192-091c312d3625",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_98d94110-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_98d94110-27b6-11ee-9192-091c312d3625",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_98f41c10-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_98f41c10-27b6-11ee-9192-091c312d3625",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_991315c0-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_991315c0-27b6-11ee-9192-091c312d3625",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_993013a0-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_993013a0-27b6-11ee-9192-091c312d3625",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_9949dd30-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_9949dd30-27b6-11ee-9192-091c312d3625",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              },
+              {
+                "name": "control_996358a0-27b6-11ee-9192-091c312d3625",
+                "fieldName": "control_996358a0-27b6-11ee-9192-091c312d3625",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "decimalPlace": 0,
+                "invisible": true,
+                "invisibleInDataGrid": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "currencies",
+  "storageType": "dashboard",
+  "title": "Currencies"
+}

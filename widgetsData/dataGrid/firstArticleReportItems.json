@@ -1,0 +1,179 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "actual": {
+      "displayName": "actual",
+      "order": 4,
+      "type": "number"
+    },
+    "dimension": {
+      "displayName": "Dimension",
+      "order": 2,
+      "type": "number"
+    },
+    "firstArticleReport": {
+      "displayName": "firstArticleReport",
+      "indexed": true,
+      "lookUpTable": "firstArticleReport",
+      "order": 1,
+      "type": "lookup"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "order": 8,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "notes": {
+      "displayName": "notes",
+      "order": 5,
+      "type": "multiline_text"
+    },
+    "outoftolerance": {
+      "displayName": "out of tolerance",
+      "invisible": false,
+      "order": 7,
+      "type": "string"
+    },
+    "tolerance": {
+      "displayName": "tolerance",
+      "order": 3,
+      "type": "number"
+    },
+    "variance": {
+      "displayName": "variance",
+      "order": 6,
+      "type": "number"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_508991",
+        "label": "",
+        "clientKey": "section_508991",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_508991_row_343642",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_e8e53772-0038-11f0-b444-f9f65eafd814",
+                "fieldName": "control_e8e53772-0038-11f0-b444-f9f65eafd814",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_0e6ee590-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_0e6ee590-0039-11f0-b444-f9f65eafd814",
+                "label": "firstArticleReport",
+                "type": "lookup",
+                "propName": "firstArticleReport",
+                "className": "col-md-6",
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_1c4f72b0-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_1c4f72b0-0039-11f0-b444-f9f65eafd814",
+                "label": "Dimension",
+                "type": "number",
+                "propName": "dimension",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_1ff28a10-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_1ff28a10-0039-11f0-b444-f9f65eafd814",
+                "label": "tolerance",
+                "type": "number",
+                "propName": "tolerance",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_23719eb0-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_23719eb0-0039-11f0-b444-f9f65eafd814",
+                "label": "actual",
+                "type": "number",
+                "propName": "actual",
+                "className": "col-md-6",
+                "decimalPlace": 2
+              },
+              {
+                "name": "control_26e0adc0-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_26e0adc0-0039-11f0-b444-f9f65eafd814",
+                "label": "notes",
+                "type": "multiline_text",
+                "propName": "notes",
+                "className": "col-md-6"
+              },
+              {
+                "name": "control_2ab73130-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_2ab73130-0039-11f0-b444-f9f65eafd814",
+                "label": "variance",
+                "type": "number",
+                "propName": "variance",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "expression": "rowData.dimension - rowData.actual",
+                "sum": true
+              },
+              {
+                "name": "control_70343190-0039-11f0-b444-f9f65eafd814",
+                "fieldName": "control_70343190-0039-11f0-b444-f9f65eafd814",
+                "label": "out of tolerance",
+                "type": "text",
+                "propName": "outoftolerance",
+                "className": "col-md-6",
+                "expression": "rowData.variance >  rowData.tolerance ? 'out of tolerance' : 'all good'",
+                "sum": true
+              },
+              {
+                "name": "control_f4991b60-004a-11f0-a666-f5629c4c45a3",
+                "fieldName": "control_f4991b60-004a-11f0-a666-f5629c4c45a3",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": []
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_e8e53770-0038-11f0-b444-f9f65eafd814",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_e8e53770-0038-11f0-b444-f9f65eafd814",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_e8e53770-0038-11f0-b444-f9f65eafd814_row_e8e53771-0038-11f0-b444-f9f65eafd814",
+            "controls": []
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "firstArticleReportItems",
+  "storageType": "dashboard",
+  "title": "firstArticleReportItems"
+}

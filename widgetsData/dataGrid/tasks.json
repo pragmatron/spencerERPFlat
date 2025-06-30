@@ -1,0 +1,188 @@
+{
+  "displayColumn": "name",
+  "filterBuilder": "{\"condition\":\"AND\",\"rules\":[{\"andOr\":\"\",\"key\":\"owner\",\"operator\":\"=\",\"value\":null,\"name\":\"Owner\",\"expression\":false,\"hidden\":false}]}",
+  "isReactive": true,
+  "meta": {
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": false,
+      "order": 3,
+      "type": "date"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": false,
+      "order": 2,
+      "type": "user"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_199386",
+        "label": "",
+        "clientKey": "section_199386",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_199386_row_705746",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_9b8c5730-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9b8c5730-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Name",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_9b8c3020-ccca-11ee-b897-91e7572d9ee8",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_9b8c3020-ccca-11ee-b897-91e7572d9ee8",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_9b8c3020-ccca-11ee-b897-91e7572d9ee8_row_9b8c3021-ccca-11ee-b897-91e7572d9ee8",
+            "controls": [
+              {
+                "name": "control_9bcd30c0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9bcd30c0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9c0a12b0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9c0a12b0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Owner",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9c512dd0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9c512dd0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9c900b90-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9c900b90-ccca-11ee-b897-91e7572d9ee8",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9cd292d0-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9cd292d0-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9d160470-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9d160470-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_9d971b50-ccca-11ee-b897-91e7572d9ee8",
+                "fieldName": "control_9d971b50-ccca-11ee-b897-91e7572d9ee8",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "tasks",
+  "storageType": "dashboard",
+  "title": "Tasks"
+}

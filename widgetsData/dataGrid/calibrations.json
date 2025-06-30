@@ -1,0 +1,338 @@
+{
+  "displayColumn": "name",
+  "isReactive": true,
+  "meta": {
+    "adjustmentsRemarks": {
+      "displayName": "Adjustments/Remarks",
+      "invisible": false,
+      "order": 16,
+      "type": "multiline_text"
+    },
+    "calibrationProcedure": {
+      "displayName": "Calibration Procedure",
+      "invisible": false,
+      "lookUpTable": "calibrationProcedure",
+      "order": 14,
+      "type": "lookup"
+    },
+    "calibrationTool": {
+      "displayName": "Calibration Tool",
+      "invisible": true,
+      "lookUpTable": "calibrationTools",
+      "order": 8,
+      "type": "lookup"
+    },
+    "createdDate": {
+      "displayName": "Created Date",
+      "invisible": false,
+      "order": 3,
+      "type": "date"
+    },
+    "dateCalibrated": {
+      "displayName": "Date Calibrated",
+      "invisible": false,
+      "order": 15,
+      "type": "date"
+    },
+    "intervalMonths": {
+      "displayName": "Interval (Months)",
+      "invisible": false,
+      "order": 12,
+      "type": "number"
+    },
+    "lastEditDate": {
+      "displayName": "Last edit date",
+      "invisible": true,
+      "order": 7,
+      "type": "date"
+    },
+    "lastEditedBy": {
+      "displayName": "Last edited by",
+      "invisible": true,
+      "order": 6,
+      "type": "user"
+    },
+    "layout": {
+      "displayName": "Layout",
+      "invisible": true,
+      "order": 1,
+      "type": "select"
+    },
+    "location": {
+      "displayName": "Location",
+      "invisible": false,
+      "order": 9,
+      "type": "string"
+    },
+    "manufacturer": {
+      "displayName": "Manufacturer",
+      "invisible": false,
+      "order": 11,
+      "type": "string"
+    },
+    "name": {
+      "displayName": "Name",
+      "order": 0,
+      "type": "string"
+    },
+    "nextEvents": {
+      "displayName": "Next Events",
+      "invisible": true,
+      "order": 5,
+      "type": "string"
+    },
+    "owner": {
+      "displayName": "Owner",
+      "invisible": false,
+      "order": 2,
+      "type": "user"
+    },
+    "propertyOf": {
+      "displayName": "Property Of",
+      "invisible": false,
+      "order": 10,
+      "type": "string"
+    },
+    "standard": {
+      "displayName": "Standard",
+      "invisible": false,
+      "order": 13,
+      "type": "string"
+    },
+    "state": {
+      "displayName": "State",
+      "invisible": true,
+      "order": 4,
+      "type": "string"
+    }
+  },
+  "rowEditorFieldsForm": {
+    "sections": [
+      {
+        "name": "section_286184",
+        "label": "",
+        "clientKey": "section_286184",
+        "order": 0,
+        "rows": [
+          {
+            "name": "section_286184_row_692671",
+            "label": "",
+            "order": 0,
+            "controls": [
+              {
+                "name": "control_7803eb80-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_7803eb80-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Calibration Tool",
+                "type": "lookup",
+                "propName": "calibrationTool",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_d297beb2-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d297beb2-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Description",
+                "type": "text",
+                "propName": "name",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "calibrations"
+              },
+              {
+                "name": "control_a8189320-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_a8189320-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Location",
+                "type": "text",
+                "propName": "location",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b3744a20-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_b3744a20-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Property Of",
+                "type": "text",
+                "propName": "propertyOf",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_b8f4fb20-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_b8f4fb20-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Manufacturer",
+                "type": "text",
+                "propName": "manufacturer",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c1afa170-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_c1afa170-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Interval (Months)",
+                "type": "number",
+                "propName": "intervalMonths",
+                "className": "col-md-6",
+                "decimalPlace": 2,
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_c6880480-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_c6880480-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Standard",
+                "type": "text",
+                "propName": "standard",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_ce2b6e70-d255-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_ce2b6e70-d255-11ee-be77-eb006ae4ac9e",
+                "label": "Calibration Procedure",
+                "type": "lookup",
+                "propName": "calibrationProcedure",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "ableToAddLookUpVal": true
+              },
+              {
+                "name": "control_d2db5760-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d2db5760-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Calibrated By",
+                "type": "user",
+                "propName": "owner",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "calibrations"
+              },
+              {
+                "name": "control_d2f9dbe0-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d2f9dbe0-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Created Date",
+                "type": "datepicker",
+                "propName": "createdDate",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "calibrations"
+              },
+              {
+                "name": "control_1205bb50-d256-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_1205bb50-d256-11ee-be77-eb006ae4ac9e",
+                "label": "Adjustments/Remarks",
+                "type": "multiline_text",
+                "propName": "adjustmentsRemarks",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false
+              },
+              {
+                "name": "control_030454e0-d256-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_030454e0-d256-11ee-be77-eb006ae4ac9e",
+                "label": "Date Calibrated",
+                "type": "datepicker",
+                "propName": "dateCalibrated",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "gridId": "calibrations"
+              }
+            ]
+          }
+        ],
+        "labelPosition": "top",
+        "isDynamic": false,
+        "minInstance": 1,
+        "maxInstance": 0,
+        "instances": []
+      },
+      {
+        "cleintKey": "hidden_section_d297beb0-d254-11ee-be77-eb006ae4ac9e",
+        "instances": [],
+        "isDynamic": false,
+        "label": "Hidden Section",
+        "vif": "false",
+        "name": "hidden_section_d297beb0-d254-11ee-be77-eb006ae4ac9e",
+        "order": 1,
+        "rows": [
+          {
+            "name": "hidden_section_d297beb0-d254-11ee-be77-eb006ae4ac9e_row_d297beb1-d254-11ee-be77-eb006ae4ac9e",
+            "controls": [
+              {
+                "name": "control_d2bd6f20-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d2bd6f20-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Layout",
+                "type": "select",
+                "propName": "layout",
+                "className": "col-md-6",
+                "dataOptions": [],
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d31af870-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d31af870-d254-11ee-be77-eb006ae4ac9e",
+                "label": "State",
+                "type": "text",
+                "propName": "state",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d337a830-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d337a830-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Next Events",
+                "type": "text",
+                "propName": "nextEvents",
+                "className": "col-md-6",
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d354a610-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d354a610-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Last edited by",
+                "type": "user",
+                "propName": "lastEditedBy",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              },
+              {
+                "name": "control_d37378b0-d254-11ee-be77-eb006ae4ac9e",
+                "fieldName": "control_d37378b0-d254-11ee-be77-eb006ae4ac9e",
+                "label": "Last edit date",
+                "type": "datepicker",
+                "propName": "lastEditDate",
+                "className": "col-md-6",
+                "readonly": true,
+                "isForDownload": false,
+                "openInNewTab": false,
+                "invisible": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "layout": "collapse"
+  },
+  "source": "calibrations",
+  "storageType": "dashboard",
+  "title": "Calibrations"
+}
